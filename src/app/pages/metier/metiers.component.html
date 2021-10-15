@@ -1,0 +1,167 @@
+<div class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+
+    <div class="section-1" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
+
+        <div class="bg" fxLayout="row" fxLayoutAlign="end end">
+            <img src="../../../assets/img/corner.png" alt="">
+        </div>
+
+        <div class="context">
+            <div fxFlex="80" fxLayout="column" fxLayoutAlign="center start" fxLayout="column" fxLayoutAlign.xs="start start" class="context-wrapper">
+                <h3>Des solutions & métiers adaptés à <br> <strong> tous vos besoins</strong></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione earum fuga laboriosam voluptatum. </p>
+                <mat-icon><span class="material-icons">
+                    arrow_circle_down
+                </span></mat-icon>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section-2" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="center start">
+
+        <h3>Decouvrez nos métiers</h3>
+
+
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="22px grid" fxLayoutGap.xs="0px grid">
+
+                <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let content of contents">
+                    <mat-card fxLayoutAlign="center end" style="background-image: url('{{content.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
+                        <mat-card-content class="mat-content-loop">
+                            <h4>Métier</h4>
+                            <h3>{{content.title}}</h3>
+                            <p>
+                                {{content.text}}
+                            </p>
+                            <button href="https://www.step-sa.fr/ " target="_blank " class="info">voir plus</button>
+                        </mat-card-content>
+                    </mat-card>
+
+                </div>
+                <div fxFlex="auto" fxHide.lt-sm="true">
+                    <mat-card fxflexFill fxFlex fxLayoutAlign="center end " class="remain-card mat-elevation-z0">
+
+
+                        <mat-card-content class="remain-card-content" flexLayout="row" fxLayoutAlign="space-around center">
+                            <div fxflexFill fxLayout="column" fxLayoutAlign="space-evenly start" style="height: 75%;">
+
+                                <h3>Quelles applications pour nos métiers?</h3>
+                                <p> Ab, sit? Eaque enim nemo nesciunt dolore rem, <br> neque laboriosam eligendi voluptatem .</p>
+                                <h4>Découvrez nos cas d'études</h4>
+                            </div>
+                            <div fxLayout="column" fxLayoutAlign="end end" style="height: 70%;">
+
+                                <span class="material-icons">
+                                    arrow_forward
+                                </span>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="section-3 " fxLayout="column " fxLayoutAlign.xs="center center " fxLayoutAlign="center start " fxHide.gt-xs="true " fxHide.md="true " fxHide.sm="true ">
+        <h3>Quelles applications pour nos métiers?</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, sit? Eaque enim nemo nesciunt dolore rem, neque laboriosam eligendi voluptatem .</p>
+
+        <button href="https://www.step-sa.fr/ " target="_blank " class="step-blue ">voir plus</button>
+    </div>
+
+
+
+    <div class="section-4 " fxLayout="row " fxLayoutAlign="space-around center " fxLayout.xs="column " fxLayoutAlign.xs="start center ">
+
+        <div class="context step-blue ">
+            <div fxFlex="80%" fxLayout="column " fxLayoutAlign="center start " fxLayout="column " fxLayoutAlign.xs="start start " class="context-wrapper context-wrapper-section-4 ">
+                <h3>Une question?</h3>
+                <h3>Un projet?</h3>
+                <h3>N'hesitez à nous contacter</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                <button href="https://www.step-sa.fr/ " target="_blank " class="step-question ">Envoyer nous votre message</button>
+
+            </div>
+        </div>
+
+        <div class="step-blue bg-question " fxLayout="row " fxLayoutAlign="end end ">
+            <img src="../../../assets/img/corner-orange.png " alt=" ">
+        </div>
+
+
+    </div>
+
+    <app-partners></app-partners>
+
+
+    <!-- 
+
+    <div class="section-2 " fxLayout="column " fxLayoutAlign.xs="center center " fxLayoutAlign="center start ">
+        <h3>Decouvrez nos métiers</h3>
+        <div fxLayout="row grid " fxLayoutAlign="space-around center " fxLayout.xs="column " fxLayoutAlign.xs="start center " class="card-container ">
+            <div class="card ">
+
+                <mat-grid-list cols="3 " rowHeight="4:3 ">
+
+                    <h5>hellllo</h5>
+                    <mat-grid-tile>
+                        <img src="../../../assets/solutions/atelier.jpg " alt=" " />
+
+                        <div fxLayout=" row " fxLayoutAlign="center end " class="block ">
+                            <div fxLayout="column " fxLayoutAlign="center space-evenly " fxLayoutGap="5px " class="content ">
+                                <h5>Métier</h5>
+                                <h3>title</h3>
+                                <h5>text</h5>
+                                <button href="https://www.step-sa.fr/ " target="_blank " class="step-cyan ">voir plus</button>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                        <img src="../../../assets/solutions/atelier.jpg " alt=" " />
+
+                        <div fxLayout=" row " fxLayoutAlign="center end " class="block ">
+                            <div fxLayout="column " fxLayoutAlign="center space-evenly " fxLayoutGap="5px " class="content ">
+                                <h5>Métier 1</h5>
+                                <h3>title 1</h3>
+                                <h5>text 3</h5>
+                                <button href="https://www.step-sa.fr/ " target="_blank " class="step-cyan ">voir plus</button>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                        <img src="../../../assets/solutions/atelier.jpg " alt=" " />
+
+                        <div fxLayout=" row " fxLayoutAlign="center end " class="block ">
+                            <div fxLayout="column " fxLayoutAlign="center space-evenly " fxLayoutGap="5px " class="content ">
+                                <h5>Métier 4</h5>
+                                <h3>title 4</h3>
+                                <h5>text 4</h5>
+                                <button href="https://www.step-sa.fr/ " target="_blank " class="step-cyan ">voir plus</button>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+
+                </mat-grid-list>
+
+
+
+            </div>
+        </div>
+    </div> -->
+
+</div>

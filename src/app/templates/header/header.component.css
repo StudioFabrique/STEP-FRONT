@@ -1,0 +1,133 @@
+/* .container {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.mat-list-item {
+    color: #140a82;
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+} */
+
+
+/* // Carousel on XS */
+
+.container {
+    width: 100%;
+}
+
+.metier-swiper {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    color: #140a82;
+    text-decoration: none;
+    font-size: 14px;
+    word-wrap: unset;
+    text-align: center;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.content-wrapper {
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    .metier-swiper {
+        width: 100%;
+        margin: auto;
+        margin-left: 15px;
+    }
+    a {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px 38px 15px 38px;
+        border-radius: 35px;
+        background-color: #F6F5FC;
+    }
+    a:hover {
+        background-color: #140a82;
+        color: white;
+    }
+    .content-wrapper {
+        width: 600px;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .metier-swiper {
+        width: 100%;
+        margin: auto;
+        margin-left: 15px;
+    }
+    a {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px 38px 15px 38px;
+        border-radius: 35px;
+        background-color: #F6F5FC;
+    }
+    a:hover {
+        background-color: #140a82;
+        color: white;
+    }
+    .content-wrapper {
+        width: 600px;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .metier-swiper {
+        width: 100%;
+        height: 100px;
+        margin-left: 20px;
+    }
+    a {
+        color: #140a82;
+        text-decoration: none;
+        padding: 15px 38px 15px 38px;
+        background-color: #F6F5FC;
+        font-size: 18px;
+        border-radius: 35px;
+        word-wrap: unset;
+        text-align: center;
+        margin-left: 10px;
+    }
+    a:hover {
+        background-color: #140a82;
+        color: white;
+    }
+    .content-wrapper {
+        width: 400px;
+        margin-left: 25px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
