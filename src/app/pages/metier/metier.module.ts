@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { MetierRoutingModule } from './metier-routing.module';
 import { FluxDocComponent } from './flux-doc/flux-doc.component';
@@ -18,8 +19,9 @@ import { IngenierieComponent } from './flux-doc/ingenierie/ingenierie.component'
 import { PrestationsComponent } from './flux-doc/prestations/prestations.component';
 import { MaterielComponent } from './atelier/materiel/materiel.component';
 import { AssistanceComponent } from './atelier/assistance/assistance.component';
-
-
+import { NumerisationComponent } from './flux-doc/prestations/numerisation/numerisation.component';
+import { EditiqueComponent } from './flux-doc/prestations/editique/editique.component';
+import { TraitementComponent } from './flux-doc/prestations/traitement/traitement.component';
 @NgModule({
   declarations: [
     FluxDocComponent,
@@ -37,11 +39,15 @@ import { AssistanceComponent } from './atelier/assistance/assistance.component';
     IngenierieComponent,
     PrestationsComponent,
     MaterielComponent,
-    AssistanceComponent
+    AssistanceComponent,
+    NumerisationComponent,
+    EditiqueComponent,
+    TraitementComponent,
   ],
   imports: [
     CommonModule,
-    MetierRoutingModule
+    MetierRoutingModule,
+
   ]
 })
 export class MetierModule { }

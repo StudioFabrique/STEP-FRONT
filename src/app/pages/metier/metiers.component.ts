@@ -13,6 +13,23 @@ export interface Content {
 })
 export class MetiersComponent implements OnInit {
 
+  bgs = "assets/img/solutions.png"
+  image="assets/img/corner-orange.png" 
+  title="Hello metier" 
+  titleBold="byby metier" 
+  text="metier is metier" 
+  defaultColor="transparent"
+  style = `background-image:url('${this.bgs}'); background-size: cover;`
+
+
+  metierBgs = "assets/img/flux_doc.jpg"
+  metierImage="assets/img/half_orange.png" 
+  metierTitle="Mes Metiers" 
+  metierTitleBold="Le metier de l'avenir" 
+  metierText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. " 
+  metierDefaultColor="transparent"
+  metierStyle = `background-image:url('${this.metierBgs}'); background-size: contain; background-position: left center;`
+
   constructor() { }
 
   ngOnInit(): void {

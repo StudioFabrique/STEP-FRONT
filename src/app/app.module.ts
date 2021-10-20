@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -60,6 +57,11 @@ import { MissionHeaderComponent } from './templates/mission-header/mission-heade
 import { HighLightDirective } from './directives/highlight.directive';
 import { NewHighLightDirective } from './directives/newHighlight.directive';
 import { DataService } from './services/data.service';
+import { EmploisComponent } from './pages/emplois/emplois.component';
+import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
+import { HeaderColorBlockComponent } from './templates/header-color-block/header-color-block.component';
+import { MetiersItemsHeaderComponent } from './templates/metiers-items-header/metiers-items-header.component';
+
 
 @NgModule({
   declarations: [
@@ -88,7 +90,11 @@ import { DataService } from './services/data.service';
 
     //DIRECTIVES
     HighLightDirective,
-    NewHighLightDirective
+    NewHighLightDirective,
+    EmploisComponent,
+    MentionsLegalesComponent,
+    HeaderColorBlockComponent,
+    MetiersItemsHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -111,8 +117,7 @@ import { DataService } from './services/data.service';
     // IvyCarouselModule,
     SlickCarouselModule,
     ReactiveFormsModule,
-    MatCarouselModule.forRoot() 
-    
+    MatCarouselModule.forRoot() ,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   providers: [DataService],

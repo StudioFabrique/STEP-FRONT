@@ -1,0 +1,21 @@
+<div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
+
+    <div class="bg" fxLayout="row" fxLayoutAlign="end end">
+        <img src="{{image}}" alt="" alt="">
+    </div>
+
+    <div class="context">
+        <div fxFlex="80" fxLayout="column" fxLayoutAlign="center start" fxLayout="column" fxLayoutAlign.xs="start start" class="context-wrapper">
+            <h3>
+                {{title}} <br />
+                <strong>  {{titleBold}}</strong>
+            </h3>
+            <p>
+                {{text}}
+            </p>
+            <mat-icon><span class="material-icons">
+                arrow_circle_down
+            </span></mat-icon>
+        </div>
+    </div>
+</div>
