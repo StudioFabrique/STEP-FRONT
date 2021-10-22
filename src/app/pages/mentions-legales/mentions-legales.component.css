@@ -1,6 +1,6 @@
 .header {
     background-color: #140a82;
-    height: 150px;
+    height: 30vh;
     width: 100%;
 }
 
@@ -16,7 +16,7 @@
 
 h1 {
     color: white;
-    line-height: 0.5rem;
+    /* line-height: 0.5rem; */
     padding: 10px 0 0 0;
 }
 
@@ -26,10 +26,23 @@ p {
     color: #140a82;
 }
 
+hr {
+    border-top: #140a82 solid 1px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
 a {
     text-decoration: none;
     font-weight: 700;
     color: #140a82;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5rem;
 }
 
 .header-container p {
@@ -40,4 +53,21 @@ a {
 .texts {
     margin: auto;
     width: 80%;
+}
+
+.texts>div {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        height: 40vh;
+    }
+    .header-container {
+        width: 80%;
+    }
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
 }
