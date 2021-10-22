@@ -13,22 +13,21 @@ export interface Content {
 })
 export class MetiersComponent implements OnInit {
 
-  bgs = "assets/img/solutions.png"
+
   image="assets/img/corner-orange.png" 
-  title="Hello metier" 
-  titleBold="byby metier" 
-  text="metier is metier" 
-  defaultColor="transparent"
-  style = `background-image:url('${this.bgs}'); background-size: cover;`
+  title="Des solutions et des métiers " 
+  titleBold="adaptés à vos besoins" 
+  text="STEP vous accompagne en vous proposant des solutions globales et ses expertises dans plusieurs grands secteurs d’activités. Les flux documentaires et le back office, les services de territoire et l’ingénierie informatique." 
+
+  
 
 
-  metierBgs = "assets/img/flux_doc.jpg"
   metierImage="assets/img/half_orange.png" 
   metierTitle="Mes Metiers" 
   metierTitleBold="Le metier de l'avenir" 
   metierText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. " 
-  metierDefaultColor="transparent"
-  metierStyle = `background-image:url('${this.metierBgs}'); background-size: contain; background-position: left center;`
+
+
 
   constructor() { }
 
@@ -39,38 +38,38 @@ export class MetiersComponent implements OnInit {
 
   contents = [
     { img: '../../../assets/solutions/formations.jpg', 
-      title:"Flux Documentaire", 
-      text:"sit amet consectetur adipisicing  amet cupiditate prumsac"
+      title:"Flux Documentaires", 
+      text:"Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion."
     },
 
     { img: '../../../assets/solutions/studio.jpg', 
       title:"Studio de Développement", 
-      text:"Nesciunt ea odit ullam cumque voluptates"
+      text:"Logiciels web éco-conçus pour des solutions informatiques sur mesure (développement web, système d’information, hébergement, base de données, applications …)"
     },
 
     { img: '../../../assets/solutions/atelier.jpg', 
       title:"L'atelier Numérique", 
-      text:"aspernatur cupiditate exercitationem molestiae." 
+      text:"Pour des services de maintenance et d’assistance informatique ou du matériel informatique reconditionné." 
     },
 
     { img: '../../../assets/solutions/livraison.jpg', 
       title:"Livraison Urbaine", 
-      text:"here is my text thqt will turn over the world" 
+      text:"Petite logistique - Livraison Urbaine : dernier kilomètre en vélo cargo de palettes et colis, ramassage de bio déchets. distribution, livraison triporteur et collecte de proximité. " 
     },
 
     { img: '../../../assets/solutions/service_post.jpg', 
       title:"Service Postal", 
-      text:"the text that will turn over the world"
+      text:"Premier opérateur postal alternatif de Nouvelle Aquitaine ; Collecte, remise et distribution de courrier et de recommandé sur Pau"
     },
 
     { img: '../../../assets/solutions/concierge.jpg', 
       title:"Conciergerie d'Entreprise", 
-      text:"the text that will turn over the world"
+      text:"(être) au bureau comme à la maison, avec la Conciergerie Solidaire. Améliorer la vie de l'entreprise. "
   },
 
   { img: '../../../assets/solutions/formations.jpg', 
     title:"Formations", 
-    text:"the text that will turn over the world over and over again"
+    text:"Formation et inclusion numérique : courte ou longue, formation numérique, digitale pour lutter contre la fracture numérique et promouvoir l’emploi durable"
   },
 
 

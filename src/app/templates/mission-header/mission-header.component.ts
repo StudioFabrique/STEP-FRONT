@@ -9,7 +9,6 @@ export interface Model {
 
 }
 
-
 @Component({
   selector: 'app-mission-header',
   templateUrl: './mission-header.component.html',
@@ -22,7 +21,6 @@ export class MissionHeaderComponent implements OnInit {
 @Input() titleBold: string = 'default'
 @Input() text: string = 'default'
 
-@Input() defaultColor: string = 'transparent'
 
   constructor() { }
 

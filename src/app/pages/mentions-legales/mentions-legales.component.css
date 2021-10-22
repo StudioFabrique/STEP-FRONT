@@ -1,0 +1,43 @@
+.header {
+    background-color: #140a82;
+    height: 150px;
+    width: 100%;
+}
+
+.header-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 10%;
+}
+
+h1 {
+    color: white;
+    line-height: 0.5rem;
+    padding: 10px 0 0 0;
+}
+
+h2,
+li,
+p {
+    color: #140a82;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #140a82;
+}
+
+.header-container p {
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 16px;
+}
+
+.texts {
+    margin: auto;
+    width: 80%;
+}

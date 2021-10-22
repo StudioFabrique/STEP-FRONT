@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
 import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
@@ -11,7 +12,9 @@ const routes: Routes = [
   {path: 'metiers', loadChildren: ()=> import("./pages/metier/metier.module").then(m => m.MetierModule)},
  
   // {path: 'metiers', component: MetiersComponent},
+  {path: 'mentions-legales', component: MentionsLegalesComponent},
   {path: 'contacts', component: ContactsComponent},
+
   {path: '**', component: Page404Component},
 ];
 

@@ -14,6 +14,12 @@ export interface Card {
 })
 export class MissionsComponent implements OnInit {
 
+  image="../../../assets/img/corner.png" 
+  title="Hello mission" 
+  titleBold="byby mission" 
+  text="metier is mission" 
+  
+
   constructor() { }
 
   ngOnInit(): void {

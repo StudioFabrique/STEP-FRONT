@@ -1,12 +1,8 @@
-<div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
-    <div class="bg" fxLayout="row" fxLayoutAlign="end end">
+<div class="container" fxFlex fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column" fxLayoutAlign.xs="center center">
 
-    </div>
-
-    <div class="context">
+    <div fxFlex="60" class="context" fxFlexOrder.lt-md='2'>
         <div fxFlex fxLayout="row" fxLayoutAlign="center space-around" fxLayoutAlign.xs="start start">
-
-            <div fxFlex="70" fxLayout="column" fxLayoutAlign="center start" fxLayout="column" fxLayoutAlign.xs="start start" class="context-wrapper ">
+            <div fxFlex="70" fxLayout="column" fxLayoutAlign="center start" fxLayout="column" fxLayoutAlign.xs="start start" class="context-wrapper">
                 <h3>
                     {{ metierTitle }} <br />
                     <strong>{{ metierTitleBold }}</strong>
@@ -14,14 +10,16 @@
                 <p>
                     {{ metierText }}
                 </p>
-
             </div>
-
 
             <div fxFlex fxLayout="column" fxLayoutAlign="end end" class="corner">
-                <img src="{{ metierImage }}" alt="" alt="" />
+                <img src="{{ metierImage }}" alt="" />
             </div>
-
         </div>
+    </div>
+
+    <div class="bg" fxFlex fxLayout="column" fxLayoutAlign="end end" fxFlexOrder.lt-md='1'>
+        <img fxFlex src="../../../assets/img/flux_doc.jpg" alt="" />
+
     </div>
 </div>

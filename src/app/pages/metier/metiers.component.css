@@ -45,6 +45,10 @@ app-metiers-items-header {
     color: white;
 }
 
+.mat-card-content p {
+    font-weight: 600;
+}
+
 .mat-card-content h4 {
     font-size: 20px;
 }
@@ -65,13 +69,13 @@ app-metiers-items-header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    border: 3px dashed rgb(177, 177, 177);
+    border: 1px dashed rgb(177, 177, 177);
     border-radius: 10px;
 }
 
 .remain-card-content {
     width: 100%;
-    height: 50%;
+    height: 70%;
     bottom: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -84,8 +88,18 @@ app-metiers-items-header {
     color: #140a82;
 }
 
+.statement {
+    width: 500px;
+    font-size: 14px;
+}
+
 .remain-card .remain-card-content h3 {
     font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+    color: #140a82;
 }
 
 .remain-card .remain-card-content h4 {
@@ -127,16 +141,16 @@ app-metiers-items-header {
     width: 30%;
 }
 
-app-partners {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 app-questions {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+app-partners {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -157,7 +171,7 @@ app-questions {
     .section-2 h3 {
         color: #140a82;
         font-weight: 500;
-        font-size: 35px;
+        font-size: 30px;
     }
     .mat-card {
         border-radius: 0px;
@@ -253,5 +267,15 @@ app-questions {
     }
     .bg-question img {
         width: 60%;
+    }
+    app-questions {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 30%;
+    }
+    app-partners {
+        width: 100%;
+        margin-top: 30%;
+        margin-bottom: 10%;
     }
 }

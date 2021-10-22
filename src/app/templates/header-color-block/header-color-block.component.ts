@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderColorBlockComponent implements OnInit {
   
-  @Input() image: string = 'default';
-  @Input() title: string = 'default';
-  @Input() titleBold: string = 'default';
-  @Input() text: string = 'default';
-  @Input() defaultColor: string = 'transparent';
+  @Input() image: string = 'default'
+  @Input() title: string = 'default'
+  @Input() titleBold: string = 'default'
+  @Input() text: string = 'default'
+  
   
   constructor() {}
   ngOnInit(): void {}

@@ -57,6 +57,10 @@ mat-icon {
     margin-top: 25px;
 }
 
+app-mission-header {
+    width: 100%;
+}
+
 
 /* SECTION 2 */
 
