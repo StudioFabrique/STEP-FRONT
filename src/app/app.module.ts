@@ -61,6 +61,8 @@ import { EmploisComponent } from './pages/emplois/emplois.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
 import { HeaderColorBlockComponent } from './templates/header-color-block/header-color-block.component';
 import { MetiersItemsHeaderComponent } from './templates/metiers-items-header/metiers-items-header.component';
+import { EcoComponent } from './pages/eco/eco.component';
+import { EcoHeaderComponent } from './templates/eco-header/eco-header.component';
 
 
 @NgModule({
@@ -94,7 +96,9 @@ import { MetiersItemsHeaderComponent } from './templates/metiers-items-header/me
     EmploisComponent,
     MentionsLegalesComponent,
     HeaderColorBlockComponent,
-    MetiersItemsHeaderComponent
+    MetiersItemsHeaderComponent,
+    EcoComponent,
+    EcoHeaderComponent
   ],
   imports: [
     BrowserModule,
