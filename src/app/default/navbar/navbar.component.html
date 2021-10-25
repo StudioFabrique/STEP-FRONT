@@ -1,14 +1,13 @@
-<mat-toolbar fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-around center" fxLayoutAlign.sm="center center" fxLayoutGap.sm="10px">
+<mat-toolbar fxLayout="row" fxLayout.sm="row" fxLayoutAlign="space-around center" fxLayoutAlign.sm="center center" fxLayoutGap.sm="10px">
     <div class="top" fxLayout.sm="row" fxLayoutAlign.sm="center center">
         <a routerLink="/accueil"><img src="../../../assets/pictos/logo-blue.png" alt="step" /></a>
     </div>
 
     <div fxFlex fxLayout="row" fxLayoutAlign="end center">
-        <ul fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutGap="18px" class="navigation-items">
+        <ul fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="18px" class="navigation-items">
             <li *ngFor="let lien of liens" fxLayoutGap="18px">
-                <a class="step-blue-color" [routerLink]="[lien.routerLink]">{{
-          lien.name
-        }}</a>
+                <a class="step-blue-color" [routerLink]="[lien.routerLink]">
+                    {{lien.name}}</a>
             </li>
 
             <div fxLayout="row" fxLayoutAlign="center center" class="mat-burger" fxLayoutGap="18px">
