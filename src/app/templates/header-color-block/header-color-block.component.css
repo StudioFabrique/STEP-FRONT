@@ -1,0 +1,122 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.bg {
+    width: 100%;
+    height: 450px;
+    background-image: url('../../../assets/img/solutions.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg img {
+    position: absolute;
+    width: 20%;
+}
+
+.container .context {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 450px;
+    background-color: #140a82;
+    opacity: 0.85;
+}
+
+.context-wrapper {
+    margin: auto;
+}
+
+h3,
+h4,
+p,
+span {
+    color: white;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+mat-icon {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 900px;
+    }
+    .bg {
+        height: 500px;
+    }
+    .container .context {
+        position: absolute;
+        left: auto;
+        bottom: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #140a82;
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+    }
+    .context-wrapper {
+        margin: auto;
+    }
+    h3 {
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 900px;
+    }
+    .bg {
+        height: 500px;
+    }
+    .bg img {
+        position: absolute;
+        width: 45%;
+    }
+    .container .context {
+        position: absolute;
+        left: auto;
+        bottom: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #140a82;
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+    }
+    .context-wrapper {
+        margin: auto;
+    }
+    h3 {
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <div class="carousel-img-container">
+                <img class="carousel-corner" src="{{ slide.cornerImg }}" alt="{{ slide.title }}">
+                <img class="carousel-img" src="{{ slide.img }} " alt="{{ slide.title }}" width="100% " />
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" class="block {{slide.bgColor}}">
+                <div fxFlex="80" fxLayout="column" fxLayoutAlign="center space-around" fxLayoutGap="5px" class="content">
+                    <h3>{{ slide.title }}</h3>
+                    <h5>{{ slide.text | slice:1:120 }}...</h5>
+
+                    <button href="https://www.step-sa.fr/" target="_blank">voir plus</button>
+                </div>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>

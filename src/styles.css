@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a,
+.mat-toolbar,
+.mat-card {
+    font-family: 'Rubik', sans-serif;
+}
+
+.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.info {
+    background-color: #00b1cc;
+    color: white;
+}
+
+
+/* Step Colors with backgounds  */
+
+.step-blue {
+    background-color: #140a82;
+}
+
+.step-green {
+    background-color: #24a640;
+}
+
+.step-yellow {
+    background-color: #ffcc40;
+}
+
+.step-cyan {
+    background-color: #00b0cc;
+}
+
+.step-orange {
+    background-color: #ff5e1a;
+}
+
+
+/* Step Colors without backgounds  */
+
+.step-blue-color {
+    color: #140a82;
+}
+
+.step-green-color {
+    color: #24a640;
+}
+
+.step-yellow-color {
+    color: #ffcc40;
+}
+
+.step-cyan-color {
+    color: #00b0cc;
+}
+
+.step-orange-color {
+    color: #ff5e1a;
+}
+
+
+/* @media only screen and (max-width: 1024px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
