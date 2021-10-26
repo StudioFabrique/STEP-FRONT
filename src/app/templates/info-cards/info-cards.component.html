@@ -1,13 +1,13 @@
-<div class="content" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="25px">
+<section class="content" fxFlex fxLayout="column" fxLayoutAlign="center center">
     <div class="head" fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center " fxLayoutAlign.xs="center start">
         <img src="../../../assets/pictos/logo-blue.png" alt="">
         <h6 class="step-blue-color">en quelques chiffres</h6>
     </div>
     <div class="content-div" fxLayout="row wrap" fxLayoutGap="grid">
-        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="43%" *ngFor="let card of cards">
+        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let card of cards">
             <mat-card class="{{card.bg}}" class="mat-elevation-z0">
                 <mat-card-header>
-                    <mat-card-title fxLayout="row" fxLayoutAlign="startcenter">
+                    <mat-card-title>
                         <mat-icon class="material-icons-outlined">
                             <span class="material-icons-outlined"> {{card.icon}} </span>
                         </mat-icon>
@@ -26,4 +26,4 @@
             </mat-card>
         </div>
     </div>
-</div>
+</section>
