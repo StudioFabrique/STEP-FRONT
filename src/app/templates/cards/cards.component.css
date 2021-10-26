@@ -1,10 +1,22 @@
 .content {
-    padding: 26px;
-    color: #140a82;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .head {
     width: 100%;
+}
+
+h3,
+h4,
+p,
+.mat-icon {
+    color: #140a82;
+}
+
+h6 {
+    font-size: 24px;
+    color: #140a82;
 }
 
 img {
@@ -13,32 +25,109 @@ img {
 }
 
 .mat-card {
-    border: solid 1px #615f8059;
     border-radius: 15px;
-    height: 220px;
+    border: #140a82 solid 1px;
+    margin: 0 5% 0 5%;
+    height: 100%;
+    padding: 5%;
 }
 
-h3,
-p,
+.mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .mat-icon {
-    color: #140a82;
+    font-size: 50px;
+    padding-left: 5%;
+    padding-bottom: 10%;
 }
 
 h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    padding-left: 5%;
+    margin-bottom: 0;
 }
 
 p {
-    padding: 20px;
+    font-size: 1rem;
+    padding-left: 5%;
 }
 
-h6 {
-    font-size: 24px;
-    color: #140a82;
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .mat-card {
+        border-radius: 15px;
+        margin: 0 8px 0 8px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    h3 {
+        font-size: 1rem;
+        padding-left: 5%;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 0.9rem;
+        padding-left: 5%;
+    }
 }
 
-.mat-icon {
-    margin-top: 10px;
-    font-size: 40px;
+@media only screen and (max-width: 768px) {
+    .content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .mat-card {
+        border-radius: 0px;
+        border: 0px solid transparent;
+        border-top: 1px solid #140a82;
+        border-bottom: 1px solid #140a82;
+        margin: 0;
+    }
+    .mat-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .head {
+        padding-left: 5%;
+    }
+    .head>img {
+        width: 20%;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 0px;
+        padding-left: 5%;
+    }
+    p {
+        font-size: 1rem;
+        padding-left: 5%;
+        line-height: 1.2rem;
+    }
 }
