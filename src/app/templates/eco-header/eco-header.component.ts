@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 export interface Model {
-  image: string,
+
   title: string,
   titleBold: string,
   text: string
@@ -15,10 +15,10 @@ export interface Model {
 })
 export class EcoHeaderComponent implements OnInit {
 
-  @Input() image: string = 'default';
-@Input() title: string = 'default'
-@Input() titleBold: string = 'default'
-@Input() text: string = 'default'
+
+  @Input() title: string = 'default'
+  @Input() titleBold: string = 'default'
+  @Input() text: string = 'default'
 
   constructor() { }
 
