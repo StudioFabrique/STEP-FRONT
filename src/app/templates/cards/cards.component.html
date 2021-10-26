@@ -1,0 +1,28 @@
+<div class="content" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="25px">
+    <div class="head" fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center " fxLayoutAlign.xs="center start">
+        <img src="../../../assets/pictos/logo-blue.png" alt="">
+        <h6 class="step-blue-color"> C'est quoi ?</h6>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="center center " fxLayoutGap="50px grid" fxFlex.sm="100%" fxLayout.sm="column" fxLayoutGap.xs="0px">
+        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="100%" *ngFor="let card of cards">
+            <mat-card class="mat-elevation-z0">
+                <mat-card-header>
+                    <mat-card-title>
+                        <mat-icon class="material-icons-outlined">
+                            <span class="material-icons-outlined"> {{card.icon}} </span>
+                        </mat-icon>
+                    </mat-card-title>
+                    <mat-card-title>
+                        <h3>{{card.title}}</h3>
+                    </mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content>
+                    <p>
+                        {{card.content}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

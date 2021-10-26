@@ -1,0 +1,30 @@
+<mat-toolbar fxLayout="row" fxLayout.sm="row" fxLayoutAlign="space-around center" fxLayoutAlign.sm="center center" fxLayoutGap.sm="10px">
+    <div class="top" fxLayout.sm="row" fxLayoutAlign.sm="center center">
+        <a routerLink="/accueil"><img src="../../../assets/pictos/logo-blue.png" alt="step" /></a>
+    </div>
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="end center">
+        <ul fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutGap="18px" class="navigation-items">
+            <li *ngFor="let lien of liens" fxLayoutGap="18px">
+                <a class="step-blue-color" [routerLink]="[lien.routerLink]">
+                    {{lien.name}}</a>
+            </li>
+
+            <div fxLayout="row" fxLayoutAlign="center center" class="mat-burger" fxLayoutGap="18px">
+                <a [routerLink]="['#']" routerLinkActive="router-link-active">
+                    <span class="material-icons">remove_red_eye</span>
+                </a>
+
+                <a [routerLink]="['#']">
+                    <span class="material-icons"> spa </span>
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <div class="burger" (click)="navSlide()" fxLayout="row" fxLayoutAlign="center center">
+        <mat-icon *ngIf="icon" class="burger" (click)="changeIcon()">menu</mat-icon>
+
+        <mat-icon style="position: fixed; z-index: 9999; color: white; opacity: 0" *ngIf="!icon" class="burger back" (click)="changeIcon()">rotate_right</mat-icon>
+    </div>
+</mat-toolbar>

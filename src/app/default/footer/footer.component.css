@@ -1,0 +1,179 @@
+    footer {
+        margin: auto;
+        width: 100%;
+        height: 400px;
+        padding: 5%;
+        color: white;
+    }
+    
+    .logo {
+        width: 7rem;
+        margin-bottom: 25px;
+    }
+    
+    .socials a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .socials {
+        width: auto;
+    }
+    
+    .social-icon {
+        width: 20px;
+    }
+    
+    .fb {
+        width: 14px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        color: white;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .copyright {
+        height: 100px;
+        width: 100%;
+        background-color: #0e075c;
+    }
+    
+    h5 {
+        line-height: 1px;
+        font-size: 14px;
+        color: white;
+    }
+    
+    h6 {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .copyright {
+            height: 100px;
+            width: 100%;
+            background-color: #0e075c;
+            text-align: center;
+        }
+        h5 {
+            font-size: 10px;
+        }
+        .tel {
+            width: 140px;
+        }
+        h6 {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+        .fb {
+            width: 9px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .infos {
+            margin-top: 50px;
+        }
+        .copyright {
+            height: 100px;
+            width: 100%;
+            background-color: #0e075c;
+            text-align: center;
+        }
+        h5 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .tel {
+            width: 100%;
+        }
+        h6 {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+        .fb {
+            width: 9px;
+        }
+        .accordion {
+            width: 90%;
+            margin: auto;
+        }
+        .mat-accordion {
+            width: 85%;
+        }
+        .mat-expansion-panel {
+            background-color: transparent;
+            border: transparent 0px solid;
+            border-bottom: white;
+            border-radius: 0px;
+        }
+        .mat-expansion-panel:not([class*='mat-elevation-z']),
+        .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+            background-color: transparent;
+            box-shadow: 0px 1px 0px -2px rgba(219, 217, 217, 0), 0px 1px 0px 0px rgba(255, 255, 255, 0), 0px 1px 0px 0px rgb(211, 211, 211);
+            border-radius: 0px;
+        }
+        .mat-accordion .mat-expansion-panel:last-of-type {
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+        }
+         ::ng-deep .accordion-header>.mat-expansion-indicator:after {
+            color: white;
+        }
+    }
+    
+    @media only screen and (max-width: 425px) {
+        .infos {
+            margin-top: 50px;
+        }
+        h6 {
+            font-size: 14px;
+        }
+        .fb {
+            width: 15px;
+        }
+        .accordion {
+            width: 90%;
+            margin: auto;
+        }
+        .mat-accordion {
+            width: 85%;
+        }
+        .mat-expansion-panel {
+            background-color: transparent;
+            border: transparent 0px solid;
+            border-bottom: white;
+            border-radius: 0px;
+        }
+        .mat-expansion-panel:not([class*='mat-elevation-z']),
+        .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+            background-color: transparent;
+            box-shadow: 0px 1px 0px -2px rgba(219, 217, 217, 0.2), 0px 1px 0px 0px rgba(255, 255, 255, 0.14), 0px 1px 0px 0px rgb(211, 211, 211);
+            border-radius: 0px;
+        }
+        .mat-accordion .mat-expansion-panel:last-of-type {
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+        }
+         ::ng-deep .accordion-header>.mat-expansion-indicator:after {
+            color: white;
+        }
+    }

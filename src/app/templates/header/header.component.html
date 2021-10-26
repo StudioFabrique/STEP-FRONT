@@ -1,0 +1,25 @@
+<div fxFlex fxLayout="column" fxLayout.xl="row" fxLayoutAlign="center start" fxLayoutGap="1px" class="container">
+    <div fxFlex fxLayout="column" fxLayoutAlign="center start" fxLayoutGap.xs="5px" fxHide.gt-md="true" class="content-wrapper">
+
+        <h2 class="step-blue-color">Nos métiers</h2>
+        <p class="step-blue-color">Swipez de gauche à droite</p>
+
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" class="content-wrapper arrows" fxHide.gt-md="true">
+        <mat-icon class="step-blue-color">west</mat-icon>
+        <mat-icon class="step-blue-color">east</mat-icon>
+    </div>
+
+    <br>
+    <br>
+    <div fxLayout="row nowrap" fxLayoutAlign="start center" fxLayoutGap="5px" class="metier-swiper content-wrapper">
+        <ngx-slick-carousel fxFlex.xs="240" fxFlex.sm="120" fxFlex.md="180" fxFlex.gt-md="120" class="carousel" #slickModal="slick-carousel" [config]="swipperConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1px" fxLayoutAlign.gt-md="center center" ngxSlickItem *ngFor="let metier of metiers" class="slide swipe">
+                <a href="#">{{ metier.title }}</a>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+
+</div>
