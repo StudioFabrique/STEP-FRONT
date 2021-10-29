@@ -4,7 +4,9 @@ import { MissionRoutingModule } from './mission-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+   
+  ],
   imports: [
     CommonModule,
     MissionRoutingModule

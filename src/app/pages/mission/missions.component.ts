@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 export interface Card {
   content: string,
   title: string,
-  bg: string
+  bg: string,
+  lien: string
 }
 
 @Component({
@@ -15,9 +16,17 @@ export interface Card {
 export class MissionsComponent implements OnInit {
 
   image="../../../assets/img/corner.png" 
-  title="Hello mission" 
-  titleBold="byby mission" 
-  text="metier is mission" 
+  title="Découvrez nos " 
+  titleBold="missions" 
+  text="20 ans d’innovation au service de l’inclusion" 
+
+  p1 = `Implantée à Pau (Sud-Ouest), en Nouvelle Aquitaine (France), STEP est une entreprise citoyenne et responsable qui mise sur l’humain et sa diversité. `
+  
+  p2 = `Expert du traitement des flux documentaires et de l’environnement informatique associé, STEP s’est imposé, en une vingtaine d'années dans le domaine des services numériques et accompagne aujourd’hui de grands comptes et de nombreuses PMEI. Elle démontre que la compétitivité et le développement de services innovants à destination des professionnels (ingénierie informatique, gestion des flux documentaires…) riment avec insertion sociale et que la fracture numérique n’est pas une fatalité.`
+
+  p3 = `Entreprise engagée en Nouvelle Aquitaine, elle a su diversifier son offre au fil du temps et propose un modèle vertueux sur l’ensemble de ses pôles d’activité via des solutions globales tout en ayant à cœur de promouvoir la responsabilité vis à vis du territoire, de la collectivité, ou des personnes aux parcours fragilisés qu’elle rencontre et soutient, sans crainte d’associer compétitivité et offre de services.`
+  
+  p4 = `STEP, c’est plusieurs métiers dédiés, de la gestion des flux documentaires à la formation au numérique, en passant par les services de territoire, le tout associé à des expertises pointues.`
   
 
   constructor() { }
@@ -28,8 +37,8 @@ export class MissionsComponent implements OnInit {
   gridColumns = 3;
 
   cards: Card[] = [
-    {'title':'Step', 'content': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit stomer krashinko.', 'bg':'../../../assets/missions/step.jpg'}, 
-    {'title':'Gouvernance', 'content': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit dolor sit.', 'bg':'../../../assets/missions/gouvernance.jpg' }, 
-    {'title':'Partenaires', 'content': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit stakced chart.' ,'bg':'../../../assets/missions/partners.jpg'}
+    {'title':'Step', 'content': 'Une histoire qui dure depuis 20 ans', 'bg':'../../../assets/missions/step.jpg', 'lien':'/missions/valeurs'}, 
+    {'title':'Gouvernance', 'content': '«Personne n’est inemployable» tel est notre credo !', 'bg':'../../../assets/missions/gouvernance.jpg', 'lien':'/missions/gouvernance' }, 
+    {'title':'Partenaires', 'content': 'Ils nous font confiance… et nous aussi' ,'bg':'../../../assets/missions/partners.jpg', 'lien':'/missions/partenaires'}
   ]
 }
