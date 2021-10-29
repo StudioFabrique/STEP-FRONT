@@ -40,7 +40,7 @@ export class SolutionSliderComponent implements OnInit {
       text:"premier opérateur postal alternatif de Nouvelle Aquitaine ; Collecte, remise et distribution de courrier et de recommandé sur Pau."
     },
 
-    { img: '../../../assets/solutions/concierge.jpg', 
+    { img: '../../../assets/solutions/formations.jpg', 
       title:"Conciergerie d'Entreprise", 
       text:"(être) au bureau comme à la maison, avec La Conciergerie solidaire. "
   },
@@ -68,7 +68,7 @@ export class SolutionSliderComponent implements OnInit {
     speed: 1000,
     autoplaySpeed: 1000,
     autoplay: false,
- 
+ fade: true,
     arrows: false,
     mobileFirst: true,
     responsive: [

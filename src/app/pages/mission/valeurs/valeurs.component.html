@@ -1,1 +1,32 @@
-<p>valeurs works!</p>
+<app-component-items-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text"></app-component-items-header>
+
+<section>
+    <h1>Valeurs</h1>
+    <article class="intro">
+        <p>{{ intro.p1 }}</p>
+
+        <img src="{{img.valImg}}" title="{{img.title}}" alt="{{img.alt}}" />
+    </article>
+</section>
+<section>
+    <article *ngFor="let item of content">
+        <h2>{{ item.headTitle | titlecase }}</h2>
+        <p>{{ item.bodyText }}</p>
+    </article>
+
+    <article>
+        <h2>{{ valeurs.mainTitle | titlecase }}</h2>
+        <p>{{ valeurs.phrase }}</p>
+        <div *ngFor="let val of valeurs.vals" class="valeurs">
+            <p>
+                <span>{{ val.valTitre | titlecase }} </span>{{ val.valText }}
+            </p>
+        </div>
+    </article>
+</section>
+
+
+<app-questions></app-questions>
+
+
+<app-partners></app-partners>

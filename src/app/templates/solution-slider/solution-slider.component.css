@@ -5,20 +5,23 @@
 }
 
 .slick-slider {
-    width: 70%;
+    width: 60%;
     object-fit: cover;
-    background: rgb(14, 13, 13);
     border-radius: 18px;
+    box-shadow: 35px 35px 0px #E8E7F3;
 }
 
 img {
     object-fit: cover;
     border-radius: 18px;
+    filter: brightness(0.3);
+    filter: contrast(70%);
 }
 
 .block {
+    background-size: cover;
     position: absolute;
-    width: 360px;
+    width: 350px;
     height: 100%;
     top: 0;
     z-index: 99;
@@ -48,24 +51,16 @@ h2 {
 h3,
 h5 {
     color: white;
+    margin: 0;
 }
 
 h3 {
     font-size: 24px;
+    padding-bottom: 5%;
 }
 
 h5 {
-    font-size: 14px;
-}
-
-.bg-carousel {
-    position: absolute;
-    z-index: -1;
-    background-color: rgba(47, 42, 134, 0.24);
-    width: 360px;
-    height: 537px;
-    border-radius: 18px;
-    transform: rotate(5deg) translateX(43px) translateY(15px);
+    font-size: 16px;
 }
 
 button {
@@ -83,8 +78,12 @@ button {
 }
 
 .content {
-    margin-left: 30px;
-    /* width: 90%; */
+    padding-left: 5%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 @media only screen and (max-width: 1440px) {
