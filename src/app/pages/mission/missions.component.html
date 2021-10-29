@@ -1,42 +1,26 @@
-<div class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+<section class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
     <app-mission-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text"></app-mission-header>
 
-    <div class="section-2" fxLayout="column" fxLayoutGap="grid">
-        <article fxLayout="row" fxLayout.xs="column">
+    <article fxLayout="column" fxLayoutGap="grid">
+        <div fxLayout="row" fxLayout.xs="column" class="text">
             <p>{{ p1 }} {{ p2 }}</p>
 
             <p>{{ p3 }} {{ p4 }}</p>
-        </article>
-
-        <div [fxFlex]="100 / gridColumns + '%'" fxFlex="100% " *ngFor="let card of cards" class="card-container">
-            <mat-card fxFlex fxLayout="column " fxLayoutAlign="center start " style=" 
-        background-image: url( '{{card.bg}}'); 
-        object-fit:cover;
-        background-size: 100%; 
-        background-repeat: no-repeat; " class="mat-elevation-z0">
-                <mat-card-header fxFlex fxLayout="column ">
-                    <mat-card-title>
-                        <h4>Mission</h4>
-                    </mat-card-title>
-
-                    <mat-card-title>
-                        <h3>{{ card.title }}</h3>
-                    </mat-card-title>
-                </mat-card-header>
-
-                <mat-card-content>
-                    <p>
-                        {{ card.content }}
-                    </p>
-                    <button [routerLink]="card.lien" class="step-green">
-            voir plus
-          </button>
-                </mat-card-content>
-            </mat-card>
         </div>
-    </div>
+    </article>
+    <article *ngFor="let card of cards" class="card-container">
+        <div class="card" style="background-image: url('{{card.bg}}');  object-fit:cover; background-size: 100%; background-repeat: no-repeat;">
+            <div class="card-linear">
+                <div class="card-info">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.content }}</p>
+                    <button [routerLink]="card.lien" class="step-green">voir plus</button>
+                </div>
+            </div>
+        </div>
+    </article>
 
     <app-questions></app-questions>
 
     <app-partners></app-partners>
-</div>
+</section>

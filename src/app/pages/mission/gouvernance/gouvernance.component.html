@@ -1,19 +1,17 @@
 <app-component-items-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text"></app-component-items-header>
 
-
 <section>
     <h1>Gouvernance</h1>
     <article class="intro">
-        <p>{{gouvernance.p}}</p>
-
-        <img src="" alt="" />
+        <p>{{ gouvernance.p }}</p>
     </article>
 </section>
 
 
-
+<section class="image">
+    <img src="{{ img.img }}" title="{{ img.title }}" alt="{{ img.alt }}" />
+</section>
 
 <app-questions></app-questions>
-
 
 <app-partners></app-partners>

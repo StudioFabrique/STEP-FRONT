@@ -26,6 +26,14 @@ Trouver sa place, faire sens, faire société ce n’est pas rien, c’est même
 
   }
 
+  img = {
+    img: "/assets/missions/gouv/gouv.png",
+    title: "Gouvernance",
+    alt: "Gouvernance"
+
+  }
+
+
 
   constructor() { }
 

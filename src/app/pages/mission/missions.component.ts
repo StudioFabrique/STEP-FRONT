@@ -20,6 +20,7 @@ export class MissionsComponent implements OnInit {
   titleBold="missions" 
   text="20 ans d’innovation au service de l’inclusion" 
 
+  
   p1 = `Implantée à Pau (Sud-Ouest), en Nouvelle Aquitaine (France), STEP est une entreprise citoyenne et responsable qui mise sur l’humain et sa diversité. `
   
   p2 = `Expert du traitement des flux documentaires et de l’environnement informatique associé, STEP s’est imposé, en une vingtaine d'années dans le domaine des services numériques et accompagne aujourd’hui de grands comptes et de nombreuses PMEI. Elle démontre que la compétitivité et le développement de services innovants à destination des professionnels (ingénierie informatique, gestion des flux documentaires…) riment avec insertion sociale et que la fracture numérique n’est pas une fatalité.`

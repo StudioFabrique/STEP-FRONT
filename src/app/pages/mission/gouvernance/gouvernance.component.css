@@ -43,6 +43,20 @@ p {
     column-gap: 4rem;
 }
 
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
 app-partners {
     width: 100%;
 }

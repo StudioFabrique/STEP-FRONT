@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValeursComponent implements OnInit {
 
+  img = {
+    valImg: "default",
+    title: "Valeurs",
+    alt: "valeurs"
+
+  }
+
   image = "assets/img/half_orange.png"
   title = "STEP, la belle histoire"
   titleBold = "Une histoire qui dure depuis 20 ans"
