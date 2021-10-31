@@ -14,7 +14,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
 }
 
@@ -92,9 +92,9 @@ button {
     .block {
         position: absolute;
         width: 100%;
-        height: 60%;
+        height: 40%;
         top: auto;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         bottom: 0;
         clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
     }
@@ -102,11 +102,17 @@ button {
         position: absolute;
         bottom: 50%;
         right: 0;
-        max-width: 100%;
+        max-width: 20%;
         height: auto;
+    }
+    .content {
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
     h3 {
         font-size: 1.4rem;
+        margin-top: 5%;
+        margin-bottom: 2%;
     }
     h5 {
         margin-top: 0;
@@ -117,6 +123,7 @@ button {
         font-size: 14px;
         width: 140px;
         height: 60px;
+        margin-top: 0;
     }
 }
 
@@ -133,27 +140,37 @@ button {
     }
     .carousel-corner {
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 0;
+        max-width: 50%;
     }
     .block {
         position: absolute;
         width: 100%;
-        height: 50%;
+        height: 40%;
         top: auto;
         padding-top: 20px;
         bottom: 0;
         clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
     }
     .content {
-        margin: auto;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
     h3 {
         font-size: 1.8rem;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     h5 {
         font-size: 1rem;
         font-weight: 500;
+    }
+    button {
+        font-size: 14px;
+        width: 160px;
+        height: 60px;
+        margin-top: 0;
     }
 }
 
@@ -170,10 +187,16 @@ button {
     img {
         height: 100vh;
     }
+    .carousel-corner {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        max-width: 50%;
+    }
     .block {
         position: absolute;
         width: 100%;
-        height: 60%;
+        height: 50%;
         top: auto;
         padding-top: 20px;
         bottom: 0;
@@ -184,6 +207,7 @@ button {
     }
     h3 {
         font-size: 30px;
+        margin-top: 50px;
     }
     h5 {
         font-size: 14px;

@@ -20,6 +20,7 @@ export class MissionHeaderComponent implements OnInit {
 @Input() title: string = 'default'
 @Input() titleBold: string = 'default'
 @Input() text: string = 'default'
+@Input() bg: string = 'default'
 
 
   constructor() { }

@@ -15,35 +15,35 @@ export interface Slide {
 export class CarousselComponent {
   slides = [
     {
-      cornerImg: '../../../assets/carousel/cornerImg/cornerImg_1.png',
+      cornerImg: '../../../assets/corners/blue_green.png',
       img: '../../../assets/carousel/carousel_1.png',
       title: 'La 1 règle de la frugalité numérique',
       text: 'sit amet consectetur adipisicing elit. Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem harum minus molestiae.',
       bgColor: 'step-blue',
     },
     {
-      cornerImg: '../../../assets/carousel/cornerImg/cornerImg_2.png',
+      cornerImg: '../../../assets/corners/white_orange.png',
       img: '../../../assets/carousel/carousel_2.png',
       title: 'Les 2 règles de la frugalité numérique',
       text: 'Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem harum minus molestiae.',
       bgColor: 'step-green',
     },
     {
-      cornerImg: '../../../assets/carousel/cornerImg/cornerImg_3.png',
+      cornerImg: '../../../assets/corners/blue_cyan.png',
       img: '../../../assets/carousel/carousel_3.png',
       title: 'Les 3 règles de la frugalité numérique',
       text: 'here is my text thqt will turn over the world & Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem harum minus molestiae.',
       bgColor: 'step-yellow',
     },
     {
-      cornerImg: '../../../assets/carousel/cornerImg/cornerImg_4.png',
+      cornerImg: '../../../assets/corners/orange_white.png',
       img: '../../../assets/carousel/carousel_4.png',
       title: 'Les 4 règles de la frugalité numérique',
       text: 'here is my text thqt will turn over the world lestum martum clapsit cravatum kitas ghribstone',
       bgColor: 'step-cyan',
     },
     {
-      cornerImg: '../../../assets/carousel/cornerImg/cornerImg_5.png',
+      cornerImg: '../../../assets/corners/blue_yellow.png',
       img: '../../../assets/carousel/carousel_5.png',
       title: 'Les 5 règles de la frugalité numérique',
       text: 'Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem.  the text that will turn over the world',
@@ -54,10 +54,10 @@ export class CarousselComponent {
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 2000,
+    speed: 3000,
     autoplaySpeed: 2000,
-    autoplay: false,
-    arrows: false,
+    autoplay: true,
+    arrows: true,
     fade: true,
     mobileFirst: true,
     responsive: [
@@ -66,14 +66,25 @@ export class CarousselComponent {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 3000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          arrows: true,
+          fade: true,
           infinite: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 3000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          arrows: true,
+          fade: true,
+          infinite: true,
         },
       },
       {

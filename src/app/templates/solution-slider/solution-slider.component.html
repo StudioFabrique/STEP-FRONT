@@ -1,10 +1,10 @@
-<div fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center" fxLayoutAlign.xs="startcenter">
-    <div class="metier-left" fxFlex="70" fxHide.xs="true" fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="62px">
+<section fxFlexFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="startcenter">
+    <article class="metier-left" fxFlex="70" fxHide.xs="true" fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="62px">
         <div>
             <h2 class="step-blue-color">Des solutions <br> & métiers adaptés à <br><strong>tous vos besoins</strong></h2>
             <p class="step-blue-color">STEP vous accompagne en vous proposant des solutions globales dans plusieurs grands secteurs d’activités. Les flux documentaires et le back office, les services de territoire et l’ingénierie informatique :</p>
         </div>
-        <div fxFlexFill>
+        <div fxFlexFill fxHide.lt-md="true">
             <mat-grid-list cols="2" cols.sm="1" fxLayout="row" fxLayoutAlign="center center" rowHeight="9:1" gutterSize="10px">
                 <mat-grid-tile *ngFor="let metier of metiers">
                     <div class="metier-txt" fxFlex>
@@ -14,14 +14,14 @@
                 </mat-grid-tile>
             </mat-grid-list>
         </div>
-    </div>
+    </article>
 
 
 
     <!-- <app-metier-swiper style="margin-left: 30px;" class="slider-txt"></app-metier-swiper> -->
 
-    <div fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
-        <ngx-slick-carousel fxFlex.xs="100%" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+    <article fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
+        <ngx-slick-carousel fxFlex.lt-md="100" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
 
@@ -43,5 +43,5 @@
 
         </ngx-slick-carousel>
 
-    </div>
-</div>
+    </article>
+</section>

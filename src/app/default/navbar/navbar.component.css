@@ -1,6 +1,6 @@
 .mat-toolbar {
     background: transparent;
-    width: 65%;
+    width: 75%;
     margin: auto;
     height: 150px;
 }
@@ -15,7 +15,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-right: 18px;
 }
 
 li {
@@ -59,22 +58,6 @@ img {
         width: 7rem;
     }
 }
-
-
-/* @media screen and (max-width: 768px) {
-    .mat-toolbar {
-        background: transparent;
-        width: 70%;
-        height: 150px;
-        margin: auto;
-    }
-    .top {
-        margin-top: 50px;
-    }
-    img {
-        width: 7rem;
-    }
-} */
 
 @media screen and (max-width: 768px) {
     img {

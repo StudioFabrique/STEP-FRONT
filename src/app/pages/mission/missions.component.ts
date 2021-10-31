@@ -15,10 +15,12 @@ export interface Card {
 })
 export class MissionsComponent implements OnInit {
 
-  image="../../../assets/img/corner.png" 
+
+  image="../../../assets/corners/white_yellow.png" 
   title="Découvrez nos " 
   titleBold="missions" 
   text="20 ans d’innovation au service de l’inclusion" 
+  bg="../../../assets/missions/mission.jpg"
 
   
   p1 = `Implantée à Pau (Sud-Ouest), en Nouvelle Aquitaine (France), STEP est une entreprise citoyenne et responsable qui mise sur l’humain et sa diversité. `
@@ -39,7 +41,7 @@ export class MissionsComponent implements OnInit {
 
   cards: Card[] = [
     {'title':'Step', 'content': 'Une histoire qui dure depuis 20 ans', 'bg':'../../../assets/missions/step.jpg', 'lien':'/missions/valeurs'}, 
-    {'title':'Gouvernance', 'content': '«Personne n’est inemployable» tel est notre credo !', 'bg':'../../../assets/missions/gouvernance.jpg', 'lien':'/missions/gouvernance' }, 
+    {'title':'Gouvernance', 'content': '«Personne n’est inemployable» tel est notre credo!', 'bg':'../../../assets/missions/gouvernance.jpg', 'lien':'/missions/gouvernance' }, 
     {'title':'Partenaires', 'content': 'Ils nous font confiance… et nous aussi' ,'bg':'../../../assets/missions/partners.jpg', 'lien':'/missions/partenaires'}
   ]
 }
