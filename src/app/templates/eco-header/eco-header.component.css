@@ -6,13 +6,16 @@
 
 .corner-img {
     position: absolute;
-    z-index: 999;
+    z-index: 99;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .corner-img img {
-    width: 100%;
+    width: 70%;
 }
 
 .context {
@@ -46,6 +49,7 @@ h3 {
 p {
     font-size: 1rem;
     margin-top: 0;
+    color: #140a82;
 }
 
 mat-icon span {
@@ -70,14 +74,10 @@ mat-icon {
 
 @media only screen and (max-width: 768px) {
     .container {
-        height: 650px;
+        height: 450px;
     }
-    .bg {
-        width: 100%;
-        height: 300px;
-    }
-    .bg img {
-        width: 100%;
+    .corner-img img {
+        width: 40%;
     }
     .context {
         left: auto;
@@ -89,15 +89,16 @@ mat-icon {
         height: 100%;
     }
     .context-wrapper {
-        margin-top: 5%;
         margin-left: 10%;
     }
     h1 {
-        font-size: 35px;
+        font-size: 3rem;
+        margin-top: 0;
         font-weight: 400;
     }
     p {
-        font-size: 16px;
+        font-size: 1.2rem;
+        font-weight: 500;
         margin-top: 0;
     }
 }
@@ -111,22 +112,21 @@ mat-icon {
         height: 350px;
         position: relative;
     }
-    .bg img {
-        width: 100%;
-    }
-    .context {
-        width: 100%;
-        height: 350px;
+    .corner-img img {
+        width: 50%;
     }
     .context-wrapper {
-        margin-top: 10%;
+        margin-top: 1%;
         margin-left: 10%;
     }
     h1 {
-        font-size: 35px;
+        font-size: 2.5rem;
+        margin-top: 0;
         font-weight: 400;
     }
     p {
-        font-size: 16px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 0;
     }
 }

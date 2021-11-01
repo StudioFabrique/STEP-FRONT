@@ -1,0 +1,44 @@
+<section>
+    <article class="artLeft">
+        <div class="title-container">
+            <h2>Découvrez nos prestations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla molestias itaque dignissimos porro?</p>
+        </div>
+
+        <div class="list-container">
+            <ul>
+                <li>
+                    <mat-icon>navigate_next</mat-icon>Numérisation</li>
+                <li>
+                    <mat-icon>navigate_next</mat-icon>Traitement de données</li>
+                <li>
+                    <mat-icon>navigate_next</mat-icon>Editique</li>
+            </ul>
+        </div>
+    </article>
+
+    <article fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
+        <ngx-slick-carousel fxFlex.lt-md="100" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+
+                <img src="{{ slide.img }} " alt=" " width="100% " />
+
+                <div fxLayout="row" fxLayoutAlign="center end" class="block">
+
+                    <div class="content">
+
+                        <h3>{{ slide.title }}</h3>
+                        <h5>{{ slide.text }}</h5>
+
+                        <button href="https://www.step-sa.fr/" target="_blank" class="step-cyan">voir plus</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </ngx-slick-carousel>
+
+    </article>
+</section>

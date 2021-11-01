@@ -1,0 +1,253 @@
+section {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.artLeft {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2,
+p,
+li {
+    color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+mat-icon {
+    margin-right: 10px;
+}
+
+.title-container {
+    padding: 5% 10% 5% 10%;
+}
+
+.list-container {
+    padding: 5%;
+}
+
+
+/* CAROUSEL ARTICLE */
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 25%;
+    right: 21%;
+}
+
+.carousel {
+    position: absolute;
+}
+
+.slick-slider {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 25px 15px 0px #E8E7F3;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(0.3);
+    filter: contrast(70%);
+}
+
+.block {
+    background-size: cover;
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.content {
+    padding-left: 5%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h3,
+h5 {
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    padding-bottom: 5%;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+button {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 180px;
+    /* background: transparent; */
+    height: 60px;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 45%;
+        height: 100vh;
+        margin: 0;
+    }
+    .slide,
+    .slick-list {
+        height: 100%;
+    }
+    img {
+        height: 50vh;
+    }
+    .block {
+        width: 260px;
+        height: 100%;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .slide,
+    .slick-list {
+        height: 350px;
+        border-radius: 0px;
+    }
+    img {
+        height: 100%;
+        border-radius: 0px;
+    }
+    .slick-slider {
+        width: 100%;
+        background: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    button {
+        font-size: 18px;
+        width: 25%;
+        height: 50px;
+    }
+    .content {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .block {
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .metier-swiper {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    a {
+        color: rgb(12, 26, 153);
+        text-decoration: none;
+        padding: 2px;
+        background-color: rgb(186, 187, 240);
+        font-size: 10px;
+    }
+    .slide,
+    .slick-slider {
+        width: 100%;
+        height: 100%;
+        background: none;
+        box-shadow: none;
+    }
+    img {
+        border-radius: 0px;
+    }
+    .block {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: auto;
+        bottom: 0;
+    }
+    .content {
+        margin-left: 15px;
+        width: 150px;
+        width: 100%;
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: -1px !important;
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: -0px !important;
+    }
+    button {
+        font-size: 16px;
+        width: 120px;
+        height: 40px;
+    }
+}

@@ -3,10 +3,11 @@
     height: auto;
 }
 
-app-header-color-block {
-    width: 100%;
+app-prestations-carousel {
+    width: 80%;
 }
 
+app-header-color-block,
 app-metiers-items-header {
     width: 100%;
 }
