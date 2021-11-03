@@ -107,6 +107,11 @@ p {
         font-size: 0.9rem;
         width: 90%;
     }
+    .bg-question {
+        border-radius: 0;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
     .bg-question img {
         width: 200px;
     }
