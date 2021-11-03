@@ -1,0 +1,24 @@
+<section class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
+    <div class="bg" fxLayout="row" fxLayoutAlign="end end" style="  background-image: url('{{bg}}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+        <div class="picto-mobile" fxHide.gt-xs="true">
+            <img src="{{image}}" alt="">
+        </div>
+        <div class="context">
+
+            <div fxFlex="55" fxFlex.xs="70" class="context-wrapper">
+
+                <div class="picto">
+                    <img src="{{image}}" alt="">
+                </div>
+
+                <div class="txt">
+                    <h3>{{title}} </h3>
+                    <h5>{{text}}</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

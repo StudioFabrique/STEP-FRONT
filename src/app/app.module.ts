@@ -65,6 +65,7 @@ import { EcoComponent } from './pages/eco/eco.component';
 import { EcoHeaderComponent } from './templates/eco-header/eco-header.component';
 import { LineBreakPipe } from './pipes/line-break.pipe';
 import { PrestationsCarouselComponent } from './templates/prestations-carousel/prestations-carousel.component';
+import { MetierDetailsHeaderComponent } from './templates/metier-details-header/metier-details-header.component';
 
 
 
@@ -106,6 +107,7 @@ import { PrestationsCarouselComponent } from './templates/prestations-carousel/p
     //PIPES
     LineBreakPipe,
          PrestationsCarouselComponent,
+         MetierDetailsHeaderComponent,
     
   
   ],
