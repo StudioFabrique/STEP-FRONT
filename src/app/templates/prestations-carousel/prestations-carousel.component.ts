@@ -3,24 +3,33 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-prestations-carousel',
   templateUrl: './prestations-carousel.component.html',
-  styleUrls: ['./prestations-carousel.component.css']
+  styleUrls: ['./prestations-carousel.component.css'],
 })
 export class PrestationsCarouselComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 
   slides = [
-    { img: '../../../assets/solutions/formations.jpg', 
-      title:"Flux Documentaire", 
-      text:"Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion"
+    {
+      id: 1,
+      img: '../../../assets/solutions/formations.jpg',
+      title: 'Numérisation',
+      text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
     },
-  ]
-
-
+    {
+      id: 2,
+      img: '../../../assets/solutions/formations.jpg',
+      title: 'Traitement de données',
+      text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
+    },
+    {
+      id: 3,
+      img: '../../../assets/solutions/formations.jpg',
+      title: 'Editique',
+      text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
+    },
+  ];
 
   slideConfig = {
     slidesToShow: 1,
@@ -28,7 +37,7 @@ export class PrestationsCarouselComponent implements OnInit {
     speed: 1000,
     autoplaySpeed: 1000,
     autoplay: false,
- fade: true,
+    fade: true,
     arrows: false,
     mobileFirst: true,
     responsive: [
@@ -38,26 +47,24 @@ export class PrestationsCarouselComponent implements OnInit {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
-
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   swipperConfig = {
     slidesToShow: 3,
@@ -74,27 +81,24 @@ export class PrestationsCarouselComponent implements OnInit {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
-
-
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   slickInit(e: any) {
     console.log('slick initialized');
@@ -111,7 +115,4 @@ export class PrestationsCarouselComponent implements OnInit {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
-
-
-
 }

@@ -29,13 +29,20 @@ section {
 
 h2,
 p,
-li {
+li,
+a {
     color: white;
 }
 
 h2 {
     font-size: 2.5rem;
     margin: 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 p {
@@ -45,8 +52,6 @@ p {
 li {
     list-style: none;
     font-size: 1.2rem;
-    display: flex;
-    align-items: center;
     margin: 0.8rem;
     padding: 5px 20px 5px 10px;
 }
@@ -58,6 +63,12 @@ li:hover {
 
 mat-icon {
     margin-right: 15px;
+}
+
+li:hover a mat-icon {
+    background-color: #ffffff;
+    color: #01A9C9;
+    border-radius: 50%;
 }
 
 .title-container {
@@ -93,7 +104,7 @@ img {
 .block {
     background-size: cover;
     position: absolute;
-    width: 350px;
+    width: 100%;
     height: 100%;
     top: 0;
     z-index: 99;
@@ -101,7 +112,7 @@ img {
 
 .content {
     padding-left: 5%;
-    padding-right: 15%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -115,12 +126,12 @@ h5 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 5%;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 button {
