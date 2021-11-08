@@ -8,21 +8,12 @@
 
         <div class="list-container">
             <ul>
-                <li>
-                    <a href="http://">
+                <li *ngFor="let slide of slides; let i = index">
+                    <a (click)="slickModal.slickGoTo(i)">
                         <mat-icon>navigate_next</mat-icon>
-                        Numérisation</a>
+                        {{slide.listTitle}}</a>
                 </li>
-                <li>
-                    <a href="http://">
-                        <mat-icon>navigate_next</mat-icon>
-                        Traitement de données</a>
-                </li>
-                <li>
-                    <a href="http://">
-                        <mat-icon>navigate_next</mat-icon>
-                        Editique</a>
-                </li>
+
             </ul>
         </div>
     </article>
@@ -30,7 +21,7 @@
     <article fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
         <ngx-slick-carousel fxFlex.lt-md="100" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide">
 
                 <img src="{{ slide.img }} " alt=" " width="100% " />
 

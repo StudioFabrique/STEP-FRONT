@@ -6,10 +6,11 @@
         </div>
         <div fxFlexFill fxHide.lt-md="true">
             <mat-grid-list cols="2" cols.sm="1" fxLayout="row" fxLayoutAlign="center center" rowHeight="9:1" gutterSize="10px">
-                <mat-grid-tile *ngFor="let metier of metiers">
+                <mat-grid-tile *ngFor="let metier of metiers; let i = index">
                     <div class="metier-txt" fxFlex>
-                        <mat-icon class="step-blue-color">chevron_right</mat-icon>
-                        <h4 class="step-blue-color"> {{metier.title}}</h4>
+                        <a (click)="slickModal.slickGoTo(i)">
+                            <mat-icon>navigate_next</mat-icon>
+                            {{metier.title}}</a>
                     </div>
                 </mat-grid-tile>
             </mat-grid-list>
