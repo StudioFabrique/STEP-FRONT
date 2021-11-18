@@ -21,7 +21,7 @@
     <app-metier-swiper style="margin-left: 30px;" class="slider-txt"></app-metier-swiper>
 
     <div fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
-        <ngx-slick-carousel fxFlex.xs="100%" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <!-- <ngx-slick-carousel fxFlex.xs="100%" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                 <img src="{{ slide.img }} " alt=" " width="100% " />
                 <div fxLayout="row" fxLayoutAlign="center end" class="block">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-        </ngx-slick-carousel>
+        </ngx-slick-carousel> -->
         <div class="bg-carousel"></div>
     </div>
 </div>

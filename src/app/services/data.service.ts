@@ -9,6 +9,7 @@ import { GouvernanceComponent } from '../pages/mission/gouvernance/gouvernance.c
 import { MissionsComponent } from '../pages/mission/missions.component';
 import { PartenairesComponent } from '../pages/mission/partenaires/partenaires.component';
 import { ValeursComponent } from '../pages/mission/valeurs/valeurs.component';
+import { ConnexionService } from './connexion.service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,8 +17,16 @@ import { ValeursComponent } from '../pages/mission/valeurs/valeurs.component';
 export class DataService {
   routes: any = [];
 
-  constructor(private router: Router, private http: HttpClient) {}
-
+  constructor(private router: Router, private http: HttpClient, private conServ:ConnexionService) {
+  }
+  /** Récupérer les paramètres de configuration */
+  getConfig(){
+    this.http.get('assets/config.json').subscribe(conf => {
+      this.conServ.config = conf;
+      console.log(this.conServ.config);
+    });
+  }
+  /** Avoir la liste de menus depuis Amplify */
   getMenu() {
     return this.http
       .get(
@@ -26,7 +35,7 @@ export class DataService {
       .subscribe((res: any) => {
         this.routes = res;
         console.log(this.routes);
-        
+
         this.routes = this.routes
           .sort((a: any, b: any) => {
             if (a.menu_order < b.menu_order) return -1;

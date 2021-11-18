@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,15 +32,14 @@ import { MetierSwiperComponent } from './templates/metier-swiper/metier-swiper.c
 import { EcoconceptionComponent } from './templates/ecoconception/ecoconception.component';
 
 // MATERIAL MODULES
-import {SlickCarouselModule} from 'ngx-slick-carousel';
-import {FlexLayoutModule} from '@angular/flex-layout';
+// import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
-import {MatCarouselModule} from '@ngmodule/material-carousel';
+// import {MatCarouselModule} from '@ngmodule/material-carousel';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -53,7 +53,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GouvernanceComponent } from './pages/mission/gouvernance/gouvernance.component';
 import { PartenairesComponent } from './pages/mission/partenaires/partenaires.component';
 import { ValeursComponent } from './pages/mission/valeurs/valeurs.component';
-import { MissionHeaderComponent } from './templates/mission-header/mission-header.component';  
+import { MissionHeaderComponent } from './templates/mission-header/mission-header.component';
 import { HighLightDirective } from './directives/highlight.directive';
 import { NewHighLightDirective } from './directives/newHighlight.directive';
 import { DataService } from './services/data.service';
@@ -63,6 +63,9 @@ import { HeaderColorBlockComponent } from './templates/header-color-block/header
 import { MetiersItemsHeaderComponent } from './templates/metiers-items-header/metiers-items-header.component';
 import { EcoComponent } from './pages/eco/eco.component';
 import { EcoHeaderComponent } from './templates/eco-header/eco-header.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { GraphInterceptor } from './services/graph.interceptor';
 
 
 @NgModule({
@@ -109,7 +112,7 @@ import { EcoHeaderComponent } from './templates/eco-header/eco-header.component'
     MatIconModule,
     MatListModule,
     MatSidenavModule,
-    FlexLayoutModule,
+    // FlexLayoutModule,
     MatMenuModule ,
     MatDialogModule,
     MatCardModule,
@@ -119,12 +122,15 @@ import { EcoHeaderComponent } from './templates/eco-header/eco-header.component'
     MatSelectModule,
     MatExpansionModule,
     // IvyCarouselModule,
-    SlickCarouselModule,
+    // SlickCarouselModule,
     ReactiveFormsModule,
-    MatCarouselModule.forRoot() ,
+    // MatCarouselModule.forRoot(),
+    // AmplifyUIAngularModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
-  providers: [DataService],
+  providers: [DataService, { provide: HTTP_INTERCEPTORS, useClass:GraphInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,72 @@
+type Liens @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  titre: String
+  alias: String
+  url: String
+  description: String
+  Menus: [Menu] @connection(keyName: "byLiens", fields: ["id"])
+  Categories: [Categorie] @connection(keyName: "byLiens", fields: ["id"])
+  Articles: [Article] @connection(keyName: "byLiens", fields: ["id"])
+  Plugins: [Plugins] @connection(keyName: "byLiens", fields: ["id"])
+}
+
+type Plugins @model @auth(rules: [{allow: public}]) @key(name: "byLiens", fields: ["liensID"]) {
+  id: ID!
+  nom: String
+  params: AWSJSON
+  position: Structure @connection
+  liensID: ID
+}
+
+type Structure @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  titre: String
+  alias: String
+  description: String
+}
+
+type Menu @model @auth(rules: [{allow: public}]) @key(name: "byLiens", fields: ["liensID"]) {
+  id: ID!
+  titre: String
+  acces: Int
+  position: Structure @connection
+  liensID: ID
+}
+
+type Article @model @auth(rules: [{allow: public}]) @key(name: "byLiens", fields: ["liensID"]) {
+  id: ID!
+  titre: String
+  alias: String
+  intro: String
+  contenu: String
+  imageIntro: String
+  image: String
+  Categories: [Categorie] @connection(keyName: "byArticle", fields: ["id"])
+  icone: String
+  acces: Int
+  liensID: ID
+}
+
+type Contact @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nom: String
+  prenom: String
+  adresse: String
+  email: AWSEmail
+  telephone: String
+  mobile: String
+  acces: Int
+}
+
+type Categorie @model @key(name: "byArticle", fields: ["articleID"]) @auth(rules: [{allow: public}]) @key(name: "byLiens", fields: ["liensID"]) {
+  id: ID!
+  titre: String
+  alias: String
+  image: String
+  intro: String
+  description: String
+  articleID: ID
+  acces: Int
+  liensID: ID
+}
+ 

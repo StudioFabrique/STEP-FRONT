@@ -4,7 +4,7 @@
         <h6 class="step-blue-color">en quelques chiffres</h6>
     </div>
     <div class="content-div" fxLayout="row wrap" fxLayoutGap="grid">
-        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="43%" *ngFor="let card of cards">
+        <div *ngFor="let card of cards">
             <mat-card class="{{card.bg}}" class="mat-elevation-z0">
                 <mat-card-header>
                     <mat-card-title fxLayout="row" fxLayoutAlign="startcenter">

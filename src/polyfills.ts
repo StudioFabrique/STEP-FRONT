@@ -53,13 +53,17 @@
  *  (window as any).__Zone_enable_cross_context_check = true;
  *
  */
-
+ import 'core-js/es/typed-array';
+ import 'core-js/es/object';
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js';  // Included with Angular CLI.
-
-
+// Variables globaes pour Amplify
+(window as any).global = window;
+(window as any).process = {
+  env: { DEBUG: undefined },
+};
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */

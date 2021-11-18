@@ -1,12 +1,53 @@
-.container {
+/* Le slider */
+section {
     width: 100%;
     height: 500px;
     margin: auto;
+    overflow:hidden;
+    display:flex;
+    flex-flow:row nowrap;
 }
+/* Contenus des slides */
+article{
+  width:100%;
+  height: 500px;
+  display:flex;
+  flex-shrink:0;
 
-.slide {
-    height: 450px;
-    position: relative;
+  margin:0;
+  padding: 0;
+  border:0;
+
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+article > div:nth-child(1){
+  width:40%;
+  display:flex;
+  flex-flow:column nowrap;
+  padding:20px 10px 20px 40px;
+}
+article > div:nth-child(2){
+  width:60%;
+  position:relative;
+}
+.prev, .next{
+  color:rgba(0,0,0,.7);
+  font-size:large;
+  border:none;
+  content:' > ';
+  width:30px;
+  height:30px;
+  border-radius: 10%;
+  transition:all .3s ease;
+}
+.prev:hover, .next:hover{
+  color:black;
+  background-color:grey;
+}
+.next{
+  transform:rotate(180deg);
 }
 
 .carousel-corner {
@@ -17,19 +58,6 @@
 
 .carousel-img {
     object-fit: cover;
-}
-
-.block {
-    position: absolute;
-    width: 36%;
-    height: 100%;
-    top: 0;
-    z-index: 99;
-    opacity: 0.95;
-}
-
-.content {
-    margin: auto;
 }
 
 h3,
@@ -79,10 +107,6 @@ button {
         height: 350px;
         margin: auto;
     }
-    .slide {
-        height: 350px;
-        position: relative;
-    }
     h3 {
         font-size: 1.5rem;
     }
@@ -98,13 +122,6 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-    .container {
-        width: 100%;
-        height: 100vh;
-    }
-    .slide {
-        height: 100%;
-    }
     img {
         height: 100vh;
     }
@@ -135,12 +152,6 @@ button {
 }
 
 @media only screen and (max-width: 375px) {
-    .container {
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-    }
-    .slide,
     .slick-list {
         height: 100%;
     }

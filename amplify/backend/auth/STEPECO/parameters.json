@@ -1,0 +1,62 @@
+{
+    "identityPoolName": "testAuthIdentityPool",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "stepecfed3c31b",
+    "userPoolName": "STEPECO",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Step.eco, mot de passe oubliÃ© : {####}",
+    "emailVerificationMessage": "Bonjour,\n\nIl semble que vous ayez oubliÃ© votre mot de passe. Voici de quoi le rÃ©initialiser : {####}\n\nBonne journÃ©e",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Numbers",
+        "Requires Symbols",
+        "Requires Uppercase"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [],
+    "userpoolClientReadAttributes": [],
+    "userpoolClientLambdaRole": "STEPECfed3c31b_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "fed3c31b",
+    "resourceName": "STEPECO",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "serviceName": "Cognito",
+    "usernameAttributes": [
+        "email"
+    ],
+    "useDefault": "manual",
+    "userPoolGroups": false,
+    "userPoolGroupList": [],
+    "adminQueries": false,
+    "thirdPartyAuth": false,
+    "authProviders": [],
+    "usernameCaseSensitive": false,
+    "dependsOn": []
+}

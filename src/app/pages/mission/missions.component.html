@@ -1,4 +1,4 @@
-<div class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+<div class="container">
     <!-- <div class="section-1" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
         <div class="bg" fxLayout="row" fxLayoutAlign="end end">
             <img src="../../../assets/img/corner.png" alt="" />
@@ -20,11 +20,11 @@
 
     <app-mission-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text"></app-mission-header>
 
-    <div class="section-2" fxLayout="column" fxLayoutGap="grid">
+    <div class="section-2">
 
 
         <h2>Découvrez nos Missions</h2>
-        <article fxLayout="row" fxLayout.xs="column">
+        <article>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum explicabo voluptas incidunt. Odio dolor asperiores nostrum veniam rerum sed harum sapiente. Molestias error recusandae unde rem cum laborum aliquid praesentium. Ea animi ad earum
                 itaque laboriosam rem quia ratione possimus natus deserunt! unde! <strong> quisquam </strong>. Quam, itaque ex.
@@ -36,7 +36,7 @@
             </p>
 
         </article>
-        <div [fxFlex]="100 / gridColumns + '%' " fxFlex="100% " *ngFor="let card of cards " class="card-container ">
+        <div *ngFor="let card of cards " class="card-container ">
             <mat-card fxFlex fxLayout="column " fxLayoutAlign="center start " style="background-image: url( '{{card.bg}}'); object-fit:cover;background-size: 100%; background-repeat: no-repeat " class="mat-elevation-z0 ">
                 <mat-card-header fxFlex fxLayout="column ">
                     <mat-card-title>
@@ -52,7 +52,7 @@
                     <p>
                         {{ card.content }}
                     </p>
-                    <button href="https://www.step-sa.fr/ " target="_blank " class="step-green ">
+                    <button href="https://www.step.eco/ " target="_blank " class="step-green ">
             voir plus
           </button>
                 </mat-card-content>

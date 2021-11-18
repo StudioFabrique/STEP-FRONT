@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "STEPECO",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authSTEPECO",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

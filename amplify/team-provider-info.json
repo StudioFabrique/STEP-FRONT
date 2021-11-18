@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-stepeco-staging-72030-authRole",
+      "UnauthRoleArn": "arn:aws:iam::731236631689:role/amplify-stepeco-staging-72030-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::731236631689:role/amplify-stepeco-staging-72030-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-stepeco-staging-72030-deployment",
+      "UnauthRoleName": "amplify-stepeco-staging-72030-unauthRole",
+      "StackName": "amplify-stepeco-staging-72030",
+      "StackId": "arn:aws:cloudformation:eu-west-3:731236631689:stack/amplify-stepeco-staging-72030/b2930510-3888-11ec-ba75-0e6f4254b10c",
+      "AmplifyAppId": "d321py54rioxuv"
+    },
+    "categories": {
+      "auth": {
+        "STEPECO": {}
+      }
+    }
+  }
+}
