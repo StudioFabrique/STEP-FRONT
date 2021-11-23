@@ -1,45 +1,58 @@
 <nav>
-
     <div class="top">
         <a routerLink="/accueil"><img src="/assets/pictos/logo-blue.png" alt="step" /></a>
     </div>
 
     <div class="liens">
-        <div>
-
-            <ul class="navigation-items">
-                <li *ngFor="let lien of liens">
-                    <a (click)="navto(lien.routerLink)">{{lien.name}}</a>
-                </li>
-            </ul>
-
-            <!-- 
-            <div class="icons mat-burger">
-                <span>
-                    <img class="material-icons" src="/assets/svg/eye.svg" alt="burger-menu">
-                </span>
-
-                <span>
-                    <img class="material-icons" src="/assets/svg/leaf_blue.svg" alt="burger-menu">
-                </span>
-            </div> -->
-
+        <ul class="navigation-items">
+            <li *ngFor="let lien of liens">
+                <a (click)="navto(lien.routerLink)">{{ lien.name }}</a>
+            </li>
 
             <div class="icons mat-burger">
-                <a routerLink="['#']" routerLinkActive="router-link-active">
-                    <span class="material-icons">remove_red_eye</span>
-                </a>
+                <span class="eye">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34.13"
+            height="20.44"
+            viewBox="0 0 46.13 32.44"
+         
+          >
+            <g id="Calque_2" data-name="Calque 2">
+              <g id="Calque_1-2" data-name="Calque 1">
+                <g id="eye">
+                  <path
+                    id="vision"
+                    d="M46,15.44C42.1,7.32,33.33,0,23.06,0,11.52,0,3.22,9,.17,15.44A1.83,1.83,0,0,0,.17,17C4,25.11,12.8,32.44,23.06,32.44c11.55,0,19.85-9,22.9-15.45a1.8,1.8,0,0,0,0-1.54ZM23.06,28.83c-8.3,0-15.18-5.47-19.22-12.61C7.86,9.1,14.74,3.6,23.06,3.6S38.25,9.07,42.29,16.21C38.27,23.33,31.39,28.83,23.06,28.83Zm0-21.62a9,9,0,1,0,9,9h0A9,9,0,0,0,23.06,7.21Zm0,14.41a5.41,5.41,0,1,1,5.41-5.4h0A5.41,5.41,0,0,1,23.06,21.62Z"
+                    
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
 
-                <a routerLink="['#']">
-                    <span class="material-icons"> spa </span>
-                </a>
+                <span class="leaf">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 193 193"
+         
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M191.986 8.07087C191.871 6.11508 191.042 4.26954 189.657 2.88419C188.272 1.49885 186.426 0.670018 184.47 0.554875C108.157 -3.93913 47.0542 19.0709 20.9982 62.0949C11.9641 76.8447 7.51393 93.9453 8.21221 111.228C8.78121 127.185 13.4352 143.292 22.0362 159.191L2.3432 178.884C0.842875 180.384 0 182.419 0 184.541C0 186.663 0.842875 188.698 2.3432 190.198C3.84353 191.698 5.87842 192.541 8.00021 192.541C10.122 192.541 12.1569 191.698 13.6572 190.198L33.3502 170.505C49.2492 179.105 65.3562 183.761 81.3132 184.329C82.4302 184.369 83.5402 184.389 84.6482 184.389C100.81 184.435 116.667 179.988 130.447 171.544C173.469 145.487 196.475 84.3749 191.987 8.07087H191.986ZM122.158 157.858C99.3382 171.68 72.3312 171.864 45.2282 158.628L133.657 70.1979C135.158 68.6975 136 66.6627 136 64.5409C136 62.4191 135.158 60.3842 133.657 58.8839C132.157 57.3835 130.122 56.5407 128 56.5407C125.878 56.5407 123.844 57.3835 122.343 58.8839L33.9132 147.314C20.6782 120.211 20.8612 93.2039 34.6832 70.3839C56.8262 33.8229 109.48 13.7929 176.353 16.1869C178.746 83.0619 158.716 135.717 122.158 157.858V157.858Z"
+              
+            />
+          </svg>
+        </span>
             </div>
-        </div>
+        </ul>
 
         <div class="burger" (click)="navSlide()">
-            <img *ngIf="icon" class="burger" (click)="changeIcon()" src="/assets/svg/burger.svg" alt="burger-menu">
+            <img *ngIf="icon" class="burger" (click)="changeIcon()" src="/assets/svg/burger.svg" alt="burger-menu" />
 
-            <img *ngIf="!icon" class="burger back" (click)="changeIcon()" src="/assets/svg/retour.svg" alt="return">
+            <img *ngIf="!icon" class="burger back" (click)="changeIcon()" src="/assets/svg/retour.svg" alt="return" />
         </div>
     </div>
 </nav>

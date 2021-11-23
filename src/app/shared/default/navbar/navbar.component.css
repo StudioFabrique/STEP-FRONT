@@ -17,6 +17,13 @@ nav {
     align-items: center;
 }
 
+.liens-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -63,8 +70,12 @@ li {
     padding: 10px;
 }
 
-.icons a {
+.icons span {
     padding: 10px;
+}
+
+.icons span svg {
+    fill: #140a82;
 }
 
 .burger {
@@ -82,7 +93,7 @@ li {
         height: 100vh;
         width: 100%;
         overflow: hidden;
-        z-index: 999;
+        z-index: 99;
         background-color: #140a82;
         overflow: hidden;
         transform: translateX(-100%);
@@ -98,11 +109,6 @@ li {
     span {
         opacity: 0;
     }
-    .burger {
-        display: block;
-        width: 40px;
-        height: 40px;
-    }
     .liens a {
         color: white;
         text-decoration: none;
@@ -110,15 +116,19 @@ li {
         font-size: 2.3rem;
         font-weight: 600;
     }
-    .icons {
-        color: #ffffff;
-        z-index: 9999;
+    .icons span svg {
+        fill: #fff;
+        width: 80px;
+        height: 80px;
     }
-    span {
-        font-size: 80px;
-        border-radius: 50%;
-        color: #ffffff;
-        z-index: 999999;
+    .icons span:nth-child(2) svg {
+        width: 60px;
+        height: 60px;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        height: 40px;
     }
     .back {
         position: fixed;

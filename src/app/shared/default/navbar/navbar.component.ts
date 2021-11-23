@@ -39,7 +39,7 @@ export class NavbarComponent implements OnInit {
     
     const nav = document.querySelector('.navigation-items');
     const navItems = document.querySelectorAll('.navigation-items li');
-    const matBurger = document.querySelectorAll('.mat-burger a span');
+    const matBurger = document.querySelectorAll('span');
     const icons = document.querySelectorAll('.icons .mat-burger');
     const back = document.querySelectorAll('.burger .back');
     
@@ -53,14 +53,14 @@ export class NavbarComponent implements OnInit {
       }
     });
 
-    icons.forEach((item: any, index) => {
-      if(item.style.animation ){
-        item.style.animation = ""
-      } else {
-        item.style.animation = `navItemsFade 0.5s ease-in-out forwards ${index/7 +1}s`;
-      }
+    // icons.forEach((item: any, index) => {
+    //   if(item.style.animation ){
+    //     item.style.animation = ""
+    //   } else {
+    //     item.style.animation = `navItemsFade 0.5s ease-in-out forwards ${index/7 +1.5}s`;
+    //   }
       
-    });
+    // });
 
     matBurger.forEach((item: any, index) => {
       if(item.style.animation ){
