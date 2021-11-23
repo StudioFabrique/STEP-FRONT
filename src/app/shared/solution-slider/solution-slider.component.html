@@ -1,0 +1,48 @@
+<section fxFlexFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="startcenter">
+    <article class="metier-left" fxFlex="70" fxHide.xs="true" fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="62px">
+        <div>
+            <h2 class="step-blue-color">Des solutions <br> & métiers adaptés à <br><strong>tous vos besoins</strong></h2>
+            <p class="step-blue-color">STEP vous accompagne en vous proposant des solutions globales dans plusieurs grands secteurs d’activités. Les flux documentaires et le back office, les services de territoire et l’ingénierie informatique :</p>
+        </div>
+        <div fxFlexFill fxHide.lt-md="true">
+            <!-- <mat-grid-list cols="2" cols.sm="1" fxLayout="row" fxLayoutAlign="center center" rowHeight="9:1" gutterSize="10px">
+                <mat-grid-tile *ngFor="let metier of metiers; let i = index">
+                    <div class="metier-txt" fxFlex>
+                        <a>
+                            <mat-icon>navigate_next</mat-icon>
+                            {{metier.title}}</a>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list> -->
+        </div>
+    </article>
+
+
+
+    <!-- <app-metier-swiper style="margin-left: 30px;" class="slider-txt"></app-metier-swiper> -->
+
+    <article fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
+        <div fxFlex.lt-md="100" class="carousel">
+
+            <div *ngFor="let slide of slides" class="slide">
+
+                <img src="{{ slide.img }} " alt=" " width="100% " />
+
+                <div fxLayout="row" fxLayoutAlign="center end" class="block">
+
+                    <div class="content">
+
+                        <h3>{{ slide.title }}</h3>
+                        <h5>{{ slide.text }}</h5>
+
+                        <button href="https://www.step-sa.fr/" target="_blank" class="step-cyan">voir plus</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+</section>

@@ -1,0 +1,145 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+}
+
+.top a img {
+    width: 8rem;
+}
+
+.liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+.liens a {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.liens a::after {
+    content: '';
+    margin-top: 5px;
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #140a82;
+    transition: 300ms;
+}
+
+.liens a:hover::after {
+    width: 100%;
+}
+
+.icons {
+    color: #140a82;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons a {
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        margin: 0px;
+    }
+    .navigation-items {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: 999;
+        background-color: #140a82;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation-items li {
+        opacity: 0;
+    }
+    span {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .liens a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    .icons {
+        color: #ffffff;
+        z-index: 9999;
+    }
+    span {
+        font-size: 80px;
+        border-radius: 50%;
+        color: #ffffff;
+        z-index: 999999;
+    }
+    .back {
+        position: fixed;
+        z-index: 9999;
+        color: white;
+        opacity: 0;
+        font-size: 2rem;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navItemsFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

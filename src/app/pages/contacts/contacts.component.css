@@ -2,7 +2,8 @@
 .artTwo {
     width: 100%;
     margin: auto;
-    background-color: #F9F9FD;
+    background-color: #f9f9fd4d;
+    height: 100vh;
 }
 
 .contact-info {
@@ -11,8 +12,8 @@
 }
 
 .txt {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 ::ng-deep .mat-select-arrow {
@@ -38,13 +39,17 @@ p {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 500;
+}
+
+p {
+    font-size: 14px;
 }
 
 mat-option,
 mat-select {
-    color: #140a82;
+    color: #140a82 !important;
 }
 
 mat-form-field {
@@ -55,7 +60,7 @@ mat-form-field {
 }
 
 mat-label {
-    margin-top: 15px !important;
+    margin-top: 1px !important;
     color: #140a82 !important;
 }
 
@@ -69,8 +74,6 @@ button {
     height: 60px;
     background-color: #140a82;
     border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .mat-icon {
@@ -81,7 +84,7 @@ button {
 
 .photo img {
     width: 100%;
-    height: 1060px;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -93,8 +96,6 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 .aside-left {
@@ -248,13 +249,11 @@ app-partners {
         height: 60px;
         background-color: #140a82;
         border-radius: 10px;
-        margin-bottom: 20px;
-        margin-top: 20px;
     }
     .photo img {
         float: left;
         width: 100%;
-        height: 1050px;
+        height: 100vh;
         object-fit: cover;
     }
     /* ARTICLE TWO */
@@ -336,16 +335,15 @@ app-partners {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
     .contact-info {
         width: 80%;
     }
     .txt {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
     .fields {
-        margin-top: 5px;
         width: 100%;
     }
     .mat-form-field {
@@ -358,9 +356,6 @@ app-partners {
         margin-top: 5px !important;
         color: #140a82 !important;
     }
-    .btn-container {
-        margin-bottom: 20px;
-    }
     button {
         color: white;
         font-family: 'Rubik', sans-serif;
@@ -371,18 +366,97 @@ app-partners {
         height: 60px;
         background-color: #140a82;
         border-radius: 10px;
-        margin-bottom: 20px;
-        margin-top: 20px;
     }
     .photo {
         width: 100%;
-        height: 425px;
+        height: 400px;
         margin: auto;
     }
     .photo img {
         object-fit: cover;
         width: 100%;
-        height: 425px;
+        height: 100%;
+    }
+    /* ARTICLE TWO */
+    .artTwo {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .bg {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .bg img {
+        width: 50%;
+    }
+    .aside-left {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.207);
+    }
+    .address {
+        margin: auto;
+        width: 85%;
+    }
+    .address-wrapper {
+        margin-top: 20px;
+    }
+    .coord-container {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .coord {
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #F9F9FD;
+        margin-top: 10px;
+    }
+    .horaires {
+        text-decoration: underline;
+        margin-bottom: 50px;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+        margin-top: 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 2%;
+        border-radius: 0px;
+    }
+    .map button {
+        width: 80%;
+        margin-right: 0;
+    }
+    button span {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .contact-info {
+        width: 80%;
+    }
+    .mat-form-field {
+        border-radius: 7px;
+        width: 100% !important;
+        line-height: 1;
+        color: #140a82;
+    }
+    .mat-label {
+        margin-top: 5px !important;
+        color: #140a82 !important;
     }
     /* ARTICLE TWO */
     .artTwo {
@@ -402,11 +476,7 @@ app-partners {
         justify-content: center;
         border-radius: 0px;
     }
-    .bg img {
-        width: 40%;
-    }
     .aside-left {
-        width: 100%;
         border-radius: 0px;
         box-shadow: none;
     }
@@ -414,23 +484,9 @@ app-partners {
         margin: auto;
         width: 85%;
     }
-    .address-wrapper {
-        margin-top: 50px;
-    }
     .coord-container {
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-    .coord {
-        height: 50px;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #F9F9FD;
+        margin-bottom: 10px;
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
     }
     .coord-wrapper {
         display: flex;
@@ -438,33 +494,8 @@ app-partners {
         align-items: center;
         justify-content: flex-start;
     }
-    .icon {
-        margin-left: 10px;
-    }
-    .coord-wrapper h5 {
-        margin-left: 15px;
-    }
-    .horaires {
-        text-decoration: underline;
-        margin-bottom: 50px;
-    }
     .map {
-        width: 100%;
-        height: 400px;
-        background-image: url('../../../assets/img/office.jpg');
-        background-position: center;
-        background-size: cover;
         margin-top: 20px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
         border-radius: 0px;
-    }
-    .map button {
-        width: 80%;
-        margin-right: 0;
-    }
-    button span {
-        color: white;
     }
 }

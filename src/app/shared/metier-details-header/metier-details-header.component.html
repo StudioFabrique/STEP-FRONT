@@ -1,0 +1,22 @@
+<section class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
+    <div class=" bg " fxLayout="row " fxLayoutAlign="end end " style=" background-image: url( '{{item.bg}}'); background-repeat: no-repeat; background-size: cover; background-position:center;" *ngFor="let item of this.metierDetailsHeaderServ.metierDetailsHeaders">
+        <div class="picto-mobile " fxHide.gt-xs="true ">
+            <img src="{{item.picto}} " alt=" ">
+        </div>
+
+        <div class="context ">
+            <div fxFlex="75 " fxFlex.xs="70 " class="context-wrapper ">
+
+                <div class="picto ">
+                    <img src="{{item.picto}} " alt=" ">
+                </div>
+
+                <div class="txt ">
+                    <h3>{{item.title}} </h3>
+                    <h5>{{item.text}}</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

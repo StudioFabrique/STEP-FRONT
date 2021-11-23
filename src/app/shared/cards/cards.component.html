@@ -1,0 +1,24 @@
+<section class="content">
+    <div class="head">
+        <img src="../../../assets/pictos/logo-blue.png" alt="" />
+        <h1 class="step-blue-color">C'est quoi ?</h1>
+    </div>
+    <article class="wrapper">
+
+        <div class="card-wrapper" *ngFor="let card of cards">
+
+            <div class="card-icon">
+                <img src="{{ card.icon }}" alt="">
+            </div>
+
+            <div class="card-text">
+                <h3>{{ card.title }}</h3>
+                <p>
+                    {{ card.content }}
+                </p>
+            </div>
+
+        </div>
+
+    </article>
+</section>

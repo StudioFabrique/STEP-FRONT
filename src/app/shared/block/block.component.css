@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    height: 150px;
+    background-color: #F5F5FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+img {
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1,
+p {
+    color: #140A82;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        height: 180px;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+}

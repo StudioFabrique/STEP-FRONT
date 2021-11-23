@@ -1,0 +1,29 @@
+<section class="content">
+    <div class="head">
+        <img src="../../../assets/pictos/logo-blue.png" alt="" />
+        <h1>en quelques chiffres</h1>
+    </div>
+    <article class="wrapper">
+
+        <div class="card-wrapper {{card.bg}}" *ngFor="let card of cards">
+
+            <div class="card-icon">
+                <img src="{{ card.icon }}" alt="">
+                <h3>information</h3>
+            </div>
+
+            <div class="card-text">
+                <div class="card-number">
+                    <h3 [appCounter]="card.number">
+                    </h3>
+                    <span *ngIf="card.pourcentage">%</span>
+                </div>
+                <p>
+                    {{ card.content }}
+                </p>
+            </div>
+
+        </div>
+
+    </article>
+</section>

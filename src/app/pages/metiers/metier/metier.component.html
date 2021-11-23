@@ -1,0 +1,61 @@
+<div class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <app-header-color-block [image]="image" [title]="title" [titleBold]="titleBold" [text]="text"></app-header-color-block>
+
+    <div class="section-2" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="center start">
+        <h3>Decouvrez nos métiers</h3>
+
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="22px grid" fxLayoutGap.xs="0px grid">
+                <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let content of contents">
+                    <mat-card fxLayoutAlign="center end" style="background-image: url('{{content.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
+                        <mat-card-content class="mat-content-loop">
+
+                            <h3>{{ content.title }}</h3>
+                            <p>
+                                {{ content.text }}
+                            </p>
+                            <button routerLink={{content.link}} class="info">voir plus</button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div fxFlex="auto" fxHide.lt-sm="true">
+                    <mat-card fxflexFill fxFlex fxLayoutAlign="center end " class="remain-card mat-elevation-z0">
+                        <mat-card-content class="remain-card-content" flexLayout="row" fxLayoutAlign="space-around center">
+                            <div fxflexFill fxLayout="column" fxLayoutAlign="space-evenly start" style="height: 75%;">
+                                <h3>Quelles applications pour nos métiers?</h3>
+                                <div class="statement">
+                                    <p>
+                                        STEP est une entreprise comme les autres, qui se doit d’avoir des résultats pour pérenniser ses actions. Mais nous démontrons jour après jour que l’on peut allier efficacité économique, finalité sociale et responsabilité environnementale.
+                                    </p>
+                                </div>
+
+                                <h5>Kenny Bertonazzi, Directeur Dénéral</h5>
+
+                                <h4>Découvrez nos cas d'études</h4>
+                            </div>
+                            <div fxLayout="column" fxLayoutAlign="end end" style="height: 70%">
+                                <span class="material-icons"> arrow_forward </span>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-3" fxLayout="column " fxLayoutAlign.xs="center center " fxLayoutAlign="center start " fxHide.gt-xs="true " fxHide.md="true " fxHide.sm="true ">
+        <h3>Quelles applications pour nos métiers?</h3>
+        <p>
+            STEP est une entreprise comme les autres, qui se doit d’avoir des résultats pour pérenniser ses actions. Mais nous démontrons jour après jour que l’on peut allier efficacité économique, finalité sociale et responsabilité environnementale.
+        </p>
+        <h5>Kenny Bertonazzi, Directeur Dénéral</h5>
+        <button href="https://www.step-sa.fr/ " target="_blank " class="step-blue">
+      voir plus
+    </button>
+    </div>
+
+
+    <app-questions></app-questions>
+
+    <app-partners></app-partners>
+</div>

@@ -6,11 +6,11 @@ body {
     margin: auto;
     overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
-    scroll-behavior:"smooth";
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    color: #140a82;
 }
 
 h1,
@@ -21,9 +21,11 @@ h5,
 h6,
 button,
 a,
+span,
 .mat-toolbar,
 .mat-card {
     font-family: 'Rubik', sans-serif;
+    color: #140a82;
 }
 
 .success {

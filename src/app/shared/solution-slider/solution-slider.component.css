@@ -1,0 +1,244 @@
+.container {
+    width: 40%;
+    height: 50%;
+    margin: auto;
+}
+
+.slick-slider {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 35px 35px 0px #E8E7F3;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(0.3);
+    filter: contrast(70%);
+}
+
+.block {
+    background-size: cover;
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+mat-grid-tile {
+    border-radius: 50px;
+}
+
+mat-grid-tile:hover {
+    background-color: #F6F5FC;
+    cursor: pointer;
+}
+
+.metier-txt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3,
+h5 {
+    color: white;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    padding-bottom: 5%;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #140a82;
+    font-family: 'Rubik', sans-serif;
+}
+
+.metier-txt:hover mat-icon {
+    background-color: #ffffff;
+    color: #140a82;
+    border-radius: 50%;
+}
+
+mat-icon {
+    margin-right: 15px;
+}
+
+button {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 180px;
+    /* background: transparent; */
+    height: 60px;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.content {
+    padding-left: 5%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 45%;
+        height: 100vh;
+        margin: 0;
+    }
+    .slide,
+    .slick-list {
+        height: 100%;
+    }
+    img {
+        height: 50vh;
+    }
+    .block {
+        width: 260px;
+        height: 100%;
+    }
+    .metier-left {
+        margin-left: 50px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .slide,
+    .slick-list {
+        height: 350px;
+        border-radius: 0px;
+    }
+    img {
+        height: 100%;
+        border-radius: 0px;
+    }
+    .slick-slider {
+        width: 100%;
+        background: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    button {
+        font-size: 18px;
+        width: 25%;
+        height: 50px;
+    }
+    .content {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .block {
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .metier-swiper {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    a {
+        color: rgb(12, 26, 153);
+        text-decoration: none;
+        padding: 2px;
+        background-color: rgb(186, 187, 240);
+        font-size: 10px;
+    }
+    .slide,
+    .slick-slider {
+        width: 100%;
+        height: 100%;
+        background: none;
+        box-shadow: none;
+    }
+    img {
+        border-radius: 0px;
+    }
+    .block {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: auto;
+        bottom: 0;
+    }
+    .content {
+        margin-left: 15px;
+        width: 150px;
+        width: 100%;
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: -1px !important;
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: -0px !important;
+    }
+    .bg-carousel {
+        display: none;
+    }
+    button {
+        font-size: 16px;
+        width: 120px;
+        height: 40px;
+    }
+}

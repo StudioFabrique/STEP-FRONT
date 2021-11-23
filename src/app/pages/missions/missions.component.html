@@ -1,0 +1,25 @@
+<section>
+    <app-mission-header [image]="image" [title]="title" [titleBold]="titleBold" [text]="text" [bg]="bg"></app-mission-header>
+
+    <article>
+        <div class="text">
+            <p>{{ intro }}</p>
+
+        </div>
+    </article>
+    <article *ngFor="let card of cards" class="card-container">
+        <div class="card" style="background-image: url('{{card.bg}}');  object-fit:cover; background-size: 100%; background-repeat: no-repeat;">
+            <div class="card-linear">
+                <div class="card-info">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.content }}</p>
+                    <button [routerLink]="card.lien" class="step-green">voir plus</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <app-questions></app-questions>
+
+    <app-partners></app-partners>
+</section>

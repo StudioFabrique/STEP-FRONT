@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+article {
+    width: 65%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    color: #140A82;
+    font-size: 1.1rem;
+}
+
+.column {
+    column-count: 2;
+    column-gap: 3rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+app-questions,
+app-metier-details-header,
+app-prestations-carousel,
+app-partners {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 425px) {
+    .column {
+        column-count: 1;
+        column-gap: 3rem;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+    article {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .content {
+        width: 80%;
+        margin: auto;
+    }
+}

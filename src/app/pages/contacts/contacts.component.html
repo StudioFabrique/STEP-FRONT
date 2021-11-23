@@ -1,167 +1,166 @@
-<div fxFlexFill fxLayout="column" fxLayoutAlign="center start">
+<section fxFlexFill fxLayout="row" fxLayoutAlign="space-around start" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" class="artOne">
 
-    <div fxFlexFill fxLayout="row" fxLayoutAlign="space-around start" fxLayout.xs="column" fxLayoutAlign.xs="center center" class="artOne">
+    <article fxFlex="50" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign.lt-md="center start" fxFlexOrder.lt-md="2" class="contact-info">
 
-        <div fxFlex="40" fxFlex.xs="100" fxLayout="column" fxLayoutAlign.xs="center center" fxFlexOrder.xs="2" class="contact-info">
+        <div class="txt">
+            <h2>Contactez-nous</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iusto!</p>
+        </div>
 
-            <div class="txt">
-                <h2>Contactez-nous</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iusto!</p>
+
+        <div fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">
+
+
+            <div class="fields" fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <mat-form-field appearance="outline">
+                    <mat-label>Selectionner une option</mat-label>
+                    <mat-select disableRipple>
+                        <mat-option value="1">Questions concernants nos formations</mat-option>
+                        <mat-option value="2">Des questions sur l'eco-conception</mat-option>
+                        <mat-option value="3">Des questions sur nos projets</mat-option>
+                        <mat-option value="4">collaboration</mat-option>
+                        <mat-option value="5">autres...</mat-option>
+                    </mat-select>
+                </mat-form-field>
             </div>
 
 
-            <div fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">
+            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="10px" fxLayoutGap.xs="1px" class="fields">
 
-
-                <div class="fields" fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                    <mat-form-field appearance="outline">
-                        <mat-label>Selectionner une option</mat-label>
-                        <mat-select disableRipple>
-                            <mat-option value="1">Option 1</mat-option>
-                            <mat-option value="2">Option 2</mat-option>
-                            <mat-option value="3">Option 3</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-
-
-                <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="20px" fxLayoutGap.xs="1px" class="fields">
-
-                    <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                        <mat-label>Nom</mat-label>
-                        <mat-form-field class="example-full-width" appearance="outline">
-                            <input matInput placeholder="votre nom">
-                        </mat-form-field>
-                    </div>
-
-                    <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                        <mat-label>Prénom</mat-label>
-                        <mat-form-field class="example-full-width" appearance="outline">
-                            <input matInput placeholder="votre prénom">
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="20px" fxLayoutGap.xs="1px" class="fields">
-
-                    <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                        <mat-label>Adresse mail</mat-label>
-                        <mat-form-field class="example-full-width" appearance="outline">
-                            <input matInput placeholder="votre adresse mail">
-                        </mat-form-field>
-                    </div>
-
-                    <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                        <mat-label>Téléphone</mat-label>
-                        <mat-form-field class="example-full-width" appearance="outline">
-                            <input matInput placeholder="votre no. de téléphone">
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " class="fields">
-
-                    <div class="fields" fxFlex="100%" fxFlex.gt-xl="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
-                        <mat-label>Entreprise</mat-label>
-                        <mat-form-field class="example-full-width" appearance="outline">
-                            <input matInput placeholder="votre entreprise">
-                        </mat-form-field>
-                    </div>
-                </div>
-
-
-                <div class="fields" fxFlexFill fxFlex="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start">
-                    <mat-label>Laissez un message</mat-label>
+                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                    <mat-label>Nom</mat-label>
                     <mat-form-field class="example-full-width" appearance="outline">
-                        <textarea cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
+                        <input matInput placeholder="votre nom">
                     </mat-form-field>
                 </div>
 
+                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                    <mat-label>Prénom</mat-label>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="votre prénom">
+                    </mat-form-field>
+                </div>
+            </div>
 
-                <div fxFlexFill fxFlex.xs="100%" class="btn-container">
-                    <button href="https://www.step-sa.fr/" target="_blank">
+            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="10px" fxLayoutGap.xs="1px" class="fields">
+
+                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                    <mat-label>Adresse mail</mat-label>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="votre adresse mail">
+                    </mat-form-field>
+                </div>
+
+                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                    <mat-label>Téléphone</mat-label>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="votre no. de téléphone">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " class="fields">
+
+                <div class="fields" fxFlex="100%" fxFlex.gt-xl="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                    <mat-label>Entreprise</mat-label>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <input matInput placeholder="votre entreprise">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="fields" fxFlexFill fxFlex="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start">
+                <mat-label>Laissez-nous un message</mat-label>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <textarea cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
+                </mat-form-field>
+            </div>
+
+
+            <div fxFlexFill fxFlex.xs="100%" class="btn-container">
+                <button href="https://www.step-sa.fr/" target="_blank">
                     <mat-icon><span class="material-icons">message</span></mat-icon>
                     Envoyer
                 </button>
 
-                    <p style="font-size: 12px; margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        <br> Mollitia dicta nobis non sed corrupti nemo.</p>
-
-                </div>
+                <p style="font-size: 12px; margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <br> Mollitia dicta nobis non sed corrupti nemo.</p>
 
             </div>
 
         </div>
 
-        <div fxFlex.xs="100" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutAlign.xs="center center" fxFlexOrder.xs="1" class="photo">
+    </article>
 
-            <img src="../../../assets/img/contact.jpg" alt="contact-us" />
+    <article fxFlex.xs="100" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutAlign.xs="center center" fxFlexOrder.xs="1" class="photo">
+
+        <img src="../../../assets/img/contact.png" alt="contact-us" />
+
+    </article>
+
+
+</section>
+
+
+
+
+
+<section fxFlexfill fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="column" fxLayoutAlign.xs="center center" class="artTwo">
+
+    <article fxLayout="column" fxLayoutAlign="space-around start" fxLayout.xs="column" fxLayoutAlign.xs="center start " class="aside-left">
+        <div class="bg step-green">
+            <img src="../../../assets/pictos/step_logo_blanc.png" alt="step">
+        </div>
+
+        <div class="address address-wrapper">
+            <h4>Technopole Hélioparc</h4>
+            <h5>2 avenue du président Pierre Angot</h5>
+            <h5>64053 Pau CEDEX</h5>
+        </div>
+
+        <div class="address coord-container" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+
+            <div class="coord">
+
+                <div class="coord-wrapper">
+                    <mat-icon><span class="material-icons icon">smartphone</span></mat-icon>
+                    <h5>05 59 14 78 79</h5>
+                </div>
+
+                <mat-icon><span class="material-icons arrow">chevron_right</span></mat-icon>
+            </div>
+
+
+
+
+            <div class="coord">
+
+                <div class="coord-wrapper">
+                    <mat-icon><span class="material-icons icon">email</span></mat-icon>
+                    <h5>contact@step.eco</h5>
+                </div>
+
+                <mat-icon><span class="material-icons arrow">chevron_right</span></mat-icon>
+            </div>
 
         </div>
 
-
-    </div>
-
+        <h5 class="address horaires">Du lundi à vendredi de 09h00 à 18h00</h5>
 
 
+    </article>
 
-
-    <div fxFlexfill fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="column" fxLayoutAlign.xs="center center" class="artTwo">
-
-        <div fxLayout="column" fxLayoutAlign="space-around start" fxLayout.xs="column" fxLayoutAlign.xs="center start " class="aside-left">
-            <div class="bg step-green">
-                <img src="../../../assets/pictos/step_logo_blanc.png" alt="step">
-            </div>
-
-            <div class="address address-wrapper">
-                <h4>Technopole Hélioparc</h4>
-                <h5>2 avenue du président Pierre Angot</h5>
-                <h5>64053 Pau CEDEX</h5>
-            </div>
-
-            <div class="address coord-container" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">
-
-                <div class="coord">
-
-                    <div class="coord-wrapper">
-                        <mat-icon><span class="material-icons icon">smartphone</span></mat-icon>
-                        <h5>05 59 14 78 79</h5>
-                    </div>
-
-                    <mat-icon><span class="material-icons arrow">chevron_right</span></mat-icon>
-                </div>
-
-
-
-
-                <div class="coord">
-
-                    <div class="coord-wrapper">
-                        <mat-icon><span class="material-icons icon">email</span></mat-icon>
-                        <h5>contact@step.eco</h5>
-                    </div>
-
-                    <mat-icon><span class="material-icons arrow">chevron_right</span></mat-icon>
-                </div>
-
-            </div>
-
-            <h5 class="address horaires">Du lundi à vendredi de 09h00 à 18h00</h5>
-
-
-        </div>
-
-        <div class="map">
-            <button href="https://www.step-sa.fr/" target="_blank">
+    <article class="map">
+        <button href="https://www.step-sa.fr/" target="_blank">
                 <mat-icon><span class="material-icons">
                     location_on
                     </span></mat-icon>
                 Voir sur Google Maps
             </button>
-        </div>
+    </article>
 
-    </div>
+</section>
 
 
-    <app-partners></app-partners>
-</div>
+<app-partners></app-partners>

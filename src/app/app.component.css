@@ -1,16 +1,16 @@
-main {
+.router-outlet {
     width: 70%;
     margin: auto;
 }
 
 @media only screen and (max-width: 1024px) {
-    main {
+    .router-outlet {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    main {
+    .router-outlet {
         width: 100%;
     }
 }

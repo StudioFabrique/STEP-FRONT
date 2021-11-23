@@ -1,0 +1,151 @@
+section {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3,
+h4,
+p,
+span,
+button {
+    color: white;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    padding-left: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.context-wrapper-section {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.context-wrapper-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #938FC6;
+}
+
+.bg-question {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.step-question-button {
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 35%;
+    background: transparent;
+    border: white 2px solid;
+    border-radius: 10px;
+    left: 0;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bg-question img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+    article {
+        border-radius: 10px;
+    }
+    .step-question-button {
+        font-size: 0.9rem;
+        width: 45%;
+    }
+    .bg-question {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .bg-question img {
+        width: 200px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bg-question img {
+        width: 200px;
+    }
+    .step-question-button {
+        font-size: 0.9rem;
+        width: 55%;
+        background: transparent;
+        border: white 2px solid;
+        border-radius: 10px;
+        left: 0;
+        padding: 15px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    section {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    article {
+        height: 100%;
+        width: 100%;
+        padding-left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0px;
+    }
+    .context-wrapper-section {
+        margin-top: 20%;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .step-question-button {
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .bg-question {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

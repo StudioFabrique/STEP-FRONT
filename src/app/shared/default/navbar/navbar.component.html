@@ -1,0 +1,45 @@
+<nav>
+
+    <div class="top">
+        <a routerLink="/accueil"><img src="/assets/pictos/logo-blue.png" alt="step" /></a>
+    </div>
+
+    <div class="liens">
+        <div>
+
+            <ul class="navigation-items">
+                <li *ngFor="let lien of liens">
+                    <a (click)="navto(lien.routerLink)">{{lien.name}}</a>
+                </li>
+            </ul>
+
+            <!-- 
+            <div class="icons mat-burger">
+                <span>
+                    <img class="material-icons" src="/assets/svg/eye.svg" alt="burger-menu">
+                </span>
+
+                <span>
+                    <img class="material-icons" src="/assets/svg/leaf_blue.svg" alt="burger-menu">
+                </span>
+            </div> -->
+
+
+            <div class="icons mat-burger">
+                <a routerLink="['#']" routerLinkActive="router-link-active">
+                    <span class="material-icons">remove_red_eye</span>
+                </a>
+
+                <a routerLink="['#']">
+                    <span class="material-icons"> spa </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="burger" (click)="navSlide()">
+            <img *ngIf="icon" class="burger" (click)="changeIcon()" src="/assets/svg/burger.svg" alt="burger-menu">
+
+            <img *ngIf="!icon" class="burger back" (click)="changeIcon()" src="/assets/svg/retour.svg" alt="return">
+        </div>
+    </div>
+</nav>

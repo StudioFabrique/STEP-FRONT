@@ -1,0 +1,119 @@
+<footer class="step-blue" fxFlexFill fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="space-around center" fxLayoutAlign.lt-lg="center center">
+    <article fxLayout="column" fxLayoutAlign="center start" fxLayout.lt-lg="column" fxLayoutAlign.lt-lg="center center" fxLayoutAlign.lt-lg="center center" fxLayoutGap="50px" class="infos">
+        <img class="logo" src="../../../assets/pictos/step_logo_blanc.png" alt="logo" />
+
+        <div class="socials" fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" fxLayoutGap.lt-lg="25px" fxLayoutAlign.lt-lg="center center">
+            <a href="http://"><img class="social-icon" src="../../../assets/socials/twitter.png" alt="twitter" /></a>
+            <a href="http://"><img class="social-icon" src="../../../assets/socials/linkedin.png" alt="linkedin" /></a>
+            <a href="http://"><img class="social-icon" src="../../../assets/socials/insta.png" alt="instagram" /></a>
+            <a href="http://"><img class="social-icon fb" src="../../../assets/socials/facebook.png" alt="facebook" /></a>
+        </div>
+
+    </article>
+
+    <article fxHide.xs="true" fxHide.sm="true" fxLayout="row" fxLayoutAlign="start start" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutGap="100px">
+        <div fxLayout="column" fxLayoutAlign=" start start" fxLayoutGap="10px">
+            <h4>Step Info</h4>
+            <a href="">Ingénierie projet</a>
+            <a href="">Ingénierie Informatique</a>
+            <a href="">Traitement de données</a>
+            <a href="">Ingénierie Technique</a>
+            <a href="">Infogérance Hébergement</a>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+            <h4>Step Métiers</h4>
+            <a href="">Flux Documentaires</a>
+            <a href="">Studio de Développement</a>
+            <a href="">L'atelier Numérique</a>
+            <a href="">Livraison Urbaine</a>
+            <a href="">Service Postal</a>
+            <a href="">Conciergerie d'Entreprise</a>
+            <a href="">Formations</a>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+            <h4>Step Missions</h4>
+            <a href="/missions/valeurs">Nos valeurs</a>
+            <a href="/missions/gouvernance">Gouvernance</a>
+            <a href="/missions/partenaires">Partenaires</a>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+            <h4>STEP-SA</h4>
+            <a href="/contacts">Contactez-nous</a>
+            <a href="/eco-conception">Eco-Conception</a>
+            <a href="/mentions-legales">Mentions Légales</a>
+
+        </div>
+    </article>
+
+    <!-- STEP ACCORDION TO SHOW IN RESPONSIVE DISPLAY MODE -->
+
+    <article class="accordion" fxHide="true" fxShow.xs="true" fxShow.sm="true" fxLayout="row" fxLayoutAlign="center center">
+        <mat-accordion class="mat-elevation-z0" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+            <mat-expansion-panel fxFlexFill (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="accordion-header">
+                    <mat-panel-title>
+                        <h4>Step Info</h4>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-links" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+                    <a href="">Ingénierie projet</a>
+                    <a href="">Ingénierie Informatique</a>
+                    <a href="">Traitement de données</a>
+                    <a href="">Ingénierie Technique</a>
+                    <a href="">Infogérance Hébergement</a>
+                </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel fxFlexFill (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="accordion-header">
+                    <mat-panel-title>
+                        <h4>Step Métiers</h4>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-links" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+                    <a href="">Flux Documentaires</a>
+                    <a href="">Studio de Développement</a>
+                    <a href="">L'atelier Numérique</a>
+                    <a href="">Livraison Urbaine</a>
+                    <a href="">Service Postal</a>
+                    <a href="">Conciergerie d'Entreprise</a>
+                    <a href="">Formations</a>
+                </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel fxFlexFill (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="accordion-header">
+                    <mat-panel-title>
+                        <h4>Step Groupe</h4>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-links" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+                    <a href="">Collectivités / Organismes Publics</a>
+                    <a href="">Groupes et PME Industriels</a>
+                    <a href="">Groupes et PME de Services</a>
+                    <a href="">PME et TPE locales</a>
+                    <a href="">Commerces Locaux</a>
+                </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel fxFlexFill (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="accordion-header">
+                    <mat-panel-title>
+                        <h4>STEP-SA</h4>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-links" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="10px">
+                    <a href="">Contactez-nous</a>
+                    <a href="">Presse</a>
+                    <a href="">Mentions Légales</a>
+                    <a href="">Politique de confidentialité</a>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </article>
+</footer>
+
+<div fxLayout="column" fxLayoutAlign="center center" class="copyright">
+    <h6>Copyright © STEP 2021</h6>
+</div>

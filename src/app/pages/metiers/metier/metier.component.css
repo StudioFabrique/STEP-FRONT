@@ -1,0 +1,284 @@
+.container {
+    width: 100%;
+    height: auto;
+}
+
+app-prestations-carousel {
+    width: 80%;
+}
+
+app-header-color-block,
+app-metiers-items-header {
+    width: 100%;
+}
+
+
+/* SECTION 2  */
+
+.section-2 {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.section-2 h3 {
+    color: #140a82;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.mat-card {
+    border-radius: 10px;
+}
+
+.mat-card>:last-child:not(.mat-card-footer) {
+    margin-bottom: 0px;
+}
+
+.mat-content-loop {
+    margin: 0px 20px 0px 20px;
+}
+
+.mat-card-content h4,
+.mat-card-content h3,
+.mat-card-content p {
+    color: white;
+}
+
+.mat-card-content p {
+    font-weight: 600;
+}
+
+.mat-card-content h4 {
+    font-size: 20px;
+}
+
+.mat-card-content button {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.remain-card {
+    background-image: url('../../../../assets/carousel/carousel_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    border: 1px dashed rgb(177, 177, 177);
+    border-radius: 10px;
+}
+
+.remain-card-content {
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+.remain-card .remain-card-content h4,
+.remain-card .remain-card-content h3,
+.remain-card .remain-card-content p {
+    color: #140a82;
+}
+
+.statement {
+    width: 500px;
+    font-size: 14px;
+}
+
+.remain-card .remain-card-content h3 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+    color: #140a82;
+}
+
+.remain-card .remain-card-content h4 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-size: 15px;
+}
+
+.material-icons {
+    color: #140a82;
+    font-size: 50px;
+}
+
+
+/* SECTION 3  */
+
+.section-3 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-3 h3,
+.section-3 p {
+    color: #140a82;
+}
+
+.section-3 h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section-3 p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section-3 button {
+    width: 30%;
+}
+
+app-questions,
+app-metier-details-header {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+app-partners {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .mat-card-content h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* SECTION 2 */
+    .section-2 {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        height: auto;
+    }
+    .section-2 h3 {
+        color: #140a82;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .mat-card {
+        border-radius: 0px;
+    }
+    .mat-card-content {
+        margin: 0px 20px 0px 20px;
+    }
+    .mat-card>:last-child:not(.mat-card-footer) {
+        margin-bottom: 20px;
+    }
+    .mat-card-content h4,
+    .mat-card-content h3,
+    .mat-card-content p {
+        color: white;
+    }
+    .mat-card-content h4 {
+        font-size: 20px;
+    }
+    mat-card-content button {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        width: 180px;
+        height: 50px;
+        border: transparent solid 1px;
+        border-radius: 10px;
+    }
+    /* SECTION 3  */
+    .section-3 {
+        width: 80%;
+    }
+    .section-3 h3,
+    .section-3 p {
+        color: #140a82;
+    }
+    .section-3 h3 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .section-3 p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .section-3 button {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        width: 280px;
+        height: 50px;
+        border: transparent solid 1px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    /* SECTION 4 */
+    .section-4 {
+        width: 100%;
+    }
+    .step-question {
+        font-size: 14px;
+        color: white;
+        width: 50%;
+        background: transparent;
+        border: white 2px solid;
+        border-radius: 10px;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .context {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .context-wrapper-section-4 {
+        margin-top: 100px;
+    }
+    .context-wrapper-section-4 h3 {
+        font-weight: 600;
+        margin: 0;
+    }
+    .context-wrapper-section-4 p {
+        margin-top: 50px;
+        color: #938FC6;
+    }
+    .bg-question {
+        width: 100%;
+        height: 350px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .bg-question img {
+        width: 60%;
+    }
+    app-questions {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 30%;
+    }
+    app-partners {
+        width: 100%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+}

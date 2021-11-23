@@ -1,0 +1,17 @@
+<!-- <app-component-items-header [bgImg]="bgImg" [corner]="corner" [title]="title" [titleBold]="titleBold" [text]="text"></app-component-items-header> -->
+
+<section class="container">
+    <article *ngFor="let article of articles">
+        <app-block icon="{{ article.icon }}" titre="{{ article.titre }}" accroche="{{ article.accroche }}"></app-block>
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+            <img src="{{ article.image }}" alt="" />
+            <p>{{ article.text }}</p>
+        </div>
+    </article>
+</section>
+
+<!-- 
+<app-questions></app-questions>
+
+<app-partners></app-partners> -->

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService } from './services/data.service';
-import { GraphqlService } from './services/graphql.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +6,5 @@ import { GraphqlService } from './services/graphql.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Step eco';
-  constructor(public graphServ:GraphqlService, public dataServ:DataService){
-    this.dataServ.getConfig();
-  }
+  title = 'Step Website';
 }

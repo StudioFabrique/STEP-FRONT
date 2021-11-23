@@ -1,0 +1,165 @@
+.content {
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head img {
+    width: 100px;
+    margin-bottom: 0;
+}
+
+p,
+h3 {
+    color: white;
+}
+
+.card-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-icon h3 {
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.card-icon img {
+    width: 10%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper {
+    width: 33.3333%;
+    height: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+span {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .head {
+        margin-left: 10%;
+    }
+    .card-icon h3 {
+        font-size: 1.2rem;
+    }
+    .card-icon img {
+        width: 10%;
+    }
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-wrapper {
+        width: 80%;
+        height: 200px;
+        padding: 5%;
+    }
+    h3 {
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Rubik', sans-serif;
+    }
+    span {
+        color: white;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .head {
+        margin: auto;
+    }
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-wrapper {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        border: none;
+        border-radius: 0px;
+        padding: 10%;
+        padding-left: 5rem;
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 5rem;
+    }
+    .card-text {
+        padding-right: 10%;
+    }
+}
