@@ -20,7 +20,7 @@ export class RectanglesComponent implements OnInit {
 
   rectangles: Rectangle[] = [
     {'img':'./../../assets/pictos/plus_white.svg', 'text': 'Studio de développement', 'bg':'assets/rectangles/rectangle_2.png'},
-    {'img':'./../../assets/pictos/chat.svg', 'text': 'Centre de formation', 'bg':'assets/rectangles/rectangle_1.png'},
+    {'img':'./../../assets/pictos/chat.svg', 'text': 'Centre de formations', 'bg':'assets/rectangles/rectangle_1.png'},
   ]
 
 }

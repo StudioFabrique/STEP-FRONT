@@ -1,8 +1,10 @@
 section {
     margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -23,9 +25,9 @@ img {
 }
 
 h3 {
-    width: 40%;
+    padding: 0 10% 0 1%;
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     word-wrap: break-word;
 }
 
@@ -36,6 +38,8 @@ h3 {
     article {
         width: 50%;
         height: 20%;
+        border-radius: 0px;
+        margin: 0px;
     }
     h3 {
         width: 50%;
@@ -46,6 +50,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        margin-top: 0px;
+    }
     article {
         width: 100%;
         height: 20%;
@@ -74,7 +82,7 @@ h3 {
 
 @media screen and (max-width: 375px) {
     article {
-        width: 90%;
+        width: 100%;
         height: 20%;
     }
     h3 {

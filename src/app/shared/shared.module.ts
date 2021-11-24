@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { FlexLayoutModule } from '@angular/flex-layout';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 //MODULES
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -85,8 +86,7 @@ const components = [
 ]
 
 const otherModules = [
-  // FlexLayoutModule,
-  SlickCarouselModule,
+  // BrowserAnimationsModule,
   HttpClientModule
 ]
 

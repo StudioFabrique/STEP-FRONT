@@ -45,56 +45,5 @@ export class HeaderComponent implements OnInit {
 
   ];
 
-  swipperConfig = {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    speed: 100,
-    draggable: true,
-    autoplaySpeed: 1000,
-    initialSlide: 0,
-    autoplay: false,
-    arrows: false,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: this.metiers.length,
-          draggable: true,
-          infinite: false,
-
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          variableWidth: true,
-          adaptiveHeight: true
-        }
-      }
-    ]
   }
 
-
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
-
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
-
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
-
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
-
-}

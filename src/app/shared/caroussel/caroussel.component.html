@@ -1,23 +1,29 @@
-<article class="container">
+<section>
+
     <div class="carousel">
+        <ng-container *ngFor="let slide of slides; let i = index" class="slider responsive-slide">
 
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
 
-            <div class="carousel-img-container">
-                <img class="carousel-corner" src="{{ slide.cornerImg }}" alt="{{ slide.title }}">
-                <img class="carousel-img" src="{{ slide.img }} " alt="{{ slide.title }}" />
-            </div>
+            <img *ngIf="i === currentSlide" [src]="slide.image" class="slide" alt="slide.image" @carouselAnimations/>
 
-            <div class="block {{slide.bgColor}}">
-                <div fxFlex="80" class="content">
-                    <h3>{{ slide.title }}</h3>
-                    <h5>{{ slide.text | slice:1:120 }}...</h5>
+            <img *ngIf="i === currentSlide" [src]="slide.cornerImg" class="cornerImg" alt="corner_image" @carouselAnimations>
 
+            <div *ngIf="i === currentSlide" class="container" [style.background-color]="slide.bg">
+                <div class="content" @carouselAnimations>
+                    <h2>{{slide.title}}</h2>
+                    <p>{{slide.text}}</p>
                     <button href="https://www.step-sa.fr/" target="_blank">voir plus</button>
                 </div>
             </div>
+        </ng-container>
 
-        </div>
 
+        <!-- controls -->
+        <button class="control prev" (click)="onPreviousClick()">
+            <span class="arrow left"></span>
+          </button>
+        <button class="control next" (click)="onNextClick()">
+            <span class="arrow right"></span>
+          </button>
     </div>
-</article>
+</section>
