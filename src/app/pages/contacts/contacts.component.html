@@ -1,17 +1,17 @@
-<section fxFlexFill fxLayout="row" fxLayoutAlign="space-around start" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" class="artOne">
+<section fxLayoutAlign.lt-md="center center" class="artOne">
 
-    <article fxFlex="50" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign.lt-md="center start" fxFlexOrder.lt-md="2" class="contact-info">
+    <article class="contact-info">
 
         <div class="txt">
             <h2>Contactez-nous</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iusto!</p>
+            <p>Vous avez une question? N'hisetz pas. Nous pouvons vous aider !</p>
         </div>
 
 
-        <div fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">
+        <div class="form">
 
 
-            <div class="fields" fxFlexFill fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+            <div class="fields">
                 <mat-form-field appearance="outline">
                     <mat-label>Selectionner une option</mat-label>
                     <mat-select disableRipple>
@@ -25,77 +25,72 @@
             </div>
 
 
-            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="10px" fxLayoutGap.xs="1px" class="fields">
+            <div class="fields name">
 
-                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <div class="fields">
                     <mat-label>Nom</mat-label>
-                    <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <input matInput placeholder="votre nom">
                     </mat-form-field>
                 </div>
 
-                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <div class="fields">
                     <mat-label>Prénom</mat-label>
-                    <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <input matInput placeholder="votre prénom">
                     </mat-form-field>
                 </div>
             </div>
 
-            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " fxLayoutGap="10px" fxLayoutGap.xs="1px" class="fields">
+            <div class="fields com">
 
-                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <div class="fields">
                     <mat-label>Adresse mail</mat-label>
-                    <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <input matInput placeholder="votre adresse mail">
                     </mat-form-field>
                 </div>
 
-                <div class="fields" fxFlex="50%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <div class="fields">
                     <mat-label>Téléphone</mat-label>
-                    <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <input matInput placeholder="votre no. de téléphone">
                     </mat-form-field>
                 </div>
             </div>
 
-            <div class="fields" fxFlexFill fxLayout.xs="column" fxLayoutAlign.xs="center start" fxLayout="row" fxLayoutAlignx="start center " class="fields">
+            <div class="fields">
 
-                <div class="fields" fxFlex="100%" fxFlex.gt-xl="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start" class="fields">
+                <div class="fields">
                     <mat-label>Entreprise</mat-label>
-                    <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <input matInput placeholder="votre entreprise">
                     </mat-form-field>
                 </div>
             </div>
 
 
-            <div class="fields" fxFlexFill fxFlex="100%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="center start">
+            <div class="fields">
                 <mat-label>Laissez-nous un message</mat-label>
-                <mat-form-field class="example-full-width" appearance="outline">
+                <mat-form-field appearance="outline">
                     <textarea cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
                 </mat-form-field>
             </div>
 
 
-            <div fxFlexFill fxFlex.xs="100%" class="btn-container">
+            <div class="btn-container">
                 <button href="https://www.step-sa.fr/" target="_blank">
                     <mat-icon><span class="material-icons">message</span></mat-icon>
                     Envoyer
                 </button>
-
-                <p style="font-size: 12px; margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    <br> Mollitia dicta nobis non sed corrupti nemo.</p>
-
             </div>
 
         </div>
 
+
     </article>
 
-    <article fxFlex.xs="100" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutAlign.xs="center center" fxFlexOrder.xs="1" class="photo">
-
-        <img src="../../../assets/img/contact.png" alt="contact-us" />
+    <article class="photo" [ngStyle]="{'background': 'url(' + contactImg + ') no-repeat 0px 0px / cover'}">
 
     </article>
 
@@ -106,7 +101,7 @@
 
 
 
-<section fxFlexfill fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="column" fxLayoutAlign.xs="center center" class="artTwo">
+<section class="artTwo" style="margin-top: 50%;">
 
     <article fxLayout="column" fxLayoutAlign="space-around start" fxLayout.xs="column" fxLayoutAlign.xs="center start " class="aside-left">
         <div class="bg step-green">
