@@ -1,17 +1,22 @@
-<div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.sm="column" fxLayoutAlign.sm="start center" fxLayout.xs="column" fxLayoutAlign.xs="start center">
-    <div class="bg" fxLayout="row" fxLayoutAlign="end end">
-        <img src="{{image}}" alt="" />
-    </div>
+<section>
 
-    <div class="context">
-        <div fxFlex="80" fxLayout="column" fxLayoutAlign="center start" fxLayout="column" fxLayoutAlign.xs="start start" class="context-wrapper">
-            <h3>
-                {{title}}
-                <strong>  {{titleBold}}</strong>
-            </h3>
-            <p>
-                {{text}}
-            </p>
+    <article [ngStyle]="{'background': 'url(' + bg + ') no-repeat 0 0 / cover'}">
+        <div class="content">
+            <div class="content-wrapper">
+
+                <h1>
+                    {{title}}
+                    <strong>  {{titleBold}}</strong>
+                </h1>
+                <p>
+                    {{text}}
+                </p>
+            </div>
         </div>
-    </div>
-</div>
+
+        <div class="corner">
+            <img [src]="cornerImg" alt="" />
+        </div>
+
+    </article>
+</section>
