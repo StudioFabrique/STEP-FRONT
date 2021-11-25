@@ -25,7 +25,7 @@ export class FluxDocComponent implements OnInit {
 
   // -- app-component-items-header --
   title = 'Flux Documentaires';
-  titleBold = "Flux Documentaires";
+  accroche = "Une ingénierie dédiée à chaque projet de numérisation ";
   text = "La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !";
 
   // -- app-prestations-carousel --

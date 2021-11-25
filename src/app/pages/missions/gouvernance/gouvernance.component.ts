@@ -10,7 +10,7 @@ export class GouvernanceComponent implements OnInit {
   bgImg="assets/img/office.jpg"
   corner = "assets/corners/blue_cyan.png"
   title="« Personne n’est inemployable » tel est notre credo!" 
-  titleBold="Une feuille de route ouverte à tous pour garder le cap" 
+  accroche="Une feuille de route ouverte à tous pour garder le cap" 
   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. " 
 
 
