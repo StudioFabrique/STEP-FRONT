@@ -22,6 +22,7 @@ import { fadeIn, fadeOut } from './carousel.animations';
 export class CarousselComponent {
   constructor() {}
 
+
   currentSlide = 0;
 
   slides: Icarousel[] = [
@@ -74,6 +75,7 @@ export class CarousselComponent {
       this.currentSlide
     );
   }
+
 
   // slides = [
   //   {

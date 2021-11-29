@@ -13,15 +13,15 @@ export class ValeursComponent implements OnInit {
   }
 
   img = {
-    valImg: "default",
+    valImg: "/assets/missions/gouv/gouv.png",
     title: "Valeurs",
     alt: "valeurs"
   }
 
   bgImg="assets/img/office.jpg"
-  corner = "assets/corners/blue_cyan.png"
+  corner = "assets/corners/blue_orange.png"
   title = "STEP, la belle histoire"
-  titleBold = "Une histoire qui dure depuis 20 ans"
+  accroche = "Une histoire qui dure depuis 20 ans"
   text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. "
 
   // ARTICLE INTRO TEXT

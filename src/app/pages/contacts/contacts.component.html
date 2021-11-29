@@ -90,7 +90,9 @@
 
     </article>
 
-    <article class="photo" [ngStyle]="{'background': 'url(' + contactImg + ') no-repeat 0px 0px / cover'}">
+    <!-- <article class="photo" [ngStyle]="{'background': 'url(' + contactImg + ') no-repeat 0px 0px / cover'}">    -->
+    <article class="photo">
+        <img [src]="contactImg" alt="">
 
     </article>
 
@@ -101,7 +103,7 @@
 
 
 
-<section class="artTwo" style="margin-top: 50%;">
+<section class="artTwo">
 
     <article fxLayout="column" fxLayoutAlign="space-around start" fxLayout.xs="column" fxLayoutAlign.xs="center start " class="aside-left">
         <div class="bg step-green">

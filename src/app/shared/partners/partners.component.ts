@@ -1,11 +1,11 @@
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-export interface Slide {
+export interface Partners {
   src: string,
   alt: string,
   title: string,
-  rows: number,
-  cols: number
+  lien: string,
+  
 }
 
 
@@ -22,47 +22,69 @@ export class PartnersComponent implements OnInit {
   }
 
 
-  partners = [
+  partners: Partners[] = [
     {
       src:'./assets/partenaires/direccts.png',
       alt:'direccts',
-      // title:'direccts',
+      title:'direccts',
+      lien:"abc"
     },
     {
       src:'./assets/partenaires/pyrenees_atlantiques.png',
       alt:'pyrenees_atlantiques',
-      // title:'pyrenees_atlantiques',
+      title:'pyrenees_atlantiques',
+      lien:"abc"
     },
     {
       src:'./assets/partenaires/eu_sengage.png',
       alt:'eu_sengage',
-      // title:'eu_sengage',
+      title:'eu_sengage',
+      lien:"abc"
     },
     {
       src:'./assets/partenaires/total.png',
       alt:'total',
-      // title:'total',
+      title:'total',
+      lien:"abc"
     },
     {
       src:'./assets/partenaires/pau.png',
       alt:'pau',
-      // title:'pau',
+      title:'pau',
+      lien:"abc"
     },
     {
       src:'./assets/partenaires/nouvelle_aquitaine.png',
       alt:'nouvelle_aquitaine',
-      // title:'nouvelle_aquitaine',
+      title:'nouvelle_aquitaine',
+      lien:"abc"
     },
+    {
+      src:'./assets/partenaires/nouvelle_aquitaine.png',
+      alt:'nouvelle_aquitaine',
+      title:'nouvelle_aquitaine',
+      lien:"abc"
+    },
+   
+    {
+      src:'./assets/partenaires/nouvelle_aquitaine.png',
+      alt:'nouvelle_aquitaine',
+      title:'nouvelle_aquitaine',
+      lien:"abc"
+    },
+   
+   
   ]
 
   swipperConfig = {
+    enabled: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
     draggable: true,
     autoplaySpeed: 1000,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     mobileFirst: true,
 

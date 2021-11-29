@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 //MODULES
@@ -87,6 +87,7 @@ const components = [
 
 const otherModules = [
   // BrowserAnimationsModule,
+  SlickCarouselModule,
   HttpClientModule
 ]
 

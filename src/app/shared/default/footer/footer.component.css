@@ -1,37 +1,70 @@
     footer {
-        margin: auto;
         width: 100%;
         height: 400px;
-        padding: 5%;
+        margin: auto;
         color: white;
+        background-color: #140a82;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
     }
     
     .logo {
-        width: 7rem;
+        width: 10rem;
         margin-bottom: 25px;
     }
     
-    .socials a {
-        display: flex;
+    .socials {
+        display: inline-flex;
+        flex-wrap: nowrap;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
     
-    .socials {
-        width: auto;
+    .socials>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
     }
     
     .social-icon {
-        width: 20px;
+        width: 1.25rem;
     }
     
     .fb {
-        width: 14px;
+        width: 1.5rem;
+    }
+    
+    .cols {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .liens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
     }
     
     h4 {
-        font-size: 16px;
+        font-size: 1.25rem;
         color: white;
     }
     
@@ -39,12 +72,20 @@
         color: white;
         text-decoration: none;
         cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .accordion {
+        display: none;
     }
     
     .copyright {
         height: 100px;
         width: 100%;
         background-color: #0e075c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     h5 {
@@ -54,10 +95,9 @@
     }
     
     h6 {
-        text-align: center;
+        font-size: 1rem;
         color: white;
         font-weight: 600;
-        font-size: 14px;
     }
     
     @media only screen and (min-width: 1024px) {
@@ -72,59 +112,65 @@
             background-color: #0e075c;
             text-align: center;
         }
-        h5 {
-            font-size: 10px;
-        }
-        .tel {
-            width: 140px;
-        }
         h6 {
             text-align: center;
             color: white;
-            font-size: 12px;
-        }
-        .fb {
-            width: 9px;
+            /* font-size: 12px; */
         }
     }
     
     @media only screen and (max-width: 768px) {
+        footer {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .infos {
-            margin-top: 50px;
-        }
-        .copyright {
-            height: 100px;
-            width: 100%;
-            background-color: #0e075c;
-            text-align: center;
-        }
-        h5 {
-            font-size: 20px;
-            font-weight: 400;
-        }
-        .tel {
+            padding-top: 5%;
             width: 100%;
         }
-        h6 {
-            text-align: center;
-            color: white;
-            font-size: 12px;
+        .cols {
+            display: none;
         }
-        .fb {
-            width: 9px;
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        a {
+            margin: 0.3rem;
+            font-size: 0.9rem;
         }
         .accordion {
-            width: 90%;
+            display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
             margin: auto;
         }
-        .mat-accordion {
-            width: 85%;
+        .accordion mat-accordion {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .accordion mat-accordion mat-expansion-panel .accordion-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
         .mat-expansion-panel {
             background-color: transparent;
             border: transparent 0px solid;
             border-bottom: white;
             border-radius: 0px;
+            width: 80%;
         }
         .mat-expansion-panel:not([class*='mat-elevation-z']),
         .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
@@ -139,42 +185,21 @@
          ::ng-deep .accordion-header>.mat-expansion-indicator:after {
             color: white;
         }
+        .copyright {
+            height: 100px;
+            width: 100%;
+            background-color: #0e075c;
+            text-align: center;
+        }
+        h6 {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
     }
     
     @media only screen and (max-width: 425px) {
         .infos {
-            margin-top: 50px;
-        }
-        h6 {
-            font-size: 14px;
-        }
-        .fb {
-            width: 15px;
-        }
-        .accordion {
-            width: 90%;
-            margin: auto;
-        }
-        .mat-accordion {
-            width: 85%;
-        }
-        .mat-expansion-panel {
-            background-color: transparent;
-            border: transparent 0px solid;
-            border-bottom: white;
-            border-radius: 0px;
-        }
-        .mat-expansion-panel:not([class*='mat-elevation-z']),
-        .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
-            background-color: transparent;
-            box-shadow: 0px 1px 0px -2px rgba(219, 217, 217, 0.2), 0px 1px 0px 0px rgba(255, 255, 255, 0.14), 0px 1px 0px 0px rgb(211, 211, 211);
-            border-radius: 0px;
-        }
-        .mat-accordion .mat-expansion-panel:last-of-type {
-            border-bottom-left-radius: 0px !important;
-            border-bottom-right-radius: 0px !important;
-        }
-         ::ng-deep .accordion-header>.mat-expansion-indicator:after {
-            color: white;
+            margin-top: 2rem;
         }
     }

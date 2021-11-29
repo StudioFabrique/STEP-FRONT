@@ -1,8 +1,9 @@
 <section>
 
     <div class="carousel">
-        <ng-container *ngFor="let slide of slides; let i = index" class="slider responsive-slide">
 
+
+        <ng-container *ngFor="let slide of slides; let i = index" class="slider responsive-slide">
 
             <img *ngIf="i === currentSlide" [src]="slide.image" class="slide" alt="slide.image" @carouselAnimations/>
 
@@ -26,4 +27,6 @@
             <span class="arrow right"></span>
           </button>
     </div>
+
+
 </section>
