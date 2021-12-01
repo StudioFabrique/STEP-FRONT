@@ -121,7 +121,7 @@
     
     @media only screen and (max-width: 768px) {
         footer {
-            height: 600px;
+            height: 625px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -149,7 +149,6 @@
             justify-content: center;
             align-items: center;
             width: 80%;
-            margin: auto;
         }
         .accordion mat-accordion {
             width: 100%;

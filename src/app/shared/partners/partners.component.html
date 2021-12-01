@@ -12,7 +12,7 @@
 
 
     <article>
-        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="swipperConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="swiperConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
             <div ngxSlickItem *ngFor="let partner of partners" class="slide swipe">
                 <a href="#">

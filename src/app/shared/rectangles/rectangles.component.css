@@ -10,14 +10,21 @@ section {
 
 article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    width: 50%;
+    width: 100%;
     height: 20%;
+}
+
+.rectangle {
     display: flex;
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    width: 97%;
+    height: 100%;
 }
 
 img {
@@ -27,24 +34,19 @@ img {
 h3 {
     padding: 0 10% 0 1%;
     color: white;
+    text-align: left;
     font-size: 2rem;
     word-wrap: break-word;
 }
 
 @media screen and (max-width: 1024px) {
-    section {
-        flex-direction: column;
-    }
-    article {
-        width: 50%;
-        height: 20%;
+    .rectangle {
         border-radius: 0px;
-        margin: 0px;
+        width: 100%;
     }
     h3 {
         width: 50%;
         word-wrap: normal;
-        font-size: 28px;
         text-align: left;
     }
 }
@@ -53,42 +55,22 @@ h3 {
     section {
         width: 100%;
         margin-top: 0px;
+        flex-direction: column-reverse;
     }
-    article {
+    .rectangle {
+        border-radius: 0px;
         width: 100%;
-        height: 20%;
     }
     h3 {
         width: 50%;
         word-wrap: normal;
-        font-size: 28px;
+        font-size: 1.5rem;
         text-align: left;
     }
 }
 
 @media screen and (max-width: 425px) {
-    article {
-        width: 100%;
-        border-radius: 0px;
-        margin: 0;
-        height: 200px;
-    }
     h3 {
-        width: 50%;
-        font-size: 22px;
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    article {
-        width: 100%;
-        height: 20%;
-    }
-    h3 {
-        width: 40%;
-        word-wrap: break-word;
-        font-size: 15px;
-        text-align: left;
+        font-size: 1.7rem;
     }
 }

@@ -80,7 +80,7 @@ p {
 
 @media only screen and (max-width: 1024px) {
     article {
-        border-radius: 10px;
+        border-radius: 0px;
     }
     .step-question-button {
         font-size: 0.9rem;

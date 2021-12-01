@@ -1,6 +1,6 @@
 [{
         "listTitle": "Formations Courtes",
-        "img": "assets/solutions/formations.jpg",
+        "img": "assets/metiers/formations/formation_1.jpg",
         "title": "Formations Courtes",
         "text": "Initiation au numérique ou spécialisation, des formations courtes",
         "buttonLink": "/metiers/formations/formations-courtes"
@@ -8,7 +8,7 @@
     },
     {
         "listTitle": "Formations Longues",
-        "img": "assets/solutions/formations.jpg",
+        "img": "assets/metiers/formations/formation_1.jpg",
         "title": "Formations Longues",
         "text": "La Fabrique du Numérique Paloise : formation et inclusion numérique",
         "buttonLink": "/metiers/formations/formations-longues"

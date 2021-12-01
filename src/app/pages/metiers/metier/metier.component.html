@@ -1,13 +1,16 @@
-<div class="container" fxFlex fxLayout="column" fxLayoutAlign="center center">
+<section>
     <app-header-color-block [cornerImg]="cornerImg" [title]="title" [titleBold]="titleBold" [text]="text" [bg]="bg"></app-header-color-block>
 
-    <div class="section-2" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="center start">
-        <h3>Decouvrez nos métiers</h3>
+    <article class="article-1">
+        <div id="titre">
+            <h3>Decouvrez nos métiers</h3>
+        </div>
 
         <div class="content">
-            <div fxLayout="row wrap" fxLayoutGap="22px grid" fxLayoutGap.xs="0px grid">
-                <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let content of contents">
-                    <mat-card fxLayoutAlign="center end" style="background-image: url('{{content.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
+            <div class="content-wrapper">
+
+                <div class="content-card" *ngFor="let content of contents">
+                    <mat-card style="background-image: url('{{content.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
                         <mat-card-content class="mat-content-loop">
 
                             <h3>{{ content.title }}</h3>
@@ -18,44 +21,46 @@
                         </mat-card-content>
                     </mat-card>
                 </div>
-                <div fxFlex="auto" fxHide.lt-sm="true">
-                    <mat-card fxflexFill fxFlex fxLayoutAlign="center end " class="remain-card mat-elevation-z0">
-                        <mat-card-content class="remain-card-content" flexLayout="row" fxLayoutAlign="space-around center">
-                            <div fxflexFill fxLayout="column" fxLayoutAlign="space-evenly start" style="height: 75%;">
+
+                <div class="remain-card-container">
+                    <mat-card class="remain-card mat-elevation-z0" style="background-image: url('assets/carousel/carousel_1.png'); background-size: cover; ">
+                        <mat-card-content class="remain-card-content">
+                            <div id="txt">
                                 <h3>Quelles applications pour nos métiers?</h3>
-                                <div class="statement">
+                                <div class="citation">
                                     <p>
-                                        STEP est une entreprise comme les autres, qui se doit d’avoir des résultats pour pérenniser ses actions. Mais nous démontrons jour après jour que l’on peut allier efficacité économique, finalité sociale et responsabilité environnementale.
+                                        " STEP est une entreprise comme les autres, qui se doit d’avoir des résultats pour pérenniser ses actions. Mais nous démontrons jour après jour que l’on peut allier efficacité économique, finalité sociale et responsabilité environnementale "
                                     </p>
                                 </div>
 
-                                <h5>Kenny Bertonazzi, Directeur Dénéral</h5>
+                                <h5>Kenny Bertonazzi, Directeur Général</h5>
+                                <div class="btn-etudes">
+                                    <h4>Découvrez nos cas d'études</h4>
+                                    <span class="material-icons"> arrow_forward </span>
+                                </div>
 
-                                <h4>Découvrez nos cas d'études</h4>
                             </div>
-                            <div fxLayout="column" fxLayoutAlign="end end" style="height: 70%">
-                                <span class="material-icons"> arrow_forward </span>
-                            </div>
+
                         </mat-card-content>
                     </mat-card>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 
-    <div class="section-3" fxLayout="column " fxLayoutAlign.xs="center center " fxLayoutAlign="center start " fxHide.gt-xs="true " fxHide.md="true " fxHide.sm="true ">
+    <article class="article-2" fxLayout="column " fxLayoutAlign.xs="center center " fxLayoutAlign="center start " fxHide.gt-xs="true " fxHide.md="true " fxHide.sm="true ">
         <h3>Quelles applications pour nos métiers?</h3>
         <p>
             STEP est une entreprise comme les autres, qui se doit d’avoir des résultats pour pérenniser ses actions. Mais nous démontrons jour après jour que l’on peut allier efficacité économique, finalité sociale et responsabilité environnementale.
         </p>
-        <h5>Kenny Bertonazzi, Directeur Dénéral</h5>
-        <button href="https://www.step-sa.fr/ " target="_blank " class="step-blue">
+        <h5>Kenny Bertonazzi, Directeur Général</h5>
+        <button href="https://www.step-sa.fr/ " target="_blank " class="step-blue btn-responsive">
       voir plus
     </button>
-    </div>
+    </article>
 
 
     <app-questions></app-questions>
 
     <app-partners></app-partners>
-</div>
+</section>

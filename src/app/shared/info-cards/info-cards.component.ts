@@ -19,7 +19,7 @@ export class InfoCardsComponent implements OnInit {
   constructor() { }
 
   pourcentage = false;
-  // if pourcentage ? " " ! ""
+
 
   ngOnInit(): void {
   }

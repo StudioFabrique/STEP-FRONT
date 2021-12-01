@@ -9,7 +9,7 @@
         <div class="list-container">
             <ul>
                 <li *ngFor="let slide of this.prestationServ.prestationsDetails; let i = index">
-                    <button>
+                    <button (click)="slickModal.slickGoTo(i)">
                         <mat-icon>navigate_next</mat-icon>
                         {{slide.listTitle}}</button>
                 </li>
@@ -18,22 +18,22 @@
         </div>
     </article>
 
-    <article fxLayout="row" fxLayoutAlign="center center" class="container slider-img">
-        <ngx-slick-carousel fxFlex.lt-md="100" class="carousel">
+    <article class="slider-img">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
-            <!-- <div ngxSlickItem *ngFor="let slide of this.prestationServ.prestationsDetails; let i = index" class="slide"> -->
+
             <div ngxSlickItem *ngFor="let slide of this.prestationServ.prestationsDetails; let i = index" class="slide">
 
-                <img src="{{ slide.img }} " alt=" " width="100% " />
+                <img src="{{ slide.img }} " alt="" />
 
-                <div fxLayout="row" fxLayoutAlign="center end" class="block">
+                <div class=" block ">
 
-                    <div class="content">
+                    <div class="content ">
 
                         <h3>{{ slide.title }}</h3>
                         <h5>{{ slide.text }}</h5>
 
-                        <a mat-button [routerLink]="slide.buttonLink" class="btn-carousel step-cyan">voir plus</a>
+                        <a mat-button [routerLink]="slide.buttonLink " class="btn-carousel step-cyan ">voir plus</a>
                     </div>
 
                 </div>

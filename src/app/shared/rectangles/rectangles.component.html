@@ -1,6 +1,9 @@
 <section>
-    <article *ngFor="let item of rectangles" style="background-image: url(' {{item.bg}} ');">
-        <img src="{{item.img}}" alt="">
-        <h3>{{item.text}}</h3>
+    <article *ngFor="let item of rectangles">
+        <div class="rectangle" style="background-image: url(' {{item.bg}} ');">
+
+            <img src="{{item.img}}" alt="">
+            <h3>{{item.text}}</h3>
+        </div>
     </article>
 </section>

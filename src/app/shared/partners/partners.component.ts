@@ -58,33 +58,19 @@ export class PartnersComponent implements OnInit {
       alt:'nouvelle_aquitaine',
       title:'nouvelle_aquitaine',
       lien:"abc"
-    },
-    {
-      src:'./assets/partenaires/nouvelle_aquitaine.png',
-      alt:'nouvelle_aquitaine',
-      title:'nouvelle_aquitaine',
-      lien:"abc"
-    },
-   
-    {
-      src:'./assets/partenaires/nouvelle_aquitaine.png',
-      alt:'nouvelle_aquitaine',
-      title:'nouvelle_aquitaine',
-      lien:"abc"
-    },
-   
+    }
    
   ]
 
-  swipperConfig = {
+  swiperConfig = {
     enabled: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     speed: 500,
     draggable: true,
     autoplaySpeed: 1000,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     mobileFirst: true,
 
@@ -94,29 +80,33 @@ export class PartnersComponent implements OnInit {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          draggable: false,
+          draggable: true,
           infinite: true,
+          autoplaySpeed: 2000,
+          autoplay: true,
+
         }
       },
 
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 1000,
+          autoplaySpeed: 2000,
+          autoplay: true,
           infinite: true,
         }
       },
       {
         breakpoint: 425,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          autoplay: false,
-          autoplaySpeed: 1000
+          autoplay: true,
+          autoplaySpeed: 2000,
+
         }
       }
     ]
