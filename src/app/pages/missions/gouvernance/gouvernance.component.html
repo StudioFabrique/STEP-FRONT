@@ -1,14 +1,34 @@
-<app-component-items-header [bgImg]="bgImg" [corner]="corner" [title]="title" [accroche]="accroche" [text]="text"></app-component-items-header>
+<app-component-items-header [bgImg]="bgImg" [corner]="corner" [title]="title" [accroche]="accroche" [text]="text" [bgColor]="bgColor"></app-component-items-header>
 
 <section>
     <h1>Gouvernance</h1>
-    <article class="intro">
-        <p>{{ gouvernance.p }}</p>
+    <article>
+        <div class="intro-txt">
+            <p>{{ intro.p1 }}</p>
+        </div>
+        <div class="photos">
+            <img src="{{img.gouvImg}}" title="{{img.title}}" alt="{{img.alt}}" />
+        </div>
 
-        <img src="{{ img.img }}" title="{{ img.title }}" alt="{{ img.alt }}" />
 
     </article>
 </section>
+
+
+<section>
+    <article *ngFor="let item of content">
+        <h2>{{ item.headTitle }}</h2>
+        <p>{{ item.bodyText }}</p>
+
+    </article>
+
+    <div class="photos">
+        <img src="{{img.gouvImg_2}}" title="{{img.title}}" alt="{{img.alt}}" />
+    </div>
+
+
+</section>
+
 
 
 

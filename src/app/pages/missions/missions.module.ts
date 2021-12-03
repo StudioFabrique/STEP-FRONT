@@ -7,7 +7,6 @@ import { GouvernanceComponent } from './gouvernance/gouvernance.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
 import { MissionsRoutingModule } from './missions-routing.module';
-// import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
   { path: '', component: MissionsComponent, children: [

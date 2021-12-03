@@ -18,11 +18,12 @@ export class ValeursComponent implements OnInit {
     alt: "valeurs"
   }
 
+  bgColor = "#00B0CC"
   bgImg="assets/img/office.jpg"
   corner = "assets/corners/blue_orange.png"
   title = "STEP, la belle histoire"
   accroche = "Une histoire qui dure depuis 20 ans"
-  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. "
+  text = "Les belles histoires sont celles qui durent. STEP nous le prouve depuis 20 ans, engagée et compétitive, elle n’a pas dit son dernier mot!"
 
   // ARTICLE INTRO TEXT
   intro = 

@@ -18,9 +18,9 @@ export class MissionsComponent implements OnInit {
 
  
   image="../../../assets/corners/white_yellow.png" 
-  title="Découvrez nos " 
-  titleBold="missions" 
-  text="20 ans d’innovation au service de l’inclusion" 
+  title="Découvrez nos missions " 
+  accroche="20 ans d’innovation au service de l’inclusion" 
+  text="STEP depuis deux décennies ne cesse de se réinventer en diversifiant ses activités et ses engagements" 
   bg="../../../assets/missions/mission.jpg"
 
   

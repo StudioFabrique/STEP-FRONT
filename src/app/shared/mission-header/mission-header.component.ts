@@ -18,7 +18,7 @@ export class MissionHeaderComponent implements OnInit {
 
 @Input() image: string = 'default'
 @Input() title: string = 'default'
-@Input() titleBold: string = 'default'
+@Input() accroche: string = 'default'
 @Input() text: string = 'default'
 @Input() bg: string = 'default'
 

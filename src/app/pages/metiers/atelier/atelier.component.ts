@@ -20,9 +20,12 @@ export class AtelierComponent implements OnInit {
 
   bgImg="assets/img/office.jpg"
   corner = "assets/corners/white_orange.png"
-  title="L'Atelier Numérique";
-  titleBold="Un atelier pour lutter contre la fracture numérique !";
-  text="";
+  title="L' Atelier Numérique";
+  accroche="Pour lutter contre la fracture numérique !";
+  text="Des solutions de bon sens : reconditionnement, réemploi du matériel informatique, formations, maintenance, assistance et accompagnement";
+
+
+
 
 
 

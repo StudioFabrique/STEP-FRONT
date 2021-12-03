@@ -1,13 +1,21 @@
-.container {
+section {
     position: relative;
     width: 100%;
     height: 450px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .bg {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .context {
@@ -23,6 +31,7 @@
 .context-wrapper {
     margin: auto;
     height: 100%;
+    width: 60%;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -42,6 +51,10 @@
     width: 60%;
 }
 
+.picto-mobile {
+    display: none;
+}
+
 .txt {
     width: 100%;
 }
@@ -58,40 +71,56 @@ h3 {
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1440px) {
     .container {
         position: relative;
         width: 100%;
-        height: 100%;
     }
     .bg {
         width: 100%;
-        height: 600px;
+        height: 500px;
     }
     .context {
         position: absolute;
         left: 0;
-        width: 100%;
+        width: 80%;
         height: 25%;
         background-color: #00B0CC;
         border-top-right-radius: 200px;
         opacity: 0.90;
     }
     .context-wrapper {
-        margin: auto;
-        height: 100%;
-        margin-left: 25px;
+        width: 80%;
+        margin-left: 50px;
     }
     h3 {
         font-size: 2rem;
         font-weight: 600;
     }
     h5 {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .context {
+        width: 100%;
+    }
+    .context-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 0.8rem;
         padding-top: 1%;
     }
     .picto {
@@ -105,9 +134,12 @@ h5 {
         padding: 5%;
         width: 5rem;
         height: 5rem;
-        background-color: rgb(192, 116, 116);
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         top: 10%;
         right: 5%;
+    }
+    .picto-mobile img {
+        width: 100%;
     }
 }

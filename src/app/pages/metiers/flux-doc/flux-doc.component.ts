@@ -15,41 +15,18 @@ export class FluxDocComponent implements OnInit {
 
   ngOnInit(): void {
     this.prestationServ.getPrestations();
-    //  this.prestationServ.prestationsDetails;
-
-    // this.prestationServ.getPrestations().subscribe((data:any) => {
-    //   this.slides = data
-    //   console.log("here is the data: " , this.slides);
-    // })
   }
 
   // -- app-component-items-header --
+  bgImg="assets/img/office.jpg"
   title = 'Flux Documentaires';
   accroche = "Une ingénierie dédiée à chaque projet de numérisation ";
-  text = "La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !";
+  text = "La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur vos coeurs de métier.";
+  corner = "assets/corners/white_orange.png"
 
-  // -- app-prestations-carousel --
-  // slides= [
-  //   {
-  //     listTitle: "Numérisation",
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Numérisation',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  //   {
-  //     listTitle: 'Traitement de données',
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Traitement de données',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  //   {
-  //     listTitle: 'Editique',
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Editique',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  // ];
 
+
+  // CONTENT
   articles = [
     {
       icon: '/assets/svg/stack.svg',

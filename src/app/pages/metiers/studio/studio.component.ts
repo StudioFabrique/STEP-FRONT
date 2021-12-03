@@ -17,18 +17,22 @@ export class StudioComponent implements OnInit {
     this.prestationServ.getPrestationsStudio();     
   }
 
-  title = 'Des développeurs à votre écoute !';
-  titleBold = "Le Studio";
-  text = "Un studio de développement responsable pour vous accompagner dans tous vos projets de développement web et mobile ";
+  
+  bgImg="assets/img/flux_doc.jpg";
+  corner="assets/corners/orange_white.png";
+  title = 'Studio de Développement';
+  accroche = "Des développeurs à votre écoute !";
+  text = "Un studio de développement responsable pour vous accompagner dans tous vos projets de développement web et mobile";
+
+
 
 
 
   articles = [
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'Studio de Développement ',
-      accroche:
-        'Lancé en 2020, le Studio de Développement vous assiste ',
+      titre: 'Studio lancé en 2020',
+      accroche:'Des technologies pour réduire votre empreinte écologique',
       column: `Lancé en 2020, le Studio de Développement vous assiste dans la mise en place et le développement d’outils, d’applications numériques et de prestations de développement web, en tenant compte des impératifs de développement durable en mettant au service de votre entreprise son ingénierie (informatique, logicielle...).
 
       Ainsi, le Studio développe des outils qui tiennent compte des nouveaux usages informatiques tout en intégrant la nécessité de réduire l’impact écologique du flux numérique. 

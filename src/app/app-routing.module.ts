@@ -7,6 +7,7 @@ import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-lega
 const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: 'accueil', loadChildren: () => import('./pages/accueil/accueil.module').then(m => m.AccueilModule) },
+  { path: 'cas-etudes', loadChildren: () => import('./pages/cas-etudes/cas-etudes.module').then(m => m.CasEtudesModule) },
   { path: 'missions', loadChildren: ()=> import("./pages/missions/missions.module").then(m => m.MissionsModule) },
   { path: 'metiers', loadChildren: ()=> import("./pages/metiers/metiers.module").then(m => m.MetiersModule) },
   { path: 'contact', loadChildren: ()=> import("./pages/contacts/contacts.module").then(m => m.ContactsModule) },

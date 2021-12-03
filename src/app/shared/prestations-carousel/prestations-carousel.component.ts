@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
 
 

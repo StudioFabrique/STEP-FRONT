@@ -16,9 +16,15 @@ export interface Model {
 export class EcoHeaderComponent implements OnInit {
 
 
-  @Input() title: string = 'default'
-  @Input() titleBold: string = 'default'
-  @Input() text: string = 'default'
+
+  @Input() image: string = 'default'
+@Input() title: string = 'default'
+@Input() titleBold: string = 'default'
+@Input() text: string = 'default'
+@Input() bg: string = 'default'
+
+
+
 
   constructor() { }
 

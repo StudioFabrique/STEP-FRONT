@@ -26,7 +26,7 @@ export class InfoCardsComponent implements OnInit {
 
 
   cards: Card[] = [
-    {'content': 'postes d’insertion créés depuis 2001', 'icon':'/assets/svg/stack_white.svg', 'number': 200, 'bg':'step-blue', 'pourcentage': false}, 
+    {'content': 'postes d’insertion créés et accompagnés depuis 2001 sur l’ensemble de nos pôles.', 'icon':'/assets/svg/stack_white.svg', 'number': 200, 'bg':'step-blue', 'pourcentage': false}, 
 
     {'content': 'des personnes trouvent un emploi durable 6 mois après la fin de leur contrat chez STEP ', 'icon':'/assets/svg/stack_white.svg', 'number': 60, 'bg':'step-green', 'pourcentage':true}, 
 

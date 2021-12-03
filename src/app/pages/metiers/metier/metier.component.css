@@ -198,14 +198,43 @@ h5 {
 app-questions,
 app-metier-details-header {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 app-partners {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .content-card {
+        width: 44ch;
+        margin-bottom: 2%;
+    }
+    .mat-card-content h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .remain-card-container {
+        width: 44ch;
+    }
+    .remain-card {
+        width: 100%;
+        height: 550px;
+    }
+    .remain-card-content {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: white;
+    }
+    #txt {
+        height: 60%;
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -340,12 +369,8 @@ app-partners {
     }
     app-questions {
         width: 100%;
-        margin-top: 10%;
-        margin-bottom: 30%;
     }
     app-partners {
         width: 100%;
-        margin-top: 30%;
-        margin-bottom: 10%;
     }
 }

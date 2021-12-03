@@ -13,10 +13,12 @@ export class ComponentItemsHeaderComponent implements OnInit {
   @Input() accroche: string = 'default';
   @Input() text: string = 'default';
   @Input() bgImg: string = 'assets/img/flux_doc.jpg';
+  @Input() bgColor: string = '#00B0CC';
  
 
 
   constructor() { }
   ngOnInit(): void {
+ 
   }
 }

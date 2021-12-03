@@ -1,0 +1,59 @@
+section {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+article {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+h2,
+span,
+p {
+    color: #140a82;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.partenaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-partenaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-partenaire .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.content-partenaire .logo img {
+    width: 80%;
+}
+
+.description {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

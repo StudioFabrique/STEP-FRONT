@@ -15,7 +15,7 @@ import { FormationComponent } from './formation/formation.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 import { StudioComponent } from './studio/studio.component';
 import { ServicePostalComponent } from './service-postal/service-postal.component';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 import { ApplicationsMobilesComponent } from './studio/applications-mobiles/applications-mobiles.component';
 import { ApplicationsWebComponent } from './studio/applications-web/applications-web.component';

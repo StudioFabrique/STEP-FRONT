@@ -44,6 +44,7 @@ import { PrestationsCarouselService } from '../services/prestations-carousel.ser
 import { HttpClientModule } from '@angular/common/http';
 import { MetiersDetailsHeadersService } from '../services/metiers-details-headers.service';
 import { CounterDirective } from '../directives/counter.directive';
+import { ArticlesService } from '../services/articles.service';
 
 
 const materialsModules = [
@@ -108,7 +109,8 @@ const otherModules = [
   ],
   providers: [
     PrestationsCarouselService,
-    MetiersDetailsHeadersService
+    MetiersDetailsHeadersService,
+    ArticlesService,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

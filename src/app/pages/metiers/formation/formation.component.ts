@@ -17,19 +17,19 @@ export class FormationComponent implements OnInit {
     this.prestationServ.getPrestationsFormations();     
   }
 
-
-  title = '';
-  titleBold = "Formations";
-  text = "La formation contre la fracture numérique";
+  corner="assets/corners/orange_white.png";
+  bgImg="assets/img/flux_doc.jpg";
+  title = "Formations";
+  accroche = "La formation contre la fracture numérique";
+  text = "Depuis 2017, nous proposons des formations courtes ou longues pour acquérir ou bien développer ses compétences";
 
 
 
   articles = [
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'Formations ',
-      accroche:
-        'Une formation au numérique pour tous',
+      titre: 'Une formation au numérique pour tous',
+      accroche:'Le pari de la reconversion et de la diversité',
       column: `En tant qu’entreprise responsable et engagée, nous sommes sensibles aux tendances de fond qui traversent la société, et même en alerte. Adapter nos missions et nos supports d’inclusion à ces grandes lignes qui bougent sans cesse, c’est notre credo. 
 
       Depuis 2017, nous avons ainsi élargi notre mission d’insertion en misant sur la formation pour donner à chacun, qu’importe son parcours, son expérience, ou sa formation d’origine, l’opportunité de pouvoir se former dans le secteur incontournable du numérique et avons créé un centre de formation baptisé « La Fabrique du Numérique Paloise ». Y cohabitent en bonne intelligence des personnes en insertion, des alternants et des apprenants. De cette manière, notre école contribue à la réduction de la fracture numérique en Nouvelle Aquitaine. `,
