@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
   selector: 'app-partenaires',
@@ -6,6 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./partenaires.component.css']
 })
 export class PartenairesComponent implements OnInit {
+
+  partenaire: IPartenaires[] = [];
+
+  constructor(public partenairesServ: PartenairesService) { }
+
+  ngOnInit(): void {
+    this.partenairesServ.getPartenaires();
+  }
+
 
 
   bgColor = "#00B0CC"
@@ -17,62 +28,13 @@ export class PartenairesComponent implements OnInit {
 
 
 
-  intro  = {
-    "p1": `Parmi les clients de STEP, on trouve de nombreuses références de grands groupes, de collectivités locales et également de PME/PMI : `
+  intro_1  = {
+    "p": `Parmi les clients de STEP, on trouve de nombreuses références de grands groupes, de collectivités locales et également de PME/PMI : `
 
   }
 
-
-  partenaires = [
-    {
-      partLogo: "/assets/partenaires/direccts.png",
-      alt: "partenaires",
-      title: "DIRECCTS",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "/assets/partenaires/eu_sengage.png",
-      alt: "partenaires",
-      title: "EU S'engage",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "/assets/partenaires/eu.png",
-      alt: "partenaires",
-      title: "Union Européen",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "/assets/partenaires/nouvelle_aquitaine.png",
-      alt: "partenaires",
-      title: "Nouvelle Aquitaine",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "/assets/partenaires/pau.png",
-      alt: "partenaires",
-      title: "Ville de Pau",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "/assets/partenaires/pyrenees_atlantiques.png",
-      alt: "partenaires",
-      title: "Pyrenées Atlantiques",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-    {
-      partLogo: "src/assets/partenaires/total.png",
-      alt: "partenaires",
-      title: "TOTAL",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde aperiam culpa porro id voluptatibus."
-    },
-  
-
-  ]
-
-  constructor() { }
-
-  ngOnInit(): void {
+  intro_2  = {
+    "p": `Pour mener à bien sa mission, STEP s’appuie sur un certain nombre de partenaires parmi lesquels : `
   }
 
 }

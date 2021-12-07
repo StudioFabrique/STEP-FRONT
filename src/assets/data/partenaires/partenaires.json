@@ -1,0 +1,91 @@
+[{
+        "partLogo": "/assets/partenaires/total.png",
+        "title": "TOTAL",
+        "description": "Numérisation de dossiers techniques"
+    },
+    {
+        "partLogo": "/assets/partenaires/terega.png",
+        "title": "TEREGA",
+        "description": "Développement informatique, éditique, services de conciergerie"
+    },
+    {
+        "partLogo": "/assets/partenaires/euralis.png",
+        "title": "Euralis",
+        "description": "Numérisation et traitement de données"
+    },
+
+    {
+        "partLogo": "/assets/partenaires/bearn_habitat.png",
+        "title": "Pau Béarn Habitat ",
+        "description": "Numérisation, gestion du courrier"
+    },
+
+    {
+        "partLogo": "/assets/partenaires/aubert_duval.png",
+        "title": "Groupe Aubert & Duval",
+        "description": "Editique"
+    },
+    {
+        "partLogo": "/assets/partenaires/caisse_depots.png",
+        "title": "Caisse des Dépôts",
+        "description": "Numérisation"
+    },
+    {
+        "partLogo": "",
+        "title": "E-santé ",
+        "description": "Numérisation et éditique"
+    },
+
+    {
+        "partLogo": "",
+        "title": "FASTT",
+        "description": "Numérisation et éditique"
+    },
+
+
+    {
+        "partLogo": "/assets/partenaires/pole_emploi.png",
+        "title": "Pôle Emploi"
+
+    },
+    {
+        "partLogo": "",
+        "title": "Mission Locale"
+
+    },
+    {
+        "partLogo": "/assets/partenaires/cap.png",
+        "title": "Cap Emploi"
+
+    },
+    {
+        "partLogo": "/assets/partenaires/plie.png",
+        "title": "Plan Local Insertion & Emploi"
+
+    },
+    {
+        "partLogo": "/assets/partenaires/pau.png",
+        "title": "Communauté d’Agglomération Pau Béarn Pyrénées"
+    },
+
+    {
+        "partLogo": "/assets/partenaires/ministre.png",
+        "title": "Ministère du travail, de l’emploi et de l’insertion"
+    },
+
+    {
+        "partLogo": "/assets/partenaires/nouvelle_aquitaine.png",
+        "title": "Nouvelle Aquitaine"
+    },
+    {
+        "partLogo": "/assets/partenaires/eu_sengage.png",
+        "title": "Le Fonds Social Européen"
+    },
+    {
+        "partLogo": "/assets/partenaires/pyrenees_atlantiques.png",
+        "title": "Département des Pyrénées-Atlantiques"
+    }
+
+
+
+]

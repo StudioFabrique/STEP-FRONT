@@ -4,17 +4,37 @@
     <h1>Partenaires</h1>
     <article>
         <div class="intro-txt">
-            <p>{{ intro.p1 }}</p>
+            <p>{{ intro_1.p }}</p>
         </div>
-        <div class="partenaire" *ngFor="let partenaire of partenaires">
-            <div class="content-partenaire">
+        <div class="partenaire__container" *ngFor="let partenaire of partenairesServ.partenaires">
+            <div class="content-partenaire__description" *ngIf="partenaire.description">
                 <div class="logo">
-                    <img src="{{ partenaire.partLogo }}" title="{{ partenaire.title }}" alt="{{ partenaire.alt }}" />
+                    <img src="{{ partenaire.partLogo }}" title="{{ partenaire.title }}" alt="{{ partenaire.title }}" />
                 </div>
 
                 <div class="description">
                     <h2>{{ partenaire.title }}</h2>
                     <p>{{ partenaire.description }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="intro-txt">
+            <p>{{ intro_2.p }}</p>
+        </div>
+        <div class="wrapper">
+
+            <div class="partenaire" *ngFor="let partenaire of partenairesServ.partenaires">
+                <div class="content-partenaire" *ngIf="!partenaire.description">
+                    <div class="logo">
+                        <img src="{{ partenaire.partLogo }}" title="{{ partenaire.title }}" alt="{{ partenaire.title }}" />
+                    </div>
+
+                    <div class="description__txt">
+                        <h2>{{ partenaire.title }}</h2>
+                    </div>
                 </div>
             </div>
         </div>
