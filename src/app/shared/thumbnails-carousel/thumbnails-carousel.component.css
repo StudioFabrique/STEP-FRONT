@@ -1,0 +1,19 @@
+section {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.client-thumbnails {
+    margin-top: 1%;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbs .slide {
+    margin: 0.7rem;
+}

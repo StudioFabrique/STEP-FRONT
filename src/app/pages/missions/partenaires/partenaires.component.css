@@ -66,6 +66,9 @@ span {
     text-align: center;
 }
 
+
+/* // 2nd article */
+
 .wrapper {
     width: 100%;
     display: inline-flex;
@@ -81,7 +84,7 @@ span {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .content-partenaire {
@@ -117,4 +120,16 @@ span {
     padding-right: 5%;
     font-size: 1rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .partenaire {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .partenaire {
+        width: 100%;
+    }
 }

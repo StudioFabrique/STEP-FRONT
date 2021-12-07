@@ -8,73 +8,82 @@ import { PrestationsCarouselService } from 'src/app/services/prestations-carouse
   styleUrls: ['./flux-doc.component.css'],
 })
 export class FluxDocComponent implements OnInit {
-  
   slides: IprestationsCarousel[] = [];
 
-  constructor(public prestationServ: PrestationsCarouselService) {}
+  constructor(public prestationServ: PrestationsCarouselService) { }
 
   ngOnInit(): void {
     this.prestationServ.getPrestations();
   }
 
   // -- app-component-items-header --
-  bgImg="assets/img/office.jpg"
+  bgImg = 'assets/img/office.jpg';
   title = 'Flux Documentaires';
-  accroche = "Une ingénierie dédiée à chaque projet de numérisation ";
-  text = "La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur vos coeurs de métier.";
-  corner = "assets/corners/white_orange.png"
-
-
+  accroche = 'Une ingénierie dédiée à chaque projet de numérisation ';
+  text =
+    'La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur vos coeurs de métier.';
+  corner = 'assets/corners/white_orange.png';
 
   // CONTENT
-  articles = [
+
+  article_1 = [
+   
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'Flux documentaires ',
+      titre: 'structuration de tout type documents',
       accroche:
         'La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !',
       column: `La numérisation est notre activité phare
       avec un plateau de 600m2 pour l’accueillir. De l’audit des flux documentaires à la gestion complète de  processus d’affaires, nous traitons, la numérisation hauts volumes et la structuration de tout type documents (courriers entrants, dossiers techniques et administratifs A4/A3, hors formats, livres anciens, haute définition, sans contact, photographies, microfilms…) : tout est possible ! `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: `Nos services vous permettent de partager votre information avec souplesse, d’accéder en simultané à vos données numérisées, de maîtriser le flux de vos documents (papier ou électroniques), d’en avoir une traçabilité et d’en sécuriser les accès.
+    }
+  ];
 
-Cela vous permet d’améliorer votre productivité et de vous concentrer sur votre cœur de métier en capitalisant sur les actifs immatériels de votre structure. 
-
-POINTS FORTS :
-- Accès simultanés sécurisés à  l’information (en intranet ou extranet)
-- Réduction importante des temps de recherche
-- Sauvegarde de vos données essentielles en cas de sinistre par exemple, sans interruption de votre activité
-- Préservation de la mémoire de votre entreprise
-
-La numérisation de dossiers techniques pour TOTAL fait partie de nos activités récurrentes. Depuis 2001, nous accompagnons le groupe dans la numérisation et la structuration de données complexes et très hétérogènes, ce qui représente des volumes de plusieurs de milliers de documents.
-
-De 2010 à 2013, nous avons également accompagné la Caisse des Dépôts et Consignations dans un projet industriel ambitieux :  la numérisation d’une grande partie de son fonds de dossiers de gestion, lui permettant d’anticiper les demandes de liquidation des dossiers retraite tout en optimisant ses espaces de stockage. Au total plus de sept millions d’images traitées !
-
-Nous accompagnons depuis notre création des services d’archives de plusieurs départements pour la numérisation de leur fonds patrimoniaux tant sous la forme de registres reliés, de cartes ou de micro formes.
-
-Avec des équipes présentes sur site et une organisation dédiée de plus de 25 personnes, nous avons pu faire la démonstration de notre capacité à accompagner de grands projets.
-
-Le service Flux Documentaires de STEP, c’est 11 personnes : 6 opérateurs, 4 coordinateurs d’activités et 1 responsable de pôle à votre service.`,
-    },
-
+  article_2 = [
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'Une ingénierie dédiée',
-      // titre: 'Une ingénierie dédiée à chaque projet de numérisation',
-      accroche:
-        'Un expert de la capture d’image sur des supports très variés à votre service',
-      column: `Expert de la capture d’image sur des supports très variés (dossiers de gestion ou techniques, microformes, plans & cartes, documents patrimoniaux…), STEP a développé également une forte expertise dans la gestion de projets et le traitement de données de flux documentaires.
-      Nous adoptons nos work flow de production, développés en interne, à chaque type de production, aussi bien sur des projets à plusieurs millions de vues que pour quelques milliers, afin d’assurer une traçabilité totale des flux et de s’assurer de métriques performantes en termes de qualité.`,
+      titre: 'Une ingénierie dédiée à chaque projet ',
+      accroche: 'STEP expert de la capture d’image et de la numérisation ',
+      column: `Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
+
+Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs immatériels.`,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: `
-  
-Les images et données produites sont restituées dans tous les formats possibles afin de pouvoir être directement intégrés dans les logiciels métiers ou systèmes d’information de nos clients. Les échanges de données sont réalisés via des échanges sécurisés (Ligne Sécurisée, protocole CFT, plateforme de transfert de données STEP cryptée…).
-  
-Nous sommes également en mesure de vous proposer des solutions de gestion, d’hébergement et d’accès sécurisés à vos données via des interfaces web robustes et adaptées à vos besoins.
-  
-Selon les projets, nous développons en interne des applications adaptées à nos opérations de numérisation, notamment pour traiter des documents aux formats variés nécessitant le recours à différentes machines pour les traiter et pouvoir réunir sur le même fichier numérique cette diversité de formats, tout en garantissant un véritable contrôle qualité permettant de vérifier qu’aucune donnée n’a été oubliée.
-  
-En misant sur la sauvegarde de vos données via nos services de numérisation, vous misez sur le long terme. Ainsi en cas de sinistre ou d’imprévu, vous préservez votre activité, vous contrôlez et limitez l’accès à vos données numériques et valorisez les actifs immatériels de votre entreprise, en en conservant la mémoire (plans, dossiers techniques, études, rapports… ).`,
+    },
+  ]
+  article_3 = [{
+    
+      icon: '/assets/svg/stack.svg',
+      titre: 'Des prestations adaptées à vos projets !',
+      accroche:
+        'NUMEO, une offre intégrée de numérisation standard',
+      column: `
+      Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
+      Simple mais efficace dans son concept, Numéo est une offre « tout en un ».
+      Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs mmatériels.
+      `,
+      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+     
+    
+  }]
+  soustitres = [
+    {
+      soustitre: 'Expresso Cloud pour gérer votre correspondance numérique',
+      text: ` Notre partenaire/filiale DIS installée à Bidart a développé Expresso Cloud, un produit de Gestion Électronique des Correspondances, distribué notamment auprès de collectivités. Grâce à celui-ci vous gérez, triez vos courriers, en contrôlez la diffusion, et y répondez en y associant la possibilité de viser et de signer électroniquement.`,
+    },
+    {
+      soustitre: ` EOS, le connecteur magique !`,
+      text: `Un connecteur vous offre la possibilité d’orienter vos flux d’impression vers nous.  
+STEP Eos est notre solution d’impression de courriers déportée. Nous nous occupons directement de l’impression, de la mise sous pli, de l’affranchissement et jusqu’au  dépôt poste. De cette manière vous libérez votre organisation et vous réalisez des économies sur vos consommables, tout en accédant à des tarifs d’affranchissement avantageux.
+Notre solution Eos s’adapte à vos différents services : administratif et financier, achats, ressources humaines, commercial…
+      `,
+    },
+    {
+      soustitre: `STEP Eos, le suivi de vos expéditions`,
+      text: `STEP Eos offre le suivi de vos expéditions par service, par délai et par période au travers d’indicateurs préétablis.`,
+    },
+    {
+      soustitre: `Tarifs : nous consulter`,
+      text: '',
     },
   ];
 }

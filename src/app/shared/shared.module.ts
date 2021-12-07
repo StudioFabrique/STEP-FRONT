@@ -45,6 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MetiersDetailsHeadersService } from '../services/metiers-details-headers.service';
 import { CounterDirective } from '../directives/counter.directive';
 import { ArticlesService } from '../services/articles.service';
+import { ThumbnailsCarouselComponent } from './thumbnails-carousel/thumbnails-carousel.component';
+import { ThumbscarouselService } from '../services/thumbscarousel.service';
 
 
 const materialsModules = [
@@ -84,6 +86,7 @@ const components = [
   SolutionSliderComponent,
   FooterComponent,
   NavbarComponent,
+  ThumbnailsCarouselComponent,
 ]
 
 const otherModules = [
@@ -111,6 +114,7 @@ const otherModules = [
     PrestationsCarouselService,
     MetiersDetailsHeadersService,
     ArticlesService,
+    ThumbscarouselService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })
