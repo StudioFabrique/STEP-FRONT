@@ -1,1 +1,57 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+        <div>
+            <h3>Hébergement </h3>
+            <p>De nombreux clients nous confient l’hébergement de leurs données une fois numérisées et traitées. Nous les mettons à l’abri en administrant nos serveurs dans des data centers sécurisés qui garantissent de hauts niveaux de disponibilité et
+                de sécurité. </p>
+        </div>
+
+        <div>
+            <h3>Sites internet </h3>
+            <p>Le studio vous propose une conception agile pour la création de votre site internet. Une dimension méthodologique forte fruit de notre longue expérience vous garantit le succès des développements comprenant : une étude du positionnement et
+                l’élaboration de votre cahier des charges en toute concertation (benchmark, analyse de la concurrence, image) ; une ou des maquettes interactives (aspects graphiques, ergonomiques et d'usages) ; la production et la scénarisation de contenus
+                (textes, médias) ; une conception et des développements tenant compte de paramètres environnementaux.
+            </p>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+
+
+        <div>
+            <h3>SaaS : prêt pour le cloud ? </h3>
+            <p>Tous les grands acteurs ont migré leur solutions sur le Web. Vous pouvez le faire, nous pouvons vous y accompagner. Penser en mode SaaS (« Software as a Service » ou en français : « logiciel en tant que service » ), c’est la garantie d'accéder
+                à un marché élargi et mature en adoptant une des solutions logicielles applicative hébergée dans le cloud gérée par un fournisseur de service. Nos développeurs ont été formés au développement de ces applications et ces logiciels autant
+                que des outils de communication. Nous pouvons vous accompagner pour étudier vos besoins, vous aider dans vos choix technologiques les mieux adaptés.
+            </p>
+        </div>
+
+        <div>
+            <h3>PoC / MVP </h3>
+            <p>
+                Un doute sur un produit, un projet, une faisabilité technique ? Nos développeurs sont formés et rompus aux expérimentations hétérogènes que ce soit de l'électronique embarquée, du Cloud, de la reconnaissance faciale ou du machine learning. Nous saurons
+                trouver, identifier et tester vos besoins pour valider avec vous les solutions techniques les mieux adaptées. Pas de chapelles, juste de l'efficacité. Si la preuve de concept est validée (PoC) nous pourrons développer un produit minimal
+                à tester sur vos marchés (MVP).
+            </p>
+        </div>
+
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>

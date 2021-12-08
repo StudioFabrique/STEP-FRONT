@@ -1,1 +1,82 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+
+        <div>
+
+
+            <h3>Nos formations courtes : vous rendre autonomes</h3>
+
+            <p>
+                Nous vous accompagnons dans la transformation numérique de vos métiers par des modules courts de spécialisation de 3 à 5 jours -chacun se forme à son rythme et selon ses besoins - (E-commerce, Web marketing, Wordpress…) et nous vous sensibilisons à un
+                numérique plus respectueux de l’environnement. Créer et gérer le Facebook de votre entreprise
+            </p>
+            <p>
+                Les réseaux sociaux peuvent être une vitrine de votre savoir-faire et de votre activité, encore faut-il en connaître les codes. Alternative moins onéreuse qu’un site internet et plus souple, nous vous proposons de vous aider à créer et gérer le FB de
+                votre structure.
+            </p>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+        <div>
+
+            <h3>Elaborer votre stratégie marketing digitale</h3>
+            <p>
+                Nous vous aidons à élaborer une véritable stratégie digitale avant de passer à l’action en vous donnant des outils pour mieux cibler et détailler vos objectifs en lien avec vos ressources, tout en y associant un plan d’actions et un planning.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Créer et administrer votre site avec Wordpress</h3>
+            <p>
+                Un site internet est un outil de communication indispensable pour le développement commercial d’une entreprise. Sa création nécessite du temps, des moyens financiers et humains. Nous vous accompagnons dans la création et la gestion de votre site sans
+                que cela ne soit une usine à gaz.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Améliorer le référencement de votre site Internet</h3>
+            <p>
+                Développer un site internet ne suffit pas, maîtriser son bon positionnement sur les moteurs de recherche est indispensable. Bon nombre d’entreprises ou d’organisations n’ont pas le temps de travailler le référencement de leur site, ou en ignorent la nécessité.
+
+
+            </p>
+            <p>C’est pourtant le meilleur chemin numérique pour conduire des visiteurs vers vous, soit de potentiels clients. Nous vous proposons une formation courte pour valoriser votre site et votre activité en vous aidant à améliorer le référencement
+                de votre outil de travail. </p>
+
+        </div>
+
+        <div>
+            <h3>
+                En savoir plus sur le site web de la
+                <a href="https://www.fabriquenumerique.fr/" target="blank">Fabrique Numérique Paloise</a>
+            </h3>
+
+        </div>
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>

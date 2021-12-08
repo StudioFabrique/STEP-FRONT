@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({
   selector: 'app-livraison',
@@ -7,14 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LivraisonComponent implements OnInit {
 
-  constructor() { }
+  constructor(public thumbsServ: ThumbscarouselService) { }
 
   ngOnInit(): void {
+    this.thumbsServ.getImgThumbsLivraison();
   }
-
-
-
-
 
   bgImg="assets/img/office.jpg"
   corner = "assets/corners/white_orange.png"
@@ -38,27 +36,26 @@ export class LivraisonComponent implements OnInit {
       icon: '/assets/svg/stack.svg',
       titre: "Livraison dernier kilomètre (flux transporteur)",
       accroche:'Services aux transporteurs',
-      column: `Nous distribuons vos colis et palettes en vélo cargo à assistance électronique. Nous acheminons ainsi sur le dernier kilomètres les palettes et colis de SCHENKER, BMV, HEPNER, CHRONOPOST…`,
+      column: ``,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: ``,
+      text: `Nous distribuons vos colis et palettes en vélo cargo à assistance électronique. Nous acheminons ainsi sur le dernier kilomètres les palettes et colis de SCHENKER, BMV, HEPNER, CHRONOPOST…`,
     },
     {
       icon: '/assets/svg/stack.svg',
       titre: "Livraison de proximité ",
       accroche:'Services aux commerçants',
-      column: `Nous préparons vos commandes et les expédions ou les livrons et assurons tant le stockage que la petite logistique urbaine. Nous réalisons ainsi la livraison pour le Drive fermier ou de fleurs pour le compte de nombreux fleuristes. Une nouvelle alternative pour des livraisons parfois faites par des taxis ! 
-      `,
+      column: ``,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: ``,
+      text: `Nous préparons vos commandes et les expédions ou les livrons et assurons tant le stockage que la petite logistique urbaine. Nous réalisons ainsi la livraison pour le Drive fermier ou de fleurs pour le compte de nombreux fleuristes. Une nouvelle alternative pour des livraisons parfois faites par des taxis !`,
     },
 
     {
       icon: '/assets/svg/stack.svg',
       titre: "Collecte des biodéchets pour la restauration",
       accroche:'Service aux restaurateurs et services de restauration collective',
-      column: `Nous étudions le développement d’un service de collecte et de valorisation des biodéchets pour les cafetiers et restaurateurs palois, toujours avec les Triporteurs Palois. Un service qui pourrait également séduire les collectivités, les services de restauration collective.`,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: ``,
+      column: ``,
+      image: '',
+      text: `Nous étudions le développement d’un service de collecte et de valorisation des biodéchets pour les cafetiers et restaurateurs palois, toujours avec les Triporteurs Palois. Un service qui pourrait également séduire les collectivités, les services de restauration collective.`,
     },
   ];
 }

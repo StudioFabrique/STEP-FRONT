@@ -25,9 +25,6 @@ export class StudioComponent implements OnInit {
   text = "Un studio de développement responsable pour vous accompagner dans tous vos projets de développement web et mobile";
 
 
-
-
-
   articles = [
     {
       icon: '/assets/svg/stack.svg',
@@ -46,11 +43,11 @@ export class StudioComponent implements OnInit {
     {
       icon: '/assets/svg/stack.svg',
       titre: 'Vos sites sur mesure ',
-      accroche:'',
+      accroche:'Réalisations basée sur une conception agile',
       column: `La réalisation de sites internet est notre point fort, basée sur une conception agile. Nous travaillons avec vous de l'étude du positionnement et l’élaboration de votre cahier des charges à la conception et au développement de votre site web en passant par la création de maquettes et la production ou scénarisation de vos contenus si nécessaire. 
       Nous vous accompagnons dans toutes les étapes de votre projet.
       
-      Nous développons également des applications mobiles et web. N’hésitez pas à nous contacter pour nous exposer vos besoins.
+ Nous développons également des applications mobiles et web. N’hésitez pas à nous contacter pour nous exposer vos besoins.
       `,
       
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',

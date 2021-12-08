@@ -20,6 +20,8 @@ article {
 p {
     color: #140A82;
     font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
 .column {

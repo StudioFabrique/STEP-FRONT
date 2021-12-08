@@ -1,1 +1,46 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+
+        <div>
+
+
+            <h3>PRESTATIONS SUSPENDUES, SOLIDARITÉ EN BONUS !</h3>
+
+            <p>
+                Se poser la question du réemploi dans le domaine du numérique, c’est à la fois une question pratique et technique, c’est aussi une question éthique et politique sur les usages et l’usure et au-delà qui interroge notre capacité à donner une ou non une
+                seconde chance aux choses et aux gens.
+            </p>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+        <div>
+
+            <p>
+                Inspirées du “caffè sospeso” ou café suspendu de tradition italienne, qui consiste à payer deux cafés au lieu d’un, pour offrir le second à une personne démunie ou dans le besoin, nos prestations suspendues sont construites sur le même modèle. Client
+                ou entreprise volontaire offre une prestation de maintenance de son choix à une association qui pourra en bénéficier directement ou en faire bénéficier un ou plusieurs de ses membres.
+
+            </p>
+
+        </div>
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>

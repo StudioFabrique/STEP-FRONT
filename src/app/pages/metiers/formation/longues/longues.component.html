@@ -1,1 +1,58 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+
+        <div>
+
+
+
+            <p>
+                Avec la Fabrique du Numérique, nous souhaitons accompagner la transformation et la formation digitale des entreprises du territoire, donner aux apprenants et notamment ceux issus de la diversité, l’opportunité d’inscrire durablement leur projet professionnel
+                dans des métiers en demande, participer à l’effort d’un accès plein et entier à sa citoyenneté par la maîtrise de l’environnement numérique.
+
+            </p>
+            <h3>Ce pôle d’activité emploie 15 personnes à temps complet</h3>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+        <div>
+
+            <h3>Les parcours certifiants longs de l’école :</h3>
+            <ul>
+                <li>Développeur web, accessible sans prérequis, Bac+2 en formation continue (l’enseignement est gratuit et co-financé par le Fonds Social Européen, la région Nouvelle-Aquitaine et la SHEM (filiale d’ENGIE).
+                </li>
+                <li>Licence en alternance sur 18 mois avec une spécialisation technique </li>
+                <li>Technicien système et réseau en alternance.</li>
+                <li>Technicien supérieur système et réseau, Bac +2 en alternance.</li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h3>
+                En savoir plus sur le site web de la
+                <a href="https://www.fabriquenumerique.fr/" target="blank">Fabrique Numérique Paloise</a>
+            </h3>
+
+        </div>
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>

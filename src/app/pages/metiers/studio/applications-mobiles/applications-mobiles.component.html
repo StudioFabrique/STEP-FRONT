@@ -1,1 +1,25 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+
+    </article>
+</section>

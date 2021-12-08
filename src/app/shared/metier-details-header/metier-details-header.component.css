@@ -31,7 +31,7 @@ section {
 .context-wrapper {
     margin: auto;
     height: 100%;
-    width: 60%;
+    width: 70%;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -71,7 +71,7 @@ h3 {
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -99,6 +99,17 @@ h5 {
     }
     h3 {
         font-size: 2rem;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 1.25rem;
+        padding-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h3 {
+        font-size: 1.75rem;
         font-weight: 600;
     }
     h5 {

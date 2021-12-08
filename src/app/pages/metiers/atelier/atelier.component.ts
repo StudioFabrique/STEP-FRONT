@@ -32,19 +32,15 @@ export class AtelierComponent implements OnInit {
   articles = [
     {
       icon: '/assets/svg/stack.svg',
-      titre: "Atelier Numérique",
+      titre: "Maintenance et assistance informatique",
      
-      accroche:' ',
+      accroche:'Accompagnement, conseils et dépannage',
       column: `Conscients des impacts environnementaux du numérique et du renouvellement accéléré des matériels informatiques, nous avons créé l’Atelier numérique qui propose des solutions de bon sens pour lutter contre la fracture numérique. Soit des prestations de maintenance et d’assistance informatique, mais également le reconditionnement et le recyclage de matériels informatiques offerts par des entreprises partenaires. 
 
      
       `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: `
-      //Blockquote a ajouter
-      Conscients des impacts environnementaux du numérique et du renouvellement accéléré des matériels informatiques, nous avons créé l’Atelier numérique qui propose des solutions de bon sens pour lutter contre la fracture numérique. Soit des prestations de maintenance et d’assistance informatique, mais également le reconditionnement et le recyclage de matériels informatiques offerts par des entreprises partenaires. 
-      Gérald Abbadie, responsable pôle formation & responsable technique Studio de Développement et Atelier Numérique
-      `,
+      text: '',
     },
    
   ];

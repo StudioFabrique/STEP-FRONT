@@ -1,1 +1,48 @@
 <app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+
+        <div>
+
+            <p>Recycler, reconditionner pour augmenter de plusieurs années la durée de vie d’un ordinateur ou d’un smartphone, c’est diviser par autant d’années leurs impacts écologiques. Pourquoi ne pas le faire ?
+            </p>
+
+            <p>
+                Se poser la question du réemploi dans le domaine du numérique, c’est à la fois une question pratique et technique, c’est aussi une question éthique et politique sur les usages et l’usure et au-delà qui interroge notre capacité à donner une ou non une
+                seconde chance aux choses et aux gens.
+            </p>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+
+        <div>
+            <h3>Responsabilité et solidarité</h3>
+            <p>Les études le montrent, la durée d’utilisation d’un ordinateur ou d'un téléphone portable est bien trop courte. Entre 2 à 5 ans maximum. Les impacts de cette volatilité ne sont pas anodins. De nombreux matériels stockés dans des placards qu’on
+                ne recycle pas, ou qu’on jette et qui augmentent le nombre de déchets informatiques. Un renouvellement trop rapide qui engendre un cercle vicieux.
+            </p>
+            <p>
+                Le calcul est pourtant simple, pour un ordinateur portable, augmenter sa durée de vie et son utilisation de un an c'est diminuer son impact écologique de 30 à 50% et les effets bénéfiques peuvent aller très vite dans ce sens. Nous avons donc décidé d’agir
+                pour réduire ces impacts en développant le reconditionnement de matériels informatiques. Nous les offrons à des associations au service de personnes démunies. Alors n’hésitez pas à nous contacter si vous avez du matériel informatique qui
+                ne sert plus !
+            </p>
+        </div>
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>

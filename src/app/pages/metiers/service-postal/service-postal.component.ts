@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({
   selector: 'app-service-postal',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicePostalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public thumbsServ: ThumbscarouselService) { }
 
   ngOnInit(): void {
+    this.thumbsServ.getImgThumbsPoste();
   }
 
 
@@ -36,20 +38,6 @@ Nous distribuons du courrier simple, proposons notre service de courrier recomma
 Soit une gamme de prestations identiques à celles du service postal historique avec un engagement fort de qualité et de suivi, et des prix plus compétitifs. 
       `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
-      text: `
-Nos services et avantages:
-  - Délai de distribution en J+1 garanti-Distribution sur présentation d'un justificatif d'identité.
-  - Jusqu'à 55% d'économie sur l'envoi d'un recommandé.
-  - Distribution de vos campagnes de communication.
-  - Distribution de mailings adressés sur notre zone de distribution-Distribution toute boite de vos mailings non adressés-Distribution réalisée en J+4 ou J+7.
-  - Avantages -De 5% à 42% d'économies réalisées sur votre budget postal.
-  -Facturation mensuelle détaillée de votre consommation-Plus besoin d'affranchir et de peser votre courrier.
-
-
-  Près de 100 000 courriers par an sont pris en charge par STEP depuis 2012 pour le compte d’une trentaine de clients. Parmi ceux-ci, on trouve la Caisse Primaire d’Assurance Maladie de Pau, Pau Béarn Habitat, le Greffe du Tribunal de Commerce, des notaires, lycées..., l’Elan Béarnais, Hélioparc, la Mairie de Pau… Des économies de 10 à 40 % réalisées selon les entreprises !
-
-
-      `,
     },
    
   ];
