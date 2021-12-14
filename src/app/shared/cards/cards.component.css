@@ -21,7 +21,7 @@ section {
     margin-bottom: 0;
 }
 
-h1 {
+h3 {
     font-size: 30px;
 }
 
@@ -102,14 +102,17 @@ h3 {
         border-bottom: #E8E7F3 solid 3px;
         border-radius: 0px;
     }
+    .head {
+        width: 100%;
+    }
     .card-wrapper:nth-child(1) {
         border-top: #E8E7F3 solid 3px;
     }
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
-    h3 {
-        font-size: 20px;
+    h2 {
+        font-size: 1.3rem;
     }
     h3,
     p,
@@ -117,7 +120,7 @@ h3 {
         margin-right: 10%;
         margin-left: 10%;
     }
-    img {
-        padding-left: 60%;
+    .card-icon img {
+        padding-left: 2rem;
     }
 }

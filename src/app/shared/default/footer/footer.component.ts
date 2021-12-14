@@ -86,6 +86,10 @@ export class FooterComponent implements OnInit {
       {
         title:"Conciergerie d'Entreprise",
         link: "/metiers/conciergerie"
-      },    
+      },  
+      {
+        title:"Formations",
+        link: "/metiers/formations"
+      },     
   ];
 }

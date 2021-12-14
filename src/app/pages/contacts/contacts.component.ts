@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() { }
+  partenaires: IPartenaires[] = []
+
+
+  constructor(public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
+
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
   contactImg = "../../../assets/img/contact.png"

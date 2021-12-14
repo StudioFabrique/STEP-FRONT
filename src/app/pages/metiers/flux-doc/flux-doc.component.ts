@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { IprestationsCarousel } from 'src/app/interfaces/iprestations-carousel';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
 
 @Component({
@@ -8,12 +10,23 @@ import { PrestationsCarouselService } from 'src/app/services/prestations-carouse
   styleUrls: ['./flux-doc.component.css'],
 })
 export class FluxDocComponent implements OnInit {
-  slides: IprestationsCarousel[] = [];
 
-  constructor(public prestationServ: PrestationsCarouselService) { }
+  slides: IprestationsCarousel[] = [];
+  partenaires: IPartenaires[] = []
+
+
+  constructor(public prestationServ: PrestationsCarouselService, public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
     this.prestationServ.getPrestations();
+
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
   // -- app-component-items-header --

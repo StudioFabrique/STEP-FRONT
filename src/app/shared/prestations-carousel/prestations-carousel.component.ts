@@ -15,36 +15,6 @@ export class PrestationsCarouselComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // @Input() listTitle: string = "default"
-  // @Input() img: string = "default"
-  // @Input() title: string = "default"
-  // @Input() text: string = "default"
-
-  // slides= [
-  //   {
-  //     listTitle: "Numérisation",
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Numérisation',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  //   {
-  //     listTitle: 'Traitement de données',
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Traitement de données',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  //   {
-  //     listTitle: 'Editique',
-  //     img: '../../../assets/solutions/formations.jpg',
-  //     title: 'Editique',
-  //     text: 'Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion',
-  //   },
-  // ];
-
-
-
-
-
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,

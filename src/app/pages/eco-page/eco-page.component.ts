@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
   selector: 'app-eco-page',
@@ -7,7 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EcoPageComponent implements OnInit {
 
-  constructor() { }
+  partenaires: IPartenaires[] = []
+
+
+  constructor(public partenaireServ: PartenairesService) { }
 
   bg="/assets/missions/mission.jpg";
   image="/assets/corners/white_yellow.png";
@@ -28,6 +33,13 @@ Au-delà, nous offrons, dès que possible, des formations aux publics éloignés
 
 
   ngOnInit(): void {
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 }

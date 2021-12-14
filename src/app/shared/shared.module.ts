@@ -47,6 +47,7 @@ import { CounterDirective } from '../directives/counter.directive';
 import { ArticlesService } from '../services/articles.service';
 import { ThumbnailsCarouselComponent } from './thumbnails-carousel/thumbnails-carousel.component';
 import { ThumbscarouselService } from '../services/thumbscarousel.service';
+import { ClientsComponent } from './clients/clients.component';
 
 
 const materialsModules = [
@@ -67,6 +68,7 @@ const materialsModules = [
 ];
 
 const components = [
+  ClientsComponent,
   BlockComponent,
   CardsComponent,
   CarousselComponent,

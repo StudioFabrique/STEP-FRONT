@@ -6,15 +6,15 @@
         <div class="intro-txt">
             <p>{{ intro_1.p }}</p>
         </div>
-        <div class="partenaire__container" *ngFor="let partenaire of partenairesServ.partenaires">
-            <div class="content-partenaire__description" *ngIf="partenaire.description">
+        <div class="partenaire__container" *ngFor="let client of clients">
+            <div class="content-partenaire__description" *ngIf="client.description">
                 <div class="logo">
-                    <img src="{{ partenaire.partLogo }}" title="{{ partenaire.title }}" alt="{{ partenaire.title }}" />
+                    <img src="{{ client.logo }}" title="{{ client.title }}" alt="{{ client.title }}" />
                 </div>
 
                 <div class="description">
-                    <h2>{{ partenaire.title }}</h2>
-                    <p>{{ partenaire.description }}</p>
+                    <h2>{{ client.title }}</h2>
+                    <p>{{ client.description }}</p>
                 </div>
             </div>
         </div>
@@ -26,10 +26,10 @@
         </div>
         <div class="wrapper">
 
-            <div class="partenaire" *ngFor="let partenaire of partenairesServ.partenaires">
-                <div class="content-partenaire" *ngIf="!partenaire.description">
+            <div class="partenaire" *ngFor="let partenaire of partenaires">
+                <div class="content-partenaire">
                     <div class="logo">
-                        <img src="{{ partenaire.partLogo }}" title="{{ partenaire.title }}" alt="{{ partenaire.title }}" />
+                        <img [src]="partenaire.src" [title]="partenaire.title " [alt]=" partenaire.alt" />
                     </div>
 
                     <div class="description__txt">

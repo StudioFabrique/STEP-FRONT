@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({
@@ -8,10 +10,22 @@ import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 })
 export class LivraisonComponent implements OnInit {
 
-  constructor(public thumbsServ: ThumbscarouselService) { }
+  partenaires: IPartenaires[] = [];
+
+
+  constructor(public thumbsServ: ThumbscarouselService,  public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
     this.thumbsServ.getImgThumbsLivraison();
+
+
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
   bgImg="assets/img/office.jpg"

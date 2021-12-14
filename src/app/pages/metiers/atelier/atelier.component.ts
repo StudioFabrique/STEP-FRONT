@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { IprestationsCarousel } from 'src/app/interfaces/iprestations-carousel';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 import { PrestationsCarouselService } from 'src/app/services/prestations-carousel.service';
 
 @Component({
@@ -9,12 +11,23 @@ import { PrestationsCarouselService } from 'src/app/services/prestations-carouse
 })
 export class AtelierComponent implements OnInit {
 
-  slides: IprestationsCarousel[] = []
+  slides: IprestationsCarousel[] = [];
+  partenaires: IPartenaires[] = []
 
-  constructor(public prestationServ: PrestationsCarouselService) { }
+
+  constructor(public prestationServ: PrestationsCarouselService, public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
-    this.prestationServ.getPrestationsAtelier()
+    this.prestationServ.getPrestationsAtelier();
+
+
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 

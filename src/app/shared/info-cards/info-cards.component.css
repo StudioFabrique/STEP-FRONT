@@ -19,6 +19,8 @@ section {
 .head img {
     width: 100px;
     margin-bottom: 0;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 p,
@@ -151,6 +153,11 @@ p {
 @media only screen and (max-width: 425px) {
     .head {
         margin: auto;
+        width: 100%;
+    }
+    .head img {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
     }
     article {
         width: 100%;

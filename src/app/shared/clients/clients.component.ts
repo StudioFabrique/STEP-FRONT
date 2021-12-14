@@ -1,23 +1,25 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { IClients } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
 
 
-
 @Component({
-  selector: 'app-partners',
-  templateUrl: './partners.component.html',
-  styleUrls: ['./partners.component.css']
+  selector: 'app-clients',
+  templateUrl: './clients.component.html',
+  styleUrls: ['./clients.component.css']
 })
-export class PartnersComponent implements OnInit {
+export class ClientsComponent implements OnInit {
 
-  @Input() partenaires!: IPartenaires[];
 
-  constructor( public partenaireServ: PartenairesService) { }
+  @Input() clients!: IClients[]
 
-  ngOnInit() {
-   
+
+  constructor(public clientServ: PartenairesService) { }
+
+  ngOnInit(): void {
+    
   }
+  
 
 
 

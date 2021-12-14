@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({
@@ -9,11 +11,25 @@ import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 })
 export class MaterielReemploiComponent implements OnInit {
 
-  constructor(public metierDetailsHeadersServ:MetiersDetailsHeadersService, public thumbsServ: ThumbscarouselService) { }
+  partenaires: IPartenaires[] = [];
+
+
+  constructor(
+    public metierDetailsHeadersServ:MetiersDetailsHeadersService, 
+    public thumbsServ: ThumbscarouselService,
+    public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
     this.metierDetailsHeadersServ.getMateriels();
     this.thumbsServ.getImgThumbsRecondition();
+
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 

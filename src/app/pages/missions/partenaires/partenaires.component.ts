@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { combineLatest, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { IClients, IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
@@ -9,12 +11,21 @@ import { PartenairesService } from 'src/app/services/partenaires.service';
 })
 export class PartenairesComponent implements OnInit {
 
-  partenaire: IPartenaires[] = [];
+  clients: IClients[] = [];
+  partenaires: IPartenaires[] = [];
 
-  constructor(public partenairesServ: PartenairesService) { }
+  constructor(public clientServ: PartenairesService, public partenaireServ: PartenairesService) { }
 
   ngOnInit(): void {
-    this.partenairesServ.getPartenaires();
+    this.clientServ.getClients$()
+    .pipe(switchMap((clients) => combineLatest([of(clients), this.partenaireServ.getPartenaires$()])))
+    .subscribe(
+      ([clients, partenaires]) => {
+        this.clients = clients;
+        this.partenaires = partenaires;
+        console.log(clients, partenaires);
+      }
+    );
   }
 
 

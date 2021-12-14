@@ -2,7 +2,7 @@
 
     <div class=" title">
 
-        <h2>Nos Partenaires</h2>
+        <h2>Ils nous font confiance</h2>
         <div class="arrows">
             <mat-icon>west</mat-icon>
             <mat-icon>east</mat-icon>
@@ -14,10 +14,8 @@
     <article>
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="swiperConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
-            <div ngxSlickItem *ngFor="let partner of partenaires" class="slide swipe">
-                <a href="{{partner.lien}}">
-                    <img src="{{ partner.src }}" alt="{{ partner.alt }}">
-                </a>
+            <div ngxSlickItem *ngFor="let client of clients" class="slide swipe">
+                <img *ngIf="client.description" [src]="client.logo" [alt]="client.title">
             </div>
         </ngx-slick-carousel>
     </article>
