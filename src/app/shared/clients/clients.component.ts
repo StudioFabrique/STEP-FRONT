@@ -20,9 +20,6 @@ export class ClientsComponent implements OnInit {
     
   }
   
-
-
-
   swiperConfig = {
     enabled: true,
     slidesToShow: 2,

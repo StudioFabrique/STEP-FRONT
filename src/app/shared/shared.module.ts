@@ -48,6 +48,7 @@ import { ArticlesService } from '../services/articles.service';
 import { ThumbnailsCarouselComponent } from './thumbnails-carousel/thumbnails-carousel.component';
 import { ThumbscarouselService } from '../services/thumbscarousel.service';
 import { ClientsComponent } from './clients/clients.component';
+import { SliderAccueilComponent } from './slider-accueil/slider-accueil.component';
 
 
 const materialsModules = [
@@ -68,6 +69,7 @@ const materialsModules = [
 ];
 
 const components = [
+  SliderAccueilComponent,
   ClientsComponent,
   BlockComponent,
   CardsComponent,

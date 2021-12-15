@@ -1,0 +1,26 @@
+<section>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+
+            <div class="carousel-img-container">
+                <img class="carousel-corner" src="{{ slide.cornerImg }}" alt="{{ slide.title }}">
+                <img class="carousel-img" src="{{ slide.img }} " alt="{{ slide.title }}" />
+            </div>
+
+            <div class="block {{slide.bgColor}}">
+                <div class="content">
+                    <div class="txt">
+                        <h3>{{ slide.title }}</h3>
+                        <h5>{{ slide.text | slice:0:130 }}...</h5>
+                    </div>
+                    <div class="btn">
+                        <button [routerLink]="slide.link" target="_blank">voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </ngx-slick-carousel>
+</section>

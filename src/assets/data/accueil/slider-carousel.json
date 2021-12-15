@@ -1,0 +1,34 @@
+[{
+        "cornerImg": "../../../assets/corners/blue_green.png",
+        "img": "../../../assets/carousel/carousel_1.png",
+        "title": "La 1 règle de la frugalité numérique",
+        "text": "sit amet consectetur adipisicing elit. Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem harum minus molestiae.",
+        "bgColor": "step-blue",
+        "link": ""
+    },
+
+    {
+        "cornerImg": "../../../assets/corners/white_orange.png",
+        "img": "../../../assets/carousel/carousel_2.png",
+        "title": "Lutter contre la fracture numérique",
+        "text": "Conscients des impacts environnementaux du numérique et du renouvellement accéléré des matériels informatiques, nous avons créé l’Atelier numérique qui propose des solutions de bon sens pour lutter contre la fracture numérique. ",
+        "bgColor": "step-green",
+        "link": "/metiers/atelier-numerique"
+    },
+    {
+        "cornerImg": "../../../assets/corners/blue_cyan.png",
+        "img": "../../../assets/carousel/carousel_3.png",
+        "title": "Les 3 règles de la frugalité numérique",
+        "text": "here is my text thqt will turn over the world & Nesciunt ea odit ullam cumque voluptates, aspernatur cupiditate exercitationem harum minus molestiae.",
+        "bgColor": "step-yellow",
+        "link": ""
+    },
+    {
+        "cornerImg": "../../../assets/corners/orange_white.png",
+        "img": "../../../assets/carousel/carousel_5.png",
+        "title": "Améliorer le quotidien des salariés",
+        "text": "Faciliter la vie, alléger cette fameuse charge mentale, pour être plus serein professionnellement, retrouver du temps pour soi, pour les autres. Mais aussi rendre plus fluide l'organisation de l'entreprise. Comment allier tout cela et plus encore ? ",
+        "bgColor": "step-cyan",
+        "link": ""
+    }
+]

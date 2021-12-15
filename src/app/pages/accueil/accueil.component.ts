@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IClients, IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { ISliderAccueil } from 'src/app/interfaces/islider-accueil';
 import { PartenairesService } from 'src/app/services/partenaires.service';
+import { SliderAccueilService } from 'src/app/services/slider-accueil.service';
 
 @Component({
   selector: 'app-accueil',
@@ -9,10 +11,12 @@ import { PartenairesService } from 'src/app/services/partenaires.service';
 })
 export class AccueilComponent implements OnInit {
 
-  partenaires: IPartenaires[] = []
-  clients: IClients[] = []
+  partenaires: IPartenaires[] = [];
+  clients: IClients[] = [];
+  slides: ISliderAccueil[] = [];
 
-  constructor(public partenaireServ: PartenairesService, public clientServ: PartenairesService) { }
+  constructor(public partenaireServ: PartenairesService, public clientServ: PartenairesService,
+    public slideAccueilServ: SliderAccueilService) { }
 
   ngOnInit(): void {
     // this.partenaireServ.getPartenaires();
@@ -31,6 +35,14 @@ export class AccueilComponent implements OnInit {
         
       }
     )
+
+    this.slideAccueilServ.getSliderAccueil$().subscribe(res => {
+      this.slides = res;
+      console.log("slider", res);
+      
+    })
+
+
   }
 
   

@@ -1,0 +1,273 @@
+section {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.slide {
+    height: 450px;
+    position: relative;
+}
+
+.carousel-img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 20%;
+    height: auto;
+}
+
+.carousel-img {
+    width: 90%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.block {
+    position: absolute;
+    width: 36%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    opacity: 1;
+}
+
+.content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content .txt {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content .btn {
+    height: 25%;
+    width: 100%;
+}
+
+h3,
+h5 {
+    color: white;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+button {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 180px;
+    background: transparent;
+    height: 60px;
+    border: white solid 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-corner {
+        height: 200px;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        height: 650px;
+    }
+    .slide {
+        height: 100%;
+        position: relative;
+    }
+    .carousel-img-container {
+        display: flex;
+        justify-content: center
+    }
+    .carousel-img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    .block {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: auto;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    }
+    .carousel-corner {
+        position: absolute;
+        bottom: 40%;
+        right: 0;
+        max-width: 20%;
+        height: auto;
+    }
+    .content {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        height: 100%;
+    }
+    .content .txt {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+    }
+    .content .btn {
+        height: 35%;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.4rem;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    h5 {
+        margin-top: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    button {
+        font-size: 14px;
+        width: 140px;
+        height: 60px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    section {
+        height: 800px;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    /* .slide {
+        height: 100vh;
+    } */
+    .carousel-img {
+        height: 800px;
+    }
+    .carousel-corner {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        max-width: 40%;
+    }
+    .block {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: auto;
+        padding-top: 20px;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+    }
+    .content {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .content .txt {
+        height: 40%;
+        justify-content: center;
+    }
+    .content .btn {
+        height: 25%;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    h5 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    button {
+        font-size: 14px;
+        width: 160px;
+        height: 60px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .slide,
+    .slick-list {
+        height: 100%;
+    }
+    img {
+        height: 100vh;
+    }
+    .carousel-corner {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        max-width: 50%;
+    }
+    .block {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: auto;
+        padding-top: 20px;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+    }
+    .content {
+        margin: auto;
+    }
+    h3 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
