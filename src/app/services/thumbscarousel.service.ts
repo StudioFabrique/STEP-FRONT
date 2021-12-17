@@ -70,7 +70,7 @@ export class ThumbscarouselService {
 
 
   getImgThumbsFormationsCourtes(){
-    this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-formations-courtes.json').subscribe((data:any) => {
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-formations-courtes.json').subscribe((data:any) => {
       this.slidesThmbs = data;
       console.log("my carousel",this.slidesThmbs);
       
@@ -79,7 +79,15 @@ export class ThumbscarouselService {
 
 
   getImgThumbsFormationsLongues(){
-    this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-formations-longues.json').subscribe((data:any) => {
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-formations-longues.json').subscribe((data:any) => {
+      this.slidesThmbs = data;
+      console.log("my carousel",this.slidesThmbs);
+      
+    })
+  }
+
+  getImgThumbsInclusion(){
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-inclusion.json').subscribe((data:any) => {
       this.slidesThmbs = data;
       console.log("my carousel",this.slidesThmbs);
       
@@ -87,7 +95,7 @@ export class ThumbscarouselService {
   }
 
   getImgThumbsLivraison(){
-    this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-livraison.json').subscribe((data:any) => {
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-livraison.json').subscribe((data:any) => {
       this.slidesThmbs = data;
       console.log("my carousel",this.slidesThmbs);
       
@@ -95,7 +103,7 @@ export class ThumbscarouselService {
   }
 
   getImgThumbsPoste(){
-    this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-poste.json').subscribe((data:any) => {
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-poste.json').subscribe((data:any) => {
       this.slidesThmbs = data;
       console.log("my carousel",this.slidesThmbs);
       
@@ -103,7 +111,7 @@ export class ThumbscarouselService {
   }
 
   getImgThumbsConciergerie(){
-    this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-conciergerie.json').subscribe((data:any) => {
+    this.thumbsServ.get('/assets/data/carouselThumbs/thumbs-conciergerie.json').subscribe((data:any) => {
       this.slidesThmbs = data;
       console.log("my carousel",this.slidesThmbs);
       

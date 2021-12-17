@@ -13,7 +13,7 @@ export class ArticlesService {
 
 
   getArticle(){
-    return this.httpServArticles.get('http://localhost:4200/assets/data/articles/article.json');
+    return this.httpServArticles.get('/assets/data/articles/article.json');
     
   }
 }

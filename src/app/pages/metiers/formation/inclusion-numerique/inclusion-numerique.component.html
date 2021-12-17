@@ -1,0 +1,82 @@
+<app-metier-details-header></app-metier-details-header>
+
+
+<section class="container">
+    <article *ngFor="let article of articles">
+
+
+        <div class="content">
+            <p class="column">{{ article.column }}</p>
+
+            <img src="{{ article.image }}" alt="" />
+        </div>
+
+
+        <div>
+
+
+            <h3>Actions d’inclusion numérique : </h3>
+
+            <p>
+                Nous menons des actions d’inclusion numérique et de formation pour toutes celles et ceux qui sont éloignés (fracture sociale, milieu rural…) des outils numériques :
+            </p>
+            <ul>
+                <li>Préparation et certification aux fondamentaux numériques, comme le PIX.</li>
+
+                <li>
+                    Actions de médiation numérique auprès des bénéficiaires de structures partenaires : MJC, centres sociaux.
+                </li>
+                <li>
+                    Formations digitales
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/eye.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/leaf_blue.svg" alt=""></div>
+            <div class="box"><img src="/assets/svg/stack.svg" alt=""></div>
+        </div>
+
+        <p>
+            Le <a href="pix.fr">PIX</a> est un outil d’auto-évaluation de ses compétences numériques. Utilisé dans les établissements scolaires, il s'adresse aussi bien aux demandeurs d'emploi cherchant à valoriser leurs connaissances pour leur futur
+            métier qu’aux collaborateurs de votre entreprise pour un nécessaire état des lieux de leur culture et leurs savoir-faire numériques.
+        </p>
+
+        <p>
+            Nous avons élaboré un plan de formation sur plusieurs niveaux permettant d'accompagner les publics dans leur préparation au PIX, depuis les débutants jusqu'aux confirmés.
+        </p>
+        <div>
+
+            <h3>Des conseillers numériques pour vous accompagner</h3>
+            <p>
+                13 millions de Français sont éloignés du numérique, l'État forme des conseillers pour développer des actions de médiation sur l’ensemble du territoire.
+
+            </p>
+
+            <p>
+                STEP porte 2 conseillers numériques France Service chargés de faire de la médiation numérique sur les usages numériques auprès des bénéficiaires ou du public accueillis au sein de structures partenaires sur le territoire (Missions Locales, Centres Sociaux,
+                tissu associatif…) de la ville de Pau.
+
+            </p>
+
+            <p>
+
+                Les conseillers vous aident à mieux communiquer avec vos proches, à mieux naviguer sur le web pour vos recherches d’emploi, ou pour que vous puissiez mieux accompagner vos enfants...
+
+            </p>
+
+        </div>
+
+
+        <app-thumbnails-carousel></app-thumbnails-carousel>
+    </article>
+</section>
+
+
+
+<app-questions></app-questions>
+
+
+<app-partners [partenaires]="partenaires"></app-partners>

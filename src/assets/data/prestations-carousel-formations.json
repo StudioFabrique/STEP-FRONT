@@ -13,5 +13,14 @@
         "text": "La Fabrique du Numérique Paloise : formation et inclusion numérique",
         "buttonLink": "/metiers/formations/formations-longues"
 
+    },
+
+    {
+        "listTitle": "Inclusion Numérique",
+        "img": "assets/metiers/formations/formation_1.jpg",
+        "title": "Inclusion Numérique",
+        "text": "Accompagnement pour lutter contre la fracture numérique",
+        "buttonLink": "/metiers/formations/inclusion-numerique"
+
     }
 ]

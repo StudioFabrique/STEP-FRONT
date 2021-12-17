@@ -29,6 +29,10 @@ section {
     align-items: flex-start;
 }
 
+.swipe {
+    display: none;
+}
+
 .title-container {
     padding: 5% 10% 5% 10%;
 }
@@ -61,7 +65,7 @@ ul li button {
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2rem;
     border: none;
     border-radius: 0;
 }
@@ -73,7 +77,6 @@ p {
 li {
     list-style: none;
     font-size: 1.2rem;
-    padding-left: 5%;
     padding-left: 5%;
     margin: 0.8rem;
     cursor: pointer;
@@ -144,6 +147,8 @@ img {
     height: 100%;
     top: 0;
     z-index: 99;
+    background-color: #00000059;
+    border-radius: 18px;
 }
 
 .content {
@@ -162,10 +167,6 @@ span {
     margin: 0;
 }
 
-span.mat-button-wrapper {
-    color: white;
-}
-
 h3 {
     font-size: 20px;
     padding-bottom: 5%;
@@ -176,6 +177,7 @@ h5 {
 }
 
 .btn-carousel {
+    color: white;
     font-weight: 600;
     font-size: 18px;
     width: 60%;
@@ -188,9 +190,16 @@ h5 {
 }
 
 @media only screen and (max-width: 1440px) {
-    .container {
+    .slider-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: auto;
         width: 40%;
+    }
+    ul li button {
+        font-size: 1rem;
     }
 }
 
@@ -204,7 +213,6 @@ h5 {
         height: 100%;
     }
     .block {
-        width: 260px;
         height: 100%;
     }
     h3 {
@@ -217,39 +225,22 @@ h5 {
 
 @media only screen and (max-width: 768px) {
     section {
-        height: 450px;
+        width: 100%;
+        margin-bottom: 0%;
     }
-    .container {
+    .slider-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: auto;
         width: 40%;
     }
-    .slick-slider {
-        box-shadow: 15px 10px 0px #E8E7F3;
-    }
-    .slide,
-    .slick-list {
-        height: 100%;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
+    ul li button {
         font-size: 1rem;
     }
-    h5 {
-        font-size: 0.8rem;
-    }
-    p {
-        font-size: 0.9rem;
-    }
     li {
-        font-size: 1.2rem;
-        margin: 0.1rem;
-        padding: 5px 20px 5px 10px;
-    }
-    ul li button {
-        width: 110%;
-        height: 40px;
+        padding-left: 1%;
     }
 }
 
@@ -275,9 +266,20 @@ h5 {
         display: none;
     }
     .list-container {
-        padding: 5%;
+        display: none;
+    }
+    .title-container {
+        padding: 5% 10% 0% 10%;
     }
     .container {
+        margin: auto;
+        width: 100%;
+    }
+    .slider-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: auto;
         width: 100%;
     }
@@ -319,5 +321,15 @@ h5 {
         border-radius: 10px;
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+    .swipe {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .swipe h4 {
+        color: white;
+    }
+    .swipe .arrows mat-icon {
+        color: white;
     }
 }

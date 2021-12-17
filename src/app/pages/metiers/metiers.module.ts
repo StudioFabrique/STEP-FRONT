@@ -27,6 +27,7 @@ import { TraitementDonneesComponent } from './flux-doc/traitement-donnees/traite
 import { EditiqueComponent } from './flux-doc/editique/editique.component';
 import { CourtesComponent } from './formation/courtes/courtes.component';
 import { LonguesComponent } from './formation/longues/longues.component';
+import { InclusionNumeriqueComponent } from './formation/inclusion-numerique/inclusion-numerique.component';
 
 const routes: Routes = [
   { path: '', component: MetiersComponent }
@@ -51,7 +52,8 @@ const routes: Routes = [
     AssistanceComponent,
     MetierComponent,
     CourtesComponent,
-    LonguesComponent
+    LonguesComponent,
+    InclusionNumeriqueComponent
   ],
   imports: [
     // FlexLayoutModule,

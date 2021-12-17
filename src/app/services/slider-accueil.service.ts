@@ -13,7 +13,7 @@ export class SliderAccueilService {
   constructor(private sliderAccueilServ: HttpClient) { }
 
   getSliderAccueil$(): Observable<ISliderAccueil[]>{
-    return this.sliderAccueilServ.get<ISliderAccueil[]>('http://localhost:4200/assets/data/accueil/slider-carousel.json');
+    return this.sliderAccueilServ.get<ISliderAccueil[]>('/assets/data/accueil/slider-carousel.json');
   }
 
 }

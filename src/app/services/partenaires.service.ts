@@ -14,10 +14,10 @@ export class PartenairesService {
   constructor(private httpServicePartenaires: HttpClient) { }
 
   getPartenaires$(): Observable<IPartenaires[]>{
-    return this.httpServicePartenaires.get<IPartenaires[]>('http://localhost:4200/assets/data/partenaires/partenaires.json');
+    return this.httpServicePartenaires.get<IPartenaires[]>('/assets/data/partenaires/partenaires.json');
   }
 
   getClients$(): Observable<IClients[]> {
-    return this.httpServicePartenaires.get<IClients[]>('http://localhost:4200/assets/data/partenaires/clients.json');
+    return this.httpServicePartenaires.get<IClients[]>('/assets/data/partenaires/clients.json');
   }
 }

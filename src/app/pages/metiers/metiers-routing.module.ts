@@ -12,6 +12,7 @@ import { TraitementDonneesComponent } from './flux-doc/traitement-donnees/traite
 import { CourtesComponent } from './formation/courtes/courtes.component';
 
 import { FormationComponent } from './formation/formation.component';
+import { InclusionNumeriqueComponent } from './formation/inclusion-numerique/inclusion-numerique.component';
 import { LonguesComponent } from './formation/longues/longues.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 
@@ -44,6 +45,7 @@ import { StudioComponent } from './studio/studio.component';
       {path: 'formations', component: FormationComponent},
       {path: 'formations/formations-longues', component: LonguesComponent},
       {path: 'formations/formations-courtes', component: CourtesComponent},
+      {path: 'formations/inclusion-numerique', component: InclusionNumeriqueComponent},
    
   ];
 @NgModule({
