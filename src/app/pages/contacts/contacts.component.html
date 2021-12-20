@@ -1,5 +1,7 @@
 <section fxLayoutAlign.lt-md="center center" class="artOne">
 
+
+
     <article class="contact-info">
 
         <div class="txt">
@@ -8,84 +10,89 @@
         </div>
 
 
-        <div class="form">
+
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+
 
 
             <div class="fields">
                 <mat-form-field appearance="outline">
                     <mat-label>Selectionner une option</mat-label>
-                    <mat-select disableRipple>
-                        <mat-option value="1">Questions concernants nos formations</mat-option>
-                        <mat-option value="2">Des questions sur l'eco-conception</mat-option>
-                        <mat-option value="3">Des questions sur nos projets</mat-option>
-                        <mat-option value="4">collaboration</mat-option>
-                        <mat-option value="5">autres...</mat-option>
+                    <mat-select disableRipple ngModel required name="objet" #objet="ngModel" [ngModelOptions]="{standalone: false}">
+                        <mat-option *ngFor="let subject of subjects" [value]="subject">{{subject}}</mat-option>
                     </mat-select>
+
                 </mat-form-field>
             </div>
-
+            <!-- 
+            <input type="text" placeholder="Nom" name="name" ngModel required #name="ngModel"> -->
 
             <div class="fields name">
 
                 <div class="fields">
                     <mat-label>Nom</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre nom">
+                        <input matInput placeholder="votre nom" name="name" ngModel required #name="ngModel">
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Prénom</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre prénom">
+                        <input matInput placeholder="votre prénom" name="lastName" ngModel required #lastName="ngModel">
                     </mat-form-field>
                 </div>
             </div>
+
+
+
+            <!-- <input type="text" placeholder="Adresse Mail" email name="email" ngModel required #email="ngModel"> -->
 
             <div class="fields com">
 
                 <div class="fields">
                     <mat-label>Adresse mail</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre adresse mail">
+                        <input matInput placeholder="votre adresse mail" email name="email" ngModel required #email="ngModel">
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Téléphone</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre no. de téléphone">
+                        <input matInput placeholder="votre no. de téléphone" name="telephone" ngModel #telephone="ngModel">
                     </mat-form-field>
                 </div>
             </div>
+
+            <!-- <input type="text" placeholder="entreprise" name="entreprise" ngModel required #entreprise="ngModel"> -->
 
             <div class="fields">
 
                 <div class="fields">
                     <mat-label>Entreprise</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre entreprise">
+                        <input matInput placeholder="votre entreprise" name="entreprise" ngModel #entreprise="ngModel">
                     </mat-form-field>
                 </div>
             </div>
 
-
             <div class="fields">
                 <mat-label>Laissez-nous un message</mat-label>
                 <mat-form-field appearance="outline">
-                    <textarea cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
+                    <textarea cdkTextareaAutosize name="messages" ngModel required #messages="ngModel" #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
                 </mat-form-field>
             </div>
 
+            <input type="hidden" name="subject" value="Votre message a été bien envoyé">
 
             <div class="btn-container">
-                <button href="https://www.step-sa.fr/" target="_blank">
+                <button type="submit" value="Envoyer">
                     <mat-icon><span class="material-icons">message</span></mat-icon>
                     Envoyer
                 </button>
             </div>
-
-        </div>
+        </form>
 
 
     </article>
@@ -97,7 +104,9 @@
     </article>
 
 
+
 </section>
+
 
 
 
@@ -158,5 +167,8 @@
     </article>
 
 </section>
+
+
+
 
 <app-partners [partenaires]="partenaires"></app-partners>
