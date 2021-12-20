@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { combineLatest, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { IClients, IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { IClients, IPartenaires, IReseaux } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
@@ -13,8 +13,9 @@ export class PartenairesComponent implements OnInit {
 
   clients: IClients[] = [];
   partenaires: IPartenaires[] = [];
+  reseaux: IReseaux[] = [];
 
-  constructor(public clientServ: PartenairesService, public partenaireServ: PartenairesService) { }
+  constructor(public clientServ: PartenairesService, public partenaireServ: PartenairesService, public reseauxServ: PartenairesService) { }
 
   ngOnInit(): void {
     this.clientServ.getClients$()
@@ -23,9 +24,18 @@ export class PartenairesComponent implements OnInit {
       ([clients, partenaires]) => {
         this.clients = clients;
         this.partenaires = partenaires;
+       
         console.log(clients, partenaires);
       }
     );
+
+    this.reseauxServ.getReseaux$().subscribe(
+      res => {
+        this.reseaux = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 
@@ -47,5 +57,10 @@ export class PartenairesComponent implements OnInit {
   intro_2  = {
     "p": `Pour mener à bien sa mission, STEP s’appuie sur un certain nombre de partenaires parmi lesquels : `
   }
+
+  intro_3  = {
+    "p": `... et c'est notre réseau:`
+  }
+
 
 }

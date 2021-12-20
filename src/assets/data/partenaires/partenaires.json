@@ -1,37 +1,91 @@
 [{
-        "src": "./assets/partenaires/direccts.png",
-        "alt": "direccts",
-        "title": "direccts",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/fse.svg",
+        "alt": "Fonds Social Eroupéen",
+        "title": "Fonds Social Eroupéen",
+        "lien": "http://www.fse.gouv.fr/"
     },
     {
-        "src": "./assets/partenaires/pyrenees_atlantiques.png",
-        "alt": "pyrenees_atlantiques",
-        "title": "pyrenees_atlantiques",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/ministre_travail.svg",
+        "alt": "Ministère du Travail, de l'Emploi et de l'Insertion",
+        "title": "Ministère du Travail, de l'Emploi et de l'Insertion",
+        "lien": "https://travail-emploi.gouv.fr/"
     },
     {
-        "src": "./assets/partenaires/eu_sengage.png",
-        "alt": "eu_sengage",
-        "title": "eu_sengage",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/minitre_cohesion.svg",
+        "alt": "Ministère de la Cohésion des territoires ",
+        "title": "Ministère de la Cohésion des territoires ",
+        "lien": "https://www.cohesion-territoires.gouv.fr/"
     },
     {
-        "src": "./assets/partenaires/total.png",
-        "alt": "total",
-        "title": "total",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/nouvelle_aquitaine.svg",
+        "alt": "Région Nouvelle-Aquitaine",
+        "title": "Région Nouvelle-Aquitaine",
+        "lien": "https://www.nouvelle-aquitaine.fr/"
     },
     {
-        "src": "./assets/partenaires/pau.png",
-        "alt": "pau",
-        "title": "pau",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/pyrenees_atlantiques.svg",
+        "alt": "Département des Pyrénées Atlantiques",
+        "title": "Département des Pyrénées Atlantiques",
+        "lien": "https://www.le64.fr/"
     },
     {
-        "src": "./assets/partenaires/nouvelle_aquitaine.png",
-        "alt": "nouvelle_aquitaine",
-        "title": "nouvelle_aquitaine",
-        "lien": "abc"
+        "src": "assets/partenaires/partenaires/partenaires/pau_agglo.svg",
+        "alt": "Communauté d'agglomération Pau Béarn Pyrénées",
+        "title": "Communauté d'agglomération Pau Béarn Pyrénées",
+        "lien": "https://www.pau.fr/accueil"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/pau.svg",
+        "alt": "Ville de Pau",
+        "title": "Ville de Pau",
+        "lien": "https://www.pau.fr/accueil"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/gip_dsu.svg",
+        "alt": "GIP-DSU",
+        "title": "Groupement Intérêt Public – Développement Social et Urbain",
+        "lien": "http://www.gipdsu-agglopau.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/cites_educatifs.svg",
+        "alt": "Les Cités éducatives",
+        "title": "Les Cités éducatives",
+        "lien": "https://www.citeseducatives.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/cite_emploi.svg",
+        "alt": "Les Cités de l'emploi",
+        "title": "Les Cités de l'emploi",
+        "lien": "https://agence-cohesion-territoires.gouv.fr/cites-de-lemploi-571"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/cnfs.svg",
+        "alt": "CNFS",
+        "title": "Conseillers Numériques France Service(CNFS)",
+        "lien": "https://www.conseiller-numerique.gouv.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/pole_emploi.svg",
+        "alt": "Pole Emploi",
+        "title": "Pole Emploi",
+        "lien": "https://www.conseiller-numerique.gouv.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/mission_locale.svg",
+        "alt": "Mission Locale",
+        "title": "Mission Locale",
+        "lien": "https://www.conseiller-numerique.gouv.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/cap_emploi.svg",
+        "alt": "Cap Emploi",
+        "title": "Cap Emploi",
+        "lien": "https://www.conseiller-numerique.gouv.fr"
+    },
+    {
+        "src": "assets/partenaires/partenaires/partenaires/plie.svg",
+        "alt": "Plan insertion & Emploi",
+        "title": "Plan insertion & Emploi",
+        "lien": "https://www.pau.fr/article/le-plan-local-pour-l-insertion-et-l-emploi"
     }
 ]

@@ -43,7 +43,7 @@ export class FluxDocComponent implements OnInit {
    
     {
       icon: '/assets/svg/stack.svg',
-      titre: 'structuration de tout type documents',
+      titre: 'Structuration de tout type documents',
       accroche:
         'La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !',
       column: `La numérisation est notre activité phare

@@ -10,3 +10,9 @@ export interface IClients {
   title: string;
   lien: string;
  }
+
+
+ export interface IReseaux {
+  logo: string;
+  title: string;
+}

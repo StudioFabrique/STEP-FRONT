@@ -1,24 +1,29 @@
 <app-component-items-header [bgImg]="bgImg" [corner]="corner" [title]="title" [accroche]="accroche" [text]="text" [bgColor]="bgColor"></app-component-items-header>
 
 <section>
-    <h1>Partenaires</h1>
+    <h1>Nos Partenaires</h1>
+
     <article>
         <div class="intro-txt">
             <p>{{ intro_1.p }}</p>
         </div>
-        <div class="partenaire__container" *ngFor="let client of clients">
-            <div class="content-partenaire__description" *ngIf="client.description">
-                <div class="logo">
-                    <img src="{{ client.logo }}" title="{{ client.title }}" alt="{{ client.title }}" />
-                </div>
+        <div class="wrapper">
 
-                <div class="description">
-                    <h2>{{ client.title }}</h2>
-                    <p>{{ client.description }}</p>
+            <div class="partenaire" *ngFor="let client of clients">
+                <div class="content-partenaire">
+                    <div class="logo">
+                        <img [src]="client.logo" [title]="client.title " [alt]=" client.title" />
+                    </div>
+
+                    <div class="description__txt">
+                        <h2>{{ client.title }}</h2>
+                        <p>{{ client.description }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </article>
+
 
     <article>
         <div class="intro-txt">
@@ -34,6 +39,29 @@
 
                     <div class="description__txt">
                         <h2>{{ partenaire.title }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+    <article>
+        <div class="intro-txt">
+            <p>{{ intro_3.p }}</p>
+        </div>
+        <div class="wrapper">
+
+            <div class="partenaire" *ngFor="let reseau of reseaux">
+                <div class="content-partenaire">
+                    <div class="logo">
+                        <img [src]="reseau.logo" [title]="reseau.title " [alt]="reseau.title" />
+                    </div>
+
+                    <div class="description__txt">
+                        <h2>{{ reseau.title }}</h2>
                     </div>
                 </div>
             </div>
