@@ -17,6 +17,10 @@ article {
     justify-content: center;
 }
 
+img {
+    height: 400px;
+}
+
 p {
     color: #140A82;
     font-size: 1.1rem;

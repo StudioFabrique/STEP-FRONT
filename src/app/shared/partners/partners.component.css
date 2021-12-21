@@ -4,7 +4,7 @@ section {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 450px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -32,27 +32,26 @@ article {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .carousel {
     display: flex;
-    flex-direction: row;
+    flex-direction: row nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
 }
 
 .slide {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
     /* background-color: rgb(112, 55, 55); */
+}
+
+a img {
+    width: 180px;
 }
 
 img {
@@ -71,7 +70,7 @@ p {
 
 @media only screen and (max-width: 1024px) {
     section {
-        height: 300px;
+        height: 350px;
     }
     .title {
         margin-left: 40px;
@@ -79,8 +78,11 @@ p {
     .carousel {
         height: 150px;
     }
+    a img {
+        width: 180px;
+    }
     img {
-        width: 10ch;
+        width: 100%;
     }
     h2 {
         font-size: 30px;
@@ -94,16 +96,20 @@ p {
 
 @media only screen and (max-width: 768px) {
     section {
-        height: 300px;
+        height: 350px;
     }
     .title {
         margin-left: 40px;
     }
     .carousel {
         height: 150px;
+        margin-left: 5rem;
+    }
+    a img {
+        width: 180px;
     }
     img {
-        width: 12ch;
+        width: 100%;
     }
     h2 {
         font-size: 30px;
@@ -116,17 +122,14 @@ p {
 }
 
 @media only screen and (max-width: 425px) {
-    section {
-        height: 300px;
-    }
     .title {
         margin-left: 40px;
     }
-    .carousel {
-        height: 150px;
+    a img {
+        width: 130px;
     }
     img {
-        width: 8ch;
+        width: 100%;
     }
     h2 {
         font-size: 30px;

@@ -55,6 +55,7 @@ app-partners {
         column-gap: 3rem;
         text-align: justify;
         line-height: 1.5rem;
+        width: 90%;
     }
     article {
         width: 100%;
@@ -63,5 +64,24 @@ app-partners {
     .content {
         width: 80%;
         margin: auto;
+    }
+    .content img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        width: 80%;
+    }
+    h3 {
+        margin-left: 10%;
+    }
+    p {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    app-block {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }

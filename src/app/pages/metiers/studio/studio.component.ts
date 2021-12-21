@@ -40,7 +40,7 @@ export class StudioComponent implements OnInit {
 
   articles = [
     {
-      icon: '/assets/svg/stack.svg',
+      icon: 'assets/svg/blue_icons/computer_blue_icon.svg',
       titre: 'Studio lancé en 2020',
       accroche:'Des technologies pour réduire votre empreinte écologique',
       column: `Lancé en 2020, le Studio de Développement vous assiste dans la mise en place et le développement d’outils, d’applications numériques et de prestations de développement web, en tenant compte des impératifs de développement durable en mettant au service de votre entreprise son ingénierie (informatique, logicielle...).
@@ -53,8 +53,11 @@ export class StudioComponent implements OnInit {
       text: '',
 
     },
+
+
+
     {
-      icon: '/assets/svg/stack.svg',
+      icon: 'assets/svg/blue_icons/settings_3_blue_icon.svg',
       titre: 'Vos sites sur mesure ',
       accroche:'Réalisations basée sur une conception agile',
       column: `La réalisation de sites internet est notre point fort, basée sur une conception agile. Nous travaillons avec vous de l'étude du positionnement et l’élaboration de votre cahier des charges à la conception et au développement de votre site web en passant par la création de maquettes et la production ou scénarisation de vos contenus si nécessaire. 

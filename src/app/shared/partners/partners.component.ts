@@ -19,11 +19,9 @@ export class PartnersComponent implements OnInit {
    
   }
 
-
-
   swiperConfig = {
     enabled: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
     draggable: true,
@@ -37,7 +35,7 @@ export class PartnersComponent implements OnInit {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
           slidesToScroll: 1,
           draggable: true,
           infinite: true,
@@ -55,10 +53,22 @@ export class PartnersComponent implements OnInit {
           autoplaySpeed: 2000,
           autoplay: true,
           infinite: true,
+          draggable: true,
         }
       },
       {
         breakpoint: 425,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+
+        }
+      },
+      {
+        breakpoint: 375,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

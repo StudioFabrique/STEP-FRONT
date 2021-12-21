@@ -42,7 +42,7 @@ export class FluxDocComponent implements OnInit {
   article_1 = [
    
     {
-      icon: '/assets/svg/stack.svg',
+      icon: 'assets/svg/blue_icons/stack_blue_icon.svg',
       titre: 'Structuration de tout type documents',
       accroche:
         'La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !',
@@ -54,7 +54,7 @@ export class FluxDocComponent implements OnInit {
 
   article_2 = [
     {
-      icon: '/assets/svg/stack.svg',
+      icon: 'assets/svg/blue_icons/settings_blue_icon.svg',
       titre: 'Une ingénierie dédiée à chaque projet ',
       accroche: 'STEP expert de la capture d’image et de la numérisation ',
       column: `Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
@@ -65,7 +65,7 @@ Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Ad
   ]
   article_3 = [{
     
-      icon: '/assets/svg/stack.svg',
+    icon: 'assets/svg/blue_icons/folder_blue_icon.svg',
       titre: 'Des prestations adaptées à vos projets !',
       accroche:
         'NUMEO, une offre intégrée de numérisation standard',
