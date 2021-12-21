@@ -9,10 +9,16 @@ export class EcoconceptionComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
+   
   }
 
-  image = "/assets/img/eco-concept.jpg";
+
+
+
+  image = "https://step-website-photos.s3.eu-west-3.amazonaws.com/ecoconception/eco-concept.jpg"
+  
   titre = "L'écoconception au centre de nos démarches"
   text = "";
   
