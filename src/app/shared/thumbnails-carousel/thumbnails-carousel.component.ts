@@ -26,6 +26,7 @@ export class ThumbnailsCarouselComponent implements OnInit {
     nextArrow:'.client-feedback .next-arrow',
     asNavFor:".thumbs",
   };
+  
   thumbnailsSlider = {
     speed:0,
     slidesToShow:3,

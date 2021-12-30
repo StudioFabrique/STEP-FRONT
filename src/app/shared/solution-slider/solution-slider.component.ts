@@ -15,43 +15,43 @@ export class SolutionSliderComponent implements OnInit {
 
 
   slides = [
-    { img: '../../../assets/solutions/formations.jpg', 
+    { img: 'assets/solutions/flux_doc.png', 
       title:"Flux Documentaire", 
       text:"Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
       link:"/metiers/flux-documentaire"
     },
 
-    { img: '../../../assets/solutions/studio.jpg', 
+    { img: 'assets/solutions/studio.jpg', 
       title:"Studio de Développement", 
       text:"logiciels Web éco-conçus pour des solutions informatiques sur mesure (développement web, système d’information, hébergement, base de données, applications…)",
       link:"/metiers/studio"
     },
 
-    { img: '../../../assets/solutions/atelier.jpg', 
+    { img: 'assets/solutions/atelier.jpg', 
       title:"L'atelier Numérique", 
       text:"pour des services de maintenance et d’assistance informatique ou du matériel informatique reconditionné." ,
       link:"/metiers/atelier-numerique"
     },
 
-    { img: '../../../assets/solutions/livraison.jpg', 
+    { img: 'assets/solutions/livraison.jpg', 
       title:"Livraison Urbaine", 
       text:"courte ou longue, formation numérique, digitale pour lutter contre la fracture numérique et promouvoir l’emploi durable" ,
       link:"/metiers/livraison"
     },
 
-    { img: '../../../assets/solutions/service_post.jpg', 
+    { img: 'assets/solutions/service_postal.jpg', 
       title:"Service Postal", 
       text:"premier opérateur postal alternatif de Nouvelle Aquitaine ; Collecte, remise et distribution de courrier et de recommandé sur Pau.",
       link:"/metiers/service-postal"
     },
 
-    { img: '../../../assets/solutions/formations.jpg', 
+    { img: 'assets/solutions/conciergerie.jpg', 
       title:"Conciergerie d'Entreprise", 
       text:"(être) au bureau comme à la maison, avec La Conciergerie solidaire. ",
       link:"/metiers/conciergerie"
   },
 
-  { img: '../../../assets/solutions/formations.jpg', 
+  { img: 'assets/solutions/formation.jpg', 
     title:"Formations", 
     text:"courte ou longue, formation numérique, digitale pour lutter contre la fracture numérique et promouvoir l’emploi durable",
     link:"/metiers/formations"

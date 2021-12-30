@@ -35,15 +35,91 @@ export class HeaderComponent implements OnInit {
 
  
   metiers = [
-    { title: 'Flux Documentaire' },
-    { title: 'Studio de Développement' },
-    { title: "L'atelier Numérique" },
-    { title: 'Livraison Urbaine' },
-    { title: 'Service Postal' },
-    { title: "Conciergerie d'Entreprise" },
-    { title: 'Formations' },
-
+    { title: "Flux Documentaires" , link: "metiers/flux-documentaire"},
+    { title: "Studio de Développement" , link: "metiers/studio"},
+    { title: "Atelier Numérique" , link: "metiers/atelier-numerique"},
+    { title: "Livraison Urbaine" , link: "metiers/livraison"},
+    { title: "Service Postal" , link: "metiers/service-postal"},
+    { title: "Conciergerie" , link: "metiers/conciergerie"},
+    { title: "Formations" , link: "metiers/formations"},
   ];
 
+
+  slideConfig = {
+    
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    autoplay: true,
+    arrows: false,
+    fade: false,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 2000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 2000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 2000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 325,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 2000,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          infinite: true,
+        },
+      },
+    ],
+  };
+
+  slickInit(e: any) {
+    console.log('slick initialized');
   }
+
+  breakpoint(e: any) {
+    console.log('breakpoint');
+  }
+
+  afterChange(e: any) {
+    console.log('afterChange');
+  }
+
+  beforeChange(e: any) {
+    console.log('beforeChange');
+  }
+
+
+
+}
 

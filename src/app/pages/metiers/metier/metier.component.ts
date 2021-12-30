@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 
 
 export interface Content {
@@ -16,6 +18,8 @@ export interface Content {
 })
 export class MetierComponent implements OnInit {
 
+  partenaires: IPartenaires[] = []
+
 
   cornerImg="assets/img/corner-orange.png" 
   title="Des solutions et des métiers " 
@@ -31,9 +35,16 @@ export class MetierComponent implements OnInit {
   metierTitleBold="Le metier de l'avenir" 
   metierText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut sagittis odio. Cras sit amet interdum eros. Proin varius arcu eget eros varius luctus. Proin mi ligula, tempus non feugiat vitae, venenatis vel magna. " 
 
-  constructor() {}
+  constructor(public partenaireServ: PartenairesService) {}
 
   ngOnInit(): void {
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    )
   }
 
   gridColumns = 3;
@@ -84,6 +95,8 @@ export class MetierComponent implements OnInit {
   },
 
   ];
+
+  
 
 
 }

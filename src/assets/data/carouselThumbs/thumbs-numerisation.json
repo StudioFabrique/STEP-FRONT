@@ -1,21 +1,21 @@
 [{
-        "image": "/assets/carousel/carousel_1.png",
+        "image": "https://step-website-photos.s3.eu-west-3.amazonaws.com/numerisation/numerisation_01.png",
         "title": "numérisation"
     },
     {
-        "image": "/assets/carousel/carousel_2.png",
+        "image": "https://step-website-photos.s3.eu-west-3.amazonaws.com/numerisation/numerisation_02.png",
         "title": "numérisation"
     },
     {
-        "image": "/assets/carousel/carousel_3.png",
+        "image": "https://step-website-photos.s3.eu-west-3.amazonaws.com/numerisation/numerisation_03.png",
         "title": "numérisation"
     },
     {
-        "image": "/assets/carousel/carousel_4.png",
+        "image": "https://step-website-photos.s3.eu-west-3.amazonaws.com/numerisation/numerisation_04.png",
         "title": "numérisation"
     },
     {
-        "image": "/assets/carousel/carousel_5.png",
+        "image": "https://step-website-photos.s3.eu-west-3.amazonaws.com/numerisation/numerisation_05.png",
         "title": "numérisation"
     }
 ]
