@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IMetierDetailsHeaders } from '../interfaces/imetier-details-headers';
+import { IMetierDetailsHeaders, IMetiersList } from '../interfaces/imetier-details-headers';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +8,18 @@ import { IMetierDetailsHeaders } from '../interfaces/imetier-details-headers';
 export class MetiersDetailsHeadersService {
 
   metierDetailsHeaders: IMetierDetailsHeaders[] = [];
+  metiersList: IMetiersList[] = [];
 
   constructor(private httpServiceMetierHeader: HttpClient) { }
+
+  getMetiers$(){
+    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metiersList.json').subscribe(
+      (data:any) => {
+        this.metiersList = data;
+      console.log("data", this.metiersList);
+      }
+    );
+  }
 
   getFormationsLongues(){
     this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json').subscribe((data:any) => {

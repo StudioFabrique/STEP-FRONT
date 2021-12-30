@@ -9,15 +9,15 @@
         <div class="content">
             <div class="content-wrapper">
 
-                <div class="content-card" *ngFor="let content of contents">
-                    <mat-card style="background-image: url('{{content.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
+                <div class="content-card" *ngFor="let metier of metierServ.metiersList">
+                    <mat-card style="background-image: url('{{metier.img}}'); background-size: cover; height:500px;" class="mat-elevation-z0">
                         <mat-card-content class="mat-content-loop">
 
-                            <h3>{{ content.title }}</h3>
+                            <h3>{{ metier.title }}</h3>
                             <p>
-                                {{ content.text }}
+                                {{ metier.text }}
                             </p>
-                            <button routerLink={{content.link}} class="info">voir plus</button>
+                            <button routerLink={{metier.link}} class="info">voir plus</button>
                         </mat-card-content>
                     </mat-card>
                 </div>

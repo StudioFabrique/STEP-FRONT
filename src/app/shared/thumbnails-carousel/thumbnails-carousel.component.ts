@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({

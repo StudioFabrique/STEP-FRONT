@@ -18,9 +18,14 @@ export class SliderAccueilComponent implements OnInit {
 
 
   slideConfig = {
+    cssEase:'ease-out',
+    draggable:true,
+    prevArrow:"<img class='a-left control-c prev slick-prev' style='width:50px; left: -50px;' src='/assets/svg/arrow-left.svg'>",
+    nextArrow:"<img class='a-right control-c next slick-next' style='width:50px; right: -50px;' src='/assets/svg/arrow-right.svg'>",
+    accessibility: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 2000,
+    speed: 200,
     autoplaySpeed: 2000,
     autoplay: true,
     arrows: false,

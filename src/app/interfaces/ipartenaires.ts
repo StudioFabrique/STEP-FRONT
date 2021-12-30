@@ -16,3 +16,8 @@ export interface IClients {
   logo: string;
   title: string;
 }
+
+export interface ICertificats {
+  logo: string;
+  title: string;
+}

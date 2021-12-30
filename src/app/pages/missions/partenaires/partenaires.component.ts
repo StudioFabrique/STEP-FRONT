@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { combineLatest, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { IClients, IPartenaires, IReseaux } from 'src/app/interfaces/ipartenaires';
+import { ICertificats, IClients, IPartenaires, IReseaux } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
@@ -14,8 +14,15 @@ export class PartenairesComponent implements OnInit {
   clients: IClients[] = [];
   partenaires: IPartenaires[] = [];
   reseaux: IReseaux[] = [];
+  certificats: ICertificats[] = [];
 
-  constructor(public clientServ: PartenairesService, public partenaireServ: PartenairesService, public reseauxServ: PartenairesService) { }
+  constructor(
+    public clientServ: PartenairesService, 
+    public partenaireServ: PartenairesService, 
+    public reseauxServ: PartenairesService,
+    public certServ: PartenairesService
+    
+    ) { }
 
   ngOnInit(): void {
     this.clientServ.getClients$()
@@ -36,6 +43,14 @@ export class PartenairesComponent implements OnInit {
         
       }
     )
+
+    this.certServ.getCertificats$().subscribe(
+      res => {
+        this.certificats = res;
+        console.log(res);
+        
+      }
+    )
   }
 
 
@@ -49,16 +64,20 @@ export class PartenairesComponent implements OnInit {
 
 
 
-  intro_1  = {
+  clientsIntro  = {
     "p": `Parmi les clients de STEP, on trouve de nombreuses références de grands groupes, de collectivités locales et également de PME/PMI : `
 
   }
 
-  intro_2  = {
+  partenairesIntro  = {
     "p": `Pour mener à bien sa mission, STEP s’appuie sur un certain nombre de partenaires parmi lesquels : `
   }
 
-  intro_3  = {
+  certIntro  = {
+    "p": `Nos marque de certification de formation...`
+  }
+
+  reseauxIntro  = {
     "p": `... et c'est notre réseau:`
   }
 

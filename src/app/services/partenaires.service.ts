@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IClients, IPartenaires, IReseaux } from '../interfaces/ipartenaires';
+import { ICertificats, IClients, IPartenaires, IReseaux } from '../interfaces/ipartenaires';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +11,7 @@ export class PartenairesService {
   partenaires: IPartenaires[] = [];
   clients: IClients[] = [];
   reseaux: IReseaux[] = [];
+  certificats: ICertificats[] = [];
 
   constructor(private httpServicePartenaires: HttpClient) { }
 
@@ -24,5 +25,8 @@ export class PartenairesService {
 
   getReseaux$(): Observable<IReseaux[]> {
     return this.httpServicePartenaires.get<IReseaux[]>('/assets/data/partenaires/reseaux.json');
+  }
+  getCertificats$(): Observable<ICertificats[]> {
+    return this.httpServicePartenaires.get<ICertificats[]>('/assets/data/partenaires/certificats.json');
   }
 }

@@ -5,7 +5,7 @@
 
     <article>
         <div class="intro-txt">
-            <p>{{ intro_1.p }}</p>
+            <p>{{ clientsIntro.p }}</p>
         </div>
         <div class="wrapper">
 
@@ -27,7 +27,7 @@
 
     <article>
         <div class="intro-txt">
-            <p>{{ intro_2.p }}</p>
+            <p>{{ partenairesIntro.p }}</p>
         </div>
         <div class="wrapper">
 
@@ -47,10 +47,30 @@
 
 
 
+    <article>
+        <div class="intro-txt">
+            <p>{{ certIntro.p }}</p>
+        </div>
+        <div class="wrapper">
+
+            <div class="partenaire" *ngFor="let cert of certificats">
+                <div class="content-partenaire">
+                    <div class="logo">
+                        <img [src]="cert.logo" [title]="cert.title " [alt]="cert.title" />
+                    </div>
+
+                    <div class="description__txt">
+                        <h2>{{ cert.title }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
 
     <article>
         <div class="intro-txt">
-            <p>{{ intro_3.p }}</p>
+            <p>{{ reseauxIntro.p }}</p>
         </div>
         <div class="wrapper">
 
