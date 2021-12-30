@@ -6,7 +6,7 @@
         <h2 class="step-blue-color">Nos métiers</h2>
         <ul class="metiers-list-lg">
             <li *ngFor="let metier of metiers">
-                <a href="{{metier.link}}">{{metier.title}}</a>
+                <a [routerLink]="metier.link">{{metier.title}}</a>
             </li>
         </ul>
 

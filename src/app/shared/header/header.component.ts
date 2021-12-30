@@ -35,13 +35,13 @@ export class HeaderComponent implements OnInit {
 
  
   metiers = [
-    { title: "Flux Documentaires" , link: "metiers/flux-documentaire"},
-    { title: "Studio de Développement" , link: "metiers/studio"},
-    { title: "Atelier Numérique" , link: "metiers/atelier-numerique"},
-    { title: "Livraison Urbaine" , link: "metiers/livraison"},
-    { title: "Service Postal" , link: "metiers/service-postal"},
-    { title: "Conciergerie" , link: "metiers/conciergerie"},
-    { title: "Formations" , link: "metiers/formations"},
+    { title: "Flux Documentaires" , link: "/metiers/flux-documentaire"},
+    { title: "Studio de Développement" , link: "/metiers/studio"},
+    { title: "Atelier Numérique" , link: "/metiers/atelier-numerique"},
+    { title: "Livraison Urbaine" , link: "/metiers/livraison"},
+    { title: "Service Postal" , link: "/metiers/service-postal"},
+    { title: "Conciergerie" , link: "/metiers/conciergerie"},
+    { title: "Formations" , link: "/metiers/formations"},
   ];
 
 
