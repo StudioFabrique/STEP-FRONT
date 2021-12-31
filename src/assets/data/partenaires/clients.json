@@ -1,51 +1,51 @@
 [{
-        "logo": "assets/partenaires/partenaires/clients/total.svg",
+        "logo": "assets/partenaires/clients/total.svg",
         "title": "TotalEnergies",
         "description": "Numérisation de dossiers techniques"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/terega.svg",
+        "logo": "assets/partenaires/clients/terega.svg",
         "title": "Teréga",
         "description": "Développement informatique, éditique, services de conciergerie"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/euralis.svg",
+        "logo": "assets/partenaires/clients/euralis.svg",
         "title": "Euralis",
         "description": "Numérisation et traitement de données"
     },
 
     {
-        "logo": "assets/partenaires/partenaires/clients/pau_bearn_habitat.svg",
+        "logo": "assets/partenaires/clients/pau_bearn_habitat.svg",
         "title": "Pau Béarn Habitat ",
         "description": "Numérisation, gestion du courrier"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/aubert_duval.svg",
+        "logo": "assets/partenaires/clients/aubert_duval.svg",
         "title": "Groupe Aubert & Duval",
         "description": "Editique"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/sante.svg",
+        "logo": "assets/partenaires/clients/sante.svg",
         "title": "Agence Nationale de Santé",
         "description": "Numérisation et éditique"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/fastt.svg",
+        "logo": "assets/partenaires/clients/fastt.svg",
         "title": "FASTT",
         "description": "Numérisation et éditique"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/chronopost.svg",
+        "logo": "assets/partenaires/clients/chronopost.svg",
         "title": "Chronopost",
         "description": "Distribution colis"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/hotel_des_ventes.svg",
+        "logo": "assets/partenaires/clients/hotel_des_ventes.svg",
         "title": "Hotel des Ventes",
         "description": "Publication Assistée par Ordinateur (PAO)"
     },
     {
-        "logo": "assets/partenaires/partenaires/clients/schenker.svg",
+        "logo": "assets/partenaires/clients/schenker.svg",
         "title": "Schencker",
         "description": "Distribution dernier kilomètre"
     }

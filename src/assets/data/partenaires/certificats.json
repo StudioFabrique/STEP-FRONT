@@ -1,11 +1,11 @@
 [{
-        "logo": "assets/partenaires/partenaires/certificats/gen.svg",
+        "logo": "assets/partenaires/certificats/gen.svg",
         "title": "Grande École du Numérique"
 
     },
 
     {
-        "logo": "assets/partenaires/partenaires/certificats/qualiopi.svg",
+        "logo": "assets/partenaires/certificats/qualiopi.svg",
         "title": "Qualiopi | Marque de certification qualité"
     }
 ]

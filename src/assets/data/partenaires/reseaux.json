@@ -1,15 +1,15 @@
 [{
-        "logo": "assets/partenaires/partenaires/reseau/fed_entreprise_insert.svg",
+        "logo": "assets/partenaires/reseau/fed_entreprise_insert.svg",
         "title": "La Fédération des Entreprises d'Insertion"
 
     },
     {
-        "logo": "assets/partenaires/partenaires/reseau/french_tech.svg",
+        "logo": "assets/partenaires/reseau/french_tech.svg",
         "title": "French Tech Pau Béarn"
 
     },
     {
-        "logo": "assets/partenaires/partenaires/reseau/simplon.svg",
+        "logo": "assets/partenaires/reseau/simplon.svg",
         "title": "Simplon.Co"
     }
 ]
