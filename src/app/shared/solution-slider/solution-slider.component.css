@@ -78,6 +78,7 @@ li {
 li:hover {
     background-color: #01A9C9;
     border-radius: 50px;
+    padding-left: 5%;
 }
 
 li:focus {

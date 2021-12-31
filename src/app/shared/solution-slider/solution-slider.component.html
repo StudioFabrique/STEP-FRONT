@@ -13,7 +13,7 @@
         </div>
         <div class="list-container">
             <ul>
-                <li *ngFor="let slide of slides; let i = index">
+                <li *ngFor="let slide of metierServ.metiersList; let i = index">
                     <button (click)="slickModal.slickGoTo(i)">
                         <mat-icon>navigate_next</mat-icon>
                         {{slide.title}}</button>
@@ -31,7 +31,7 @@
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
 
 
-            <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide">
+            <div ngxSlickItem *ngFor="let slide of metierServ.metiersList; let i = index" class="slide">
 
                 <img src="{{ slide.img }} " alt="" />
 

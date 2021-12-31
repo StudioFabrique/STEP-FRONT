@@ -49,6 +49,7 @@ import { ThumbnailsCarouselComponent } from './thumbnails-carousel/thumbnails-ca
 import { ThumbscarouselService } from '../services/thumbscarousel.service';
 import { ClientsComponent } from './clients/clients.component';
 import { SliderAccueilComponent } from './slider-accueil/slider-accueil.component';
+import { AccueilCardsService } from '../services/accueil-cards.service';
 
 
 const materialsModules = [
@@ -118,7 +119,8 @@ const otherModules = [
     PrestationsCarouselService,
     MetiersDetailsHeadersService,
     ArticlesService,
-    ThumbscarouselService
+    ThumbscarouselService,
+    AccueilCardsService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

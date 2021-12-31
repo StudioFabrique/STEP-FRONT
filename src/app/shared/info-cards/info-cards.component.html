@@ -5,7 +5,7 @@
     </div>
     <article>
 
-        <div class="card-wrapper {{card.bg}}" *ngFor="let card of cards">
+        <div class="card-wrapper {{card.bg}}" *ngFor="let card of cardsServ.cardsInfo">
 
             <div class="card-icon">
                 <img src="{{ card.icon }}" alt="">
@@ -19,7 +19,7 @@
                     <span *ngIf="card.pourcentage">%</span>
                 </div>
                 <p>
-                    {{ card.content }}
+                    {{ card.text }}
                 </p>
             </div>
 
