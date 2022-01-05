@@ -6,6 +6,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { IContact } from 'src/app/interfaces/icontact';
 import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
+import{GoogleAnalyticsService} from '../../services/google-analytics.service';
 
 
 
@@ -31,7 +32,7 @@ export class ContactsComponent implements OnInit {
 
 
   
-  constructor(public partenaireServ: PartenairesService, private http: HttpClient, private _snackBar: MatSnackBar) {}
+  constructor(public partenaireServ: PartenairesService, private http: HttpClient, private _snackBar: MatSnackBar, public googleAnalytics: GoogleAnalyticsService) {}
   
   
   durationInSeconds = 3;
@@ -75,6 +76,12 @@ export class ContactsComponent implements OnInit {
     
     
   }
+
+
+  sendInfo(){ 
+    this.googleAnalytics.eventEmitter("contact", this.subjects, "sendmail");
+  } 
+
 
   ngOnInit(): void {
 

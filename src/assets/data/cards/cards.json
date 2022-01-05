@@ -1,16 +1,16 @@
 [{
-        "content": "Depuis 20 ans, l’ADN de STEP - entreprise citoyenne et responsable- c’est de construire des parcours inclusifs, par la production de services innovants, ou par la formation, à destination des entreprises et des collectivités.",
-        "icon": "/assets/svg/chat.svg",
-        "title": "Une entreprise citoyenne..."
+        "content": "Depuis 20 ans, l’ADN de STEP c’est de construire des parcours inclusifs en favorisant l’insertion dans des secteurs particulièrement innovants: le numérique, l’imagerie et l’informatique.",
+        "icon": "/assets/svg/blue_icons/arrows_blue_icon.svg",
+        "title": "Entreprise inclusive"
     },
     {
-        "content": "Nous ne sommes pas nés d’hier et nous savons que demain la solidarité sera la norme. Agir au service des territoires, donner la chance d’avoir une seconde chance – et même une première chance – est notre métier.",
-        "icon": "/assets/svg/chat.svg",
-        "title": "...au service du territoire"
+        "content": "Expert des solutions numériques au service des entreprises et des territoires, STEP vous offre des prestations de qualité autour d’activités de pointe. ",
+        "icon": "/assets/svg/blue_icons/pic_blue_icon.svg",
+        "title": "Prestations de qualité"
     },
     {
-        "content": "STEP veut être une passerelle vers l’emploi durable, et surtout la confiance retrouvée.",
-        "icon": "/assets/svg/chat.svg",
-        "title": "Une passerelle vers l’emploi et la confiance retrouvée !"
+        "content": "Entreprise citoyenne ancrée sur son territoire, STEP a choisi d’aller au-delà des purs objectifs financiers pour contribuer à l’émergence d’une économie plus durable et participer à renforcer la cohésion du territoire.",
+        "icon": "/assets/svg/blue_icons/persons_blue.svg",
+        "title": "Économie Sociale & Solidaire"
     }
 ]

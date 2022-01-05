@@ -2,6 +2,24 @@
 <html lang="fr">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDVB2VW');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <title>Step</title>
     <base href="/">
@@ -20,8 +38,11 @@
 
     <link href="https://www.step.eco" rel="canonical" />
 
-    <!-- // GOOGLE ANALYTICS SCRIPT -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-68BRV56CC2"></script>
+
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -29,14 +50,21 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', 'GA_TRACKING_ID');
+
+        gtag('config', 'G-68BRV56CC2', {
+            send_page_view: false
+        });
     </script>
-    <!-- A CHANGER: GA_TRACKING_ID -->
+
+    <!-- End Google Tag Manager (noscript) -->
 
 </head>
 
 <body>
+
     <app-root></app-root>
+
+
 </body>
 
 

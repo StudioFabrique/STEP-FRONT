@@ -1,14 +1,16 @@
 <section>
     <div class="head">
         <img src="../../../assets/pictos/logo-blue.png" alt="" />
-        <h2 class="step-blue-color">C'est quoi ?</h2>
+        <h2 class="step-blue-color"> C'est quoi ?</h2>
     </div>
     <article>
 
         <div class="card-wrapper" *ngFor="let card of cardsServ.cards">
 
             <div class="card-icon">
-                <img src="{{ card.icon }}" alt="">
+                <!-- <img src="{{ card.icon }}" alt=""> -->
+                <svg style="background-image: url('{{ card.icon }}'); background-size: 30px 30px;" width="30" height="30" fill="#fff000"></svg>
+
             </div>
 
             <div class="card-text">

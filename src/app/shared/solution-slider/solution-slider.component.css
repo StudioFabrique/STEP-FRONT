@@ -71,7 +71,7 @@ ul li button:hover {
 li {
     list-style: none;
     font-size: 1.2rem;
-    margin: 0.8rem;
+    margin-bottom: 0.8rem;
     cursor: pointer;
 }
 

@@ -63,6 +63,8 @@ export class SliderAccueilComponent implements OnInit {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 2000,
+          autoplaySpeed: 2000,
         },
       },
     ],

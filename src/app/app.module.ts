@@ -12,6 +12,7 @@ import { Page404Component } from './pages/page404/page404.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
 import { EmploisComponent } from './pages/emplois/emplois.component';
 import { EcoPageComponent } from './pages/eco-page/eco-page.component';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,9 @@ import { EcoPageComponent } from './pages/eco-page/eco-page.component';
     SharedModule,
     BrowserAnimationsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, GoogleAnalyticsService],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
