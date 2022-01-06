@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { IImages } from 'src/app/interfaces/iimages';
 import { IMetierDetailsHeaders } from 'src/app/interfaces/imetier-details-headers';
 import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { FirebaseImagesService } from 'src/app/services/firebase-images.service';
 import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 import { PartenairesService } from 'src/app/services/partenaires.service';
 import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
@@ -12,18 +14,20 @@ import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 })
 export class NumerisationComponent implements OnInit {
 
-  partenaires: IPartenaires[] = []
+  partenaires: IPartenaires[] = [];
+  images: IImages[] = [];
 
   constructor(
     public metierDetailsHeadersServ:MetiersDetailsHeadersService, 
     public thumbsServ: ThumbscarouselService,
-    public partenaireServ: PartenairesService
+    public partenaireServ: PartenairesService,
+    public firebaseServ: FirebaseImagesService
     ) { }
 
   ngOnInit(): void {
     this.metierDetailsHeadersServ.getNumerisation();
-    this.thumbsServ.getImgThumbsNumerisation();
-
+    // this.thumbsServ.getImgThumbsNumerisation();
+    this.firebaseServ.getNumerisationIMG$();
 
     this.partenaireServ.getPartenaires$().subscribe(
       res => {

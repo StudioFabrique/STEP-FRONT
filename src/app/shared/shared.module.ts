@@ -50,6 +50,11 @@ import { ThumbscarouselService } from '../services/thumbscarousel.service';
 import { ClientsComponent } from './clients/clients.component';
 import { SliderAccueilComponent } from './slider-accueil/slider-accueil.component';
 import { AccueilCardsService } from '../services/accueil-cards.service';
+import { FirebaseImagesService } from '../services/firebase-images.service';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 
 const materialsModules = [
@@ -109,7 +114,9 @@ const otherModules = [
     materialsModules,
     otherModules,
     CommonModule,
-    RouterModule
+    RouterModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireStorageModule
   ],
   exports: [
     materialsModules,
@@ -120,8 +127,10 @@ const otherModules = [
     MetiersDetailsHeadersService,
     ArticlesService,
     ThumbscarouselService,
-    AccueilCardsService
+    AccueilCardsService,
+    FirebaseImagesService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })
+
 export class SharedModule { }

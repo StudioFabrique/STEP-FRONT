@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IImages } from 'src/app/interfaces/iimages';
+import { FirebaseImagesService } from 'src/app/services/firebase-images.service';
 import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 
 @Component({
@@ -8,9 +10,16 @@ import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
 })
 export class ThumbnailsCarouselComponent implements OnInit {
 
-  constructor(public thumbnailServ: ThumbscarouselService) { }
+
+  @Input() images: IImages[] = [];
+
+  constructor(
+    // public thumbnailServ: ThumbscarouselService, 
+    public firebaseServ: FirebaseImagesService) { }
+  
 
   ngOnInit(): void {
+    
   }
 
   imagesSlider = {

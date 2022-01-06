@@ -7,9 +7,13 @@ import { IThumbsCarousel } from '../interfaces/ithumbs-carousel';
 })
 export class ThumbscarouselService {
 
+
+  images: any[] = [];
+
   slidesThmbs: IThumbsCarousel[] = [];
 
   constructor(private thumbsServ: HttpClient) { }
+
 
   getImgThumbsNumerisation(){
     this.thumbsServ.get('http://localhost:4200/assets/data/carouselThumbs/thumbs-numerisation.json').subscribe((data:any) => {

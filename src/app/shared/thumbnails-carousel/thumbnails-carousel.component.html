@@ -3,8 +3,8 @@
         <div class="feedback-slides">
             <div class="client-feedback">
                 <ngx-slick-carousel class="carousel feedback" #slickModal="slick-carousel" [config]="imagesSlider">
-                    <div ngxSlickItem *ngFor="let slide of this.thumbnailServ.slidesThmbs let i = index;" class="slide">
-                        <img src="{{ slide.image }}" alt="{{slide.title}}" width="100%">
+                    <div ngxSlickItem *ngFor="let img of firebaseServ.images let i = index;" class="slide">
+                        <img [src]="img" alt="" width="100%">
                     </div>
                 </ngx-slick-carousel>
             </div>
@@ -12,8 +12,8 @@
 
         <div class="client-thumbnails">
             <ngx-slick-carousel class="carousel thumbs" #slickModal="slick-carousel" [config]="thumbnailsSlider ">
-                <div ngxSlickItem *ngFor="let slide of this.thumbnailServ.slidesThmbs let i = index;" class="slide">
-                    <img src="{{ slide.image }}" alt="{{slide.title}}" width="100%">
+                <div ngxSlickItem *ngFor="let img of firebaseServ.images let i = index;" class="slide">
+                    <img [src]="img" alt="" width="100%">
                 </div>
             </ngx-slick-carousel>
         </div>

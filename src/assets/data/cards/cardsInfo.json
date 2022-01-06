@@ -1,13 +1,13 @@
 [{
-        "text": "postes d’insertion créés et accompagnés depuis 2001 sur l’ensemble de nos pôles.",
+        "text": "postes d’insertion créés depuis 2001",
         "icon": "assets/svg/white_icons/stack.svg",
         "number": 200,
-        "bg": "step-blue",
+        "bg": "step-orange",
         "pourcentage": false
     },
 
     {
-        "text": "des personnes trouvent un emploi durable 6 mois après la fin de leur contrat chez STEP ",
+        "text": "en emploi durable 6 mois après la fin de leur contrat chez STEP",
         "icon": "/assets/svg/white_icons/camembert.svg",
         "number": 60,
         "bg": "step-green",
@@ -15,8 +15,8 @@
     },
 
     {
-        "text": "des ressources STEP sont issues de son activité économique traditionnelle.",
-        "bg": "step-orange",
+        "text": "des ressources STEP sont issues de son activité économique traditionnelle",
+        "bg": "step-cyan",
         "icon": "/assets/svg/white_icons/stats.svg",
         "number": 93,
         "pourcentage": true
