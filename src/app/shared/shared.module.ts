@@ -54,7 +54,7 @@ import { FirebaseImagesService } from '../services/firebase-images.service';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
+
 
 
 const materialsModules = [
