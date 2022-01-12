@@ -1,6 +1,6 @@
 [{
         "listTitle": "Applications Web",
-        "img": "../../../assets/solutions/formations.jpg",
+        "img": "/assets/img/prestations-carousel-img/applications_web.png",
         "title": "Applications Web",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
         "buttonLink": "/metiers/studio/applications-web"
@@ -8,7 +8,7 @@
     },
     {
         "listTitle": "Applications Mobiles",
-        "img": "../../../assets/solutions/formations.jpg",
+        "img": "/assets/img/prestations-carousel-img/applications_mobile.png",
         "title": "Applications Mobiles",
         "text": "Numérisation hauts volumes, patrimoniale, microformes, hors format, grand format et traitement de données. Editique, impression déportée de courriers de gestion",
         "buttonLink": "/metiers/studio/applications-mobiles"

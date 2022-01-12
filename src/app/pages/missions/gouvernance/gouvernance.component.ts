@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
   selector: 'app-gouvernance',
@@ -6,7 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gouvernance.component.css']
 })
 export class GouvernanceComponent implements OnInit {
-
+  
+  partenaires: IPartenaires[] = []
+  
+  constructor(public partenaireServ: PartenairesService) {}
+  
+  ngOnInit(): void {
+  
+    this.partenaireServ.getPartenaires$().subscribe(
+      res => {
+        this.partenaires = res;
+        console.log(res);
+        
+      }
+    );
+  
+  }
 
   bgColor = "#00B0CC"
   bgImg="assets/img/office.jpg"
@@ -48,11 +65,5 @@ C’est ce que nous nous efforçons de faire chaque jour, en le réinventant à 
   }
 
 
-
-  constructor() { }
-
-  ngOnInit(): void {
-    
-  }
 
 }
