@@ -27,6 +27,7 @@ export class FirebaseImagesService {
   constructor(public firebaseStorage: AngularFireStorage) {}
 
   getEditiqueIMG$() {
+    this.images = []; 
     listAll(this.listEditique).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -34,12 +35,15 @@ export class FirebaseImagesService {
           .getDownloadURL()
           .subscribe((res: any) => {
             this.images.push(res);
+            console.log(this.images);
+            
           });
       });
     });
   }
 
   getNumerisationIMG$() {
+    this.images = []; 
     listAll(this.listNumerisation).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -47,12 +51,14 @@ export class FirebaseImagesService {
           .getDownloadURL()
           .subscribe((res: any) => {
             this.images.push(res);
+            console.log(this.images);
           });
       });
     });
   }
 
   getTraitementDonneesIMG$() {
+    this.images = []; 
     listAll(this.listTraitementDonnees).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -79,6 +85,7 @@ export class FirebaseImagesService {
   }
 
   getFormationsLonguesIMG$() {
+    this.images = []; 
     listAll(this.listFormations_longues).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -92,6 +99,7 @@ export class FirebaseImagesService {
   }
 
   getAtelierMaterielIMG$() {
+    this.images = []; 
     listAll(this.listAtelier_materiel).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -104,6 +112,7 @@ export class FirebaseImagesService {
     });
   }
   getAtelierAssistanceIMG$() {
+    this.images = []; 
     listAll(this.listAtelier_assistance).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -117,6 +126,7 @@ export class FirebaseImagesService {
   }
 
   getLivraisonIMG$() {
+    this.images = []; 
     listAll(this.listlivraison).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -130,6 +140,7 @@ export class FirebaseImagesService {
   }
 
   getServicePostal$() {
+    this.images = []; 
     listAll(this.listService_postal).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -143,6 +154,7 @@ export class FirebaseImagesService {
   }
 
   getConciergerie$() {
+    this.images = []; 
     listAll(this.listConciergerie).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage
@@ -156,6 +168,7 @@ export class FirebaseImagesService {
   }
 
   getInclusion$() {
+    this.images = []; 
     listAll(this.listInclusion).then((data) => {
       data.items.forEach((itemRef) => {
         this.firebaseStorage

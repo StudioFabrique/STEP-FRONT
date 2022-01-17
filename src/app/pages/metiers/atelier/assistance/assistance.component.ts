@@ -4,7 +4,7 @@ import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { FirebaseImagesService } from 'src/app/services/firebase-images.service';
 import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 import { PartenairesService } from 'src/app/services/partenaires.service';
-import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
+
 
 @Component({
   selector: 'app-assistance',
