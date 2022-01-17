@@ -56,11 +56,10 @@ const routes: Routes = [
     InclusionNumeriqueComponent
   ],
   imports: [
-    // FlexLayoutModule,
     CommonModule,
     SharedModule,
     MetiersRoutingModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

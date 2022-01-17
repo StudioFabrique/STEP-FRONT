@@ -5,4 +5,11 @@
     <router-outlet></router-outlet>
 </div>
 
+<div [ngStyle]="{ 'display-none': shouldShowBreadcrumb}" *ngIf="shouldShowBreadcrumb" style="width: 100%;">
+    <app-breadcrumbs></app-breadcrumbs>
+</div>
+
+
+<app-partners [partenaires]="partenaires"></app-partners>
+
 <app-footer></app-footer>

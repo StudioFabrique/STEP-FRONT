@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouterEvent } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { IPartenaires } from './interfaces/ipartenaires';
+import { PartenairesService } from './services/partenaires.service';
 
   // declare ga as a function to set and sent the events
   declare let gtag: Function;
@@ -13,11 +15,32 @@ export class AppComponent implements OnInit {
   title = 'Step';
 
 
-  constructor(private router: Router) {
+  partenaires: IPartenaires[] = []
+
+  shouldShowBreadcrumb:boolean = false;
+
+  constructor(private router: Router,  public partenaireServ: PartenairesService) {
+
+    this.router.events.pipe(
+      filter((event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((e: RouterEvent) => {
+      this.shouldShowBreadcrumb = e.url != '/accueil' && e.url != '/contact' && e.url != '/metiers' && e.url != '/missions';
+     
+      console.log(e.url);
+      
+      });
+      
   }
 
   ngOnInit() {
       this.setUpAnalytics();     
+      this.partenaireServ.getPartenaires$().subscribe(
+        res => {
+          this.partenaires = res;
+          console.log(res);
+          
+        }
+      )
   }
 
   setUpAnalytics() {

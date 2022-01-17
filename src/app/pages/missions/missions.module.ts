@@ -8,11 +8,6 @@ import { ValeursComponent } from './valeurs/valeurs.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
 import { MissionsRoutingModule } from './missions-routing.module';
 
-const routes: Routes = [
-  { path: '', component: MissionsComponent, children: [
-
-  ]}
-]
 
 @NgModule({
   declarations: [
@@ -26,7 +21,6 @@ const routes: Routes = [
     CommonModule,
     SharedModule,
     MissionsRoutingModule,
-    RouterModule.forChild(routes)
 
   ]
 })

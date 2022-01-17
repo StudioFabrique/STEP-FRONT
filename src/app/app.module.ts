@@ -20,6 +20,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 
 import { AngularFireDatabase } from '@angular/fire/compat/database'
 import {AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

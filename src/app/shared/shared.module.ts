@@ -2,8 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { environment } from 'src/environments/environment';
 
-//MODULES
+
+//MATERIAL MODULES
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,6 +24,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatExpansionModule } from '@angular/material/expansion';
+
+
+// SERVICES
+import { BreadcrumbsService } from '../services/breadcrumbs.service';
+import { AccueilCardsService } from '../services/accueil-cards.service';
+import { FirebaseImagesService } from '../services/firebase-images.service';
+import { ThumbscarouselService } from '../services/thumbscarousel.service';
+import { CounterDirective } from '../directives/counter.directive';
+import { ArticlesService } from '../services/articles.service';
+import { PrestationsCarouselService } from '../services/prestations-carousel.service';
+import { MetiersDetailsHeadersService } from '../services/metiers-details-headers.service';
+
 
 //COMPONENTS
 import { CardsComponent } from './cards/cards.component';
@@ -37,23 +56,11 @@ import { RectanglesComponent } from './rectangles/rectangles.component';
 import { SolutionSliderComponent } from './solution-slider/solution-slider.component';
 import { FooterComponent } from './default/footer/footer.component';
 import { NavbarComponent } from './default/navbar/navbar.component';
-import { RouterModule } from '@angular/router';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BlockComponent } from './block/block.component';
-import { PrestationsCarouselService } from '../services/prestations-carousel.service';
-import { HttpClientModule } from '@angular/common/http';
-import { MetiersDetailsHeadersService } from '../services/metiers-details-headers.service';
-import { CounterDirective } from '../directives/counter.directive';
-import { ArticlesService } from '../services/articles.service';
 import { ThumbnailsCarouselComponent } from './thumbnails-carousel/thumbnails-carousel.component';
-import { ThumbscarouselService } from '../services/thumbscarousel.service';
 import { ClientsComponent } from './clients/clients.component';
 import { SliderAccueilComponent } from './slider-accueil/slider-accueil.component';
-import { AccueilCardsService } from '../services/accueil-cards.service';
-import { FirebaseImagesService } from '../services/firebase-images.service';
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from 'src/environments/environment';
-import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 
@@ -97,6 +104,7 @@ const components = [
   FooterComponent,
   NavbarComponent,
   ThumbnailsCarouselComponent,
+  BreadcrumbsComponent
 ]
 
 const otherModules = [
@@ -108,7 +116,8 @@ const otherModules = [
 @NgModule({
   declarations: [
     components,
-    CounterDirective
+    CounterDirective,
+  
   ],
   imports: [
     materialsModules,
@@ -128,7 +137,8 @@ const otherModules = [
     ArticlesService,
     ThumbscarouselService,
     AccueilCardsService,
-    FirebaseImagesService
+    FirebaseImagesService,
+    BreadcrumbsService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

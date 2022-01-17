@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { IPartenaires } from 'src/app/interfaces/ipartenaires';
+
 import { PartenairesService } from 'src/app/services/partenaires.service';
 
 @Component({
@@ -10,19 +12,21 @@ import { PartenairesService } from 'src/app/services/partenaires.service';
 export class GouvernanceComponent implements OnInit {
   
   partenaires: IPartenaires[] = []
+
   
-  constructor(public partenaireServ: PartenairesService) {}
+  constructor(public partenaireServ: PartenairesService) {
+
+  }
   
   ngOnInit(): void {
-  
+
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
         this.partenaires = res;
         console.log(res);
         
       }
-    );
-  
+    );  
   }
 
   bgColor = "#00B0CC"

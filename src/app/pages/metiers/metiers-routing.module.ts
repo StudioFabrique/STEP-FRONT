@@ -16,40 +16,39 @@ import { InclusionNumeriqueComponent } from './formation/inclusion-numerique/inc
 import { LonguesComponent } from './formation/longues/longues.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 
-
 import { ServicePostalComponent } from './service-postal/service-postal.component';
 import { ApplicationsMobilesComponent } from './studio/applications-mobiles/applications-mobiles.component';
 import { ApplicationsWebComponent } from './studio/applications-web/applications-web.component';
 import { StudioComponent } from './studio/studio.component';
 
+const routes: Routes = [
+  // FLUX DOC
+  { path: 'flux-documentaire', component: FluxDocComponent, data: { breadcrumb: 'Flux documentaires'}},
+  { path: 'flux-documentaire/editique', component: EditiqueComponent, data: { breadcrumb: 'Editique' }},
+  { path: 'flux-documentaire/numerisation', component: NumerisationComponent, data: { breadcrumb: 'Numérisation' } },
+  { path: 'flux-documentaire/traitement-de-donnees', component: TraitementDonneesComponent, data: { breadcrumb: 'Traitement de données' }},
 
-  const routes: Routes = [
-      // FLUX DOC
-      {path: 'flux-documentaire', component:FluxDocComponent},
-      {path: 'flux-documentaire/editique', component:EditiqueComponent},
-      {path: 'flux-documentaire/numerisation', component:NumerisationComponent},
-      {path: 'flux-documentaire/traitement-de-donnees', component:TraitementDonneesComponent},
-      // Atelier
-      {path: 'atelier-numerique', component: AtelierComponent},
-      {path: 'atelier-numerique/assistance', component: AssistanceComponent},
-      {path: 'atelier-numerique/materiel-reemploi', component: MaterielReemploiComponent},
-      // STUDIO
-      {path: 'studio', component: StudioComponent},
-      {path: 'studio/applications-web', component: ApplicationsWebComponent},
-      {path: 'studio/applications-mobiles', component: ApplicationsMobilesComponent},
-      // Autres
-      {path: 'conciergerie', component: ConciergerieComponent},
-      {path: 'service-postal', component: ServicePostalComponent},
-      {path: 'livraison', component: LivraisonComponent},
-      // FORMATIONS
-      {path: 'formations', component: FormationComponent},
-      {path: 'formations/formations-longues', component: LonguesComponent},
-      {path: 'formations/formations-courtes', component: CourtesComponent},
-      {path: 'formations/inclusion-numerique', component: InclusionNumeriqueComponent},
-   
-  ];
+  // Atelier
+  { path: 'atelier-numerique', component: AtelierComponent },
+  { path: 'atelier-numerique/assistance', component: AssistanceComponent },
+  { path: 'atelier-numerique/materiel-reemploi', component: MaterielReemploiComponent},
+  // STUDIO
+  { path: 'studio', component: StudioComponent },
+  { path: 'studio/applications-web', component: ApplicationsWebComponent },
+  {path: 'studio/applications-mobiles', component: ApplicationsMobilesComponent},
+  // FORMATIONS
+  { path: 'formations', component: FormationComponent },
+  { path: 'formations/formations-longues', component: LonguesComponent },
+  { path: 'formations/formations-courtes', component: CourtesComponent },
+  { path: 'formations/inclusion-numerique', component: InclusionNumeriqueComponent},
+
+  // Autres
+  { path: 'conciergerie', component: ConciergerieComponent, data: { breadcrumb: 'Conciergerie' } },
+  { path: 'service-postal', component: ServicePostalComponent, data: { breadcrumb: 'Service postal' } },
+  { path: 'livraison', component: LivraisonComponent, data: { breadcrumb: 'Livraison' } },
+];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class MetiersRoutingModule { }
+export class MetiersRoutingModule {}

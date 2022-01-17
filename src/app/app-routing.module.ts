@@ -9,8 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: 'accueil', loadChildren: () => import('./pages/accueil/accueil.module').then(m => m.AccueilModule) },
   { path: 'cas-etudes', loadChildren: () => import('./pages/cas-etudes/cas-etudes.module').then(m => m.CasEtudesModule) },
-  { path: 'missions', loadChildren: ()=> import("./pages/missions/missions.module").then(m => m.MissionsModule) },
-  { path: 'metiers', loadChildren: ()=> import("./pages/metiers/metiers.module").then(m => m.MetiersModule) },
+  { path: 'missions', loadChildren: ()=> import("./pages/missions/missions.module").then(m => m.MissionsModule), data: {breadcrumb: 'Missions'} },
+  { path: 'metiers', loadChildren: ()=> import("./pages/metiers/metiers.module").then(m => m.MetiersModule), data: {breadcrumb: 'Métiers'} },
   { path: 'contact', loadChildren: ()=> import("./pages/contacts/contacts.module").then(m => m.ContactsModule) },
   { path: 'eco-conception', component: EcoPageComponent},
   { path: 'mentions-legales', component: MentionsLegalesComponent},
@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes, { useHash: true, scrollPositionRestoration: "top" })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

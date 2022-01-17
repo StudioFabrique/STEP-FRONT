@@ -3,7 +3,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 70%;
+    margin: auto;
     height: 500px;
     overflow: hidden;
 }

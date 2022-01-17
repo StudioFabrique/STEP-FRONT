@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IliensFooter, IliensMetiers, IliensMissions } from 'src/app/interfaces/iliens-footer';
 
 @Component({
@@ -9,11 +10,16 @@ import { IliensFooter, IliensMetiers, IliensMissions } from 'src/app/interfaces/
 export class FooterComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+
+  currentYear: number = new Date().getFullYear();
+
+  ngOnInit(): void {
+
+  }
 
   panelOpenState = false;
 
-  copyright = 'Copyright © STEP 2001 - 2021';
+  copyright = `Copyright © STEP 2001 - ${this.currentYear}`;
 
   twitter = 'https://twitter.com';
   linkedin = 'https://fr.linkedin.com/company/step-sa';
