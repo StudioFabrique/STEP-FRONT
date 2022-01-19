@@ -1,6 +1,7 @@
 .router-outlet {
     width: 70%;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 :host-context(.display-none) {

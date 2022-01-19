@@ -32,7 +32,7 @@ export class GouvernanceComponent implements OnInit {
   bgColor = "#00B0CC"
   bgImg="assets/img/office.jpg"
   corner = "assets/corners/white_orange.png"
-  title="« Personne n’est inemployable »!" 
+  title="« Personne n’est inemployable »" 
   accroche="Une feuille de route ouverte à tous pour garder le cap" 
   text="Il y a ceux qui disent, et ceux qui font. Chez STEP, nous faisons ce que nous disons ou plutôt nous testons en interne ce que nous préconisons. " 
 

@@ -98,6 +98,7 @@ p {
 @media only screen and (max-width: 768px) {
     section {
         height: 350px;
+        width: 95%;
     }
     .title {
         margin-left: 40px;
@@ -107,10 +108,7 @@ p {
         margin-left: 5rem;
     }
     a img {
-        width: 180px;
-    }
-    img {
-        width: 100%;
+        width: 160px;
     }
     h2 {
         font-size: 30px;

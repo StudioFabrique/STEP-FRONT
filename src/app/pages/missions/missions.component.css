@@ -14,8 +14,6 @@ span {
     color: white;
 }
 
-p {}
-
 h3 {
     margin-top: 0;
     font-size: 45px;
@@ -36,7 +34,7 @@ article:nth-child(1) {
 }
 
 .text p {
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-size: 16px;
     margin-bottom: 10px;
     margin-top: 0;

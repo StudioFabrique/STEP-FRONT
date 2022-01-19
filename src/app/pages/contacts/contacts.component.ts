@@ -94,7 +94,7 @@ export class ContactsComponent implements OnInit {
     )
   }
 
-  contactImg = "../../../assets/img/contact.png"
+  contactImg = "/assets/img/contact.png"
 
 }
 
