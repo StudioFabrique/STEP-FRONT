@@ -34,7 +34,7 @@ export class FluxDocComponent implements OnInit {
   title = 'Flux Documentaires';
   accroche = 'Une ingénierie dédiée à chaque projet de numérisation ';
   text =
-    'La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur vos coeurs de métier.';
+    'La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur votre coeur de métier.';
   corner = 'assets/corners/white_orange.png';
 
   // CONTENT
@@ -94,9 +94,6 @@ Notre solution Eos s’adapte à vos différents services : administratif et fin
       soustitre: `STEP Eos, le suivi de vos expéditions`,
       text: `STEP Eos offre le suivi de vos expéditions par service, par délai et par période au travers d’indicateurs préétablis.`,
     },
-    {
-      soustitre: `Tarifs : nous consulter`,
-      text: '',
-    },
+    
   ];
 }

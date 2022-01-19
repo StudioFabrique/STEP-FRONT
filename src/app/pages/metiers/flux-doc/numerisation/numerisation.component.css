@@ -17,18 +17,28 @@ article {
     justify-content: center;
 }
 
+p,
+h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p {
     color: #140A82;
     font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.content img {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .column {
     column-count: 2;
     column-gap: 3rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .box-wrapper {
@@ -64,7 +74,6 @@ p {
     .column {
         column-count: 1;
         column-gap: 0rem;
-        text-align: justify;
         line-height: 1.5rem;
     }
     .content {

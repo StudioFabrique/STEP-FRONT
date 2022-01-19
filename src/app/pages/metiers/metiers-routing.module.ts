@@ -10,7 +10,7 @@ const routes: Routes = [
   // FLUX DOC
   // { path: 'flux-documentaire', loadChildren: () => import('./pages/').then(m => m.) },
 
-  {path: 'flux-documentaire', loadChildren: () => import('./flux-doc/flux-doc.module').then(m => m.FluxDocModule), data: { breadcrumb: 'Flux documentaire' }},
+  {path: 'flux-documentaires', loadChildren: () => import('./flux-doc/flux-doc.module').then(m => m.FluxDocModule), data: { breadcrumb: 'Flux documentaire' }},
 
   {path: 'studio', loadChildren: () => import('./studio/studio.module').then(m => m.StudioModule), data: { breadcrumb: 'Studio de développement' }},
 

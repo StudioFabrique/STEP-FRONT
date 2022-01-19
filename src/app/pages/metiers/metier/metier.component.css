@@ -168,8 +168,13 @@ app-metiers-items-header {
     font-size: 14px;
 }
 
+.citation p {
+    margin-left: 0;
+}
+
 .remain-card .remain-card-content h3 {
     font-size: 18px;
+    margin-left: 0;
 }
 
 h5 {

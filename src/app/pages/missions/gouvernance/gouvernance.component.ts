@@ -30,7 +30,7 @@ export class GouvernanceComponent implements OnInit {
   }
 
   bgColor = "#00B0CC"
-  bgImg="assets/img/office.jpg"
+  bgImg="assets/img/component-items-header/gouvernance.jpg"
   corner = "assets/corners/white_orange.png"
   title="« Personne n’est inemployable »" 
   accroche="Une feuille de route ouverte à tous pour garder le cap" 
