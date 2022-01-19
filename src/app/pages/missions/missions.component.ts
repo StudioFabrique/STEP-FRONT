@@ -29,14 +29,17 @@ export class MissionsComponent implements OnInit {
   text="STEP depuis deux décennies ne cesse de se réinventer en diversifiant ses activités et ses engagements" 
   bg="/assets/missions/mission_header.jpg"
 
+
+  strong = "STEP";
+
   
-  intro = `Implantée à Pau (Sud-Ouest), en Nouvelle Aquitaine (France), STEP est une entreprise citoyenne et responsable qui mise sur l’humain et sa diversité. 
+  intro = `Implantée à Pau (Sud-Ouest), en Nouvelle Aquitaine (France), ${this.strong} est une entreprise citoyenne et responsable qui mise sur l’humain et sa diversité. 
   
-  Expert du traitement des flux documentaires et de l’environnement informatique associé, STEP s’est imposé, en une vingtaine d'années dans le domaine des services numériques et accompagne aujourd’hui de grands comptes et de nombreuses PMEI. Elle démontre que la compétitivité et le développement de services innovants à destination des professionnels (ingénierie informatique, gestion des flux documentaires…) riment avec insertion sociale et que la fracture numérique n’est pas une fatalité.
+  Expert du traitement des flux documentaires et de l’environnement informatique associé, ${this.strong} s’est imposé, en une vingtaine d'années dans le domaine des services numériques et accompagne aujourd’hui de grands comptes et de nombreuses PMEI. Elle démontre que la compétitivité et le développement de services innovants à destination des professionnels (ingénierie informatique, gestion des flux documentaires…) riment avec insertion sociale et que la fracture numérique n’est pas une fatalité.
 
  Entreprise engagée en Nouvelle Aquitaine, elle a su diversifier son offre au fil du temps et propose un modèle vertueux sur l’ensemble de ses pôles d’activité via des solutions globales tout en ayant à cœur de promouvoir la responsabilité vis à vis du territoire, de la collectivité, ou des personnes aux parcours fragilisés qu’elle rencontre et soutient, sans crainte d’associer compétitivité et offre de services.
   
- STEP, c’est plusieurs métiers dédiés, de la gestion des flux documentaires à la formation au numérique, en passant par les services de territoire, le tout associé à des expertises pointues.`
+ ${this.strong}, c’est plusieurs métiers dédiés, de la gestion des flux documentaires à la formation au numérique, en passant par les services de territoire, le tout associé à des expertises pointues.`
   
 
 

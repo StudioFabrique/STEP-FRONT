@@ -18,15 +18,17 @@ export class AppComponent implements OnInit {
   partenaires: IPartenaires[] = []
 
   shouldShowBreadcrumb:boolean = false;
+  showPartenaires:boolean = false;
 
   constructor(private router: Router,  public partenaireServ: PartenairesService) {
 
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((e: RouterEvent) => {
-      this.shouldShowBreadcrumb = e.url != '/accueil' && e.url != '/contact' && e.url != '/metiers' && e.url != '/missions';
+      this.shouldShowBreadcrumb = e.url != '/accueil' && e.url != '/contact' && e.url != '/metiers' && e.url != '/missions' && e.url != '/eco-conception' && e.url != '/mentions-legales';
+      this.showPartenaires = e.url != '/missions/partenaires' && e.url != '/mentions-legales';
      
-      console.log(e.url);
+  
       
       });
       

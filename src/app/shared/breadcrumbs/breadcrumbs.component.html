@@ -1,20 +1,23 @@
 <section>
+    <article>
 
-    <div class="breadcrumbs-container">
-        <ol class="breadcrumb">
-            <li *ngFor="let breadcrumb of breadcrumbs">
-                <span [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
-        
-      {{ breadcrumb.label }}
-    </span>
-            </li>
-        </ol>
-    </div>
 
-    <div class="accueil">
-        <img [src]=this.img alt="">
-        <a href="accueil">Retour à l'accueil</a>
-    </div>
+        <div class="breadcrumbs-container">
+            <ol class="breadcrumb">
+                <li *ngFor="let breadcrumb of breadcrumbs">
+                    <span [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
+                        
+                        {{ breadcrumb.label }}
+                    </span>
+                </li>
+            </ol>
+        </div>
 
+        <div class="accueil">
+            <img [src]=this.img alt="">
+            <a href="accueil">Retour à l'accueil</a>
+        </div>
+
+    </article>
 
 </section>

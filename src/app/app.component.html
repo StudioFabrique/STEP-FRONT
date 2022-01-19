@@ -9,7 +9,6 @@
     <app-breadcrumbs></app-breadcrumbs>
 </div>
 
-
-<app-partners [partenaires]="partenaires"></app-partners>
+<app-partners [ngStyle]="{ 'display-none': showPartenaires}" *ngIf="showPartenaires" [partenaires]="partenaires"></app-partners>
 
 <app-footer></app-footer>

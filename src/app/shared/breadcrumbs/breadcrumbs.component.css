@@ -9,6 +9,15 @@ section {
     border-bottom: navy solid 2px;
 }
 
+article {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .breadcrumbs-container {
     width: 60%;
 }
