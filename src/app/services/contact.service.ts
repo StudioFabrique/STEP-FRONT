@@ -1,18 +1,56 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+
+import { catchError, map } from 'rxjs/operators';
 import { IContact } from '../interfaces/icontact';
 
 
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ContactService {
 
-  contact: IContact[] = [];
 
-  serverURL ='https://script.google.com/macros/s/AKfycby1V59j2CIPWVf2gH7s3fB6U4ewE8lHD21114DZw6AIORILAczLH3-vFlJ5owuVfpUP/exec';
+  headers = new HttpHeaders()
+
+  contact: IContact[] = [];
+  formspree = 'https://formspree.io/f/xzbobqzj'
+  serverURL ='https://script.google.com/a/macros/fabriquenumerique.fr/s/AKfycbx1MXDhIual2MweVZIWhV6CASlmXbLK8lnKWVsinc4ogH-lJFkuxEhjyqytSbUi8NeCXA/exec';
+  constructor(private httpServ: HttpClient) {}
+
+ 
+
+  PostMessage(input: any) {
+    this.headers.set('content-type', 'application/json')
+    this.headers.set('Access-Control-Allow-Origin', '*')
+    
+    return this.httpServ.post(this.serverURL, input,  {
+
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+
+   
+    })
+      .pipe(
+        map(
+          (response:any) => {
+            if (response) {
+              return response;
+            }else{
+              return null;
+            }
+          },
+          (error: any) => {
+            return error;
+          }
+        )
+      )
+  }
+
   
 
   // deplymenID:"AKfycby1V59j2CIPWVf2gH7s3fB6U4ewE8lHD21114DZw6AIORILAczLH3-vFlJ5owuVfpUP"

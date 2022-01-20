@@ -224,14 +224,14 @@ button {
     border-top-right-radius: 8px;
 }
 
-.map button {
+.map a {
     width: 30%;
     margin-right: 2rem;
     margin-bottom: 2rem;
     border: 0px solid transparent;
 }
 
-button span {
+.button-map span {
     color: white;
 }
 
@@ -240,7 +240,7 @@ h5,
 span,
 p {
     color: #140a82;
-    line-height: 0.5rem;
+    line-height: 1.5rem;
 }
 
 h5 {
@@ -252,7 +252,7 @@ app-partners {
 }
 
 @media only screen and (max-width: 1440px) {
-    .map button {
+    .map .button-map {
         width: 40%;
         margin-right: 2rem;
         margin-bottom: 2rem;
@@ -382,10 +382,10 @@ app-partners {
         width: 60%;
         height: 350px;
     }
-    .map button {
+    .map a {
         width: 50%;
     }
-    button span {
+    .button-map span {
         color: white;
     }
 }
@@ -510,11 +510,11 @@ app-partners {
         padding-bottom: 2%;
         border-radius: 0px;
     }
-    .map button {
+    .map a {
         width: 80%;
         margin-right: 0;
     }
-    .map button span {
+    .map a span {
         color: white;
     }
 }

@@ -6,6 +6,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { NgxCaptchaModule, ReCaptchaV3Service } from 'ngx-captcha';
+
+
 
 
 const routes: Routes = [
@@ -17,6 +20,7 @@ const routes: Routes = [
     ContactsComponent
   ],
   imports: [
+    NgxCaptchaModule,
     ReactiveFormsModule,
     FormsModule,
     CommonModule,
@@ -24,6 +28,10 @@ const routes: Routes = [
     HttpClientModule,
     MatSnackBarModule,
     RouterModule.forChild(routes)
+  ],
+  providers: [
+    ReCaptchaV3Service,
+    
   ]
 })
 export class ContactsModule { }

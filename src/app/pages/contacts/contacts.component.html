@@ -11,9 +11,10 @@
 
 
 
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+        <form [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
 
-
+            <ngx-invisible-recaptcha #captchaElem [siteKey]="siteKey" [useGlobalDomain]="false" ngModel [ngModelOptions]="{ standalone: true }">
+            </ngx-invisible-recaptcha>
 
             <div class="fields">
                 <mat-form-field appearance="outline">
@@ -30,14 +31,14 @@
                 <div class="fields">
                     <mat-label>Nom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre nom" name="name" ngModel required #name="ngModel">
+                        <input matInput placeholder="Votre nom" [formControl]="name" ngModel required>
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Prénom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre prénom" name="lastName" ngModel required #lastName="ngModel">
+                        <input matInput placeholder="Votre prénom" [formControl]="lastName" ngModel required>
                     </mat-form-field>
                 </div>
             </div>
@@ -51,14 +52,14 @@
                 <div class="fields">
                     <mat-label>Adresse mail *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre adresse mail" email name="email" ngModel required #email="ngModel">
+                        <input matInput type="email" placeholder="Votre adresse mail" email [formControl]="email" ngModel required>
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Téléphone</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre numéro de téléphone" name="telephone" ngModel #telephone="ngModel">
+                        <input matInput type="number" placeholder="Votre numéro de téléphone" [formControl]="telephone" ngModel>
                     </mat-form-field>
                 </div>
             </div>
@@ -70,7 +71,7 @@
                 <div class="fields">
                     <mat-label>Entreprise</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre entreprise" name="entreprise" ngModel #entreprise="ngModel">
+                        <input matInput placeholder="Votre entreprise" [formControl]="entreprise" ngModel>
                     </mat-form-field>
                 </div>
             </div>
@@ -78,7 +79,7 @@
             <div class="fields">
                 <mat-label>Laissez-nous un message *</mat-label>
                 <mat-form-field appearance="outline">
-                    <textarea cdkTextareaAutosize name="messages" ngModel required #messages="ngModel" #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
+                    <textarea cdkTextareaAutosize [formControl]="message" ngModel required #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
                 </mat-form-field>
             </div>
 
@@ -86,7 +87,7 @@
 
             <div class="btn-container">
 
-                <button type="submit" value="Envoyer">
+                <button [disabled]="isLoading" type="submit" value="Envoyer">
                     <mat-icon><span class="material-icons">message</span></mat-icon>
                     Envoyer
                 </button>
@@ -160,12 +161,12 @@
     </article>
 
     <article class="map">
-        <button href="https://www.step-sa.fr/" target="_blank">
-                <mat-icon><span class="material-icons">
+        <a class="button" href="https://www.google.com/maps/place/Step/@43.319347,-0.366196,15z/data=!4m2!3m1!1s0x0:0x503142a10cf1a61b?sa=X&ved=2ahUKEwjG9puH2cD1AhWP4YUKHRY1DN8Q_BJ6BAgqEAU">
+            <mat-icon><span class="material-icons">
                     location_on
                     </span></mat-icon>
-                Voir sur Google Maps
-            </button>
+            Voir sur Google Maps
+        </a>
     </article>
 
 </section>
