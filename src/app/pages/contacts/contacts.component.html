@@ -17,7 +17,7 @@
 
             <div class="fields">
                 <mat-form-field appearance="outline">
-                    <mat-label>Selectionner une option</mat-label>
+                    <mat-label>Sujet de votre demande</mat-label>
                     <mat-select disableRipple ngModel required name="objet" #objet="ngModel" [ngModelOptions]="{standalone: false}">
                         <mat-option *ngFor="let subject of subjects" [value]="subject">{{subject}}</mat-option>
                     </mat-select>
@@ -28,16 +28,16 @@
             <div class="fields name">
 
                 <div class="fields">
-                    <mat-label>Nom</mat-label>
+                    <mat-label>Nom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre nom" name="name" ngModel required #name="ngModel">
+                        <input matInput placeholder="Votre nom" name="name" ngModel required #name="ngModel">
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
-                    <mat-label>Prénom</mat-label>
+                    <mat-label>Prénom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre prénom" name="lastName" ngModel required #lastName="ngModel">
+                        <input matInput placeholder="Votre prénom" name="lastName" ngModel required #lastName="ngModel">
                     </mat-form-field>
                 </div>
             </div>
@@ -49,16 +49,16 @@
             <div class="fields com">
 
                 <div class="fields">
-                    <mat-label>Adresse mail</mat-label>
+                    <mat-label>Adresse mail *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre adresse mail" email name="email" ngModel required #email="ngModel">
+                        <input matInput placeholder="Votre adresse mail" email name="email" ngModel required #email="ngModel">
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Téléphone</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre no. de téléphone" name="telephone" ngModel #telephone="ngModel">
+                        <input matInput placeholder="Votre numéro de téléphone" name="telephone" ngModel #telephone="ngModel">
                     </mat-form-field>
                 </div>
             </div>
@@ -70,13 +70,13 @@
                 <div class="fields">
                     <mat-label>Entreprise</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="votre entreprise" name="entreprise" ngModel #entreprise="ngModel">
+                        <input matInput placeholder="Votre entreprise" name="entreprise" ngModel #entreprise="ngModel">
                     </mat-form-field>
                 </div>
             </div>
 
             <div class="fields">
-                <mat-label>Laissez-nous un message</mat-label>
+                <mat-label>Laissez-nous un message *</mat-label>
                 <mat-form-field appearance="outline">
                     <textarea cdkTextareaAutosize name="messages" ngModel required #messages="ngModel" #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
                 </mat-form-field>
@@ -85,10 +85,14 @@
             <input type="hidden" name="subject" value="Votre message a été bien envoyé">
 
             <div class="btn-container">
+
                 <button type="submit" value="Envoyer">
                     <mat-icon><span class="material-icons">message</span></mat-icon>
                     Envoyer
                 </button>
+                <p>
+                    Vos données seront bien traitées et vous ne recevrez aucune communication automatique sans votre accord préalable
+                </p>
             </div>
         </form>
 

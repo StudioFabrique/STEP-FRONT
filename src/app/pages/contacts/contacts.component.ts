@@ -23,11 +23,10 @@ export class ContactsComponent implements OnInit {
   contact: IContact[] = [];
 
   subjects = [   
-    "Questions concernants nos formations",
-    "Des questions sur l'eco-conception",
-    "Des questions sur nos projets",
-    "collaboration",
-    "autres..."
+    "Demande d'informations",
+    "Demande de devis",
+    "Poser une question sur une formation",
+    "autres..."   
   ]
 
 
