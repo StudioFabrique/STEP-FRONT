@@ -14,6 +14,11 @@ export interface Lien {
 export class NavbarComponent implements OnInit {
   constructor(private router: Router) {}
 
+  toggleTheme(): void {
+    
+    document.body.classList.toggle('dark-theme');
+ }
+
   ngOnInit(): void {}
 
   liens: Lien[] = [

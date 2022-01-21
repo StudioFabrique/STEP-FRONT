@@ -18,7 +18,7 @@ article {
 }
 
 p {
-    color: #140A82;
+    line-height: 1.8rem;
     font-size: 1.1rem;
 }
 
@@ -26,7 +26,7 @@ p {
     column-count: 2;
     column-gap: 3rem;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 app-questions,

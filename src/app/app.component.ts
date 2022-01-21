@@ -14,8 +14,7 @@ import { PartenairesService } from './services/partenaires.service';
 export class AppComponent implements OnInit {
   title = 'Step';
 
-
-  partenaires: IPartenaires[] = []
+   partenaires: IPartenaires[] = []
 
   shouldShowBreadcrumb:boolean = false;
   showPartenaires:boolean = false;
@@ -35,6 +34,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    document.body.classList.add('light-theme')
+
+
       this.setUpAnalytics();     
       this.partenaireServ.getPartenaires$().subscribe(
         res => {
@@ -55,4 +58,6 @@ export class AppComponent implements OnInit {
               );
           });
   }
+
+
 }

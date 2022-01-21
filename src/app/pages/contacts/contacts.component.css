@@ -136,7 +136,6 @@ button {
 /* ARTICLE TWO */
 
 .artTwo {
-    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,6 +170,11 @@ button {
 
 .address-wrapper {
     margin-top: 50px;
+}
+
+.address-wrapper h4,
+.address-wrapper h5 {
+    color: var(--text-color);
 }
 
 .coord-container {
@@ -208,6 +212,7 @@ button {
 .horaires {
     text-decoration: underline;
     margin-bottom: 50px;
+    color: var(--text-color);
 }
 
 .map {

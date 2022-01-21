@@ -5,27 +5,32 @@ import { SliderAccueilService } from 'src/app/services/slider-accueil.service';
 @Component({
   selector: 'app-slider-accueil',
   templateUrl: './slider-accueil.component.html',
-  styleUrls: ['./slider-accueil.component.css']
+  styleUrls: ['./slider-accueil.component.css'],
 })
 export class SliderAccueilComponent implements OnInit {
-
-  @Input() slides!: ISliderAccueil[]
+  @Input() slides!: ISliderAccueil[];
 
   constructor(public sliderAccueilServ: SliderAccueilService) { }
 
-  ngOnInit(): void {
-  }
 
+  arrowleft = '/assets/svg/arrow-left.svg';
+  arrowright = '/assets/svg/arrow-right.svg';
+
+    previous = `<img class='a-left control-c prev slick-prev ' style='width:50px; left: -50px;' src=${this.arrowleft}>`
+
+    next =  `<img class='step-blue-color a-right control-c next slick-next' style='width:50px; right: -50px;' src=${this.arrowright}>`
+
+  ngOnInit(): void { }
 
   slideConfig = {
-    cssEase:'ease-out',
-    draggable:true,
-    prevArrow:"<img class='a-left control-c prev slick-prev' style='width:50px; left: -50px;' src='/assets/svg/arrow-left.svg'>",
-    nextArrow:"<img class='a-right control-c next slick-next' style='width:50px; right: -50px;' src='/assets/svg/arrow-right.svg'>",
+    cssEase: 'ease-out',
+    draggable: true,
+    prevArrow: this.previous,
+    nextArrow: this.next,
     accessibility: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 200,
+    speed: 10,
     autoplaySpeed: 2000,
     autoplay: true,
     arrows: false,
@@ -35,34 +40,26 @@ export class SliderAccueilComponent implements OnInit {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 3000,
+          speed: 1500,
           autoplaySpeed: 2000,
           autoplay: true,
           arrows: true,
-          fade: true,
           infinite: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
           speed: 3000,
           autoplaySpeed: 2000,
           autoplay: true,
           arrows: true,
-          fade: true,
           infinite: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
           speed: 2000,
           autoplaySpeed: 2000,
         },
@@ -85,5 +82,4 @@ export class SliderAccueilComponent implements OnInit {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
-
 }

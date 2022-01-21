@@ -1,13 +1,4 @@
 [{
-        "cornerImg": "../../../assets/corners/blue_green.png",
-        "img": "../../../assets/carousel/carousel_1.png",
-        "title": "Un Service Postal alternatif",
-        "text": "Depuis 2011, nous détenons une licence d’opérateur postal privé délivrée par l’ARCEP afin d’offrir un Service Postal alternatif dédié aux professionnels faisant de nous le premier opérateur postal privé de proximité en Nouvelle Aquitaine.",
-        "bgColor": "step-blue",
-        "link": "/metiers/service-postal"
-    },
-
-    {
         "cornerImg": "../../../assets/corners/white_orange.png",
         "img": "../../../assets/carousel/carousel_2.png",
         "title": "Lutter contre la fracture numérique",

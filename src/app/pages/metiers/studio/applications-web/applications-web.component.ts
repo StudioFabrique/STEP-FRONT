@@ -35,12 +35,4 @@ export class ApplicationsWebComponent implements OnInit {
 
 
 
-  articles= [
-   
-    {
-      column: '',
-      image: '',
-    }
-  ];
-
 }

@@ -1,7 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
+.light-theme {
+    --body-color: #fff;
+    --text-color: #140a82;
+    --step-blue-main: #140a82;
+    --step-white-color: #fff;
+    --button-color: #fff;
+    --special-style-blue: #140a82;
+    --hover-color: #140a82;
+}
+
+.dark-theme {
+    --body-color: #08043A;
+    --text-color: #fff;
+    --step-blue-main: #fff;
+    --step-white-color: #140a82;
+    --special-style-blue: #140a82;
+    --hover-color: #cdcaee;
+}
+
 html,
 body {
+    background-color: var(--body-color);
     width: 100%;
     margin: auto;
     overflow-x: hidden;
@@ -11,7 +31,7 @@ body {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color: #140a82;
+    color: var(--text-color);
 }
 
 h1,
@@ -20,12 +40,17 @@ h3,
 h4,
 h5,
 h6,
+li,
 button,
 a,
 .mat-toolbar,
 .mat-card {
     font-family: 'Rubik', sans-serif;
-    color: #140a82;
+    color: var(--text-color);
+}
+
+.special-style-blue {
+    color: var(--special-style-blue);
 }
 
 .success {
@@ -42,7 +67,7 @@ a,
 /* Step Colors with backgounds  */
 
 .step-blue {
-    background-color: #140a82;
+    background-color: var(--body-color);
 }
 
 .step-green {
@@ -62,14 +87,14 @@ a,
 }
 
 .step-white-color {
-    color: white;
+    color: var(--step-white-color);
 }
 
 
 /* Step Colors without backgounds  */
 
 .step-blue-color {
-    color: #140a82;
+    color: var(--text-color);
 }
 
 .step-green-color {
@@ -87,17 +112,3 @@ a,
 .step-orange-color {
     color: #ff5e1a;
 }
-
-
-/* @media only screen and (max-width: 1024px) {
-    body {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    body {
-        width: 100%;
-        margin-top: 10px;
-    }
-} */

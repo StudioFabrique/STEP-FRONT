@@ -36,6 +36,8 @@ export class MissionsComponent implements OnInit {
 
   ngOnInit(): void {
 
+    
+
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
         this.partenaires = res;

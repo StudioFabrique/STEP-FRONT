@@ -18,28 +18,22 @@ article {
 }
 
 p {
-    color: #140A82;
     font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 ul li {
     font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.5rem;
-    color: #140A82;
+    line-height: 1.95rem;
 }
 
 .column {
     column-count: 2;
     column-gap: 3rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
-app-questions,
-app-partners {
+app-questions {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -48,9 +42,6 @@ app-partners {
 @media only screen and (max-width: 425px) {
     .column {
         column-count: 1;
-        column-gap: 3rem;
-        text-align: justify;
-        line-height: 1.5rem;
     }
     article {
         width: 100%;

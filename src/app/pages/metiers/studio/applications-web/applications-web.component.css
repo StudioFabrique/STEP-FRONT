@@ -18,21 +18,17 @@ article {
 }
 
 p {
-    color: #140A82;
     font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .column {
     column-count: 2;
     column-gap: 3rem;
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 ul li {
-    color: #140A82;
     line-height: 1.95rem;
     list-style: inside;
 }
@@ -69,9 +65,6 @@ ul li {
     }
     .column {
         column-count: 1;
-        column-gap: 0rem;
-        text-align: justify;
-        line-height: 1.5rem;
     }
     .content {
         width: 100%;

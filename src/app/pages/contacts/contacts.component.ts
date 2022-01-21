@@ -29,6 +29,8 @@ export class ContactsComponent implements OnInit {
   partenaires: IPartenaires[] = [];
   contact: IContact[] = [];
 
+  map = "https://www.google.com/maps/place/Step/@43.319347,-0.366196,15z/data=!4m2!3m1!1s0x0:0x503142a10cf1a61b?sa=X&ved=2ahUKEwjG9puH2cD1AhWP4YUKHRY1DN8Q_BJ6BAgqEAU";
+
   serverURL =
     'https://script.google.com/macros/s/AKfycbxURr5g7xLT7dvigI9ouwNAV9PH3lF7mk6ClYW5VWakU--I2TkzX7G6Y-Dw5Rg6ZkDJ/exec';
 
@@ -158,27 +160,3 @@ export class ContactsComponent implements OnInit {
   }
 }
 
-// onSubmit(contactForm: NgForm) {
-//   if (contactForm.valid) {
-//     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-//     const email = contactForm.value;
-//     this.httpServ.post(this.formspree,
-
-//       {
-//         objet: email.objet,
-//         name: email.name,
-//         lastName: email.lastName,
-//         telephone: [Validators.required, email.telephone],
-//         entreprise: email.entreprise,
-//         email: [Validators.required ,email.email],
-//         message: email.messages,
-//         // recaptcha: ['', Validators.required]
-//       },
-//       { 'headers': headers }).subscribe(
-//         (response) => {
-//           console.log('my error', response );
-//         }
-//       );
-//       contactForm.reset();
-//   }
-// }

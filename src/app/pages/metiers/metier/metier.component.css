@@ -40,7 +40,6 @@ app-metiers-items-header {
 }
 
 #titre h3 {
-    color: #140a82;
     font-weight: 700;
     font-size: 3ch;
     margin: 1rem;
@@ -145,13 +144,13 @@ app-metiers-items-header {
     align-items: center;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: white;
+    background-color: var( --body-color);
 }
 
 .remain-card .remain-card-content h4,
 .remain-card .remain-card-content h3,
 .remain-card .remain-card-content p {
-    color: #140a82;
+    color: var( --text-color);
 }
 
 #txt {
@@ -180,7 +179,7 @@ app-metiers-items-header {
 h5 {
     font-size: 14px;
     font-style: italic;
-    color: #140a82;
+    color: var( --text-color);
 }
 
 .remain-card .remain-card-content h4 {

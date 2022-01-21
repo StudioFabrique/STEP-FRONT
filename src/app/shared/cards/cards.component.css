@@ -48,9 +48,10 @@ article {
     padding: 2%;
 }
 
-img {
+svg {
     width: 40px;
     margin-bottom: 20px;
+    fill: var(--text-color);
 }
 
 h3 {

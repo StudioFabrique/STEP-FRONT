@@ -6,11 +6,11 @@
     <div class="liens">
         <ul class="navigation-items">
             <li *ngFor="let lien of liens">
-                <a (click)="navto(lien.routerLink)">{{ lien.name }}</a>
+                <a class="step-blue-color" (click)="navto(lien.routerLink)">{{ lien.name }}</a>
             </li>
 
-            <div class="icons mat-burger">
-                <span class="eye">
+            <div class="icons mat-burger step-blue-color ">
+                <span class="eye" (click)="toggleTheme()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="34.13"
