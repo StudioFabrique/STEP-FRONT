@@ -22,14 +22,12 @@ export class LivraisonComponent implements OnInit {
 
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
-        this.partenaires = res;
-        console.log(res);
-        
+        this.partenaires = res;        
       }
     )
   }
 
-  bgImg="assets/img/office.jpg"
+  bgImg="/assets/img/livraison.jpg"
   corner = "assets/corners/white_orange.png"
   title="Livraison urbaine";
   accroche="Des triporteurs pour vos colis citadins";

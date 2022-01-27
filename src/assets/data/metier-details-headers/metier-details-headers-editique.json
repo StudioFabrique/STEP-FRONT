@@ -1,6 +1,7 @@
 [{
     "picto": "assets/svg/white_icons/gomme.svg",
+    "picto_mobile": "assets/svg/blue_icons/gomme_blue_icon.svg",
     "title": "Editique",
     "text": "Flux entrants ou sortants, on s’occupe de tout !",
-    "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"
+    "bg": "/assets/img/component-items-header/flux-doc/editique_header.jpg"
 }]

@@ -35,7 +35,7 @@ export class FirebaseImagesService {
           .getDownloadURL()
           .subscribe((res: any) => {
             this.images.push(res);
-            console.log(this.images);
+           
             
           });
       });
@@ -51,7 +51,7 @@ export class FirebaseImagesService {
           .getDownloadURL()
           .subscribe((res: any) => {
             this.images.push(res);
-            console.log(this.images);
+           
           });
       });
     });

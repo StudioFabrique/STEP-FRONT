@@ -3,12 +3,7 @@ section {
     margin-bottom: 50px;
 }
 
-blockquote,
-h2,
-h3,
-li,
-cite,
-p {
+cite {
     color: #140a82;
 }
 
@@ -71,12 +66,14 @@ blockquote {
     padding-right: 5%;
     font-size: 1.3rem;
     line-height: 1.7rem;
+    color: #140a82;
 }
 
-h3 {
+.block h3 {
     padding-left: 5%;
     font-size: 1.5rem;
     text-decoration: underline;
+    color: #140a82;
 }
 
 ul {

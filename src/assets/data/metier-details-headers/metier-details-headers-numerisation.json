@@ -1,6 +1,7 @@
 [{
     "picto": "assets/svg/white_icons/folder.svg",
+    "picto_mobile": "assets/svg/blue_icons/folder_blue_icon.svg",
     "title": "Numérisation",
     "text": "Optimisez et conservez vos données patrimoniales !",
-    "bg": "assets/metiers/flux-doc/flux_doc_6.jpg"
+    "bg": "/assets/img/component-items-header/flux-doc/numerisation_header.jpg"
 }]

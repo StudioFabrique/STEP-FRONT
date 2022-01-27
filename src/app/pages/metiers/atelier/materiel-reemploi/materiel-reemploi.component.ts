@@ -26,9 +26,7 @@ export class MaterielReemploiComponent implements OnInit {
 
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
-        this.partenaires = res;
-        console.log(res);
-        
+        this.partenaires = res;        
       }
     )
   }

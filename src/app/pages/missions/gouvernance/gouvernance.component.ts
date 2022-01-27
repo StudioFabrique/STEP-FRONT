@@ -22,15 +22,13 @@ export class GouvernanceComponent implements OnInit {
 
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
-        this.partenaires = res;
-        console.log(res);
-        
+        this.partenaires = res; 
       }
     );  
   }
 
   bgColor = "#00B0CC"
-  bgImg="assets/img/component-items-header/gouvernance.jpg"
+  bgImg="/assets/img/component-items-header/missions/gouvernance_header.jpg"
   corner = "assets/corners/white_orange.png"
   title="« Personne n’est inemployable »" 
   accroche="Une feuille de route ouverte à tous pour garder le cap" 

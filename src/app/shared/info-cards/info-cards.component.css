@@ -16,11 +16,9 @@ section {
     justify-content: flex-start;
 }
 
-.head img {
-    width: 100px;
-    margin-bottom: 0;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+.head svg {
+    fill: var(--text-color);
+    margin-bottom: 10px;
 }
 
 p,

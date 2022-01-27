@@ -1,5 +1,6 @@
 [{
-    "picto": "assets/svg/stack.svg",
+    "picto": "/assets/svg/white_icons/computer.svg",
+    "picto_mobile": "/assets/svg/blue_icons/computer_blue_icon.svg",
     "title": "Applications Web",
     "text": "Technologies récentes : Saas, PoC et MVP",
     "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"

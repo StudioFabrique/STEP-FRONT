@@ -122,6 +122,7 @@ p {
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        margin-top: 0px;
     }
     article {
         height: 100%;

@@ -99,12 +99,6 @@ li button:focus mat-icon {
     border-radius: 50%;
 }
 
-
-/* li:focus-within {
-    background-color: #01A9C9;
-    border-radius: 50px;
-} */
-
 mat-icon {
     margin-right: 15px;
 }
@@ -254,6 +248,7 @@ h5 {
         justify-content: center;
         align-items: center;
         background-color: #00B0CC;
+        margin-bottom: 0px;
     }
     .artLeft {
         width: 100%;
@@ -297,6 +292,7 @@ h5 {
         width: 100%;
         top: auto;
         bottom: 0;
+        border-radius: 0px;
     }
     .content {
         margin-left: 15px;

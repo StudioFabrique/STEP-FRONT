@@ -1,6 +1,7 @@
 [{
-    "picto": "assets/svg/stack.svg",
+    "picto": "/assets/svg/white_icons/settings.svg",
+    "picto_mobile": "/assets/svg/blue_icons/settings_blue_icon.svg",
     "title": "Assistance et maintenance",
     "text": "Des techniciens et des alternants à votre service",
-    "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"
+    "bg": "/assets/img/component-items-header/atelier/maintenance_header.jpg"
 }]

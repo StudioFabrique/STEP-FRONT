@@ -1,6 +1,7 @@
 [{
-    "picto": "assets/svg/stack.svg",
+    "picto": "/assets/svg/white_icons/pic.svg",
+    "picto_mobile": "assets/svg/blue_icons/pic_blue_icon.svg",
     "title": "Inclusion Numérique",
     "text": "Accompagnement pour lutter contre la fracture numérique",
-    "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"
+    "bg": "/assets/img/component-items-header/formation/inclusion_header.jpg"
 }]

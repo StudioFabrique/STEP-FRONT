@@ -1,6 +1,7 @@
 [{
-    "picto": "assets/svg/stack.svg",
+    "picto": "/assets/svg/white_icons/settings_2.svg",
+    "picto_mobile": "/assets/svg/blue_icons/settings_2_blue_icon.svg",
     "title": "Matériel de réemploi reconditionné ",
     "text": "Un second souffle pour les ordis",
-    "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"
+    "bg": "/assets/img/component-items-header/atelier/remploie-materiel_header.jpg"
 }]

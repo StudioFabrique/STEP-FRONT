@@ -1,5 +1,6 @@
 export interface IMetierDetailsHeaders {
     picto: string,
+    picto_mobile: string,
     title: string ,
     text: string, 
     bg: string,

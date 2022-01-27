@@ -1,6 +1,7 @@
 [{
-    "picto": "assets/svg/stack.svg",
+    "picto": "assets/svg/white_icons/stack.svg",
+    "picto_mobile": "assets/svg/blue_icons/stack_blue_icon.svg",
     "title": "Traitement des Données",
     "text": "L’analyse textuelle à votre service !",
-    "bg": "assets/metiers/flux-doc/flux_doc_5.jpg"
+    "bg": "/assets/img/component-items-header/flux-doc/traitement-de-donnees_header.jpg"
 }]

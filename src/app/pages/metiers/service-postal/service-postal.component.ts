@@ -21,14 +21,12 @@ export class ServicePostalComponent implements OnInit {
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
         this.partenaires = res;
-        console.log(res);
-        
       }
     )
   }
 
 
-  bgImg="assets/img/office.jpg"
+  bgImg="/assets/img/service-postal.jpg"
   corner = "assets/corners/white_orange.png"
   title="Service Postal";
   accroche="STEP, votre opérateur postal de proximité ";

@@ -32,7 +32,7 @@ export class ValeursComponent implements OnInit {
   }
 
   bgColor = "#00B0CC"
-  bgImg="assets/img/office.jpg"
+  bgImg="/assets/img/component-items-header/missions/valeurs_header.jpg"
   corner = "assets/corners/blue_orange.png"
   title = "STEP, la belle histoire"
   accroche = "Une histoire qui dure depuis 20 ans"

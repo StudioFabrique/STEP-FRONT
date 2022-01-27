@@ -28,7 +28,7 @@ export class MetierComponent implements OnInit {
   title="Des solutions et des métiers " 
   titleBold="adaptés à vos besoins" 
   text="STEP vous accompagne en vous proposant des solutions globales et ses expertises dans plusieurs grands secteurs d’activités. Les flux documentaires et le back office, les services de territoire et l’ingénierie informatique." 
-  bg="../../../assets/img/solutions.png"
+  bg="/assets/img/metiers.jpg"
 
   
   constructor(public partenaireServ: PartenairesService, public metierServ: MetiersDetailsHeadersService) {}
@@ -38,17 +38,12 @@ export class MetierComponent implements OnInit {
   ngOnInit(): void {
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
-        this.partenaires = res;
-        console.log(res);
-        
+        this.partenaires = res;      
       }
     );
 
     this.metierServ.getMetiers$();
   }
-
-
-
   gridColumns = 3;
 
 }
