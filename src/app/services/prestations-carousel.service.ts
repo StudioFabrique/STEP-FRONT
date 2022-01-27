@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import { IprestationsCarousel } from '../interfaces/iprestations-carousel';
 
 @Injectable({
@@ -12,32 +13,36 @@ export class PrestationsCarouselService {
   constructor(private httpService: HttpClient) { }
 
   getPrestations() {
-    this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-fluxdoc.json').subscribe((data: any) => {
+    // this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-fluxdoc.json')
+    this.httpService.get(environment.JSONBinFiles.PrestationsCarouselFluxdoc)
+    .subscribe((data: any) => {
       this.prestationsDetails = data;
-      console.log("data", this.prestationsDetails);
     });
   }
 
   getPrestationsStudio() {
-    this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-studio.json').subscribe((data: any) => {
+    // this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-studio.json')
+    this.httpService.get(environment.JSONBinFiles.PrestationsCarouselStudio)
+    .subscribe((data: any) => {
       this.prestationsDetails = data;
-      console.log("data", this.prestationsDetails);
     });
   }
 
 
   getPrestationsAtelier() {
-    this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-atelier.json').subscribe((data: any) => {
+    // this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-atelier.json')
+    this.httpService.get(environment.JSONBinFiles.PrestationsCarouselAtelier)
+    .subscribe((data: any) => {
       this.prestationsDetails = data;
-      console.log("data", this.prestationsDetails);
     });
   }
 
 
   getPrestationsFormations() {
-    this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-formations.json').subscribe((data: any) => {
+    // this.httpService.get('/assets/data/prestations-carousel/prestations-carousel-formations.json')
+    this.httpService.get(environment.JSONBinFiles.PrestationsCarouselFormations)
+    .subscribe((data: any) => {
       this.prestationsDetails = data;
-      console.log("data", this.prestationsDetails);
     });
   }
   }

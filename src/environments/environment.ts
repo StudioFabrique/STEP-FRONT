@@ -12,6 +12,12 @@ export const environment = {
     messagingSenderId: "919741587961",
     appId: "1:919741587961:web:8f0e262e38b445998a9d28",
     measurementId: "G-VKXTYSJQY2"
+  },
+  JSONBinFiles: {
+    sliderCarousel: "https://api.jsonbin.io/b/61f1034bc37c954943550be5/1",
+  },
+  ContactForm: {
+    serverURL: 'https://script.google.com/a/macros/fabriquenumerique.fr/s/AKfycbx1MXDhIual2MweVZIWhV6CASlmXbLK8lnKWVsinc4ogH-lJFkuxEhjyqytSbUi8NeCXA/exec',
   }
 };
 

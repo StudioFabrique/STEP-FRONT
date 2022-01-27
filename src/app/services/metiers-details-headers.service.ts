@@ -1,93 +1,124 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IMetierDetailsHeaders, IMetiersList } from '../interfaces/imetier-details-headers';
+import {
+  IMetierDetailsHeaders,
+  IMetiersList,
+} from '../interfaces/imetier-details-headers';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MetiersDetailsHeadersService {
-
   metierDetailsHeaders: IMetierDetailsHeaders[] = [];
   metiersList: IMetiersList[] = [];
 
-  constructor(private httpServiceMetierHeader: HttpClient) { }
+  constructor(private httpServiceMetierHeader: HttpClient) {}
 
-  getMetiers$(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metiersList.json').subscribe(
-      (data:any) => {
+  getMetiers$() {
+    this.httpServiceMetierHeader
+      .get('/assets/data/metier-details-headers/metiersList.json')
+      .subscribe((data: any) => {
         this.metiersList = data;
-      console.log("data", this.metiersList);
-      }
-    );
+      });
   }
 
-  getFormationsLongues(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getFormationsLongues() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getFormationsCourtes(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-formationsCourtes.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getFormationsCourtes() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-formationsCourtes.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-    getFormationsInclusion(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-inclusion.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getFormationsInclusion() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-inclusion.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getNumerisation(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-numerisation.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getNumerisation() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-numerisation.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getEditique(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-editique.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getEditique() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-editique.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getTraitementDonnees(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-traitementDonnees.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getTraitementDonnees() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-traitementDonnees.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getApplicationsWeb(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-applicationsWeb.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getApplicationsWeb() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-applicationsWeb.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getApplicationsMobiles(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-applicationsMobiles.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getApplicationsMobiles() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-applicationsMobiles.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getAssistance(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-atelier-assistance.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getAssistance() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-atelier-assistance.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 
-  getMateriels(){
-    this.httpServiceMetierHeader.get('/assets/data/metier-details-headers/metier-details-headers-atelier-materiels.json').subscribe((data:any) => {
-      this.metierDetailsHeaders = data;
-      console.log("data", this.metierDetailsHeaders);
-    });
+  getMateriels() {
+    this.httpServiceMetierHeader
+      .get(
+        '/assets/data/metier-details-headers/metier-details-headers-atelier-materiels.json'
+      )
+      .subscribe((data: any) => {
+        this.metierDetailsHeaders = data;
+      });
   }
 }

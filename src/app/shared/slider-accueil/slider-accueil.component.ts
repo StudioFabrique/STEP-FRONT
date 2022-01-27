@@ -10,17 +10,16 @@ import { SliderAccueilService } from 'src/app/services/slider-accueil.service';
 export class SliderAccueilComponent implements OnInit {
   @Input() slides!: ISliderAccueil[];
 
-  constructor(public sliderAccueilServ: SliderAccueilService) { }
-
+  constructor(public sliderAccueilServ: SliderAccueilService) {}
 
   arrowleft = '/assets/svg/arrow-left.svg';
   arrowright = '/assets/svg/arrow-right.svg';
 
-    previous = `<img class='a-left control-c prev slick-prev ' style='width:50px; left: -50px;' src=${this.arrowleft}>`
+  previous = `<img class='a-left control-c prev slick-prev ' style='width:50px; left: -50px;' src=${this.arrowleft}>`;
 
-    next =  `<img class='step-blue-color a-right control-c next slick-next' style='width:50px; right: -50px;' src=${this.arrowright}>`
+  next = `<img class='step-blue-color a-right control-c next slick-next' style='width:50px; right: -50px;' src=${this.arrowright}>`;
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   slideConfig = {
     cssEase: 'ease-out',
@@ -67,19 +66,11 @@ export class SliderAccueilComponent implements OnInit {
     ],
   };
 
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
+  slickInit(e: any) {}
 
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
+  breakpoint(e: any) {}
 
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
+  afterChange(e: any) {}
 
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
+  beforeChange(e: any) {}
 }

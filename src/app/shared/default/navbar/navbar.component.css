@@ -10,6 +10,10 @@ nav {
     width: 8rem;
 }
 
+.top a svg path {
+    fill: var(--text-color);
+}
+
 .liens {
     display: flex;
     flex-direction: row;
@@ -53,7 +57,7 @@ li {
     width: 0px;
     height: 2px;
     display: block;
-    background-color: varr(--body-color);
+    background-color: var(--body-color);
     transition: 300ms;
 }
 

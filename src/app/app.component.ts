@@ -41,9 +41,7 @@ export class AppComponent implements OnInit {
       this.setUpAnalytics();     
       this.partenaireServ.getPartenaires$().subscribe(
         res => {
-          this.partenaires = res;
-          console.log(res);
-          
+          this.partenaires = res;         
         }
       )
   }

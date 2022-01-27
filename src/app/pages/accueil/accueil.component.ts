@@ -23,26 +23,18 @@ export class AccueilComponent implements OnInit {
     this.clientServ.getClients$().subscribe(
       res => {
         this.clients = res;
-        console.log(res);
-        
       }
     );
 
     this.partenaireServ.getPartenaires$().subscribe(
       res => {
-        this.partenaires = res;
-        console.log(res);
-        
+        this.partenaires = res;        
       }
     )
 
     this.slideAccueilServ.getSliderAccueil$().subscribe(res => {
-      this.slides = res;
-      console.log("slider", res);
-      
+      this.slides = res;      
     })
-
-
   }
 
   

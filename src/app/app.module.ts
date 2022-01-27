@@ -14,8 +14,6 @@ import { EmploisComponent } from './pages/emplois/emplois.component';
 import { EcoPageComponent } from './pages/eco-page/eco-page.component';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
 
-import { environment } from 'src/environments/environment';
-
 import { AngularFireModule } from '@angular/fire/compat';
 
 import { AngularFireDatabase } from '@angular/fire/compat/database'

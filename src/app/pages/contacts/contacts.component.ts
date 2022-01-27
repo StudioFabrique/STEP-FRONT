@@ -17,6 +17,7 @@ import { ReCaptchaV3Service } from 'ngx-captcha';
 import { IContact } from 'src/app/interfaces/icontact';
 import { IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { PartenairesService } from 'src/app/services/partenaires.service';
+import { environment } from 'src/environments/environment.prod';
 import { GoogleAnalyticsService } from '../../services/google-analytics.service';
 
 @Component({
@@ -31,8 +32,7 @@ export class ContactsComponent implements OnInit {
 
   map = "https://www.google.com/maps/place/Step/@43.319347,-0.366196,15z/data=!4m2!3m1!1s0x0:0x503142a10cf1a61b?sa=X&ved=2ahUKEwjG9puH2cD1AhWP4YUKHRY1DN8Q_BJ6BAgqEAU";
 
-  serverURL =
-    'https://script.google.com/macros/s/AKfycbxURr5g7xLT7dvigI9ouwNAV9PH3lF7mk6ClYW5VWakU--I2TkzX7G6Y-Dw5Rg6ZkDJ/exec';
+  serverURL = environment.ContactForm.serverURL;
 
   subjects = [
     "Demande d'informations",
@@ -124,6 +124,7 @@ export class ContactsComponent implements OnInit {
           this.submitted = true; // show the response message
           this.isLoading = false; // re enable the submit button
           console.log(response);
+          this.form.reset();
         },
         (error) => {
           this.responseMessage =
@@ -151,7 +152,7 @@ export class ContactsComponent implements OnInit {
       duration: 3000,
       horizontalPosition: 'center',
       verticalPosition: 'top',
-      panelClass: ['step-blue', 'step-white-color'],
+      panelClass: ['success', 'step-blue-color'],
     });
   }
 

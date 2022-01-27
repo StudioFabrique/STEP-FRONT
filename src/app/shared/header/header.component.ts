@@ -1,52 +1,42 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-
-
 export interface HeaderList {
-  item: string,
+  item: string;
 }
-
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   headerItems1: HeaderList[] = [
-    {"item": "Flux documentaire"},
-    {"item": "Studio de développement"},
-    {"item": "L'atelier numérique"}
-  ]
-
-  headerItems2: HeaderList[] = [
-    {"item": "Livraison urbaine"},
-    {"item": "Conciergerie d’entreprise"},
-    {"item": "Formations"}
-  ]
-
-  ngOnInit(): void {
-  }
-
-
-
- 
-  metiers = [
-    { title: "Flux Documentaires" , link: "/metiers/flux-documentaire"},
-    { title: "Studio de Développement" , link: "/metiers/studio"},
-    { title: "Atelier Numérique" , link: "/metiers/atelier-numerique"},
-    { title: "Livraison Urbaine" , link: "/metiers/livraison"},
-    { title: "Service Postal" , link: "/metiers/service-postal"},
-    { title: "Conciergerie" , link: "/metiers/conciergerie"},
-    { title: "Formations" , link: "/metiers/formations"},
+    { item: 'Flux documentaire' },
+    { item: 'Studio de développement' },
+    { item: "L'atelier numérique" },
   ];
 
+  headerItems2: HeaderList[] = [
+    { item: 'Livraison urbaine' },
+    { item: 'Conciergerie d’entreprise' },
+    { item: 'Formations' },
+  ];
+
+  ngOnInit(): void {}
+
+  metiers = [
+    { title: 'Flux Documentaires', link: '/metiers/flux-documentaire' },
+    { title: 'Studio de Développement', link: '/metiers/studio' },
+    { title: 'Atelier Numérique', link: '/metiers/atelier-numerique' },
+    { title: 'Livraison Urbaine', link: '/metiers/livraison' },
+    { title: 'Service Postal', link: '/metiers/service-postal' },
+    { title: 'Conciergerie', link: '/metiers/conciergerie' },
+    { title: 'Formations', link: '/metiers/formations' },
+  ];
 
   slideConfig = {
-    
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 2000,
@@ -103,23 +93,11 @@ export class HeaderComponent implements OnInit {
     ],
   };
 
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
+  slickInit(e: any) {}
 
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
+  breakpoint(e: any) {}
 
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
+  afterChange(e: any) {}
 
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
-
-
-
+  beforeChange(e: any) {}
 }
-

@@ -18,7 +18,7 @@
 
             <div class="fields">
                 <mat-form-field appearance="outline">
-                    <mat-label>Sujet de votre demande</mat-label>
+                    <mat-label role="contentinfo">Sujet de votre demande</mat-label>
                     <mat-select disableRipple ngModel required name="objet" #objet="ngModel" [ngModelOptions]="{standalone: false}">
                         <mat-option *ngFor="let subject of subjects" [value]="subject">{{subject}}</mat-option>
                     </mat-select>
@@ -31,14 +31,14 @@
                 <div class="fields">
                     <mat-label>Nom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre nom" [formControl]="name" ngModel required>
+                        <input role="cell" matInput placeholder="Votre nom" [formControl]="name" ngModel required>
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Prénom *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre prénom" [formControl]="lastName" ngModel required>
+                        <input role="cell" matInput placeholder="Votre prénom" [formControl]="lastName" ngModel required>
                     </mat-form-field>
                 </div>
             </div>
@@ -52,14 +52,14 @@
                 <div class="fields">
                     <mat-label>Adresse mail *</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput type="email" placeholder="Votre adresse mail" email [formControl]="email" ngModel required>
+                        <input role="cell" matInput type="email" placeholder="Votre adresse mail" email [formControl]="email" ngModel required>
                     </mat-form-field>
                 </div>
 
                 <div class="fields">
                     <mat-label>Téléphone</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput type="number" placeholder="Votre numéro de téléphone" [formControl]="telephone" ngModel>
+                        <input role="cell" matInput type="number" placeholder="Votre numéro de téléphone" [formControl]="telephone" ngModel>
                     </mat-form-field>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="fields">
                     <mat-label>Entreprise</mat-label>
                     <mat-form-field appearance="outline">
-                        <input matInput placeholder="Votre entreprise" [formControl]="entreprise" ngModel>
+                        <input role="cell" matInput placeholder="Votre entreprise" [formControl]="entreprise" ngModel>
                     </mat-form-field>
                 </div>
             </div>
@@ -79,7 +79,7 @@
             <div class="fields">
                 <mat-label>Laissez-nous un message *</mat-label>
                 <mat-form-field appearance="outline">
-                    <textarea cdkTextareaAutosize [formControl]="message" ngModel required #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
+                    <textarea role="cell" cdkTextareaAutosize [formControl]="message" ngModel required #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="8" matInput placeholder="Bonjour ... "></textarea>
                 </mat-form-field>
             </div>
 
@@ -87,8 +87,8 @@
 
             <div class="btn-container">
 
-                <button [disabled]="isLoading" type="submit" value="Envoyer">
-                    <mat-icon><span class="material-icons">message</span></mat-icon>
+                <button role="button" [disabled]="isLoading" type="submit" value="Envoyer">
+                    <img class="chat" src="/assets/svg/white_icons/chat_white.svg" alt="">
                     Envoyer
                 </button>
                 <p>
@@ -101,8 +101,8 @@
     </article>
 
     <!-- <article class="photo" [ngStyle]="{'background': 'url(' + contactImg + ') no-repeat 0px 0px / cover'}">    -->
-    <article class="photo">
-        <img [src]="contactImg" alt="">
+    <article role="img" class="photo">
+        <img role="img" [src]="contactImg" alt="">
 
     </article>
 
@@ -122,7 +122,7 @@
             <img src="/assets/pictos/step_logo_blanc.png" alt="step">
         </div>
 
-        <div class="address address-wrapper">
+        <div role="contentinfo" class="address address-wrapper">
             <h4>Technopole Hélioparc</h4>
             <h5>2 avenue du président Pierre Angot</h5>
             <h5>64053 Pau CEDEX</h5>

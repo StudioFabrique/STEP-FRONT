@@ -2,16 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { IMetiersList } from 'src/app/interfaces/imetier-details-headers';
 import { MetiersDetailsHeadersService } from 'src/app/services/metiers-details-headers.service';
 
-
 @Component({
   selector: 'app-solution-slider',
   templateUrl: './solution-slider.component.html',
-  styleUrls: ['./solution-slider.component.css']
+  styleUrls: ['./solution-slider.component.css'],
 })
 export class SolutionSliderComponent implements OnInit {
-
-  metiersList: IMetiersList[] = []
-  constructor(public metierServ: MetiersDetailsHeadersService) { }
+  metiersList: IMetiersList[] = [];
+  constructor(public metierServ: MetiersDetailsHeadersService) {}
 
   ngOnInit(): void {
     this.metierServ.getMetiers$();
@@ -86,24 +84,11 @@ export class SolutionSliderComponent implements OnInit {
     ],
   };
 
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
+  slickInit(e: any) {}
 
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
+  breakpoint(e: any) {}
 
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
+  afterChange(e: any) {}
 
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
-
-
-
-
-
+  beforeChange(e: any) {}
 }

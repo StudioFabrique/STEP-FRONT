@@ -9,8 +9,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { NgxCaptchaModule, ReCaptchaV3Service } from 'ngx-captcha';
 
 
-
-
 const routes: Routes = [
   { path: '', component: ContactsComponent }
 ]
@@ -28,6 +26,7 @@ const routes: Routes = [
     HttpClientModule,
     MatSnackBarModule,
     RouterModule.forChild(routes)
+   
   ],
   providers: [
     ReCaptchaV3Service,

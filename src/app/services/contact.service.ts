@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 
 import { catchError, map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { IContact } from '../interfaces/icontact';
 
 
@@ -16,8 +17,7 @@ export class ContactService {
   headers = new HttpHeaders()
 
   contact: IContact[] = [];
-  formspree = 'https://formspree.io/f/xzbobqzj'
-  serverURL ='https://script.google.com/a/macros/fabriquenumerique.fr/s/AKfycbx1MXDhIual2MweVZIWhV6CASlmXbLK8lnKWVsinc4ogH-lJFkuxEhjyqytSbUi8NeCXA/exec';
+  serverURL = environment.ContactForm.serverURL;
   constructor(private httpServ: HttpClient) {}
 
  
