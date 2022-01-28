@@ -30,7 +30,7 @@ export class FluxDocComponent implements OnInit {
   }
 
   // -- app-component-items-header --
-  bgImg = 'assets/img/office.jpg';
+  bgImg = '/assets/img/component-items-header/flux-doc/flux-doc_header.jpg';
   title = 'Flux Documentaires';
   accroche = 'Une ingénierie dédiée à chaque projet de numérisation ';
   text =

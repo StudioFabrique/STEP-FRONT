@@ -31,7 +31,7 @@ export class StudioComponent implements OnInit {
   }
 
   
-  bgImg="assets/img/flux_doc.jpg";
+  bgImg="/assets/img/component-items-header/studio/studio.jpg";
   corner="assets/corners/orange_white.png";
   title = 'Studio de Développement';
   accroche = "Des développeurs à votre écoute !";
@@ -49,7 +49,7 @@ export class StudioComponent implements OnInit {
       A titre d’exemple, un des projets phares est la création d’un outil logiciel de création de site web 40% plus
       économe en ressources que le traditionnel WordPress.`,
 
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/component-items-header/studio/app-dev-2.jpg',
       text: '',
 
     },
@@ -66,7 +66,7 @@ export class StudioComponent implements OnInit {
  Nous développons également des applications mobiles et web. N’hésitez pas à nous contacter pour nous exposer vos besoins.
       `,
       
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/component-items-header/studio/app-dev.jpg',
       text: '',
     },
   ]

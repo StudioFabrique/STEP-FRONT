@@ -8,6 +8,7 @@
     --button-color: #fff;
     --special-style-blue: #140a82;
     --hover-color: #140a82;
+    --shadow: rgba(0, 0, 0, 0.207);
 }
 
 .dark-theme {
@@ -17,6 +18,7 @@
     --step-white-color: #140a82;
     --special-style-blue: #140a82;
     --hover-color: #cdcaee;
+    --shadow: #140a82c2;
 }
 
 html,

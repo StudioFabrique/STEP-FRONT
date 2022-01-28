@@ -8,7 +8,8 @@
         <app-block icon="{{ article.icon }}" titre="{{ article.titre }}" accroche="{{ article.accroche }}"></app-block>
         <div class="content">
             <p class="column">{{ article.column }}</p>
-            <img src="{{ article.image }}" alt="" />
+            <div class="img-container" style="background-image: url('{{article.image}}'); background-repeat: no-repeat; background-size: cover;">
+            </div>
             <p>{{ article.text }}</p>
         </div>
     </article>

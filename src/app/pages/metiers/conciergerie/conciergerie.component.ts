@@ -32,7 +32,7 @@ export class ConciergerieComponent implements OnInit {
   }
 
 
-  bgImg="assets/img/office.jpg"
+  bgImg="/assets/img/conciergerie_header.jpg"
   corner = "assets/corners/white_orange.png"
   title="Conciergerie d’entreprise ";
   accroche="Des collaborateurs heureux, ça n’a pas de prix, non ?";

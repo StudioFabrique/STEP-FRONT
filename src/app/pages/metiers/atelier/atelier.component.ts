@@ -31,7 +31,7 @@ export class AtelierComponent implements OnInit {
   }
 
 
-  bgImg="assets/img/office.jpg"
+  bgImg="/assets/img/component-items-header/atelier/atelier_header.jpg"
   corner = "assets/corners/white_orange.png"
   title="L' Atelier Numérique";
   accroche="Pour lutter contre la fracture numérique !";

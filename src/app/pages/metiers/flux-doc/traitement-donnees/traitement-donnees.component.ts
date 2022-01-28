@@ -48,7 +48,7 @@ export class TraitementDonneesComponent implements OnInit {
       column: `Le traitement des données automatisées permet d’optimiser l’accès à vos flux numérisés. Il inclut la reconnaissance optique de caractères, la lecture et la reconnaissance automatique de documents, le vidéocodage sur de grandes quantités de données… Tout ce qui permet d’enrichir et d’exploiter au mieux vos fonds numérisés.
       
       `,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '',
     }
   ];
 }

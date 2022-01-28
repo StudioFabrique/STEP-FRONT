@@ -30,7 +30,7 @@ export class FormationComponent implements OnInit {
   }
 
   corner="assets/corners/orange_white.png";
-  bgImg="assets/img/flux_doc.jpg";
+  bgImg="/assets/img/component-items-header/formation/formations_header.jpg";
   title = "Formations";
   accroche = "La formation contre la fracture numérique";
   text = "Depuis 2017, nous proposons des formations courtes ou longues pour acquérir ou bien développer ses compétences";
