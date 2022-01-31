@@ -26,7 +26,8 @@ export class ValeursComponent implements OnInit {
   }
 
   img = {
-    valImg: "/assets/missions/gouv/gouv.png",
+    valImg1: "/assets/missions/valeurs/valeur_body_img_1.jpg",
+    valImg2: "/assets/missions/valeurs/valeur_body_img_2.jpg",
     title: "Valeurs",
     alt: "valeurs"
   }

@@ -59,8 +59,8 @@ C’est ce que nous nous efforçons de faire chaque jour, en le réinventant à 
 
 
   img = {
-    gouvImg: "/assets/missions/gouv/gouv.png",
-    gouvImg_2: "/assets/missions/gouv/gouv.png",
+    gouvImg: "/assets/missions/gouv/gouv_body_img_1.jpg",
+    gouvImg_2: "/assets/missions/gouv/gouv_body_img_2.jpg",
     title: "Gouvernance",
     alt: "Gouvernance"
 

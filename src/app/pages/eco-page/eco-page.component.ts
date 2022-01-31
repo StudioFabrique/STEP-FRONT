@@ -14,7 +14,7 @@ export class EcoPageComponent implements OnInit {
 
   constructor(public partenaireServ: PartenairesService) { }
 
-  bg="/assets/missions/mission.jpg";
+  bg="/assets/img/eco_header.jpg";
   image="/assets/corners/white_yellow.png";
   title = 'Eco Conception';
   titleBold = 'Une aventure, un état d’esprit!';
