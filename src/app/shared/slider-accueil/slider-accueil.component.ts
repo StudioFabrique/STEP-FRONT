@@ -10,22 +10,24 @@ import { SliderAccueilService } from 'src/app/services/slider-accueil.service';
 export class SliderAccueilComponent implements OnInit {
   @Input() slides!: ISliderAccueil[];
 
-  constructor(public sliderAccueilServ: SliderAccueilService) {}
+  constructor(public sliderAccueilServ: SliderAccueilService) { }
 
-  arrowleft = '/assets/svg/arrow-left.svg';
-  arrowright = '/assets/svg/arrow-right.svg';
-
-  previous = `<img class='a-left control-c prev slick-prev ' style='width:50px; left: -50px;' src=${this.arrowleft}>`;
-
-  next = `<img class='step-blue-color a-right control-c next slick-next' style='width:50px; right: -50px;' src=${this.arrowright}>`;
+  arrowleft = `<svg class='a-left control-c prev slick-prev arrows' width="2450" height="4474" viewBox="0 0 2450 4474" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2237 213L213 2237L2237 4261"  stroke-width="300" stroke-linecap="square"/>
+  </svg>
+  `;
+  arrowright = `<svg class='a-right control-c next slick-next arrows' width="2450" height="4474" viewBox="0 0 2450 4474" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M213 213L2237 2237L213 4261" stroke-width="300" stroke-linecap="square"/>
+  </svg>
+  `;
 
   ngOnInit(): void {}
 
   slideConfig = {
     cssEase: 'ease-out',
     draggable: true,
-    prevArrow: this.previous,
-    nextArrow: this.next,
+    prevArrow: this.arrowleft,
+    nextArrow: this.arrowright,
     accessibility: true,
     slidesToShow: 1,
     slidesToScroll: 1,
