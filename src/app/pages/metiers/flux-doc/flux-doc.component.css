@@ -17,6 +17,10 @@ article {
     justify-content: center;
 }
 
+.content img {
+    height: 400px;
+}
+
 p {
     font-size: 1.1rem;
     text-align: justify;
@@ -39,13 +43,9 @@ ul li {
     margin: auto;
 }
 
-app-questions,
 app-metier-details-header,
-app-prestations-carousel,
-app-partners {
+app-prestations-carousel {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 @media only screen and (max-width: 425px) {

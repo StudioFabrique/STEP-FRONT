@@ -19,14 +19,7 @@ export class FluxDocComponent implements OnInit {
 
   ngOnInit(): void {
     this.prestationServ.getPrestations();
-
-    this.partenaireServ.getPartenaires$().subscribe(
-      res => {
-        this.partenaires = res;
-        console.log(res);
-        
-      }
-    )
+     this.partenaireServ.getPartenaires$()
   }
 
   // -- app-component-items-header --
@@ -48,7 +41,7 @@ export class FluxDocComponent implements OnInit {
         'La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !',
       column: `La numérisation est notre activité phare
       avec un plateau de 600m2 pour l’accueillir. De l’audit des flux documentaires à la gestion complète de  processus d’affaires, nous traitons, la numérisation hauts volumes et la structuration de tout type documents (courriers entrants, dossiers techniques et administratifs A4/A3, hors formats, livres anciens, haute définition, sans contact, photographies, microfilms…) : tout est possible ! `,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/flux-doc/flux_doc_body_1.png',
     }
   ];
 
@@ -60,7 +53,7 @@ export class FluxDocComponent implements OnInit {
       column: `Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
 
 Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs immatériels.`,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/flux-doc/flux_doc_body_1.png',
     },
   ]
   article_3 = [{
@@ -74,7 +67,7 @@ Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Ad
       Simple mais efficace dans son concept, Numéo est une offre « tout en un ».
       Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs mmatériels.
       `,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/flux-doc/flux_doc_body_1.png',
      
     
   }]

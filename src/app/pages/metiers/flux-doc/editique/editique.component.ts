@@ -28,13 +28,7 @@ export class EditiqueComponent implements OnInit {
    
     this.firebaseServ.getEditiqueIMG$();
     
-    this.partenaireServ.getPartenaires$().subscribe(
-      res => {
-        this.partenaires = res;
-        console.log(res);
-        
-      }
-    )
+    this.partenaireServ.getPartenaires$();
   }
 
 
@@ -46,8 +40,7 @@ export class EditiqueComponent implements OnInit {
 
       Nous proposons ainsi des solutions back office pour des opérations commerciales d’opérateurs. Nous traitons également le flux de factures de clients industriels ou l’édition de  bulletins de salaire...
       
-      `,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      `
     }
   ];
 }
