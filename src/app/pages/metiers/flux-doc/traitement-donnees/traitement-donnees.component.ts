@@ -26,29 +26,16 @@ export class TraitementDonneesComponent implements OnInit {
 
   ngOnInit(): void {
     this.metierDetailsHeadersServ.getTraitementDonnees();
-
     this.firebaseServ.getTraitementDonneesIMG$();
-
-    this.partenaireServ.getPartenaires$().subscribe(
-      res => {
-        this.partenaires = res;
-        console.log(res);
-        
-      }
-    )
+    this.partenaireServ.getPartenaires$();
   }
 
 
 
 
   articles= [
-   
     {
-     
-      column: `Le traitement des données automatisées permet d’optimiser l’accès à vos flux numérisés. Il inclut la reconnaissance optique de caractères, la lecture et la reconnaissance automatique de documents, le vidéocodage sur de grandes quantités de données… Tout ce qui permet d’enrichir et d’exploiter au mieux vos fonds numérisés.
-      
-      `,
-      image: '',
+      column: `Le traitement des données automatisées permet d’optimiser l’accès à vos flux numérisés. Il inclut la reconnaissance optique de caractères, la lecture et la reconnaissance automatique de documents, le vidéocodage sur de grandes quantités de données… Tout ce qui permet d’enrichir et d’exploiter au mieux vos fonds numérisés.`
     }
   ];
 }

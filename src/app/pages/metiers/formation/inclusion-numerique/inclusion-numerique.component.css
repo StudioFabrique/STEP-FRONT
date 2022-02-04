@@ -56,13 +56,20 @@ ul li {
     border-radius: 15px;
     height: 150px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .box img {
-    width: 40%;
+    width: 25%;
+}
+
+.box h5 {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 0.5rem;
+    color: #140A82;
 }
 
 h3 a {

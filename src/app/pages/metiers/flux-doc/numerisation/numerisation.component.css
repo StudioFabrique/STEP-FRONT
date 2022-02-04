@@ -56,13 +56,20 @@ p {
     border-radius: 15px;
     height: 150px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .box img {
-    width: 40%;
+    width: 25%;
+}
+
+.box h5 {
+    color: #140A82;
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 0.5rem;
 }
 
 @media only screen and (max-width: 425px) {
