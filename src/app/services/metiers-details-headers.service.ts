@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import {
   IMetierDetailsHeaders,
   IMetiersList,
@@ -16,7 +17,7 @@ export class MetiersDetailsHeadersService {
 
   getMetiers$() {
     this.httpServiceMetierHeader
-      .get('/assets/data/metier-details-headers/metiersList.json')
+      .get(environment.JSONBinFiles.SolutionSliderSection)
       .subscribe((data: any) => {
         this.metiersList = data;
       });

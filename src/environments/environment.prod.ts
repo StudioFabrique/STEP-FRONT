@@ -14,6 +14,7 @@ export const environment = {
     SliderAccueilCarousel: "https://api.npoint.io/63efc911468850dfd43e",
     AccueilCards: "https://api.npoint.io/05aabc5afda1b9a5d7fd",
     AccueilCardsInfo: "https://api.npoint.io/9ec76ad3496988c07177",
+    SolutionSliderSection: "https://api.npoint.io/4d749be6a1313ece55fc",
 
     //Logos
     LogoPartenaires: "https://api.npoint.io/fb9835875df607c8c85c",
