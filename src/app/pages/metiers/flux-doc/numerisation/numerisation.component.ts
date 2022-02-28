@@ -48,7 +48,7 @@ export class NumerisationComponent implements OnInit {
 
       Nous garantissons ainsi un choix optimisé entre contraintes, coûts et résultats attendus, en privilégiant les formats universels pour prendre en compte l’évolutivité et l’interopérabilité, tout en optimisant les performances de votre organisation. 
       `,
-      image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
+      image: '/assets/img/flux-doc/flux_doc_body_3.png',
     }
   ];
 

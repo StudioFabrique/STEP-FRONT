@@ -5,7 +5,7 @@ section {
 }
 
 article {
-    width: 65%;
+    width: 75%;
     margin: auto;
     margin-top: 5%;
 }
@@ -27,17 +27,23 @@ h3 {
 p {
     font-size: 1.1rem;
     line-height: 1.8rem;
+    text-justify: distribute;
+    text-align: justify;
 }
 
 .content img {
+    margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
+    height: 400px;
+    width: 90%;
 }
 
 .column {
     column-count: 2;
     column-gap: 3rem;
     line-height: 1.8rem;
+    text-align: justify;
 }
 
 .box-wrapper {

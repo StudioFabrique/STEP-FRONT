@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IImages } from 'src/app/interfaces/iimages';
 import { FirebaseImagesService } from 'src/app/services/firebase-images.service';
-import { ThumbscarouselService } from 'src/app/services/thumbscarousel.service';
+
 
 @Component({
   selector: 'app-thumbnails-carousel',
@@ -17,6 +17,15 @@ export class ThumbnailsCarouselComponent implements OnInit {
     // public thumbnailServ: ThumbscarouselService, 
     public firebaseServ: FirebaseImagesService) { }
   
+    arrowleft = `<svg class='a-left control-c prev slick-prev arrows' width="2450" height="4474" viewBox="0 0 2450 4474" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2237 213L213 2237L2237 4261"  stroke-width="300" stroke-linecap="square"/>
+    </svg>
+    `;
+    arrowright = `<svg class='a-right control-c next slick-next arrows' width="2450" height="4474" viewBox="0 0 2450 4474" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M213 213L2237 2237L213 4261" stroke-width="300" stroke-linecap="square"/>
+    </svg>
+    `;
+  
 
   ngOnInit(): void {
     
@@ -30,13 +39,14 @@ export class ThumbnailsCarouselComponent implements OnInit {
     fade:true,
     autoplay: false,
     draggable:false,
-    prevArrow:'.client-feedback .prev-arrow',
-    nextArrow:'.client-feedback .next-arrow',
+    prevArrow: this.arrowleft,
+    nextArrow: this.arrowright,
     asNavFor:".thumbs",
   };
   
   thumbnailsSlider = {
     speed:0,
+    arrows: false,
     slidesToShow:3,
     slidesToScroll:0,
     cssEase:'linear',
