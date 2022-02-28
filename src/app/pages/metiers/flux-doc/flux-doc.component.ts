@@ -53,7 +53,7 @@ export class FluxDocComponent implements OnInit {
       column: `Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
 
 Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs immatériels.`,
-      image: '/assets/img/flux-doc/flux_doc_body_1.png',
+      image: '/assets/img/flux-doc/flux_doc_body_2.png',
     },
   ]
   article_3 = [{
@@ -67,7 +67,7 @@ Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Ad
       Simple mais efficace dans son concept, Numéo est une offre « tout en un ».
       Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs mmatériels.
       `,
-      image: '/assets/img/flux-doc/flux_doc_body_1.png',
+      image: '/assets/img/flux-doc/flux_doc_body_3.png',
      
     
   }]

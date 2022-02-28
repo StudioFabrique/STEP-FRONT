@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   metiers = [
-    { title: 'Flux Documentaires', link: '/metiers/flux-documentaire' },
+    { title: 'Flux Documentaires', link: '/metiers/flux-documentaires' },
     { title: 'Studio de Développement', link: '/metiers/studio' },
     { title: 'Atelier Numérique', link: '/metiers/atelier-numerique' },
     { title: 'Livraison Urbaine', link: '/metiers/livraison' },
