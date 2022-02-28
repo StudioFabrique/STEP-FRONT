@@ -174,12 +174,14 @@ button img {
 }
 
 .address-wrapper {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .address-wrapper h4,
 .address-wrapper h5 {
     color: var(--text-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .coord-container {
@@ -251,7 +253,6 @@ button img {
 
 .button span {
     color: white;
-    ;
 }
 
 h4,
