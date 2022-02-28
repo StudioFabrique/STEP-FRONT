@@ -63,9 +63,10 @@ Simple mais efficace dans son concept, Numéo est une offre « tout en un ». Ad
       accroche:
         'NUMEO, une offre intégrée de numérisation standard',
       column: `
-      Pour faciliter le montage de vos projets de numérisation, nous proposons  une offre innovante et intégrée, facilement opérable, à faible impact financier, depuis la prise en charge de vos documents, jusqu'à leur mise à disposition sur une plateforme WEB de gestion de documents, avec une garantie possible « 0 défaut ».
-      Simple mais efficace dans son concept, Numéo est une offre « tout en un ».
-      Adaptée à vos contraintes, Numéo vous apporte immédiatement de la réactivité, du confort et de la souplesse en proposant une meilleure productivité des processus métiers, une plus grande sécurité dans la gestion de l'information et de vos flux documentaires, ainsi qu’une valorisation des actifs mmatériels.
+      Expert de la capture d’image sur des supports très variés (dossiers de gestion ou techniques, microformes, plans & cartes, documents patrimoniaux…), STEP a développé également une forte expertise dans la gestion de projets
+      et le traitement de données de flux documentaires.
+
+       Nous adoptons nos work flow de production, développés en interne, à chaque type de production, aussi bien sur des projets à plusieurs millions de vues que pour quelques milliers, afin d’assurer une traçabilité totale des flux et de s’assurer de métriques performantes en termes de qualité.
       `,
       image: '/assets/img/flux-doc/flux_doc_body_3.png',
      

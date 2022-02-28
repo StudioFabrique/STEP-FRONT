@@ -36,7 +36,7 @@ export class ConciergerieComponent implements OnInit {
   corner = "assets/corners/white_orange.png"
   title="Conciergerie d’entreprise ";
   accroche="Des collaborateurs heureux, ça n’a pas de prix, non ?";
-  text="C’est une de nos dernières créations, un beau projet de services aux collaborateurs des organisations que nous accompagnons en collaboration avec la Conciergerie Solidaire de Bordeaux.";
+  text="C’est une de nos dernières créations, un beau projet de services aux collaborateurs des organisations que nous accompagnons.";
 
 
 

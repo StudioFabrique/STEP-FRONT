@@ -39,9 +39,7 @@ export class InclusionNumeriqueComponent implements OnInit {
 
   articles= [
     {
-      column: `La Fabrique du Numérique Paloise propose également des formations courtes (3 à 5 jours) sur la transformation numérique et l’utilisation des réseaux sociaux professionnels en partenariat avec une start-up de
-      Dordogne, la Wab, spécialiste du digital coopératif. 
-      Nous travaillons avec eux pour l’organisation de formations courtes pour accompagner la transformation numérique ainsi que sur le développement de formations digitales. 
+      column: `Participer activement à une meilleure appropriation par le plus grand nombre des usages numériques, c’est l’objectif de notre activité « Inclusion numérique » au sein  de La Fabrique du Numérique Paloise.  
       `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
     }
