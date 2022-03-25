@@ -4,6 +4,7 @@ export interface Rectangle {
   img: string,
   text: string,
   bg: string
+  link: string,
 }
 
 @Component({
@@ -19,8 +20,8 @@ export class RectanglesComponent implements OnInit {
   }
 
   rectangles: Rectangle[] = [
-    {'img':'./../../assets/pictos/plus_white.svg', 'text': 'Studio de développement', 'bg':'assets/rectangles/rectangle_2.png'},
-    {'img':'./../../assets/pictos/chat.svg', 'text': 'Centre de formation', 'bg':'assets/rectangles/rectangle_1.png'},
+    {'img':'./../../assets/pictos/plus_white.svg', 'text': 'Studio de développement', 'bg':'assets/rectangles/rectangle_2.png', 'link': '/metiers/studio'},
+    {'img':'./../../assets/pictos/chat.svg', 'text': 'Centre de formation', 'bg':'assets/rectangles/rectangle_1.png', 'link': '/metiers/formations'},
   ]
 
 }

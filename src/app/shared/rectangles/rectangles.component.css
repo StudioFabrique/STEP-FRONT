@@ -31,12 +31,14 @@ img {
     width: 35%;
 }
 
-h3 {
+a {
     padding: 0 10% 0 1%;
     color: white;
     text-align: left;
     font-size: 2rem;
+    font-weight: 700;
     word-wrap: break-word;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {

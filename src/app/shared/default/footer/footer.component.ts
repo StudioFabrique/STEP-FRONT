@@ -67,7 +67,7 @@ export class FooterComponent implements OnInit {
   liensMetiers: IliensMetiers[] = [
       {
         title:"Flux Documentaires",
-        link: "/metiers/flux-documentaire"
+        link: "/metiers/flux-documentaires"
       },
       {
         title:"Studio de Dévelopement",

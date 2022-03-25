@@ -3,7 +3,10 @@
         <div class="rectangle" style="background-image: url(' {{item.bg}} '); background-repeat: no-repeat; background-size: cover;">
 
             <img src="{{item.img}}" alt="">
-            <h3>{{item.text}}</h3>
+
+            <a routerLink="{{item.link}}">
+                {{item.text}}
+            </a>
         </div>
     </article>
 </section>
