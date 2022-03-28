@@ -17,7 +17,7 @@ export class EcoHeaderComponent implements OnInit {
 
 
 
-  @Input() image: string = 'default'
+@Input() image: string = 'default'
 @Input() title: string = 'default'
 @Input() titleBold: string = 'default'
 @Input() text: string = 'default'

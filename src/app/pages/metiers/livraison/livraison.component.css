@@ -25,7 +25,7 @@ p {
 
 .column {
     column-count: 2;
-    column-gap: 3rem;
+    column-gap: 5rem;
     text-align: justify;
     line-height: 1.8rem;
 }

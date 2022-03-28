@@ -37,17 +37,8 @@ export class ValeursComponent implements OnInit {
   corner = "assets/corners/blue_orange.png"
   title = "STEP, la belle histoire"
   accroche = "Une histoire qui dure depuis 20 ans"
-  text = "Les belles histoires sont celles qui durent. STEP nous le prouve depuis 20 ans, engagée et compétitive, elle n’a pas dit son dernier mot!"
+  text = "Les belles histoires sont celles qui durent. STEP nous le prouve depuis 20 ans, engagée et compétitive, elle n’a pas dit son dernier mot !"
 
-  // ARTICLE INTRO TEXT
-  intro = 
-    {
-      "p1": `Née de l'initiative d'acteurs de la société civile et de l'engagement de TOTAL, il y a 20 ans, STEP, entreprise responsable, n'a cessé de croire et de miser sur l'innovation pour durer et créer un modèle économique viable, offrant un panel de services toujours plus diversifié et de véritables parcours d’insertion à valeur ajoutée.
-Acteur économique de premier plan sur son domaine d’activité dans le grand Sud-Ouest, STEP s’appuie sur 20 années d’expertise en matière de gestion de flux documentaires et d’environnement informatique associé. Kenny Bertonazzi, directeur général de STEP depuis 2002, fortement investi dans la création de STEP avec le groupe b2s (Comdata France) dont il était le directeur palois, présente une croissance à deux chiffres de l’ordre de + 10% par an. En 2020, l’entreprise a enregistré une exploitation de 1 555 000 €.
-Pour l’année 2021, le prévisionnel d’exploitation avoisine les 2,1 millions d’euros. Une très forte hausse liée au développement des nouvelles activités. Actuellement, STEP emploie 40 collaborateurs à plein temps dont 16 personnes en parcours d’insertion et 60 apprenants suivent ses parcours de formation.`
-    }
-
-  
   // CONTENT PAGE TEXT
 
   content = [
@@ -76,28 +67,28 @@ Belle manière pour STEP de contribuer à l’effort de cohésion sociale sur le
       phrase: "STEP c’est donc une philosophie, ce sont aussi des valeurs fortes portées par chacun des collaborateurs de l’entreprise :",
       vals: [
         {
-          valTitre: "L’ INCLUSION:",
+          valTitre: "L’ INCLUSION :",
           valText: "Nous portons un projet social au service d’un territoire  via l’accompagnement à l’emploi, l’insertion, la lutte contre la discrimination et l’isolement, en intégrant les enjeux spécifiques des zones rurales, via le développement de la compétence numérique."
         },
         {
-          valTitre: "L’ INNOVATION:",
+          valTitre: "L’ INNOVATION :",
           valText: "Acteur clé de la numérisation, nous développons sans relâche une offre innovante en étant par exemple, le premier opérateur postal alternatif en Nouvelle Aquitaine et en portant une école de développeur Web."
         },
         {
-          valTitre: "LA QUALITE:",
+          valTitre: "LA QUALITÉ :",
           valText: "20 ans d’expérience liée à la gestion de projets pour le compte de clients de 1er ordre,  à la numérisation et la mise en œuvre nous permettent de mener à bien des projets, du plus simple au plus complexe."
         },
         {
-          valTitre:  "L’ INVENTIVITE:",
+          valTitre:  "L’ INVENTIVITÉ :",
           valText: "Si notre cœur de métier est bien le numérique, celui-ci est surtout le terreau à de nouvelles idées et de nouvelles perspectives de développement."
          
         },
         {
-          valTitre: "LA DURABILITE:",
+          valTitre: "LA DURABILITÉ :",
           valText: "au quotidien, en tant qu’entreprise RSE nous mettons en œuvre des pratiques éco-responsables : éco-conduite, amélioration des conditions de travail, prise en compte de l’aspect environnemental dans nos pratiques numériques et incitation de nos clients à les adopter, mise en place de la « prestation suspendue » sur le modèle du « café suspendu » (cf Atelier numérique)…"
         },
         {
-          valTitre: "L’ ECO-CONCEPTION:",
+          valTitre: "L’ECO-CONCEPTION :",
           valText: "Chacun de nos projets et services  riment avec éco-conception et responsabilité."
         }
       ]

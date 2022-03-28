@@ -36,7 +36,7 @@ export class ServicePostalComponent implements OnInit {
 
   articles = [
     {
-      icon: '/assets/svg/stack.svg',
+      icon: '/assets/svg/blue_icons/folder_blue_icon.svg',
       titre: "Un Service Postal alternatif...",
      
       accroche:'...dédié aux professionnels',

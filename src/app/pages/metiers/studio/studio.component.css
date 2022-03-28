@@ -27,8 +27,9 @@ p {
 
 .column {
     column-count: 2;
-    column-gap: 3rem;
+    column-gap: 4rem;
     line-height: 1.8rem;
+    text-align: justify;
 }
 
 app-questions,

@@ -39,13 +39,6 @@ export class ApplicationsMobilesComponent implements OnInit {
    
     {
      
-      column: `Toutes vos applications ne pourront être développées par nos soins. Nous sommes concentrés sur des solutions qui permettent une diffusion large sur les stores de Androïd et Apple au meilleur coût.
-
-      Elles seront facilement adaptables pour le développement d'une application Web (SaaS), pour rentabiliser au maximum vos investissements et les temps de conception. 
-      Sollicitez-nous pour tester vos besoins et tester votre marché. Nos choix permettent des prototypages rapides et rentables y compris sur les mobiles. 
-      
-      
-      `,
       image: '',
     }
   ];

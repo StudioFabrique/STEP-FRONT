@@ -46,7 +46,7 @@ export class LivraisonComponent implements OnInit {
       `,
     },
     {
-      icon: '/assets/svg/stack.svg',
+      icon: '/assets/svg/blue_icons/arrows_blue_icon.svg',
       titre: "Livraison dernier kilomètre (flux transporteur)",
       accroche:'Services aux transporteurs',
       column: ``,
@@ -54,7 +54,7 @@ export class LivraisonComponent implements OnInit {
       text: `Nous distribuons vos colis et palettes en vélo cargo à assistance électronique. Nous acheminons ainsi sur le dernier kilomètres les palettes et colis de SCHENKER, BMV, HEPNER, CHRONOPOST…`,
     },
     {
-      icon: '/assets/svg/stack.svg',
+      icon: '/assets/svg/blue_icons/persons_blue_icon.svg',
       titre: "Livraison de proximité ",
       accroche:'Services aux commerçants',
       column: ``,
@@ -63,7 +63,7 @@ export class LivraisonComponent implements OnInit {
     },
 
     {
-      icon: '/assets/svg/stack.svg',
+      icon: '/assets/svg/blue_icons/leaf_blue_icon.svg',
       titre: "Collecte des biodéchets pour la restauration",
       accroche:'Service aux restaurateurs et services de restauration collective',
       column: ``,

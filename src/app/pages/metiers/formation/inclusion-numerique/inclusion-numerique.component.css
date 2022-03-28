@@ -29,8 +29,8 @@ a {
 }
 
 .column {
-    column-count: 2;
-    column-gap: 3rem;
+    column-count: 1;
+    column-gap: 5rem;
     text-align: justify;
     line-height: 1.8rem;
 }
@@ -38,6 +38,7 @@ a {
 ul li {
     line-height: 1.95rem;
     list-style: inside;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box-wrapper {
