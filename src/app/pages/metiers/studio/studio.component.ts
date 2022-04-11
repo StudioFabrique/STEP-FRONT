@@ -18,16 +18,8 @@ export class StudioComponent implements OnInit {
   constructor(public prestationServ: PrestationsCarouselService, public partenaireServ: PartenairesService) {}
 
   ngOnInit(): void {
-    this.prestationServ.getPrestationsStudio(); 
-    
-    
-    this.partenaireServ.getPartenaires$().subscribe(
-      res => {
-        this.partenaires = res;
-        console.log(res);
-        
-      }
-    )
+    this.prestationServ.getPrestationsStudio();    
+    this.partenaireServ.getPartenaires$();
   }
 
   
