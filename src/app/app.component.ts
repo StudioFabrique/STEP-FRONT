@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((e: RouterEvent) => {
-      this.shouldShowBreadcrumb = e.url != '/accueil' && e.url != '/contact' && e.url != '/metiers' && e.url != '/missions' && e.url != '/eco-conception' && e.url != '/mentions-legales';
+      this.shouldShowBreadcrumb = e.url != '/' && e.url != '/accueil' && e.url != '/contact' && e.url != '/metiers' && e.url != '/missions' && e.url != '/eco-conception' && e.url != '/mentions-legales';
       this.showPartenaires = e.url != '/missions/partenaires' && e.url != '/mentions-legales';
      
   

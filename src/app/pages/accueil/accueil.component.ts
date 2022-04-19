@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { IClients, IPartenaires } from 'src/app/interfaces/ipartenaires';
 import { ISliderAccueil } from 'src/app/interfaces/islider-accueil';
 import { PartenairesService } from 'src/app/services/partenaires.service';
@@ -9,6 +9,7 @@ import { SliderAccueilService } from 'src/app/services/slider-accueil.service';
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.css']
 })
+
 export class AccueilComponent implements OnInit {
 
   partenaires: IPartenaires[] = [];
