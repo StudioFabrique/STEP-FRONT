@@ -66,31 +66,31 @@ export class FooterComponent implements OnInit {
 
   liensMetiers: IliensMetiers[] = [
       {
-        title:"Flux Documentaires",
+        title:"Flux documentaires",
         link: "/metiers/flux-documentaires"
       },
       {
-        title:"Studio de Dévelopement",
+        title:"Studio de dévelopement",
         link: "/metiers/studio"
       },
      
       {
-        title:"Atelier Numérique",
+        title:"Atelier numérique",
         link: "/metiers/atelier-numerique"
       },
      
       {
-        title:"Livraison Urbaine",
+        title:"Livraison urbaine",
         link: "/metiers/livraison"
       },
      
       {
-        title:"Service Postal",
+        title:"Service postal",
         link: "/metiers/service-postal"
       },
      
       {
-        title:"Conciergerie d'Entreprise",
+        title:"Conciergerie d'entreprise",
         link: "/metiers/conciergerie"
       },  
       {

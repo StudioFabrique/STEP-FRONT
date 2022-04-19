@@ -24,7 +24,7 @@ export class FluxDocComponent implements OnInit {
 
   // -- app-component-items-header --
   bgImg = '/assets/img/component-items-header/flux-doc/flux-doc_header.jpg';
-  title = 'Flux Documentaires';
+  title = 'Flux documentaires';
   accroche = 'Une ingénierie dédiée à chaque projet de numérisation ';
   text =
     'La numérisation vous permet de réduire vos charges d’exploitation et de vous concentrer sur votre coeur de métier.';

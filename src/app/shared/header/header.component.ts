@@ -27,11 +27,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   metiers = [
-    { title: 'Flux Documentaires', link: '/metiers/flux-documentaires' },
-    { title: 'Studio de Développement', link: '/metiers/studio' },
-    { title: 'Atelier Numérique', link: '/metiers/atelier-numerique' },
-    { title: 'Livraison Urbaine', link: '/metiers/livraison' },
-    { title: 'Service Postal', link: '/metiers/service-postal' },
+    { title: 'Flux documentaires', link: '/metiers/flux-documentaires' },
+    { title: 'Studio de développement', link: '/metiers/studio' },
+    { title: 'Atelier numérique', link: '/metiers/atelier-numerique' },
+    { title: 'Livraison urbaine', link: '/metiers/livraison' },
+    { title: 'Service postal', link: '/metiers/service-postal' },
     { title: 'Conciergerie', link: '/metiers/conciergerie' },
     { title: 'Formations', link: '/metiers/formations' },
   ];

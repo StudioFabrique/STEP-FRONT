@@ -11,13 +11,13 @@ export class MetierSwiperComponent implements OnInit {
   ngOnInit(): void {}
 
   metiers = [
-    { title: 'Flux Documentaire' },
-    { title: 'Studio de Développement' },
-    { title: "L'atelier Numérique" },
-    { title: 'Livraison Urbaine' },
+    { title: 'Flux documentaire' },
+    { title: 'Studio de développement' },
+    { title: "L'atelier numérique" },
+    { title: 'Livraison urbaine' },
     { title: 'Service Postal' },
-    { title: "Conciergerie d'Entreprise" },
-    { title: 'Formations de Numérique' },
+    { title: "Conciergerie d'entreprise" },
+    { title: 'Formations' },
   ];
 
 }

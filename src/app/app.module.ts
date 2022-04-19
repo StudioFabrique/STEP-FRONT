@@ -34,7 +34,9 @@ import { RouterModule } from '@angular/router';
     SharedModule,
     BrowserAnimationsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, GoogleAnalyticsService],
+  providers: [
+    // {provide: LocationStrategy, useClass: HashLocationStrategy},
+     GoogleAnalyticsService],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 
   bootstrap: [AppComponent]
