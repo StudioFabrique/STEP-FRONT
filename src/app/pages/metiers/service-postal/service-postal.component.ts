@@ -30,7 +30,7 @@ export class ServicePostalComponent implements OnInit {
   corner = "assets/corners/white_orange.png"
   title="Service Postal";
   accroche="STEP, votre opérateur postal de proximité ";
-  text="Mine de rien, nous sommes le premier concurrent mais aussi le premier client de la Poste sur notre territoire !";
+  text="Mine de rien, nous sommes le premier concurrent mais aussi le premier client de La Poste sur notre territoire !";
 
 
 
@@ -40,7 +40,7 @@ export class ServicePostalComponent implements OnInit {
       titre: "Un Service Postal alternatif...",
      
       accroche:'...dédié aux professionnels',
-      column: `Depuis 2011, nous détenons une licence d’opérateur postal privé délivrée par l’ARCEP afin d’offrir un Service Postal alternatif dédié aux professionnels faisant de nous le premier opérateur postal privé de proximité en Nouvelle Aquitaine.
+      column: `Depuis 2011, nous détenons une licence d’opérateur postal privé délivrée par l’ARCEP afin d’offrir un Service Postal alternatif dédié aux professionnels faisant de nous le premier opérateur postal privé de proximité en Nouvelle-Aquitaine.
 
 Nous offrons à nos clients professionnels une gamme identique à celle du service postal national en évitant de s’équiper de machines à affranchir notamment et en offrant un véritable gain de temps.
       

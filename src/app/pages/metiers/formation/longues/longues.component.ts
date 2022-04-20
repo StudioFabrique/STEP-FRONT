@@ -41,7 +41,7 @@ export class LonguesComponent implements OnInit {
     {
       column: `Initié en 2017, le Centre de Formation de STEP est original à plus d’un titre. En partenariat avec l’école privée SIMPLON et baptisé « Fabrique du Numérique Paloise », il fait cohabiter des personnes en insertion, des apprenants en formation continue ou en alternance. 
 
-Estampillé CFA en 2021, il a pour ambition d’amener de la diversité dans les métiers du numérique (femmes, seniors, personnes issues des quartiers prioritaires, ruraux, réfugiés, personnes handicapées).
+Estampillé CFA en 2021, il a pour ambition d’amener de la diversité dans les métiers du numérique (femmes, seniors, personnes issues des quartiers prioritaires, ruraux, réfugiés, personnes en situation de handicap).
 Il propose différents parcours de formation du bac au bac +3/4, ainsi que des dispositifs d’inclusion numérique qui s’appuient sur des pédagogies actives (école Simplon).
       `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',

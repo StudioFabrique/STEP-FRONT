@@ -47,7 +47,7 @@ export class ConciergerieComponent implements OnInit {
       titre: "Des services pour améliorer le quotidien des salariés",
       accroche:'…et alléger la charge mentale',
       column: `Faciliter la vie, alléger cette fameuse charge mentale, pour être plus serein professionnellement, retrouver du temps pour soi, pour les autres. Mais aussi rendre plus fluide l'organisation de l'entreprise.
-      Comment allier tout cela et plus encore ? … La conciergerie d’entreprise permet à vos salariés d’avoir accès sur leurs lieux de travail, à un large panel de services clés en main répondant à tous les besoins du quotidien, de la livraison de courses à la garde d’enfants en passant par le repassage à domicile, mais aussi de développer des services “pros” pour votre structure.  La conciergerie d’entreprise est un agrégateur de services et un facilitateur de liens.
+      Comment allier tout cela et plus encore ? La conciergerie d’entreprise permet à vos salariés d’avoir accès sur leurs lieux de travail, à un large panel de services clés en main répondant à tous les besoins du quotidien, de la livraison de courses à la garde d’enfants en passant par le repassage à domicile, mais aussi de développer des services “pros” pour votre structure.  La conciergerie d’entreprise est un agrégateur de services et un facilitateur de liens.
      `,
       image: '/assets/metiers/flux-doc/flux_doc_6.jpg',
       
