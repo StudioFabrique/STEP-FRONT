@@ -36,11 +36,11 @@ export class FluxDocComponent implements OnInit {
    
     {
       icon: 'assets/svg/blue_icons/stack_blue_icon.svg',
-      titre: 'Structuration de tout type documents',
+      titre: 'Structuration de tout type de documents',
       accroche:
         'La numérisation, notre cœur de métier pour réduire vos charges d’exploitation !',
       column: `La numérisation est notre activité phare
-      avec un plateau de 600m2 pour l’accueillir. De l’audit des flux documentaires à la gestion complète de  processus d’affaires, nous traitons, la numérisation hauts volumes et la structuration de tout type documents (courriers entrants, dossiers techniques et administratifs A4/A3, hors formats, livres anciens, haute définition, sans contact, photographies, microfilms…) : tout est possible ! `,
+      avec un plateau de 600m2 pour l’accueillir. De l’audit des flux documentaires à la gestion complète de  processus d’affaires, nous traitons, la numérisation hauts volumes et la structuration de tout type de documents (courriers entrants, dossiers techniques et administratifs A4/A3, hors formats, livres anciens, haute définition, sans contact, photographies, microfilms…) : tout est possible ! `,
       image: '/assets/img/flux-doc/flux_doc_body_1.png',
     }
   ];

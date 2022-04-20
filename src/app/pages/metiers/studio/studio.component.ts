@@ -33,8 +33,8 @@ export class StudioComponent implements OnInit {
   articles = [
     {
       icon: 'assets/svg/blue_icons/computer_blue_icon.svg',
-      titre: 'Studio lancé en 2020',
-      accroche:'Des technologies pour réduire votre empreinte écologique',
+      titre:`Technologies pour réduire l'empreinte écologique`,
+      accroche: 'Studio lancé en 2020',
       column: `Lancé en 2020, le Studio de Développement vous assiste dans la mise en place et le développement d’outils, d’applications numériques et de prestations de développement web, en tenant compte des impératifs de développement durable en mettant au service de votre entreprise son ingénierie (informatique, logicielle...).
 
       Ainsi, le Studio développe des outils qui tiennent compte des nouveaux usages informatiques tout en intégrant la nécessité de réduire l’impact écologique du flux numérique. 
@@ -50,7 +50,7 @@ export class StudioComponent implements OnInit {
 
     {
       icon: 'assets/svg/blue_icons/settings_3_blue_icon.svg',
-      titre: 'Vos sites sur mesure ',
+      titre: 'Vos sites sur-mesure ',
       accroche:'Réalisations basée sur une conception agile',
       column: `La réalisation de sites internet est notre point fort, basée sur une conception agile. Nous travaillons avec vous de l'étude du positionnement et l’élaboration de votre cahier des charges à la conception et au développement de votre site web en passant par la création de maquettes et la production ou scénarisation de vos contenus si nécessaire. 
       Nous vous accompagnons dans toutes les étapes de votre projet.

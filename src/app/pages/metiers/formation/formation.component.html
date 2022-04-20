@@ -5,9 +5,23 @@
     <article *ngFor="let article of articles">
         <app-block icon="{{ article.icon }}" titre="{{ article.titre }}" accroche="{{ article.accroche }}"></app-block>
         <div class="content">
-            <p class="column">{{ article.column }}</p>
-            <p>{{ article.text }}</p>
+            <p class="column">
+
+                En tant qu’entreprise <strong>responsable et engagée</strong> , nous sommes sensibles aux tendances de fond qui traversent la société, et même en alerte. Adapter nos missions et <strong>nos supports d’inclusion </strong>à ces grandes lignes
+                qui bougent sans cesse, c’est notre credo. Depuis 2017, nous avons ainsi élargi notre <strong>mission d’insertion</strong> en misant sur la formation pour donner à chacun, qu’importe son parcours, son expérience, ou sa formation d’origine,
+                l’opportunité de pouvoir se former dans le secteur incontournable du numérique et avons créé un centre de formation baptisé <strong> « La Fabrique du Numérique Paloise »</strong>. Y cohabitent en bonne intelligence des personnes en insertion,
+                des alternants et des apprenants. De cette manière, notre école contribue à la réduction de la fracture numérique en Nouvelle-Aquitaine.
+            </p>
             <img src="{{ article.image }}" alt="" />
+            <p>
+                Certifié Qualiopi en 2021 et labellisé « Grande École du Numérique » (pour sa formation de Développeur Web et Web Mobile),la Fabrique du Numérique Paloise s’appuie sur les pédagogies d’enseignement innovantes de l’école Simplon sur la Technopole Hélioparc
+                de Pau. L’école met en avant des méthodes de pédagogie active et propose :
+            </p>
+            <ul>
+                <li>Des parcours certifiants longs </li>
+                <li>Des formations courtes, et des formations digitales </li>
+                <li>des actions d’inclusion numérique</li>
+            </ul>
         </div>
     </article>
 </section>
