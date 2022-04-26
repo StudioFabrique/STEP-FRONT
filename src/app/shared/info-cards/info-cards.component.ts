@@ -23,10 +23,4 @@ export class InfoCardsComponent implements OnInit {
   }
 
 
-
-  hasAppeared!: boolean;
-  onAppear(){
-    this.hasAppeared = false;
-  }
-
 }
