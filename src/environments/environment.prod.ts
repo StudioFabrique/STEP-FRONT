@@ -28,6 +28,26 @@ export const environment = {
     PrestationsCarouselStudio: "https://api.npoint.io/f495a192cd29a8989662",
     PrestationsCarouselFormations: "https://api.npoint.io/0a07d0c1f8ab34ac0e4c",
 
+    //MetierDetailsHeaders
+
+    //FluxDoc
+    MetiersDetailsTraitementDeDonnees: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsEditique: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsNumerisation: " https://api.npoint.io/ce413d1931776cb4e6f7",
+
+    //Formations
+    MetiersDetailsFormationsLongues: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsFormationsCourtes: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsFormationsInclusion: " https://api.npoint.io/ce413d1931776cb4e6f7",
+
+    //Atelier
+    MetiersDetailsAssistance: " https://api.npoint.io/ce413d1931776cb4e6f7",    
+    MetiersDetailsRecondition: " https://api.npoint.io/ce413d1931776cb4e6f7",
+
+    //Studio
+    MetiersDetailsDevWeb: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsDevMobile: " https://api.npoint.io/ce413d1931776cb4e6f7",
+
   },
   ContactForm: {
     serverURL: 'https://script.google.com/macros/s/AKfycbxURr5g7xLT7dvigI9ouwNAV9PH3lF7mk6ClYW5VWakU--I2TkzX7G6Y-Dw5Rg6ZkDJ/exec',

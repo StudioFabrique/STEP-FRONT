@@ -25,7 +25,7 @@ export class MetiersDetailsHeadersService {
 
   getFormationsLongues() {
     this.httpServiceMetierHeader
-      .get<string>(
+      .get(
         '/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json'
       )
       .subscribe((data: any) => {
@@ -76,7 +76,7 @@ export class MetiersDetailsHeadersService {
   getTraitementDonnees() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-traitementDonnees.json'
+        environment.JSONBinFiles.MetiersDetailsTraitementDeDonnees
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
