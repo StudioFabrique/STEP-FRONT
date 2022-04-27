@@ -25,7 +25,7 @@ export class MetiersDetailsHeadersService {
 
   getFormationsLongues() {
     this.httpServiceMetierHeader
-      .get(
+      .get<string>(
         '/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json'
       )
       .subscribe((data: any) => {
@@ -69,7 +69,7 @@ export class MetiersDetailsHeadersService {
         '/assets/data/metier-details-headers/metier-details-headers-editique.json'
       )
       .subscribe((data: any) => {
-        this.metierDetailsHeaders = data;
+        this.metierDetailsHeaders = data;        
       });
   }
 
