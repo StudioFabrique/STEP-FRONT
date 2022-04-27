@@ -74,7 +74,7 @@ export class PartenairesComponent implements OnInit {
   }
 
   certIntro  = {
-    "p": `Nos marque de certification de formation...`
+    "p": `Nos marques de certification de formation...`
   }
 
   reseauxIntro  = {

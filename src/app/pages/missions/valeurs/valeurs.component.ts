@@ -46,7 +46,7 @@ export class ValeursComponent implements OnInit {
       "headTitle": "UNE DOUBLE IDENTITÉ ASSUMÉE",
       "bodyText": `STEP assume une double identité : être une entreprise compétitive doublée d'une entreprise solidaire. Et ça marche ! Depuis 20 ans, STEP développe son engagement au quotidien en affichant de véritables objectifs de développement. Kenny Bertonazzi, directeur général de STEP depuis 2002, fortement investi dans la création de STEP avec le groupe b2s (Comdata France) dont il était le directeur palois, présente une croissance à deux chiffres de l’ordre de + 10% par an. En 2020, l’entreprise a enregistré une exploitation de 1 555 000 €. Pour l’année 2021, le prévisionnel d’exploitation avoisine les 2,1 millions d’euros. Une très forte hausse liée au développement des nouvelles activités.
 
-Actuellement, STEP emploie 40 collaborateurs à plein temps dont 16 personnes en parcours d’insertion et 60 apprenants suivent ses parcours de formation. Sa pérennité est la preuve qu'on peut viser l'inclusion par le travail associée à une exigence de qualité. 
+Actuellement, STEP emploie plus de 40 collaborateurs à plein temps dont 20 personnes en parcours d’insertion et 60 apprenants suivent ses parcours de formation. Sa pérennité est la preuve qu'on peut viser l'inclusion par le travail associée à une exigence de qualité. 
 
 Chez STEP, tout le monde à sa chance, les profils des salariés en contrat d'insertion le démontrent, personnes en difficulté sur le marché de l'emploi, absence ou faiblesse des qualifications pour certains, situations de retour à l’emploi après une longue période d’inactivité, ou d’arrivée récente en France, etc... tous développent des compétences au service d'un projet global.
 

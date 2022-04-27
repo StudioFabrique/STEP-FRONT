@@ -9,7 +9,7 @@ import { ValeursComponent } from './valeurs/valeurs.component';
 const routes: Routes = [
   {path: '', children: [
     {path: '', component: MissionsComponent},
-    {path: 'gouvernance', component: GouvernanceComponent, data: {breadcrumb: 'Gouvernance'}},
+    {path: 'raison-d-etre', component: GouvernanceComponent, data: {breadcrumb: 'Gouvernance'}},
     {path: 'valeurs', component: ValeursComponent, data: {breadcrumb: 'Nos valeurs'}},
     {path: 'partenaires', component: PartenairesComponent, data: {breadcrumb: 'Nos partenaires'}}
   ]},

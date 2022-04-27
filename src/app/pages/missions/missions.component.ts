@@ -49,8 +49,8 @@ export class MissionsComponent implements OnInit {
   }
 
   cards: Card[] = [
+    {'title':`Raison d'être`, 'content': '«Personne n’est inemployable» tel est notre credo!', 'bg':'/assets/missions/gouvernance.jpg', 'lien':'./raison-d-etre' }, 
     {'title':'Nos Valeurs', 'content': 'Une histoire qui dure depuis 20 ans', 'bg':'/assets/missions/valeurs.jpg', 'lien':'./valeurs'}, 
-    {'title':'Gouvernance', 'content': '«Personne n’est inemployable» tel est notre credo!', 'bg':'/assets/missions/gouvernance.jpg', 'lien':'./gouvernance' }, 
     {'title':'Partenaires', 'content': 'Ils nous font confiance… et nous aussi' ,'bg':'/assets/missions/partenaires.jpg', 'lien':'./partenaires'}
   ]
 
