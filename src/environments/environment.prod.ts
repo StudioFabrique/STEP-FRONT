@@ -32,21 +32,21 @@ export const environment = {
 
     //FluxDoc
     MetiersDetailsTraitementDeDonnees: " https://api.npoint.io/ce413d1931776cb4e6f7",
-    MetiersDetailsEditique: " https://api.npoint.io/ce413d1931776cb4e6f7",
-    MetiersDetailsNumerisation: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsEditique: " https://api.npoint.io/ed69fd54ac5836f0ce15",
+    MetiersDetailsNumerisation: " https://api.npoint.io/fdbb5e0b1d8116cc64ef",
 
     //Formations
-    MetiersDetailsFormationsLongues: " https://api.npoint.io/ce413d1931776cb4e6f7",
-    MetiersDetailsFormationsCourtes: " https://api.npoint.io/ce413d1931776cb4e6f7",
-    MetiersDetailsFormationsInclusion: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsFormationsLongues: " https://api.npoint.io/cc8e286112a86ac2da9b",
+    MetiersDetailsFormationsCourtes: " https://api.npoint.io/52d82c492ce7ac463ce2",
+    MetiersDetailsFormationsInclusion: " https://api.npoint.io/8f397cb0a3a55fbf31a1",
 
     //Atelier
-    MetiersDetailsAssistance: " https://api.npoint.io/ce413d1931776cb4e6f7",    
-    MetiersDetailsRecondition: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsAssistance: "https://api.npoint.io/13aea6495d9624c245ce",    
+    MetiersDetailsRecondition: " https://api.npoint.io/49a0d16d6c9bdf2eabb4",
 
     //Studio
-    MetiersDetailsDevWeb: " https://api.npoint.io/ce413d1931776cb4e6f7",
-    MetiersDetailsDevMobile: " https://api.npoint.io/ce413d1931776cb4e6f7",
+    MetiersDetailsDevWeb: " https://api.npoint.io/5edbd7d5b75c044f8295",
+    MetiersDetailsDevMobile: "https://api.npoint.io/45068e86f42dddc925b2",
 
   },
   ContactForm: {

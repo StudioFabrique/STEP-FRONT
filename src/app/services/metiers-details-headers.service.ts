@@ -26,7 +26,7 @@ export class MetiersDetailsHeadersService {
   getFormationsLongues() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-formationsLongues.json'
+        environment.JSONBinFiles.MetiersDetailsFormationsLongues
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -36,7 +36,7 @@ export class MetiersDetailsHeadersService {
   getFormationsCourtes() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-formationsCourtes.json'
+        environment.JSONBinFiles.MetiersDetailsFormationsCourtes
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -46,7 +46,7 @@ export class MetiersDetailsHeadersService {
   getFormationsInclusion() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-inclusion.json'
+        environment.JSONBinFiles.MetiersDetailsFormationsInclusion
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -56,7 +56,7 @@ export class MetiersDetailsHeadersService {
   getNumerisation() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-numerisation.json'
+        environment.JSONBinFiles.MetiersDetailsNumerisation
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -66,7 +66,7 @@ export class MetiersDetailsHeadersService {
   getEditique() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-editique.json'
+        environment.JSONBinFiles.MetiersDetailsEditique
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;        
@@ -86,7 +86,7 @@ export class MetiersDetailsHeadersService {
   getApplicationsWeb() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-applicationsWeb.json'
+        environment.JSONBinFiles.MetiersDetailsDevWeb
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -96,7 +96,7 @@ export class MetiersDetailsHeadersService {
   getApplicationsMobiles() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-applicationsMobiles.json'
+        environment.JSONBinFiles.MetiersDetailsDevMobile
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
@@ -106,7 +106,7 @@ export class MetiersDetailsHeadersService {
   getAssistance() {
     this.httpServiceMetierHeader
       .get(
-        '/assets/data/metier-details-headers/metier-details-headers-atelier-assistance.json'
+        environment.JSONBinFiles.MetiersDetailsAssistance
       )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
