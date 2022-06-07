@@ -115,9 +115,9 @@ export class MetiersDetailsHeadersService {
 
   getMateriels() {
     this.httpServiceMetierHeader
-      .get(
-        '/assets/data/metier-details-headers/metier-details-headers-atelier-materiels.json'
-      )
+    .get(
+      environment.JSONBinFiles.MetiersDetailsRecondition
+    )
       .subscribe((data: any) => {
         this.metierDetailsHeaders = data;
       });
